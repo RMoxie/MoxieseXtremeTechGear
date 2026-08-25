@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extreme Performance NVMe SSDs & Storage Solutions (2026) - MoxieseXtremeTechGear</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --flame-orange: #f97316;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --header-bg: #1e293b;
+            --hero-grad-start: #1e293b;
+            --hero-grad-end: #0f172a;
+            --table-alt: #162032;
+        }
+
+        [data-theme="light"] {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --accent: #0284c7;
+            --flame-orange: #ea580c;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-color: #cbd5e1;
+            --header-bg: #ffffff;
+            --hero-grad-start: #f1f5f9;
+            --hero-grad-end: #f8fafc;
+            --table-alt: #f1f5f9;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+        header {
+            background: var(--header-bg);
+            padding: 1.25rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--accent);
+            letter-spacing: 0.5px;
+            text-decoration: none;
+        }
+        .nav-wrap {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        nav {
+            display: flex;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .theme-toggle {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .theme-toggle:hover {
+            border-color: var(--accent);
+        }
+
+        .hot-banner {
+            background: linear-gradient(90deg, #c2410c, #ea580c, #f97316, #ea580c, #c2410c);
+            background-size: 200% auto;
+            color: #ffffff;
+            text-align: center;
+            padding: 0.75rem 1rem;
+            font-weight: bold;
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+            animation: flameGlow 4s linear infinite;
+            border-bottom: 1px solid #9a3412;
+        }
+        @keyframes flameGlow {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1.5rem;
+            background: linear-gradient(to bottom, var(--hero-grad-start), var(--hero-grad-end));
+            border-bottom: 1px solid var(--border-color);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+        .hero p {
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+            border-left: 4px solid var(--flame-orange);
+            padding-left: 12px;
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            margin-top: 2rem;
+            color: var(--accent);
+        }
+
+        p, li {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        strong {
+            color: var(--text-main);
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            border-color: var(--flame-orange);
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
+        }
+        .specs { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.0rem; }
+        
+        .aff-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #0f172a;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.2s;
+        }
+        .aff-btn:hover { background: #7dd3fc; }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 2.5rem 0;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--card-bg);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--header-bg);
+            color: var(--text-main);
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--table-alt);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            background: var(--card-bg);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" class="logo">MoxieseXtremeTechGear</a>
+        <div class="nav-wrap">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="index.html" style="color: var(--accent);">Storage Gear</a>
+                <a href="../ai-hardware.html">AI Hardware</a>
+                <a href="../mobile-power.html">Mobile Power</a>
+                <a href="../ebike-gear.html">E-Bike Gear</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()">☀️ Light Mode</button>
+        </div>
+    </header>
+
+    <div class="hot-banner">
+        🔥 BLISTERING GEN 4 &amp; GEN 5 NVME DRIVES, THERMAL HEATSINKS &amp; RUGGED BACKUPS 🔥
+    </div>
+
+    <div class="hero">
+        <h1>Extreme Performance NVMe SSDs &amp; Storage Solutions (2026)</h1>
+        <p>Blistering solid-state drives, rugged external backup enclosures, and heavy-duty thermal management built for relentless data throughput.</p>
+    </div>
+
+    <div class="container">
+        
+        <p>Whether you are transferring massive video editing timelines, caching massive local AI model checkpoints, or securing critical project backups, traditional mechanical drives are long gone. Modern high-performance setups demand extreme sequential throughput and ironclad reliability.</p>
+
+        <h2>1. Blistering Gen 4 &amp; Gen 5 NVMe M.2 Drives</h2>
+        <p>PCIe Gen 4 and Gen 5 solid-state drives saturate motherboard bandwidth to deliver mind-boggling read and write speeds, cutting file transfer and boot times down to absolute fractions of a second.</p>
+
+        <div class="card">
+            <h3>High-End NVMe M.2 Internal SSDs (1TB to 4TB)</h3>
+            <div class="specs"><strong>Key Spec:</strong> Up to 14,000 MB/s Read Speeds | High TBW Endurance Rating</div>
+            <p>Designed for power users, developers, and creators who need instantaneous asset loading without performance throttling under heavy sustained writing tasks.</p>
+            <a href="https://www.amazon.com/s?k=gen5+nvme+ssd+2tb&tag=rmoxie-20" class="aff-btn" target="_blank">Check High-Performance NVMe SSDs on Amazon</a>
+        </div>
+
+        <h2>2. Rugged Portable SSDs &amp; Enclosures</h2>
+        <p>Taking your data on the go requires shock-resistant enclosures and rugged outer shells that can withstand accidental drops, dust, and outdoor field conditions.</p>
+
+        <div class="card">
+            <h3>Rugged Portable External SSD Enclosures</h3>
+            <div class="specs"><strong>Key Spec:</strong> USB 3.2 Gen 2x2 Type-C | IP67 Dust &amp; Water Resistance</div>
+            <p>Turn any internal NVMe drive into an ultra-fast, drop-resistant external backup drive capable of handling punishing mobile environments.</p>
+            <a href="https://www.amazon.com/s?k=rugged+external+nvme+ssd+enclosure&tag=rmoxie-20" class="aff-btn" target="_blank">Check Portable Enclosures on Amazon</a>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Storage Category</th>
+                        <th>Recommended Speed / Spec</th>
+                        <th>Best Application</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Gen 5 Internal NVMe</strong></td>
+                        <td>12,000+ MB/s Read</td>
+                        <td>Ultimate OS boot drive &amp; heavy AI model cache</td>
+                        <td><a href="https://www.amazon.com/s?k=gen5+nvme+ssd&tag=rmoxie-20" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: bold;">View Gear &rarr;</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gen 4 Workhorse SSD</strong></td>
+                        <td>7,000 MB/s Read</td>
+                        <td>General game library &amp; development workspaces</td>
+                        <td><a href="https://www.amazon.com/s?k=gen4+nvme+ssd+2tb&tag=rmoxie-20" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: bold;">View Gear &rarr;</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Active M.2 Heatsinks</strong></td>
+                        <td>Aluminum Fin + Thermal Pads</td>
+                        <td>Preventing thermal throttling during sustained data transfers</td>
+                        <td><a href="https://www.amazon.com/s?k=m.2+nvme+heatsink+ps5+pc&tag=rmoxie-20" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: bold;">View Gear &rarr;</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>High-End Flash Thumb Drives</strong></td>
+                        <td>USB 3.2 Gen 2 Metal Casing</td>
+                        <td>Quick portable toolkits, ISO flashing, and utility scripts</td>
+                        <td><a href="https://www.amazon.com/s?k=usb+3.2+metal+flash+drive&tag=rmoxie-20" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: bold;">View Gear &rarr;</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 MoxieseXtremeTechGear.com. All rights reserved.</p>
+        <p>As an Amazon Associate I earn from qualifying purchases.</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const btn = document.getElementById('themeToggleBtn');
+            if (html.getAttribute('data-theme') === 'light') {
+                html.removeAttribute('data-theme');
+                btn.textContent = '☀️ Light Mode';
+            } else {
+                html.setAttribute('data-theme', 'light');
+                btn.textContent = '🌙 Dark Mode';
+            }
+        }
+    </script>
+</body>
+</html>

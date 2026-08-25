@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Power & Portable Gear Guide (2026) - MoxieseXtremeTechGear</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --flame-orange: #f97316;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --header-bg: #1e293b;
+            --hero-grad-start: #1e293b;
+            --hero-grad-end: #0f172a;
+            --table-alt: #162032;
+        }
+
+        [data-theme="light"] {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --accent: #0284c7;
+            --flame-orange: #ea580c;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-color: #cbd5e1;
+            --header-bg: #ffffff;
+            --hero-grad-start: #f1f5f9;
+            --hero-grad-end: #f8fafc;
+            --table-alt: #f1f5f9;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+        header {
+            background: var(--header-bg);
+            padding: 1.25rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--accent);
+            letter-spacing: 0.5px;
+            text-decoration: none;
+        }
+        .nav-wrap {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        nav {
+            display: flex;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .theme-toggle {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .theme-toggle:hover {
+            border-color: var(--accent);
+        }
+
+        .hot-banner {
+            background: linear-gradient(90deg, #c2410c, #ea580c, #f97316, #ea580c, #c2410c);
+            background-size: 200% auto;
+            color: #ffffff;
+            text-align: center;
+            padding: 0.75rem 1rem;
+            font-weight: bold;
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+            animation: flameGlow 4s linear infinite;
+            border-bottom: 1px solid #9a3412;
+        }
+        @keyframes flameGlow {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1.5rem;
+            background: linear-gradient(to bottom, var(--hero-grad-start), var(--hero-grad-end));
+            border-bottom: 1px solid var(--border-color);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+        .hero p {
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+            border-left: 4px solid var(--flame-orange);
+            padding-left: 12px;
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            margin-top: 2rem;
+            color: var(--accent);
+        }
+
+        p, li {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        strong {
+            color: var(--text-main);
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            border-color: var(--flame-orange);
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
+        }
+        .specs { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.0rem; }
+        
+        .aff-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #0f172a;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.2s;
+        }
+        .aff-btn:hover { background: #7dd3fc; }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 2.5rem 0;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--card-bg);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--header-bg);
+            color: var(--text-main);
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--table-alt);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .callout {
+            background: linear-gradient(135deg, var(--card-bg), var(--bg-color));
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            background: var(--card-bg);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">MoxieseXtremeTechGear</a>
+        <div class="nav-wrap">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="gan-chargers-guide.html">GaN Chargers</a>
+                <a href="ai-hardware.html">Local AI Hardware</a>
+                <a href="cable-management.html">Cable Management</a>
+                <a href="mobile-power.html" style="color: var(--accent);">Mobile Power</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()">☀️ Light Mode</button>
+        </div>
+    </header>
+
+    <div class="hot-banner">
+        🔥 FIELD TESTED: RUGGED POWER BANKS, E-BIKE RAPID CHARGERS &amp; OFF-GRID GEAR 🔥
+    </div>
+
+    <div class="hero">
+        <h1>Mobile Power &amp; Portable Gear Guide (2026)</h1>
+        <p>Uncompromising off-grid power banks, high-draw e-bike field chargers, and rugged pack-ready tech built for maximum durability and relentless output.</p>
+    </div>
+
+    <div class="container">
+        
+        <p>When you are operating far from a standard wall outlet—whether out on an off-road trail excursion, maintaining field equipment, or setting up a high-performance mobile workstation—standard consumer charging bricks simply fall short. Modern high-draw electronics demand robust engineering, reliable thermal throttling protection, and true multi-voltage output.</p>
+
+        <h2>1. High-Capacity Power Banks &amp; Stations</h2>
+        <p>Modern high-capacity portable power stations and heavy-duty brick batteries utilize advanced Lithium Iron Phosphate (LiFePO4) cells and high-wattage USB-C Power Delivery (PD 3.1) to drive laptops, drone batteries, and communication gear simultaneously.</p>
+
+        <div class="card">
+            <h3>Heavy-Duty Portable Power Stations &amp; LiFePO4 Banks</h3>
+            <div class="specs"><strong>Key Spec:</strong> 300Wh - 1000Wh+ Capacity | Pure Sine Wave AC &amp; 140W USB-C PD</div>
+            <p>Perfect for basecamps, mobile workstations, and off-grid emergency backup. These units handle sustained high-draw power loads cleanly and safely.</p>
+            <a href="https://www.amazon.com/s?k=portable+power+station+lifepo4&tag=rmoxie-20" class="aff-btn" target="_blank">Check Portable Power Stations on Amazon</a>
+        </div>
+
+        <h2>2. E-Bike Batteries, Upgrades &amp; Rapid Chargers</h2>
+        <p>Electric mobility has evolved rapidly, with heavy-duty e-bikes and personal transport machines becoming primary gear haulers. Keeping your ride powered requires reliable replacement battery packs and fast, rugged field chargers.</p>
+
+        <div class="card">
+            <h3>E-Bike Replacement Battery Packs (48V / 52V)</h3>
+            <div class="specs"><strong>Key Spec:</strong> High-discharge BMS cells (Hailong or Custom Cases) | Key-locked security</div>
+            <p>Extend your range or swap out a tired commuter pack with high-capacity lithium battery packs engineered for sustained torque and dependable mileage.</p>
+            <a href="https://www.amazon.com/s?k=ebike+battery+48v+52v&tag=rmoxie-20" class="aff-btn" target="_blank">Check E-Bike Batteries on Amazon</a>
+        </div>
+
+        <div class="card">
+            <h3>Rugged E-Bike Rapid Chargers</h3>
+            <div class="specs"><strong>Key Spec:</strong> Adjustable Amperage (2A/4A/8A) | Aluminum Cooling Housing</div>
+            <p>Cut your charge times down significantly in the garage or basecamp with fan-cooled, heavy-duty chargers featuring proper connector compatibility (GX16, XT60, XLR).</p>
+            <a href="https://www.amazon.com/s?k=ebike+fast+charger+aluminum&tag=rmoxie-20" class="aff-btn" target="_blank">Check E-Bike Chargers on Amazon</a>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gear Category</th>
+                        <th>Recommended Output</th>
+                        <th>Best Use Case</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Heavy-Duty Field Power Bank</strong></td>
+                        <td>140W - 240W USB-C PD 3.1</td>
+                        <td>Laptops, portable monitors, drone gear</td>
+                        <td><a href="https://www.amazon.com/s?k=usb+c+power+bank+140w&tag=rmoxie-20" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: bold;">View Gear &rarr;</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rapid E-Bike Charger</strong></td>
+                        <td>48V / 52V at 5A - 8A Adjustable</td>
+                        <td>Fast garage &amp; basecamp turnarounds</td>
+                        <td><a href="https://www.amazon.com/s?k=adjustable+ebike+charger&tag=rmoxie-20" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: bold;">View Gear &rarr;</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Compact EDC Power Brick</strong></td>
+                        <td>65W - 100W Dual Port</td>
+                        <td>Day packs, light travel, phone/tablet</td>
+                        <td><a href="https://www.amazon.com/s?k=gan+power+bank+100w&tag=rmoxie-20" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: bold;">View Gear &rarr;</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Solar Field Blanket</strong></td>
+                        <td>100W - 200W Monocrystalline</td>
+                        <td>Extended off-grid basecamp recharging</td>
+                        <td><a href="https://www.amazon.com/s?k=portable+solar+panel+for+power+station&tag=rmoxie-20" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: bold;">View Gear &rarr;</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>3. Field-Pack Organization &amp; Thermal Management</h2>
+        <p>High-wattage energy transfer generates heat—and heat is the enemy of battery longevity. When building your mobile power kit:</p>
+        <ul>
+            <li><strong>Avoid Enclosed Pack Charging:</strong> Never charge high-capacity power banks or e-bike packs while sealed tightly inside a dense nylon backpack without airflow.</li>
+            <li><strong>Use Braided Silicone Cables:</strong> Standard PVC cables stiffen and crack in cold weather or degrade under sustained high-amperage draw. High-purity copper core silicone cables remain flexible and cool to the touch.</li>
+            <li><strong>Secure Mounting:</strong> If mounting gear to e-bikes or off-road vehicles, utilize vibration-dampening cradles to prevent solder fatigue on internal battery terminals.</li>
+        </ul>
+
+        <div class="callout">
+            <h3>Pro-Tip from the Bench</h3>
+            <p>Always carry a dedicated multi-meter or USB-C power meter in your field kit. Being able to verify live voltage drop and actual wattage negotiation instantly diagnoses failing cables or underperforming charging ports before you get stranded in the field.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 MoxieseXtremeTechGear.com. All rights reserved.</p>
+        <p>As an Amazon Associate I earn from qualifying purchases.</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const btn = document.getElementById('themeToggleBtn');
+            if (html.getAttribute('data-theme') === 'light') {
+                html.removeAttribute('data-theme');
+                btn.textContent = '☀️ Light Mode';
+            } else {
+                html.setAttribute('data-theme', 'light');
+                btn.textContent = '🌙 Dark Mode';
+            }
+        }
+    </script>
+</body>
+</html>
