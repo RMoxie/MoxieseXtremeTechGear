@@ -145,7 +145,7 @@
 
         h3 {
             font-size: 1.35rem;
-            margin-top: 2rem;
+            margin-top: 0;
             color: var(--accent);
         }
 
@@ -175,6 +175,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            position: relative;
         }
         .card:hover {
             border-color: var(--flame-orange);
@@ -184,8 +185,8 @@
         
         .aff-btn {
             display: inline-block;
-            background: var(--accent);
-            color: #0f172a;
+            background: var(--flame-orange);
+            color: #ffffff;
             padding: 0.6rem 1.2rem;
             border-radius: 4px;
             text-decoration: none;
@@ -194,7 +195,36 @@
             text-align: center;
             transition: background 0.2s;
         }
-        .aff-btn:hover { background: #7dd3fc; }
+        .aff-btn:hover { background: #ea580c; }
+
+        .aff-btn.secondary {
+            background: var(--accent);
+            color: #0f172a;
+        }
+        .aff-btn.secondary:hover { background: #7dd3fc; }
+
+        /* Offer Specific Styles */
+        .hub-title {
+            font-size: 1.3rem;
+            color: var(--accent);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .badge {
+            position: absolute;
+            top: -12px;
+            right: 15px;
+            background: var(--flame-orange);
+            color: #ffffff;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 2px 10px;
+            border-radius: 12px;
+            text-transform: uppercase;
+        }
 
         footer {
             text-align: center;
@@ -214,6 +244,7 @@
         <div class="nav-wrap">
             <nav>
                 <a href="index.html" style="color: var(--accent);">Home</a>
+                <a href="#offers">Exclusive Offers</a>
                 <a href="gan-chargers-guide.html">GaN Chargers</a>
                 <a href="ai-hardware.html">AI Hardware</a>
                 <a href="mobile-power.html">Mobile Power</a>
@@ -247,7 +278,7 @@
                     <div class="specs">100W+ Multi-Port Bricks &amp; Travel Hubs</div>
                     <p>Explore high-wattage Gallium Nitride blocks and retractable cable chargers designed to rapidly juice up your laptops and field tech.</p>
                 </div>
-                <a href="gan-chargers-guide.html" class="aff-btn">Open GaN Chargers Guide &rarr;</a>
+                <a href="gan-chargers-guide.html" class="aff-btn secondary">Open GaN Chargers Guide &rarr;</a>
             </div>
 
             <div class="card">
@@ -256,7 +287,7 @@
                     <div class="specs">Ollama, LM Studio &amp; High-VRAM GPUs</div>
                     <p>Configure optimal hardware setups, VRAM sweet spots, and secure local environments for running language models offline.</p>
                 </div>
-                <a href="ai-hardware.html" class="aff-btn">Open AI Hardware Guide &rarr;</a>
+                <a href="ai-hardware.html" class="aff-btn secondary">Open AI Hardware Guide &rarr;</a>
             </div>
 
             <div class="card">
@@ -265,7 +296,7 @@
                     <div class="specs">Braided Cords, Sleeves &amp; Hubs</div>
                     <p>Eliminate desktop clutter and messy wiring with heavy-duty sleeves, Velcro straps, and organized routing solutions.</p>
                 </div>
-                <a href="gan-chargers-guide.html" class="aff-btn">Open Cable Management &rarr;</a>
+                <a href="gan-chargers-guide.html" class="aff-btn secondary">Open Cable Management &rarr;</a>
             </div>
 
             <div class="card">
@@ -274,7 +305,7 @@
                     <div class="specs">Studio Monitors, DACs &amp; ANC Cans</div>
                     <p>Immerse yourself in crystal-clear sound with high-fidelity desktop DAC amplifiers, reference monitors, and active noise-canceling headsets.</p>
                 </div>
-                <a href="ai-hardware.html" class="aff-btn">Open Audio Gear Guide &rarr;</a>
+                <a href="ai-hardware.html" class="aff-btn secondary">Open Audio Gear Guide &rarr;</a>
             </div>
 
             <div class="card">
@@ -283,7 +314,7 @@
                     <div class="specs">Power Banks, Solar &amp; Field Charging</div>
                     <p>Keep your gear running anywhere with massive capacity power banks, portable solar panels, and rapid automotive power adapters.</p>
                 </div>
-                <a href="mobile-power.html" class="aff-btn">Open Mobile Power Guide &rarr;</a>
+                <a href="mobile-power.html" class="aff-btn secondary">Open Mobile Power Guide &rarr;</a>
             </div>
 
             <div class="card">
@@ -292,7 +323,7 @@
                     <div class="specs">Gen 4/Gen 5 NVMe &amp; Heatsinks</div>
                     <p>Maximize your sequential data throughput with blistering M.2 solid-state drives, active heatsinks, and rugged enclosures.</p>
                 </div>
-                <a href="storage-gear/index.html" class="aff-btn">Open Storage Gear Hub &rarr;</a>
+                <a href="storage-gear/index.html" class="aff-btn secondary">Open Storage Gear Hub &rarr;</a>
             </div>
 
             <div class="card">
@@ -301,7 +332,178 @@
                     <div class="specs">High-Torque Motors &amp; Commuter Builds</div>
                     <p>Explore rugged fat-tire electric bikes like Totguard builds, heavy-duty security locks, and ergonomic comfort upgrades.</p>
                 </div>
-                <a href="ebike-gear.html" class="aff-btn">Open E-Bike Guide &rarr;</a>
+                <a href="ebike-gear.html" class="aff-btn secondary">Open E-Bike Guide &rarr;</a>
+            </div>
+        </div>
+
+        <h2 id="offers">Exclusive Offers!!</h2>
+        <p>Unlock free trials, specialized club memberships, and exclusive Amazon savings curated for our tech community.</p>
+
+        <div class="hub-title">⚡ Entertainment &amp; Gaming Perks</div>
+        <div class="grid">
+            <div class="card">
+                <span class="badge">Free Trial</span>
+                <div>
+                    <h3>Prime Video Free Stream</h3>
+                    <div class="specs">Movies, TV Shows &amp; Live Sports</div>
+                    <p>Stream top-tier entertainment, tech documentaries, live sports, and original series on any device.</p>
+                </div>
+                <a href="https://www.amazon.com/gp/video/storefront?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Claim Free Trial &rarr;</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Gamer Perk</span>
+                <div>
+                    <h3>Prime Gaming</h3>
+                    <div class="specs">Free Games &amp; Twitch Channel Sub</div>
+                    <p>Score free monthly PC games, exclusive in-game loot, and a free channel subscription on Twitch.</p>
+                </div>
+                <a href="https://amazon.com/playluna?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Join Prime Gaming &rarr;</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Free Trial</span>
+                <div>
+                    <h3>Amazon Music Unlimited</h3>
+                    <p>Ad-free HD &amp; Spatial audio streaming with millions of songs. Perfect background tunes for workbench sessions.</p>
+                </div>
+                <a href="https://www.amazon.com/music/unlimited?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Try Free Music &rarr;</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Special Promo</span>
+                <div>
+                    <h3>Music &amp; Audible Bundle</h3>
+                    <p>Combine high-definition music streaming with unlimited audiobook passes in one digital deal.</p>
+                </div>
+                <a href="https://www.amazon.com/music/amazon-music-audible-deals?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">View Bundle Deal &rarr;</a>
+            </div>
+        </div>
+
+        <div class="hub-title">🎓 Special Access &amp; Club Passes</div>
+        <div class="grid">
+            <div class="card">
+                <span class="badge">Ages 18-24</span>
+                <div>
+                    <h3>Prime for Young Adults</h3>
+                    <div class="specs">6-Month Trial + 50% Off</div>
+                    <p>Young adults and students get 6 months free of fast delivery, streaming, and exclusive young adult perks.</p>
+                </div>
+                <a href="https://www.amazon.com/joinyoungadult?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Join Club Free &rarr;</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Special Access</span>
+                <div>
+                    <h3>Prime Access (EBT / Assistance)</h3>
+                    <div class="specs">Discounted Full Membership</div>
+                    <p>Qualifying assistance cardholders get full Amazon Prime benefits at a steep monthly discount.</p>
+                </div>
+                <a href="https://amazon.com/qualify?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Check Eligibility &rarr;</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Pro / Builder</span>
+                <div>
+                    <h3>Amazon Business Account</h3>
+                    <div class="specs">Bulk Savings &amp; Tax Exemption</div>
+                    <p>Create a free business account for discounted hardware, bulk power setups, and workshop tools.</p>
+                </div>
+                <a href="https://business.amazon.com?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Create Free Account &rarr;</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">EBT Savings</span>
+                <div>
+                    <h3>EBT Card Registration</h3>
+                    <div class="specs">Online Grocery &amp; Special Deals</div>
+                    <p>Register your EBT card to enable convenient grocery ordering and unlock special budget promos.</p>
+                </div>
+                <a href="https://www.amazon.com/snap?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Register EBT Card &rarr;</a>
+            </div>
+        </div>
+
+        <div class="hub-title">📚 Digital Library &amp; Audio Pass</div>
+        <div class="grid">
+            <div class="card">
+                <span class="badge">Free Trial</span>
+                <div>
+                    <h3>Audible Premium Plus</h3>
+                    <div class="specs">Monthly &amp; Annual Free Trials</div>
+                    <p>Listen while you tinker or commute! Get free audiobooks, podcasts, and Audible Originals.</p>
+                </div>
+                <a href="https://www.amazon.com/hz/audible/mlp?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Start Free Trial &rarr;</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Free Trial</span>
+                <div>
+                    <h3>Kindle Unlimited</h3>
+                    <div class="specs">4+ Million Titles</div>
+                    <p>Unlimited reading on any phone, tablet, or Kindle device. Tech guides, magazines, and novels.</p>
+                </div>
+                <a href="https://www.amazon.com/kindleunlimited?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Start Reading Free &rarr;</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Gift Pass</span>
+                <div>
+                    <h3>Audible Gift Memberships</h3>
+                    <div class="specs">3, 6, or 12-Month Plans</div>
+                    <p>Send 1, 3, 6, or 12 months of unlimited audiobooks to fellow makers, friends, or family.</p>
+                </div>
+                <a href="https://www.amazon.com/hz/audible/gift-membership-detail?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Gift Audible Pass &rarr;</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Family Perk</span>
+                <div>
+                    <h3>Amazon Kids+</h3>
+                    <div class="specs">Books, Games &amp; Apps</div>
+                    <p>Kid-safe digital playground packed with educational games, books, and full parental control filters.</p>
+                </div>
+                <a href="https://www.amazon.com/tryamazonkids?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Try Kids+ Free &rarr;</a>
+            </div>
+        </div>
+
+        <div class="hub-title">🎁 Gear Gifts &amp; Registries</div>
+        <div class="grid">
+            <div class="card">
+                <span class="badge">Bargains</span>
+                <div>
+                    <h3>Amazon Haul</h3>
+                    <div class="specs">Ultra-Low Cost Gear</div>
+                    <p>Shop budget gadget accessories, workshop gear, and daily essentials under $10.</p>
+                </div>
+                <a href="https://www.amazon.com/haul/store?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Shop Amazon Haul &rarr;</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Gifting</span>
+                <div>
+                    <h3>Give the Gift of Prime</h3>
+                    <div class="specs">3 or 12-Month Passes</div>
+                    <p>Pass along fast free delivery, video streaming, and exclusive Prime shopping events to anyone.</p>
+                </div>
+                <a href="https://www.amazon.com/gp/prime/pipeline/prime_gifting_landing?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Gift Prime &rarr;</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Registry</span>
+                <div>
+                    <h3>Amazon Wedding Registry</h3>
+                    <p>Build your tech, workshop, and home wishlist with group gifting support and discounts.</p>
+                </div>
+                <a href="https://www.amazon.com/gp/wedding/homepage?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Create Registry &rarr;</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">Registry</span>
+                <div>
+                    <h3>Amazon Baby Registry</h3>
+                    <p>Unlock free welcome boxes, completion discounts, and hassle-free returns for family setups.</p>
+                </div>
+                <a href="https://www.amazon.com/baby-reg/homepage?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Create Baby Registry &rarr;</a>
             </div>
         </div>
 
