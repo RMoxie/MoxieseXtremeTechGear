@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Offers &amp; Member Perks - Moxies eXtreme TechGear</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --flame-orange: #f97316;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --header-bg: #1e293b;
+            --hero-grad-start: #1e293b;
+            --hero-grad-end: #0f172a;
+        }
+        [data-theme="light"] {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --accent: #0284c7;
+            --flame-orange: #ea580c;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-color: #cbd5e1;
+            --header-bg: #ffffff;
+            --hero-grad-start: #f1f5f9;
+            --hero-grad-end: #f8fafc;
+        }
+        *, *::before, *::after { box-sizing: border-box; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+        header {
+            background: var(--header-bg);
+            padding: 1.25rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--accent);
+            letter-spacing: 0.5px;
+            text-decoration: none;
+        }
+        .nav-wrap {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .theme-toggle {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .theme-toggle:hover {
+            border-color: var(--accent);
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 1.5rem;
+            background: linear-gradient(to bottom, var(--hero-grad-start), var(--hero-grad-end));
+            border-bottom: 1px solid var(--border-color);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+        .hero p {
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        h3 {
+            font-size: 1.35rem;
+            margin-top: 0;
+            color: var(--accent);
+        }
+        p, li {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+        strong {
+            color: var(--text-main);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: border-color 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+        .card:hover {
+            border-color: var(--flame-orange);
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
+        }
+        .specs { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.0rem; }
+        .aff-btn {
+            display: inline-block;
+            background: var(--flame-orange);
+            color: #ffffff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            text-align: center;
+            transition: background 0.2s;
+        }
+        .aff-btn:hover { background: #ea580c; }
+        .hub-title {
+            font-size: 1.3rem;
+            color: var(--accent);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+        .badge {
+            position: absolute;
+            top: -12px;
+            right: 15px;
+            background: var(--flame-orange);
+            color: #ffffff;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 2px 10px;
+            border-radius: 12px;
+            text-transform: uppercase;
+        }
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            background: var(--card-bg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Moxies eXtreme TechGear</a>
+        <div class="nav-wrap">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="offers.html" style="color: var(--accent);">Exclusive Offers</a>
+                <a href="gan-chargers-guide.html">GaN Chargers</a>
+                <a href="ai-hardware.html">AI Hardware</a>
+                <a href="mobile-power.html">Mobile Power</a>
+                <a href="storage-gear/index.html">Storage Gear</a>
+                <a href="ebike-gear.html">E-Bike Gear</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()">☀️ Light Mode</button>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Exclusive Offers &amp; Member Perks</h1>
+        <p>Unlock free trials, specialized club memberships, and exclusive Amazon savings curated for our tech community.</p>
+    </div>
+
+    <div class="container">
+        <div class="hub-title" style="margin-top: 0;">⚡ Entertainment &amp; Gaming Perks</div>
+        <div class="grid">
+            <div class="card">
+                <span class="badge">Free Trial</span>
+                <div>
+                    <h3>Prime Video Free Stream</h3>
+                    <div class="specs">Movies, TV Shows &amp; Live Sports</div>
+                    <p>Stream top-tier entertainment, tech documentaries, live sports, and original series on any device.</p>
+                </div>
+                <a href="https://www.amazon.com/gp/video/storefront?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Claim Free Trial &rarr;</a>
+            </div>
+            <div class="card">
+                <span class="badge">Gamer Perk</span>
+                <div>
+                    <h3>Prime Gaming</h3>
+                    <div class="specs">Free Games &amp; Twitch Channel Sub</div>
+                    <p>Score free monthly PC games, exclusive in-game loot, and a free channel subscription on Twitch.</p>
+                </div>
+                <a href="https://amazon.com/playluna?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Join Prime Gaming &rarr;</a>
+            </div>
+            <div class="card">
+                <span class="badge">Free Trial</span>
+                <div>
+                    <h3>Amazon Music Unlimited</h3>
+                    <p>Ad-free HD &amp; Spatial audio streaming with millions of songs. Perfect background tunes for workbench sessions.</p>
+                </div>
+                <a href="https://www.amazon.com/music/unlimited?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Try Free Music &rarr;</a>
+            </div>
+            <div class="card">
+                <span class="badge">Special Promo</span>
+                <div>
+                    <h3>Music &amp; Audible Bundle</h3>
+                    <p>Combine high-definition music streaming with unlimited audiobook passes in one digital deal.</p>
+                </div>
+                <a href="https://www.amazon.com/music/amazon-music-audible-deals?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">View Bundle Deal &rarr;</a>
+            </div>
+        </div>
+
+        <div class="hub-title">🎓 Special Access &amp; Club Passes</div>
+        <div class="grid">
+            <div class="card">
+                <span class="badge">Ages 18-24</span>
+                <div>
+                    <h3>Prime for Young Adults</h3>
+                    <div class="specs">6-Month Trial + 50% Off</div>
+                    <p>Young adults and students get 6 months free of fast delivery, streaming, and exclusive young adult perks.</p>
+                </div>
+                <a href="https://www.amazon.com/joinyoungadult?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Join Club Free &rarr;</a>
+            </div>
+            <div class="card">
+                <span class="badge">Special Access</span>
+                <div>
+                    <h3>Prime Access (EBT / Assistance)</h3>
+                    <div class="specs">Discounted Full Membership</div>
+                    <p>Qualifying assistance cardholders get full Amazon Prime benefits at a steep monthly discount.</p>
+                </div>
+                <a href="https://amazon.com/qualify?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Check Eligibility &rarr;</a>
+            </div>
+            <div class="card">
+                <span class="badge">Pro / Builder</span>
+                <div>
+                    <h3>Amazon Business Account</h3>
+                    <div class="specs">Bulk Savings &amp; Tax Exemption</div>
+                    <p>Create a free business account for discounted hardware, bulk power setups, and workshop tools.</p>
+                </div>
+                <a href="https://business.amazon.com?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Create Free Account &rarr;</a>
+            </div>
+            <div class="card">
+                <span class="badge">EBT Savings</span>
+                <div>
+                    <h3>EBT Card Registration</h3>
+                    <div class="specs">Online Grocery &amp; Special Deals</div>
+                    <p>Register your EBT card to enable convenient grocery ordering and unlock special budget promos.</p>
+                </div>
+                <a href="https://www.amazon.com/snap?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Register EBT Card &rarr;</a>
+            </div>
+        </div>
+
+        <div class="hub-title">📚 Digital Library &amp; Audio Pass</div>
+        <div class="grid">
+            <div class="card">
+                <span class="badge">Free Trial</span>
+                <div>
+                    <h3>Audible Premium Plus</h3>
+                    <div class="specs">Monthly &amp; Annual Free Trials</div>
+                    <p>Listen while you tinker or commute! Get free audiobooks, podcasts, and Audible Originals.</p>
+                </div>
+                <a href="https://www.amazon.com/hz/audible/mlp?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Start Free Trial &rarr;</a>
+            </div>
+            <div class="card">
+                <span class="badge">Free Trial</span>
+                <div>
+                    <h3>Kindle Unlimited</h3>
+                    <div class="specs">4+ Million Titles</div>
+                    <p>Unlimited reading on any phone, tablet, or Kindle device. Tech guides, magazines, and novels.</p>
+                </div>
+                <a href="https://www.amazon.com/kindleunlimited?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Start Reading Free &rarr;</a>
+            </div>
+            <div class="card">
+                <span class="badge">Gift Pass</span>
+                <div>
+                    <h3>Audible Gift Memberships</h3>
+                    <div class="specs">3, 6, or 12-Month Plans</div>
+                    <p>Send 1, 3, 6, or 12 months of unlimited audiobooks to fellow makers, friends, or family.</p>
+                </div>
+                <a href="https://www.amazon.com/hz/audible/gift-membership-detail?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Gift Audible Pass &rarr;</a>
+            </div>
+            <div class="card">
+                <span class="badge">Family Perk</span>
+                <div>
+                    <h3>Amazon Kids+</h3>
+                    <div class="specs">Books, Games &amp; Apps</div>
+                    <p>Kid-safe digital playground packed with educational games, books, and full parental control filters.</p>
+                </div>
+                <a href="https://www.amazon.com/tryamazonkids?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Try Kids+ Free &rarr;</a>
+            </div>
+        </div>
+
+        <div class="hub-title">🎁 Gear Gifts &amp; Registries</div>
+        <div class="grid">
+            <div class="card">
+                <span class="badge">Bargains</span>
+                <div>
+                    <h3>Amazon Haul</h3>
+                    <div class="specs">Ultra-Low Cost Gear</div>
+                    <p>Shop budget gadget accessories, workshop gear, and daily essentials under $10.</p>
+                </div>
+                <a href="https://www.amazon.com/haul/store?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Shop Amazon Haul &rarr;</a>
+            </div>
+            <div class="card">
+                <span class="badge">Gifting</span>
+                <div>
+                    <h3>Give the Gift of Prime</h3>
+                    <div class="specs">3 or 12-Month Passes</div>
+                    <p>Pass along fast free delivery, video streaming, and exclusive Prime shopping events to anyone.</p>
+                </div>
+                <a href="https://www.amazon.com/gp/prime/pipeline/prime_gifting_landing?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Gift Prime &rarr;</a>
+            </div>
+            <div class="card">
+                <span class="badge">Registry</span>
+                <div>
+                    <h3>Amazon Wedding Registry</h3>
+                    <p>Build your tech, workshop, and home wishlist with group gifting support and discounts.</p>
+                </div>
+                <a href="https://www.amazon.com/gp/wedding/homepage?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Create Registry &rarr;</a>
+            </div>
+            <div class="card">
+                <span class="badge">Registry</span>
+                <div>
+                    <h3>Amazon Baby Registry</h3>
+                    <p>Unlock free welcome boxes, completion discounts, and hassle-free returns for family setups.</p>
+                </div>
+                <a href="https://www.amazon.com/baby-reg/homepage?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Create Baby Registry &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 MoxieseXtremeTechGear.com. All rights reserved.</p>
+        <p>As an Amazon Associate I earn from qualifying purchases.</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const btn = document.getElementById('themeToggleBtn');
+            if (html.getAttribute('data-theme') === 'light') {
+                html.removeAttribute('data-theme');
+                btn.textContent = '☀️ Light Mode';
+            } else {
+                html.setAttribute('data-theme', 'light');
+                btn.textContent = '🌙 Dark Mode';
+            }
+        }
+    </script>
+</body>
+</html>
