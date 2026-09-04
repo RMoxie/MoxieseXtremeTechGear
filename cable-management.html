@@ -69,10 +69,34 @@
             font-size: 0.9rem;
         }
     </style>
+
+  <link rel="stylesheet" href="/MoxieseXtremeTechGear/style.css?v=20260904b">
 </head>
 <body>
+  <a class="site-skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="site-header-top">
+      <a class="site-brand" href="/MoxieseXtremeTechGear/index.html">Moxies eXtreme TechGear</a>
+      <button class="site-theme-toggle" id="siteThemeToggle" type="button" aria-label="Switch to light mode">☀️ <span>Light Mode</span></button>
+      <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-expanded="false" aria-controls="sitePrimaryNav">Menu</button>
+    </div>
+    <nav class="site-primary-nav" id="sitePrimaryNav" aria-label="Primary navigation">
+      <a href="/MoxieseXtremeTechGear/index.html">Home</a>
+      <a href="/MoxieseXtremeTechGear/offers.html">Exclusive Offers</a>
+      <a href="/MoxieseXtremeTechGear/gan-chargers-guide.html">GaN Chargers</a>
+      <a href="/MoxieseXtremeTechGear/ai-hardware.html">AI Hardware</a>
+      <a href="/MoxieseXtremeTechGear/mobile-power.html">Mobile Power</a>
+      <a href="/MoxieseXtremeTechGear/storage-gear/index.html">Storage Gear</a>
+      <a href="/MoxieseXtremeTechGear/ebike-gear.html">E-Bike Gear</a>
+      <a href="/MoxieseXtremeTechGear/cable-management.html" aria-current="page">Cable Mgmt</a>
+      <a href="/MoxieseXtremeTechGear/audio-gear.html">Audio Gear</a>
+      <a href="/MoxieseXtremeTechGear/coding-gear/index.html">Software</a>
+    </nav>
+  </header>
+  <div class="site-highlight-banner" role="note">🔌 CLEANER WORKSPACES, SAFER POWER DELIVERY &amp; SMART CABLE ROUTING 🔌</div>
 
-    <div class="container">
+
+    <div id="main-content" class="container">
         <a href="index.html" class="back-link">&larr; Back to Main Home</a>
         <h1>Cable Management & Power Delivery Explained</h1>
         <div class="meta">Published by Moxie | Engineering & Safety Guides</div>
@@ -104,5 +128,30 @@
         <p>As an Amazon Associate I earn from qualifying purchases.</p>
     </footer>
 
+
+  <script data-site-shell>
+    (() => {
+      const root = document.documentElement;
+      const themeButton = document.getElementById('siteThemeToggle');
+      const menuButton = document.getElementById('siteMenuToggle');
+      const nav = document.getElementById('sitePrimaryNav');
+      const applyTheme = theme => {
+        const light = theme === 'light';
+        if (light) root.setAttribute('data-theme', 'light'); else root.removeAttribute('data-theme');
+        themeButton.innerHTML = light ? '🌙 <span>Dark Mode</span>' : '☀️ <span>Light Mode</span>';
+        themeButton.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+        localStorage.setItem('theme', light ? 'light' : 'dark');
+      };
+      applyTheme(localStorage.getItem('theme') === 'light' ? 'light' : 'dark');
+      themeButton.addEventListener('click', () => applyTheme(root.hasAttribute('data-theme') ? 'dark' : 'light'));
+      menuButton.addEventListener('click', () => {
+        const open = nav.classList.toggle('is-open');
+        menuButton.setAttribute('aria-expanded', String(open));
+      });
+      nav.addEventListener('click', event => {
+        if (event.target.closest('a')) { nav.classList.remove('is-open'); menuButton.setAttribute('aria-expanded', 'false'); }
+      });
+    })();
+  </script>
 </body>
 </html>
