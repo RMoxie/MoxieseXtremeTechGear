@@ -1,548 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extreme Tech Gear Guides | Moxies eXtreme TechGear</title>
-    <meta name="description" content="Compare practical guides for GaN chargers, mobile power, local AI hardware, storage, audio, e-bikes, and cable management.">
-    <link rel="canonical" href="https://rmoxie.github.io/MoxieseXtremeTechGear/">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ctext y=%2752%27 font-size=%2752%27%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Moxies eXtreme TechGear","url":"https://rmoxie.github.io/MoxieseXtremeTechGear/","description":"Practical comparison guides for performance technology and mobile power gear."}</script>
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --accent: #38bdf8;
-            --flame-orange: #f97316;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --border-color: #334155;
-            --header-bg: #1e293b;
-            --hero-grad-start: #1e293b;
-            --hero-grad-end: #0f172a;
-            --table-alt: #162032;
-        }
-
-        [data-theme="light"] {
-            --bg-color: #f8fafc;
-            --card-bg: #ffffff;
-            --accent: #0284c7;
-            --flame-orange: #ea580c;
-            --text-main: #0f172a;
-            --text-muted: #475569;
-            --border-color: #cbd5e1;
-            --header-bg: #ffffff;
-            --hero-grad-start: #f1f5f9;
-            --hero-grad-end: #f8fafc;
-            --table-alt: #f1f5f9;
-        }
-
-        *, *::before, *::after { box-sizing: border-box; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            margin: 0;
-            padding: 0;
-            line-height: 1.7;
-        }
-        header {
-            background: var(--header-bg);
-            padding: 1.25rem 2rem;
-            border-bottom: 1px solid var(--border-color);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        .logo {
-            font-size: 1.4rem;
-            font-weight: bold;
-            color: var(--accent);
-            letter-spacing: 0.5px;
-            text-decoration: none;
-        }
-        .nav-wrap {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-        }
-        nav {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-        nav a:hover {
-            color: var(--accent);
-        }
-        .theme-toggle {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            color: var(--text-main);
-            padding: 0.4rem 0.8rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            font-weight: bold;
-        }
-        .theme-toggle:hover {
-            border-color: var(--accent);
-        }
-
-        .hot-banner {
-            background: linear-gradient(90deg, #c2410c, #ea580c, #f97316, #ea580c, #c2410c);
-            background-size: 200% auto;
-            color: #ffffff;
-            text-align: center;
-            padding: 0.75rem 1rem;
-            font-weight: bold;
-            font-size: 1.05rem;
-            letter-spacing: 0.5px;
-            animation: flameGlow 4s linear infinite;
-            border-bottom: 1px solid #9a3412;
-        }
-        @keyframes flameGlow {
-            0% { background-position: 0% center; }
-            100% { background-position: 200% center; }
-        }
-
-        .hero {
-            text-align: center;
-            padding: 4rem 1.5rem;
-            background: linear-gradient(to bottom, var(--hero-grad-start), var(--hero-grad-end));
-            border-bottom: 1px solid var(--border-color);
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-top: 0;
-            margin-bottom: 1rem;
-            color: var(--text-main);
-        }
-        .hero p {
-            color: var(--text-muted);
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: 1.15rem;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 3rem 1.5rem;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            color: var(--text-main);
-            border-left: 4px solid var(--flame-orange);
-            padding-left: 12px;
-        }
-
-        h3 {
-            font-size: 1.35rem;
-            margin-top: 0;
-            color: var(--accent);
-        }
-
-        p, li {
-            color: var(--text-muted);
-            font-size: 1.05rem;
-        }
-
-        strong {
-            color: var(--text-main);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: border-color 0.2s, box-shadow 0.2s;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            position: relative;
-        }
-        .card:hover {
-            border-color: var(--flame-orange);
-            box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
-        }
-        .specs { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.0rem; }
-        
-        .aff-btn {
-            display: inline-block;
-            background: var(--flame-orange);
-            color: #ffffff;
-            padding: 0.6rem 1.2rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 1rem;
-            text-align: center;
-            transition: background 0.2s;
-        }
-        .aff-btn:hover { background: #ea580c; }
-
-        .aff-btn.secondary {
-            background: var(--accent);
-            color: #0f172a;
-        }
-        .aff-btn.secondary:hover { background: #7dd3fc; }
-
-        .hub-title {
-            font-size: 1.3rem;
-            color: var(--accent);
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            border-bottom: 1px dashed var(--border-color);
-            padding-bottom: 0.5rem;
-        }
-
-        .badge {
-            position: absolute;
-            top: -12px;
-            right: 15px;
-            background: var(--flame-orange);
-            color: #ffffff;
-            font-size: 0.75rem;
-            font-weight: bold;
-            padding: 2px 10px;
-            border-radius: 12px;
-            text-transform: uppercase;
-        }
-
-        footer {
-            text-align: center;
-            padding: 3rem 1.5rem;
-            color: var(--text-muted);
-            border-top: 1px solid var(--border-color);
-            margin-top: 4rem;
-            font-size: 0.9rem;
-            background: var(--card-bg);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical Tech Gear Guides | Moxies eXtreme TechGear</title>
+  <meta name="description" content="Clear, practical guides for GaN chargers, mobile power, local AI hardware, fast storage, audio, e-bikes, and cable management.">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="canonical" href="https://rmoxie.github.io/MoxieseXtremeTechGear/">
+  <meta property="og:title" content="Moxies eXtreme TechGear">
+  <meta property="og:description" content="Practical comparison guides for high-performance technology and mobile power gear.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rmoxie.github.io/MoxieseXtremeTechGear/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ctext y=%2752%27 font-size=%2752%27%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Moxies eXtreme TechGear","url":"https://rmoxie.github.io/MoxieseXtremeTechGear/","description":"Practical comparison guides for performance technology and mobile power gear."}</script>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --surface: #111c30;
+      --surface-2: #17243a;
+      --text: #f8fafc;
+      --muted: #b7c3d4;
+      --border: #2d3c55;
+      --blue: #55c6ff;
+      --orange: #fb923c;
+      --orange-strong: #f97316;
+      --header: rgba(11, 18, 32, .94);
+      --shadow: 0 18px 50px rgba(0, 0, 0, .25);
+    }
+    [data-theme="light"] {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --surface-2: #edf3f9;
+      --text: #0f172a;
+      --muted: #44546a;
+      --border: #c7d2e1;
+      --blue: #0369a1;
+      --orange: #c2410c;
+      --orange-strong: #9a3412;
+      --header: rgba(255, 255, 255, .95);
+      --shadow: 0 18px 45px rgba(15, 23, 42, .10);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .skip-link {
+      position: fixed; top: .75rem; left: .75rem; z-index: 1000;
+      transform: translateY(-180%); padding: .75rem 1rem;
+      background: var(--orange); color: #111827; border-radius: .55rem; font-weight: 800;
+    }
+    .skip-link:focus { transform: translateY(0); }
+    :focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; }
+    header {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      padding: 1rem clamp(1rem, 4vw, 4rem);
+      background: var(--header); border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(16px);
+    }
+    .logo { color: var(--blue); text-decoration: none; font-size: 1.22rem; font-weight: 900; letter-spacing: .01em; }
+    .nav-wrap, nav { display: flex; align-items: center; gap: .45rem; }
+    nav a { color: var(--muted); text-decoration: none; font-size: .91rem; padding: .65rem .7rem; border-radius: .5rem; }
+    nav a:hover, nav a[aria-current="page"] { color: var(--text); background: var(--surface-2); }
+    .icon-button {
+      min-height: 44px; min-width: 44px; padding: .55rem .75rem;
+      border: 1px solid var(--border); border-radius: .65rem;
+      background: var(--surface); color: var(--text); font: inherit; font-weight: 750; cursor: pointer;
+    }
+    .menu-toggle { display: none; }
+    main { overflow: hidden; }
+    .hero {
+      position: relative; isolation: isolate;
+      padding: clamp(5rem, 10vw, 8.5rem) 1.25rem clamp(4.5rem, 8vw, 7rem);
+      text-align: center;
+      background:
+        radial-gradient(circle at 15% 15%, rgba(85,198,255,.18), transparent 30%),
+        radial-gradient(circle at 85% 15%, rgba(251,146,60,.18), transparent 28%),
+        linear-gradient(180deg, var(--surface), var(--bg));
+    }
+    .hero::after {
+      content: ""; position: absolute; inset: 0; z-index: -1; opacity: .12;
+      background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 44px 44px; mask-image: linear-gradient(to bottom, black, transparent 85%);
+    }
+    .eyebrow { display: inline-flex; gap: .5rem; align-items: center; color: var(--orange); font-weight: 850; letter-spacing: .09em; text-transform: uppercase; font-size: .8rem; }
+    h1 { max-width: 900px; margin: .8rem auto 1.2rem; font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.02; letter-spacing: -.045em; }
+    .hero-copy { max-width: 760px; margin: 0 auto; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.28rem); }
+    .hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .9rem; margin-top: 2rem; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 48px;
+      padding: .75rem 1.2rem; border: 1px solid transparent; border-radius: .7rem;
+      text-decoration: none; font-weight: 850;
+    }
+    .button.primary { background: var(--orange); color: #111827; }
+    [data-theme="light"] .button.primary { color: #fff; }
+    .button.secondary { background: var(--surface); border-color: var(--border); color: var(--text); }
+    .trust-strip { display: grid; grid-template-columns: repeat(3, 1fr); max-width: 1050px; margin: -1.75rem auto 0; padding: 0 1.25rem; position: relative; z-index: 2; }
+    .trust-item { background: var(--surface); border: 1px solid var(--border); padding: 1rem 1.2rem; text-align: center; color: var(--muted); font-weight: 700; }
+    .trust-item:first-child { border-radius: .8rem 0 0 .8rem; }
+    .trust-item:last-child { border-radius: 0 .8rem .8rem 0; }
+    .trust-item strong { color: var(--text); display: block; }
+    .container { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; padding: 4.5rem 0; }
+    .section-heading { max-width: 700px; margin-bottom: 2rem; }
+    .section-kicker { color: var(--orange); text-transform: uppercase; letter-spacing: .1em; font-weight: 850; font-size: .8rem; }
+    h2 { margin: .35rem 0 .7rem; font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.15; letter-spacing: -.025em; }
+    .section-heading p, .card p, .method p, footer p { color: var(--muted); }
+    .featured-grid, .category-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+    .feature-card, .category-card, .method, .offers-panel {
+      background: linear-gradient(145deg, var(--surface-2), var(--surface)); border: 1px solid var(--border);
+      border-radius: 1rem; box-shadow: var(--shadow);
+    }
+    .feature-card { padding: 1.6rem; position: relative; min-height: 265px; display: flex; flex-direction: column; }
+    .feature-card::before { content: ""; height: 4px; position: absolute; left: 1.6rem; right: 1.6rem; top: 0; border-radius: 0 0 8px 8px; background: linear-gradient(90deg, var(--blue), var(--orange)); }
+    .visual { width: 58px; height: 58px; display: grid; place-items: center; margin-bottom: 1rem; border-radius: 1rem; font-size: 1.75rem; background: var(--bg); border: 1px solid var(--border); }
+    h3 { margin: 0 0 .25rem; color: var(--text); font-size: 1.28rem; }
+    .label { color: var(--blue); font-size: .88rem; font-weight: 800; }
+    .text-link { margin-top: auto; color: var(--blue); font-weight: 850; text-underline-offset: .25rem; }
+    .categories { background: var(--surface); border-block: 1px solid var(--border); }
+    .category-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .category-card { padding: 1.35rem; box-shadow: none; transition: transform .18s ease, border-color .18s ease; }
+    .category-card:hover { transform: translateY(-4px); border-color: var(--blue); }
+    .category-card .visual { width: 48px; height: 48px; font-size: 1.45rem; }
+    .category-card h3 { font-size: 1.08rem; }
+    .category-card p { font-size: .94rem; margin-bottom: 0; }
+    .method { padding: clamp(1.5rem, 4vw, 2.5rem); display: grid; grid-template-columns: .9fr 1.1fr; gap: 2.5rem; align-items: center; }
+    .method ol { margin: 0; padding: 0; list-style: none; counter-reset: steps; }
+    .method li { counter-increment: steps; display: grid; grid-template-columns: 40px 1fr; gap: .8rem; color: var(--muted); margin: 1rem 0; }
+    .method li::before { content: counter(steps); width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: var(--orange); color: #111827; font-weight: 900; }
+    .offers-panel { padding: clamp(1.5rem, 4vw, 2.5rem); display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+    .offers-panel h2 { font-size: clamp(1.6rem, 3vw, 2.35rem); }
+    footer { border-top: 1px solid var(--border); background: var(--surface); padding: 2.5rem 1rem; text-align: center; }
+    footer a { color: var(--blue); }
+    @media (max-width: 980px) {
+      .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .featured-grid { grid-template-columns: 1fr; }
+      .feature-card { min-height: auto; }
+      .method { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 800px) {
+      header { flex-wrap: wrap; }
+      .nav-wrap { margin-left: auto; }
+      .menu-toggle { display: inline-block; }
+      nav { display: none; width: 100%; order: 3; padding-top: .75rem; }
+      nav.open { display: grid; grid-template-columns: 1fr 1fr; }
+      nav a { min-height: 44px; display: flex; align-items: center; }
+      header:has(nav.open) { align-items: flex-start; }
+    }
+    @media (max-width: 620px) {
+      .logo { max-width: 175px; line-height: 1.15; }
+      .theme-text { display: none; }
+      .hero { padding-top: 4.5rem; }
+      .trust-strip { grid-template-columns: 1fr; margin-top: -1rem; }
+      .trust-item, .trust-item:first-child, .trust-item:last-child { border-radius: 0; }
+      .trust-item:first-child { border-radius: .8rem .8rem 0 0; }
+      .trust-item:last-child { border-radius: 0 0 .8rem .8rem; }
+      .category-grid { grid-template-columns: 1fr; }
+      .offers-panel { align-items: flex-start; flex-direction: column; }
+      nav.open { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+    }
+  </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <a href="index.html" class="logo">Moxies eXtreme TechGear</a>
+    <div class="nav-wrap">
+      <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+      <button class="icon-button" id="themeToggleBtn" type="button" aria-label="Switch to light mode">☀️ <span class="theme-text">Light</span></button>
+    </div>
+    <nav id="primaryNav" aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="#guides">Guides</a>
+      <a href="#method">How We Choose</a>
+      <a href="offers.html">Exclusive Offers</a>
+      <a href="ai-hardware.html">AI Hardware</a>
+      <a href="ebike-gear.html">E-Bikes</a>
+    </nav>
+  </header>
 
-    <header>
-        <a href="index.html" class="logo">Moxies eXtreme TechGear</a>
-        <div class="nav-wrap">
-            <nav>
-                <a href="index.html" style="color: var(--accent);">Home</a>
-                <a href="offers.html">Exclusive Offers</a>
-                <a href="gan-chargers-guide.html">GaN Chargers</a>
-                <a href="ai-hardware.html">AI Hardware</a>
-                <a href="mobile-power.html">Mobile Power</a>
-                <a href="storage-gear/index.html">Storage Gear</a>
-                <a href="ebike-gear.html">E-Bike Gear</a>
-                <a href="cable-management.html">Cable Mgmt</a>
-                <a href="audio-gear.html">Audio Gear</a>
-            </nav>
-            <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()">☀️ Light Mode</button>
-        </div>
-    </header>
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <span class="eyebrow">⚡ Clear answers for serious gear</span>
+      <h1 id="hero-title">Choose better tech without the guesswork.</h1>
+      <p class="hero-copy">Practical guides that turn confusing specifications into straightforward recommendations for power, performance, mobility, and everyday setups.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#guides">Explore Gear Guides</a>
+        <a class="button secondary" href="#method">See How We Choose</a>
+      </div>
+    </section>
 
-    <main>
-    <div class="hot-banner">
-        🔥 EXTREME TECH, HIGH-TORQUE E-BIKES, LOCAL AI RIGS, AUDIO, CABLE MANAGEMENT &amp; MOBILE POWER GUIDES 🔥
+    <div class="trust-strip" aria-label="What readers can expect">
+      <div class="trust-item"><strong>Practical research</strong>Focused on real use</div>
+      <div class="trust-item"><strong>Specs explained</strong>Less jargon, more clarity</div>
+      <div class="trust-item"><strong>Updated for 2026</strong>Current categories and gear</div>
     </div>
 
-    <div class="hero">
-        <h1>Moxies eXtreme TechGear Hub (2026)</h1>
-        <p>Your ultimate command center for high-performance mobile power solutions, high-torque personal mobility machines, local AI hardware, blistering storage speed, audio gear, and clean cable management.</p>
-    </div>
+    <section class="container" aria-labelledby="start-title">
+      <div class="section-heading">
+        <span class="section-kicker">Popular starting points</span>
+        <h2 id="start-title">Find the right setup faster</h2>
+        <p>Start with three of the most useful areas for work, travel, and high-performance computing.</p>
+      </div>
+      <div class="featured-grid">
+        <article class="feature-card">
+          <div class="visual" aria-hidden="true">⚡</div>
+          <span class="label">POWER &amp; TRAVEL</span>
+          <h3>GaN Chargers &amp; Adapters</h3>
+          <p>Compare compact multi-port chargers and understand the wattage your laptop and mobile gear actually need.</p>
+          <a class="text-link" href="gan-chargers-guide.html">Explore charging gear →</a>
+        </article>
+        <article class="feature-card">
+          <div class="visual" aria-hidden="true">🤖</div>
+          <span class="label">PRIVATE AI</span>
+          <h3>Local AI &amp; Coding Rigs</h3>
+          <p>Plan GPU, memory, and storage around Ollama, LM Studio, coding assistants, and private local models.</p>
+          <a class="text-link" href="ai-hardware.html">Build an AI setup →</a>
+        </article>
+        <article class="feature-card">
+          <div class="visual" aria-hidden="true">🔋</div>
+          <span class="label">OFF-GRID POWER</span>
+          <h3>Mobile Power Solutions</h3>
+          <p>Make sense of power banks, portable solar, and automotive charging for commutes, travel, and emergencies.</p>
+          <a class="text-link" href="mobile-power.html">Compare mobile power →</a>
+        </article>
+      </div>
+    </section>
 
-    <div class="container">
-        
-        <h2>Explore All Hardware Categories &amp; Guides</h2>
-        <p>Select any portal below to dive into specialized gear breakdowns, specifications, and researched hardware setups.</p>
-
-        <div class="grid">
-            <div class="card">
-                <div>
-                    <h3>⚡ GaN Chargers &amp; Adapters</h3>
-                    <div class="specs">100W+ Multi-Port Bricks &amp; Travel Hubs</div>
-                    <p>Explore high-wattage Gallium Nitride blocks and retractable cable chargers designed to rapidly juice up your laptops and field tech.</p>
-                </div>
-                <a href="gan-chargers-guide.html" class="aff-btn secondary">Open GaN Chargers Guide &rarr;</a>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h3>🤖 Local AI &amp; Coding Rigs</h3>
-                    <div class="specs">Ollama, LM Studio &amp; High-VRAM GPUs</div>
-                    <p>Configure optimal hardware setups, VRAM sweet spots, and secure local environments for running language models offline.</p>
-                </div>
-                <a href="ai-hardware.html" class="aff-btn secondary">Open AI Hardware Guide &rarr;</a>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h3>🔌 Cable Management &amp; Organization</h3>
-                    <div class="specs">Braided Cords, Sleeves &amp; Hubs</div>
-                    <p>Eliminate desktop clutter and messy wiring with heavy-duty sleeves, Velcro straps, and organized routing solutions.</p>
-                </div>
-                <a href="cable-management.html" class="aff-btn secondary">Open Cable Management &rarr;</a>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h3>🎧 Extreme Audio Gear</h3>
-                    <div class="specs">Studio Monitors, DACs &amp; ANC Cans</div>
-                    <p>Immerse yourself in crystal-clear sound with high-fidelity desktop DAC amplifiers, reference monitors, and active noise-canceling headsets.</p>
-                </div>
-                <a href="audio-gear.html" class="aff-btn secondary">Open Audio Gear Guide &rarr;</a>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h3>⚡ Mobile Power Solutions</h3>
-                    <div class="specs">Power Banks, Solar &amp; Field Charging</div>
-                    <p>Keep your gear running anywhere with massive capacity power banks, portable solar panels, and rapid automotive power adapters.</p>
-                </div>
-                <a href="mobile-power.html" class="aff-btn secondary">Open Mobile Power Guide &rarr;</a>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h3>💾 Extreme Storage Gear</h3>
-                    <div class="specs">Gen 4/Gen 5 NVMe &amp; Heatsinks</div>
-                    <p>Maximize your sequential data throughput with blistering M.2 solid-state drives, active heatsinks, and rugged enclosures.</p>
-                </div>
-                <a href="storage-gear/index.html" class="aff-btn secondary">Open Storage Gear Hub &rarr;</a>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h3>🚲 E-Bike &amp; Personal Mobility</h3>
-                    <div class="specs">High-Torque Motors &amp; Commuter Builds</div>
-                    <p>Explore rugged fat-tire electric bikes like Totguard builds, heavy-duty security locks, and ergonomic comfort upgrades.</p>
-                </div>
-                <a href="ebike-gear.html" class="aff-btn secondary">Open E-Bike Guide &rarr;</a>
-            </div>
+    <section class="categories" id="guides" aria-labelledby="guides-title">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">All categories</span>
+          <h2 id="guides-title">Explore every gear guide</h2>
+          <p>Choose a category for practical explanations, useful specifications, and researched setup ideas.</p>
         </div>
-
-        <h2 id="offers">Exclusive Offers!!</h2>
-        <p>Unlock free trials, specialized club memberships, and exclusive Amazon savings curated for our tech community.</p>
-
-        <div class="hub-title">⚡ Entertainment &amp; Gaming Perks</div>
-        <div class="grid">
-            <div class="card">
-                <span class="badge">Free Trial</span>
-                <div>
-                    <h3>Prime Video Free Stream</h3>
-                    <div class="specs">Movies, TV Shows &amp; Live Sports</div>
-                    <p>Stream top-tier entertainment, tech documentaries, live sports, and original series on any device.</p>
-                </div>
-                <a href="https://www.amazon.com/gp/video/storefront?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Claim Free Trial &rarr;</a>
-            </div>
-
-            <div class="card">
-                <span class="badge">Gamer Perk</span>
-                <div>
-                    <h3>Prime Gaming</h3>
-                    <div class="specs">Free Games &amp; Twitch Channel Sub</div>
-                    <p>Score free monthly PC games, exclusive in-game loot, and a free channel subscription on Twitch.</p>
-                </div>
-                <a href="https://amazon.com/playluna?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Join Prime Gaming &rarr;</a>
-            </div>
-
-            <div class="card">
-                <span class="badge">Free Trial</span>
-                <div>
-                    <h3>Amazon Music Unlimited</h3>
-                    <p>Ad-free HD &amp; Spatial audio streaming with millions of songs. Perfect background tunes for workbench sessions.</p>
-                </div>
-                <a href="https://www.amazon.com/music/unlimited?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Try Free Music &rarr;</a>
-            </div>
-
-            <div class="card">
-                <span class="badge">Special Promo</span>
-                <div>
-                    <h3>Music &amp; Audible Bundle</h3>
-                    <p>Combine high-definition music streaming with unlimited audiobook passes in one digital deal.</p>
-                </div>
-                <a href="https://www.amazon.com/music/amazon-music-audible-deals?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">View Bundle Deal &rarr;</a>
-            </div>
+        <div class="category-grid">
+          <article class="category-card"><div class="visual" aria-hidden="true">⚡</div><h3><a href="gan-chargers-guide.html">GaN Chargers</a></h3><p>Compact high-wattage charging for laptops and mobile gear.</p></article>
+          <article class="category-card"><div class="visual" aria-hidden="true">🤖</div><h3><a href="ai-hardware.html">AI Hardware</a></h3><p>GPUs, VRAM, storage, and private local-model setups.</p></article>
+          <article class="category-card"><div class="visual" aria-hidden="true">🔋</div><h3><a href="mobile-power.html">Mobile Power</a></h3><p>Power banks, portable solar, and field charging.</p></article>
+          <article class="category-card"><div class="visual" aria-hidden="true">💾</div><h3><a href="storage-gear/index.html">Storage Gear</a></h3><p>Fast NVMe drives, heatsinks, and rugged enclosures.</p></article>
+          <article class="category-card"><div class="visual" aria-hidden="true">🚲</div><h3><a href="ebike-gear.html">E-Bike Gear</a></h3><p>High-torque mobility, locks, and comfort upgrades.</p></article>
+          <article class="category-card"><div class="visual" aria-hidden="true">🔌</div><h3><a href="cable-management.html">Cable Management</a></h3><p>Sleeves, straps, hubs, and cleaner workspace routing.</p></article>
+          <article class="category-card"><div class="visual" aria-hidden="true">🎧</div><h3><a href="audio-gear.html">Audio Gear</a></h3><p>DACs, monitors, and noise-canceling headphones.</p></article>
+          <article class="category-card"><div class="visual" aria-hidden="true">🏷️</div><h3><a href="offers.html">Exclusive Offers</a></h3><p>Free trials, memberships, and curated savings.</p></article>
         </div>
+      </div>
+    </section>
 
-        <div class="hub-title">🎓 Special Access &amp; Club Passes</div>
-        <div class="grid">
-            <div class="card">
-                <span class="badge">Ages 18-24</span>
-                <div>
-                    <h3>Prime for Young Adults</h3>
-                    <div class="specs">6-Month Trial + 50% Off</div>
-                    <p>Young adults and students get 6 months free of fast delivery, streaming, and exclusive young adult perks.</p>
-                </div>
-                <a href="https://www.amazon.com/joinyoungadult?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Join Club Free &rarr;</a>
-            </div>
-
-            <div class="card">
-                <span class="badge">Special Access</span>
-                <div>
-                    <h3>Prime Access (EBT / Assistance)</h3>
-                    <div class="specs">Discounted Full Membership</div>
-                    <p>Qualifying assistance cardholders get full Amazon Prime benefits at a steep monthly discount.</p>
-                </div>
-                <a href="https://amazon.com/qualify?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Check Eligibility &rarr;</a>
-            </div>
-
-            <div class="card">
-                <span class="badge">Pro / Builder</span>
-                <div>
-                    <h3>Amazon Business Account</h3>
-                    <div class="specs">Bulk Savings &amp; Tax Exemption</div>
-                    <p>Create a free business account for discounted hardware, bulk power setups, and workshop tools.</p>
-                </div>
-                <a href="https://business.amazon.com?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Create Free Account &rarr;</a>
-            </div>
-
-            <div class="card">
-                <span class="badge">EBT Savings</span>
-                <div>
-                    <h3>EBT Card Registration</h3>
-                    <div class="specs">Online Grocery &amp; Special Deals</div>
-                    <p>Register your EBT card to enable convenient grocery ordering and unlock special budget promos.</p>
-                </div>
-                <a href="https://www.amazon.com/snap?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Register EBT Card &rarr;</a>
-            </div>
+    <section class="container" id="method" aria-labelledby="method-title">
+      <div class="method">
+        <div>
+          <span class="section-kicker">A clearer way to shop</span>
+          <h2 id="method-title">How we approach gear</h2>
+          <p>Recommendations should help you make a confident decision—not bury you in specifications.</p>
         </div>
+        <ol>
+          <li><span><strong>Start with the use case.</strong><br>Work, travel, mobility, and performance needs come first.</span></li>
+          <li><span><strong>Explain the important specs.</strong><br>We focus on the numbers that affect everyday use.</span></li>
+          <li><span><strong>Show the tradeoffs.</strong><br>Price, power, portability, and compatibility all matter.</span></li>
+        </ol>
+      </div>
+    </section>
 
-        <div class="hub-title">📚 Digital Library &amp; Audio Pass</div>
-        <div class="grid">
-            <div class="card">
-                <span class="badge">Free Trial</span>
-                <div>
-                    <h3>Audible Premium Plus</h3>
-                    <div class="specs">Monthly &amp; Annual Free Trials</div>
-                    <p>Listen while you tinker or commute! Get free audiobooks, podcasts, and Audible Originals.</p>
-                </div>
-                <a href="https://www.amazon.com/hz/audible/mlp?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Start Free Trial &rarr;</a>
-            </div>
+    <section class="container" aria-labelledby="offers-title">
+      <div class="offers-panel">
+        <div><span class="section-kicker">Save on useful services</span><h2 id="offers-title">Looking for current offers?</h2><p>Browse free trials, special-access programs, memberships, and Amazon savings in one dedicated place.</p></div>
+        <a class="button primary" href="offers.html">View Exclusive Offers</a>
+      </div>
+    </section>
+  </main>
 
-            <div class="card">
-                <span class="badge">Free Trial</span>
-                <div>
-                    <h3>Kindle Unlimited</h3>
-                    <div class="specs">4+ Million Titles</div>
-                    <p>Unlimited reading on any phone, tablet, or Kindle device. Tech guides, magazines, and novels.</p>
-                </div>
-                <a href="https://www.amazon.com/kindleunlimited?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Start Reading Free &rarr;</a>
-            </div>
+  <footer>
+    <p><strong>Moxies eXtreme TechGear</strong> — practical guides for power, performance, and mobility.</p>
+    <p>As an Amazon Associate I earn from qualifying purchases. <a href="#method">How we approach gear</a></p>
+    <p>&copy; 2026 Moxies eXtreme TechGear. All rights reserved.</p>
+  </footer>
 
-            <div class="card">
-                <span class="badge">Gift Pass</span>
-                <div>
-                    <h3>Audible Gift Memberships</h3>
-                    <div class="specs">3, 6, or 12-Month Plans</div>
-                    <p>Send 1, 3, 6, or 12 months of unlimited audiobooks to fellow makers, friends, or family.</p>
-                </div>
-                <a href="https://www.amazon.com/hz/audible/gift-membership-detail?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Gift Audible Pass &rarr;</a>
-            </div>
+  <script>
+    const root = document.documentElement;
+    const themeButton = document.getElementById('themeToggleBtn');
+    const menuButton = document.getElementById('menuToggle');
+    const nav = document.getElementById('primaryNav');
 
-            <div class="card">
-                <span class="badge">Family Perk</span>
-                <div>
-                    <h3>Amazon Kids+</h3>
-                    <div class="specs">Books, Games &amp; Apps</div>
-                    <p>Kid-safe digital playground packed with educational games, books, and full parental control filters.</p>
-                </div>
-                <a href="https://www.amazon.com/tryamazonkids?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Try Kids+ Free &rarr;</a>
-            </div>
-        </div>
-
-        <div class="hub-title">🎁 Gear Gifts &amp; Registries</div>
-        <div class="grid">
-            <div class="card">
-                <span class="badge">Bargains</span>
-                <div>
-                    <h3>Amazon Haul</h3>
-                    <div class="specs">Ultra-Low Cost Gear</div>
-                    <p>Shop budget gadget accessories, workshop gear, and daily essentials under $10.</p>
-                </div>
-                <a href="https://www.amazon.com/haul/store?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Shop Amazon Haul &rarr;</a>
-            </div>
-
-            <div class="card">
-                <span class="badge">Gifting</span>
-                <div>
-                    <h3>Give the Gift of Prime</h3>
-                    <div class="specs">3 or 12-Month Passes</div>
-                    <p>Pass along fast free delivery, video streaming, and exclusive Prime shopping events to anyone.</p>
-                </div>
-                <a href="https://www.amazon.com/gp/prime/pipeline/prime_gifting_landing?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Gift Prime &rarr;</a>
-            </div>
-
-            <div class="card">
-                <span class="badge">Registry</span>
-                <div>
-                    <h3>Amazon Wedding Registry</h3>
-                    <p>Build your tech, workshop, and home wishlist with group gifting support and discounts.</p>
-                </div>
-                <a href="https://www.amazon.com/gp/wedding/homepage?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Create Registry &rarr;</a>
-            </div>
-
-            <div class="card">
-                <span class="badge">Registry</span>
-                <div>
-                    <h3>Amazon Baby Registry</h3>
-                    <p>Unlock free welcome boxes, completion discounts, and hassle-free returns for family setups.</p>
-                </div>
-                <a href="https://www.amazon.com/baby-reg/homepage?tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Create Baby Registry &rarr;</a>
-            </div>
-        </div>
-
-    </div>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Moxies eXtreme TechGear. All rights reserved.</p>
-        <p>As an Amazon Associate I earn from qualifying purchases.</p>
-    </footer>
-
-    <script>
-        function toggleTheme() {
-            const html = document.documentElement;
-            const btn = document.getElementById('themeToggleBtn');
-            if (html.getAttribute('data-theme') === 'light') {
-                html.removeAttribute('data-theme');
-                btn.textContent = '☀️ Light Mode';
-                localStorage.setItem('theme', 'dark');
-            } else {
-                html.setAttribute('data-theme', 'light');
-                btn.textContent = '🌙 Dark Mode';
-                localStorage.setItem('theme', 'light');
-            }
-        }
-
-        (function initTheme() {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.getElementById('themeToggleBtn').textContent = '🌙 Dark Mode';
-            }
-        })();
-    </script>
+    function setTheme(theme) {
+      if (theme === 'light') root.setAttribute('data-theme', 'light'); else root.removeAttribute('data-theme');
+      const light = theme === 'light';
+      themeButton.innerHTML = light ? '🌙 <span class="theme-text">Dark</span>' : '☀️ <span class="theme-text">Light</span>';
+      themeButton.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+      localStorage.setItem('theme', theme);
+    }
+    setTheme(localStorage.getItem('theme') === 'light' ? 'light' : 'dark');
+    themeButton.addEventListener('click', () => setTheme(root.hasAttribute('data-theme') ? 'dark' : 'light'));
+    menuButton.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+    });
+    nav.addEventListener('click', event => {
+      if (event.target.matches('a')) { nav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); }
+    });
+  </script>
 </body>
 </html>
-f
