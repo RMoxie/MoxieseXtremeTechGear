@@ -188,25 +188,33 @@
             background: var(--card-bg);
         }
     </style>
+
+  <link rel="stylesheet" href="/MoxieseXtremeTechGear/style.css?v=20260904b">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">Moxies eXtreme TechGear</a>
-        <div class="nav-wrap">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="offers.html" style="color: var(--accent);">Exclusive Offers</a>
-                <a href="gan-chargers-guide.html">GaN Chargers</a>
-                <a href="ai-hardware.html">AI Hardware</a>
-                <a href="mobile-power.html">Mobile Power</a>
-                <a href="storage-gear/index.html">Storage Gear</a>
-                <a href="ebike-gear.html">E-Bike Gear</a>
-            </nav>
-            <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()">☀️ Light Mode</button>
-        </div>
-    </header>
+  <a class="site-skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="site-header-top">
+      <a class="site-brand" href="/MoxieseXtremeTechGear/index.html">Moxies eXtreme TechGear</a>
+      <button class="site-theme-toggle" id="siteThemeToggle" type="button" aria-label="Switch to light mode">☀️ <span>Light Mode</span></button>
+      <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-expanded="false" aria-controls="sitePrimaryNav">Menu</button>
+    </div>
+    <nav class="site-primary-nav" id="sitePrimaryNav" aria-label="Primary navigation">
+      <a href="/MoxieseXtremeTechGear/index.html">Home</a>
+      <a href="/MoxieseXtremeTechGear/offers.html" aria-current="page">Exclusive Offers</a>
+      <a href="/MoxieseXtremeTechGear/gan-chargers-guide.html">GaN Chargers</a>
+      <a href="/MoxieseXtremeTechGear/ai-hardware.html">AI Hardware</a>
+      <a href="/MoxieseXtremeTechGear/mobile-power.html">Mobile Power</a>
+      <a href="/MoxieseXtremeTechGear/storage-gear/index.html">Storage Gear</a>
+      <a href="/MoxieseXtremeTechGear/ebike-gear.html">E-Bike Gear</a>
+      <a href="/MoxieseXtremeTechGear/cable-management.html">Cable Mgmt</a>
+      <a href="/MoxieseXtremeTechGear/audio-gear.html">Audio Gear</a>
+      <a href="/MoxieseXtremeTechGear/coding-gear/index.html">Software</a>
+    </nav>
+  </header>
+  <div class="site-highlight-banner" role="note">🔥 CURRENT TRIALS, MEMBER PERKS &amp; CURATED AMAZON SAVINGS 🔥</div>
 
-    <div class="hero">
+<div id="main-content" class="hero">
         <h1>Exclusive Offers &amp; Member Perks</h1>
         <p>Unlock free trials, specialized club memberships, and exclusive Amazon savings curated for our tech community.</p>
     </div>
@@ -387,5 +395,30 @@
             }
         }
     </script>
+
+  <script data-site-shell>
+    (() => {
+      const root = document.documentElement;
+      const themeButton = document.getElementById('siteThemeToggle');
+      const menuButton = document.getElementById('siteMenuToggle');
+      const nav = document.getElementById('sitePrimaryNav');
+      const applyTheme = theme => {
+        const light = theme === 'light';
+        if (light) root.setAttribute('data-theme', 'light'); else root.removeAttribute('data-theme');
+        themeButton.innerHTML = light ? '🌙 <span>Dark Mode</span>' : '☀️ <span>Light Mode</span>';
+        themeButton.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+        localStorage.setItem('theme', light ? 'light' : 'dark');
+      };
+      applyTheme(localStorage.getItem('theme') === 'light' ? 'light' : 'dark');
+      themeButton.addEventListener('click', () => applyTheme(root.hasAttribute('data-theme') ? 'dark' : 'light'));
+      menuButton.addEventListener('click', () => {
+        const open = nav.classList.toggle('is-open');
+        menuButton.setAttribute('aria-expanded', String(open));
+      });
+      nav.addEventListener('click', event => {
+        if (event.target.closest('a')) { nav.classList.remove('is-open'); menuButton.setAttribute('aria-expanded', 'false'); }
+      });
+    })();
+  </script>
 </body>
 </html>
