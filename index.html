@@ -168,26 +168,33 @@
       *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
     }
   </style>
+
+  <link rel="stylesheet" href="/MoxieseXtremeTechGear/style.css?v=20260904b">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-  <header>
-    <a href="index.html" class="logo">Moxies eXtreme TechGear</a>
-    <div class="nav-wrap">
-      <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav">Menu</button>
-      <button class="icon-button" id="themeToggleBtn" type="button" aria-label="Switch to light mode">☀️ <span class="theme-text">Light</span></button>
+  <a class="site-skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="site-header-top">
+      <a class="site-brand" href="/MoxieseXtremeTechGear/index.html">Moxies eXtreme TechGear</a>
+      <button class="site-theme-toggle" id="siteThemeToggle" type="button" aria-label="Switch to light mode">☀️ <span>Light Mode</span></button>
+      <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-expanded="false" aria-controls="sitePrimaryNav">Menu</button>
     </div>
-    <nav id="primaryNav" aria-label="Primary navigation">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="#guides">Guides</a>
-      <a href="#method">How We Choose</a>
-      <a href="offers.html">Exclusive Offers</a>
-      <a href="ai-hardware.html">AI Hardware</a>
-      <a href="ebike-gear.html">E-Bikes</a>
+    <nav class="site-primary-nav" id="sitePrimaryNav" aria-label="Primary navigation">
+      <a href="/MoxieseXtremeTechGear/index.html" aria-current="page">Home</a>
+      <a href="/MoxieseXtremeTechGear/offers.html">Exclusive Offers</a>
+      <a href="/MoxieseXtremeTechGear/gan-chargers-guide.html">GaN Chargers</a>
+      <a href="/MoxieseXtremeTechGear/ai-hardware.html">AI Hardware</a>
+      <a href="/MoxieseXtremeTechGear/mobile-power.html">Mobile Power</a>
+      <a href="/MoxieseXtremeTechGear/storage-gear/index.html">Storage Gear</a>
+      <a href="/MoxieseXtremeTechGear/ebike-gear.html">E-Bike Gear</a>
+      <a href="/MoxieseXtremeTechGear/cable-management.html">Cable Mgmt</a>
+      <a href="/MoxieseXtremeTechGear/audio-gear.html">Audio Gear</a>
+      <a href="/MoxieseXtremeTechGear/coding-gear/index.html">Software</a>
     </nav>
   </header>
+  <div class="site-highlight-banner" role="note">⚡ PRACTICAL GUIDES FOR POWER, PERFORMANCE, MOBILITY &amp; MODERN TECH ⚡</div>
 
-  <main id="main-content">
+<main id="main-content">
     <section class="hero" aria-labelledby="hero-title">
       <span class="eyebrow">⚡ Clear answers for serious gear</span>
       <h1 id="hero-title">Choose better tech without the guesswork.</h1>
@@ -306,6 +313,31 @@
     nav.addEventListener('click', event => {
       if (event.target.matches('a')) { nav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); }
     });
+  </script>
+
+  <script data-site-shell>
+    (() => {
+      const root = document.documentElement;
+      const themeButton = document.getElementById('siteThemeToggle');
+      const menuButton = document.getElementById('siteMenuToggle');
+      const nav = document.getElementById('sitePrimaryNav');
+      const applyTheme = theme => {
+        const light = theme === 'light';
+        if (light) root.setAttribute('data-theme', 'light'); else root.removeAttribute('data-theme');
+        themeButton.innerHTML = light ? '🌙 <span>Dark Mode</span>' : '☀️ <span>Light Mode</span>';
+        themeButton.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+        localStorage.setItem('theme', light ? 'light' : 'dark');
+      };
+      applyTheme(localStorage.getItem('theme') === 'light' ? 'light' : 'dark');
+      themeButton.addEventListener('click', () => applyTheme(root.hasAttribute('data-theme') ? 'dark' : 'light'));
+      menuButton.addEventListener('click', () => {
+        const open = nav.classList.toggle('is-open');
+        menuButton.setAttribute('aria-expanded', String(open));
+      });
+      nav.addEventListener('click', event => {
+        if (event.target.closest('a')) { nav.classList.remove('is-open'); menuButton.setAttribute('aria-expanded', 'false'); }
+      });
+    })();
   </script>
 </body>
 </html>
