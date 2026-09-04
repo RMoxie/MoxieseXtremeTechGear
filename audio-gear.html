@@ -210,6 +210,296 @@
                 <a href="ebike-gear.html">E-Bike Gear</a>
                 <a href="cable-management.html">Cable Mgmt</a>
                 <a href="audio-gear.html" style="color: var(--accent);">Audio Gear</a>
+                <a href="coding-gear/index.html">Software</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()">☀️ Light Mode</button>
+        </div>
+    </header>
+
+    <div class="hot-banner">
+        🎧 HIGH-FIDELITY AUDIO, DESKTOP DACs, STUDIO MONITORS &amp; ANC HEADSETS 🎧
+    </div>
+
+    <div class="hero">
+        <h1>Extreme Audio Gear Guide (2026)</h1>
+        <p>Whether you need crystal-clear monitoring for local speech synthesis models, immersive gaming audio, or noise-canceling cans for workshop focus, here are the top audio setups.</p>
+    </div>
+
+    <div class="container">
+        <h2>Recommended Desktop Audio Solutions</h2>
+
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <h3>🔊 Desktop Reference Monitors</h3>
+                    <div class="specs">Active Studio Speakers &amp; Subwoofers</div>
+                    <p>Flat-frequency response speakers ideal for mixing, media consumption, and clear acoustic reproduction on your desk setup.</p>
+                </div>
+                <a href="https://www.amazon.com/s?k=%F0%9F%94%8A+Desktop+Reference+Monitors&tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Check Monitor Deals &rarr;</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>🎛️ Desktop DAC &amp; Headphone Amps</h3>
+                    <div class="specs">High-Res Audio Decoders &amp; Amplifiers</div>
+                    <p>Clean up signal noise from your motherboard and drive power-hungry planar magnetic or high-impedance studio headphones.</p>
+                </div>
+                <a href="https://www.amazon.com/s?k=desktop+dac+amp&tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">Browse DAC Amps &rarr;</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>🎧 Noise-Canceling Headsets</h3>
+                    <div class="specs">ANC Wireless &amp; Low-Latency Cans</div>
+                    <p>Block out workbench tools or PC fan noise with top-tier active noise cancellation and multi-point Bluetooth connectivity.</p>
+                </div>
+                <a href="https://www.amazon.com/s?k=anc+headphones&tag=rmoxie-20" target="_blank" rel="noopener sponsored" class="aff-btn">View ANC Headsets &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 MoxieseXtremeTechGear.com. All rights reserved.</p>
+        <p>As an Amazon Associate I earn from qualifying purchases.</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const btn = document.getElementById('themeToggleBtn');
+            if (html.getAttribute('data-theme') === 'light') {
+                html.removeAttribute('data-theme');
+                btn.textContent = '☀️ Light Mode';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                btn.textContent = '🌙 Dark Mode';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        (function initTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.getElementById('themeToggleBtn').textContent = '🌙 Dark Mode';
+            }
+        })();
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extreme Audio Gear Guide (2026) - Moxies eXtreme TechGear</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --flame-orange: #f97316;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --header-bg: #1e293b;
+            --hero-grad-start: #1e293b;
+            --hero-grad-end: #0f172a;
+        }
+
+        [data-theme="light"] {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --accent: #0284c7;
+            --flame-orange: #ea580c;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-color: #cbd5e1;
+            --header-bg: #ffffff;
+            --hero-grad-start: #f1f5f9;
+            --hero-grad-end: #f8fafc;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+        header {
+            background: var(--header-bg);
+            padding: 1.25rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--accent);
+            letter-spacing: 0.5px;
+            text-decoration: none;
+        }
+        .nav-wrap {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .theme-toggle {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .theme-toggle:hover {
+            border-color: var(--accent);
+        }
+
+        .hot-banner {
+            background: linear-gradient(90deg, #c2410c, #ea580c, #f97316, #ea580c, #c2410c);
+            background-size: 200% auto;
+            color: #ffffff;
+            text-align: center;
+            padding: 0.75rem 1rem;
+            font-weight: bold;
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+            animation: flameGlow 4s linear infinite;
+            border-bottom: 1px solid #9a3412;
+        }
+        @keyframes flameGlow {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1.5rem;
+            background: linear-gradient(to bottom, var(--hero-grad-start), var(--hero-grad-end));
+            border-bottom: 1px solid var(--border-color);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+        .hero p {
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+            border-left: 4px solid var(--flame-orange);
+            padding-left: 12px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: border-color 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            border-color: var(--flame-orange);
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
+        }
+        .card h3 {
+            font-size: 1.35rem;
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .specs { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.0rem; }
+
+        .aff-btn {
+            display: inline-block;
+            background: var(--flame-orange);
+            color: #ffffff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            text-align: center;
+            transition: background 0.2s;
+        }
+        .aff-btn:hover { background: #ea580c; }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            background: var(--card-bg);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Moxies eXtreme TechGear</a>
+        <div class="nav-wrap">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#offers">Exclusive Offers</a>
+                <a href="gan-chargers-guide.html">GaN Chargers</a>
+                <a href="ai-hardware.html">AI Hardware</a>
+                <a href="mobile-power.html">Mobile Power</a>
+                <a href="storage-gear/index.html">Storage Gear</a>
+                <a href="ebike-gear.html">E-Bike Gear</a>
+                <a href="cable-management.html">Cable Mgmt</a>
+                <a href="audio-gear.html" style="color: var(--accent);">Audio Gear</a>
                 <a href="software.html">Software</a>
             </nav>
             <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()">☀️ Light Mode</button>
