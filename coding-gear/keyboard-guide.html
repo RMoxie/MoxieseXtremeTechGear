@@ -59,6 +59,16 @@
             margin-top: 1rem;
         }
         .aff-btn:hover { background: #7dd3fc; }
+
+        .comparison-wrap { overflow-x: auto; margin: 2.5rem 0; border: 1px solid var(--border-color, #334155); border-radius: 8px; }
+        .comparison-table { width: 100%; border-collapse: collapse; min-width: 680px; background: var(--card-bg, #1e293b); }
+        .comparison-table th, .comparison-table td { padding: 0.9rem 1rem; border-bottom: 1px solid var(--border-color, #334155); text-align: left; vertical-align: top; }
+        .comparison-table th { color: var(--text-main, #f8fafc); background: rgba(56,189,248,0.1); }
+        .comparison-table td { color: var(--text-muted, #94a3b8); }
+        .comparison-table tr:last-child td { border-bottom: 0; }
+        .buying-note { color: var(--text-muted, #94a3b8); font-size: 0.95rem; }
+        .aff-btn:focus-visible, .btn-buy:focus-visible { outline: 3px solid #f97316; outline-offset: 3px; }
+
         footer {
             text-align: center;
             padding: 3rem;
@@ -110,7 +120,7 @@
             <h3>Hot-Swappable Mechanical Keyboards (Tactile Switches)</h3>
             <div class="specs"><strong>Key Spec:</strong> Custom Switch Actuation & N-Key Rollover | <strong>Why It Matters:</strong> Reduces typing strain and provides clean tactile feedback.</div>
             <p>Writing code requires thousands of precise keystrokes daily. A solid mechanical keyboard with tactile or quiet linear switches ensures every stroke registers instantly while minimizing joint impact. Hot-swappable boards also let you change out switches later without buying a whole new unit.</p>
-            <a href="https://www.amazon.com/s?k=hot+swappable+mechanical+keyboard+programmable&tag=rmoxie-20" class="aff-btn" target="_blank">Check Keyboards on Amazon</a>
+            <a href="https://www.amazon.com/s?k=hot+swappable+mechanical+keyboard+programmable&tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener">Check Keyboards on Amazon</a>
         </div>
 
         <h2>2. Programmable Macro Pads & Stream Decks</h2>
@@ -118,7 +128,7 @@
             <h3>Custom Macro Control Pads</h3>
             <div class="specs"><strong>Key Spec:</strong> Customizable LCD Keys & Script Shortcuts | <strong>Why It Matters:</strong> Instantly fires off terminal commands, scripts, or app launches.</div>
             <p>If you're constantly running local server scripts, opening Git repositories, or juggling multiple terminal windows, assigning those tasks to physical macro keys saves endless context-switching.</p>
-            <a href="https://www.amazon.com/s?k=programmable+macro+pad+macropad&tag=rmoxie-20" class="aff-btn" target="_blank">Check Macro Pads on Amazon</a>
+            <a href="https://www.amazon.com/s?k=programmable+macro+pad+macropad&tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener">Check Macro Pads on Amazon</a>
         </div>
 
         <h2>3. Monitor Light Bars for Eye Strain Relief</h2>
@@ -126,8 +136,20 @@
             <h3>Asymmetric LED Monitor Light Bars</h3>
             <div class="specs"><strong>Key Spec:</strong> Zero Screen Glare & Adjustable Color Temp | <strong>Why It Matters:</strong> Lights your desk surface without throwing reflections onto your display.</div>
             <p>Coding in a dark room wrecks your eyes, but standard desk lamps create annoying glares right across your monitor. A monitor-mounted light bar illuminates your physical keyboard and notes cleanly without a single photon hitting the glass.</p>
-            <a href="https://www.amazon.com/s?k=monitor+light+bar+desk+lamp&tag=rmoxie-20" class="aff-btn" target="_blank">Check Light Bars on Amazon</a>
+            <a href="https://www.amazon.com/s?k=monitor+light+bar+desk+lamp&tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener">Check Light Bars on Amazon</a>
         </div>
+
+
+        <h2>4. Full-Size Custom Mechanical Keyboard</h2>
+        <div class="product-card"><h3>Keychron Q6 Max Wireless Mechanical Keyboard</h3><div class="specs"><strong>Key Spec:</strong> Full-Size Layout | QMK/VIA Support | Hot-Swappable Options</div><p>A premium choice for users who want a number pad, deep customization, and wired or wireless flexibility in one substantial board.</p><a href="https://www.amazon.com/s?k=Keychron+Q6+Max&amp;tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener">Compare Keychron Q6 Max Models</a></div>
+        <h2>5. Quiet Multi-Device Productivity Keyboard</h2>
+        <div class="product-card"><h3>Logitech MX Mechanical</h3><div class="specs"><strong>Key Spec:</strong> Low-Profile Mechanical Keys | Multi-Device Pairing</div><p>A practical office-and-coding option for switching between computers while keeping a familiar full-size layout and restrained design.</p><a href="https://www.amazon.com/s?k=Logitech+MX+Mechanical&amp;tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener">Compare MX Mechanical Options</a></div>
+        <h2>6. Compact Low-Profile Mechanical Keyboard</h2>
+        <div class="product-card"><h3>NuPhy Air75 V2</h3><div class="specs"><strong>Key Spec:</strong> 75% Layout | Low-Profile Switches | Wireless Connectivity</div><p>A travel-friendly choice that keeps function keys and arrows while using less desk space than a full-size keyboard.</p><a href="https://www.amazon.com/s?k=NuPhy+Air75+V2&amp;tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener">Compare NuPhy Air75 V2 Models</a></div>
+
+        <h2>Quick Comparison</h2>
+        <div class="comparison-wrap"><table class="comparison-table"><thead><tr><th>Pick</th><th>Best for</th><th>Key advantage</th></tr></thead><tbody><tr><td>Hot-swappable keyboards</td><td>Switch experimentation</td><td>Easy future customization</td></tr><tr><td>Macro control pads</td><td>Shortcuts and automation</td><td>Dedicated programmable keys</td></tr><tr><td>Monitor light bars</td><td>Late-night desk work</td><td>Glare-controlled task lighting</td></tr><tr><td>Keychron Q6 Max</td><td>Premium full-size setups</td><td>Deep software and switch customization</td></tr><tr><td>Logitech MX Mechanical</td><td>Multi-computer productivity</td><td>Easy device switching</td></tr><tr><td>NuPhy Air75 V2</td><td>Compact and portable desks</td><td>Low-profile 75% layout</td></tr></tbody></table></div>
+        <p class="buying-note"><strong>Buying tip:</strong> Confirm dimensions, compatibility, and the current listing details before ordering.</p>
 
         <h2>The Bottom Line</h2>
         <p>Investing in your input devices pays massive dividends in workflow speed and physical comfort. Build a desk environment that works *with* your hands, not against them.</p>
