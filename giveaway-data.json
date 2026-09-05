@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T21:15:00Z",
+  "updatedAt": "2026-09-05T21:21:13.712563Z",
   "source": "Giveaway of the Day",
   "items": [
     {
@@ -29,8 +29,8 @@
       "label": "Android App",
       "icon": "🤖",
       "title": "Orbitrack",
-      "description": "An augmented-reality satellite tracker and spaceflight simulator.",
-      "price": "$4.99",
+      "description": "Orbitrack is a brand-new, Augmented-Reality satellite tracker and spaceflight simulator!",
+      "price": "4.99",
       "url": "https://android.giveawayoftheday.com/orbitrack/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
       "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/03/com.southernstars.orbitrack_app_icon_1741021025.png"
@@ -40,7 +40,7 @@
       "label": "iPhone & iPad App",
       "icon": "📱",
       "title": "3D Anatomy",
-      "description": "A fully 3D learning app with position quizzes and audio pronunciation.",
+      "description": "A true and totally 3D app for learning human anatomy with 3D position quiz and audio pronunciation.",
       "price": "$2.99",
       "url": "https://iphone.giveawayoftheday.com/3d-anatomy/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
