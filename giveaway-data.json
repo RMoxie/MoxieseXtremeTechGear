@@ -1,0 +1,50 @@
+{
+  "updatedAt": "2026-09-05T21:15:00Z",
+  "source": "Giveaway of the Day",
+  "items": [
+    {
+      "category": "windows",
+      "label": "Windows Software",
+      "icon": "💻",
+      "title": "Seed4.Me VPN 1.5.1 (Win, Mac, Android, iPhone/iPad)",
+      "description": "Your Internet, Your Rules!",
+      "price": "$5.00 / month",
+      "url": "https://www.giveawayoftheday.com/seed4-me-vpn-2/",
+      "categoryUrl": "https://www.giveawayoftheday.com/",
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/af86fe2d8590263e9f31150755eddf82.png"
+    },
+    {
+      "category": "game",
+      "label": "PC Game",
+      "icon": "🎮",
+      "title": "Martian Transporter",
+      "description": "Explore vast expanses of Mars competing with other truckers!",
+      "price": "$6.99",
+      "url": "https://game.giveawayoftheday.com/martian-transporter/",
+      "categoryUrl": "https://game.giveawayoftheday.com/",
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/08/feeb347bcf6420a3df159dd43d908206.jpeg"
+    },
+    {
+      "category": "android",
+      "label": "Android App",
+      "icon": "🤖",
+      "title": "Orbitrack",
+      "description": "An augmented-reality satellite tracker and spaceflight simulator.",
+      "price": "$4.99",
+      "url": "https://android.giveawayoftheday.com/orbitrack/",
+      "categoryUrl": "https://android.giveawayoftheday.com/",
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/03/com.southernstars.orbitrack_app_icon_1741021025.png"
+    },
+    {
+      "category": "iphone",
+      "label": "iPhone & iPad App",
+      "icon": "📱",
+      "title": "3D Anatomy",
+      "description": "A fully 3D learning app with position quizzes and audio pronunciation.",
+      "price": "$2.99",
+      "url": "https://iphone.giveawayoftheday.com/3d-anatomy/",
+      "categoryUrl": "https://iphone.giveawayoftheday.com/",
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/695187101_app_icon_big_1788612729.jpg"
+    }
+  ]
+}
