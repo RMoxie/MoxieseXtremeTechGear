@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local AI Hardware & Coding Rig Guide (2026)</title>
-    <meta name="description" content="Choose GPUs, VRAM, memory, and software for a private local AI or coding rig using Ollama, LM Studio, and offline language models.">
+    <meta name="description" content="Shop recommended GPUs, AI mini PCs, memory, storage, power supplies, cooling, and accessories for a private local AI or coding rig.">
     <link rel="canonical" href="https://rmoxie.github.io/MoxieseXtremeTechGear/ai-hardware.html">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ctext y=%2752%27 font-size=%2752%27%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Local AI & Coding Rig Setup Guide (2026)","author":{"@type":"Person","name":"Moxie"},"publisher":{"@type":"Organization","name":"Moxies eXtreme TechGear"},"mainEntityOfPage":"https://rmoxie.github.io/MoxieseXtremeTechGear/ai-hardware.html"}</script>
@@ -190,6 +190,69 @@
         }
         .aff-btn:hover { background: #7dd3fc; }
 
+
+        .shopping-intro {
+            max-width: 850px;
+            margin-bottom: 1.5rem;
+        }
+        .tier-heading {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+            margin-top: 2.5rem;
+        }
+        .tier-badge {
+            display: inline-block;
+            padding: 0.2rem 0.65rem;
+            border-radius: 999px;
+            background: var(--flame-orange);
+            color: #ffffff;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.25rem;
+            margin: 1rem 0 2.5rem;
+        }
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 1.5rem;
+        }
+        .product-card h4 {
+            color: var(--text-main);
+            font-size: 1.15rem;
+            line-height: 1.35;
+            margin: 0 0 0.55rem;
+        }
+        .product-card .specs {
+            color: var(--accent);
+            font-weight: 700;
+            min-height: 2.8rem;
+        }
+        .product-card p { font-size: 0.98rem; }
+        .product-card .aff-btn {
+            margin-top: auto;
+            text-align: center;
+        }
+        .buyer-note {
+            background: var(--table-alt);
+            border-left: 4px solid var(--accent);
+            border-radius: 6px;
+            padding: 1rem 1.2rem;
+            margin: 2rem 0;
+        }
+        .buyer-note p { margin: 0; }
+        .aff-btn:focus-visible {
+            outline: 3px solid var(--flame-orange);
+            outline-offset: 3px;
+        }
+
         .table-container {
             overflow-x: auto;
             margin: 2.5rem 0;
@@ -302,7 +365,92 @@
             </table>
         </div>
 
-        <h2>2. Engine Configuration: Ollama &amp; LM Studio</h2>
+        <h2>2. Shop AI Hardware by Build Level</h2>
+        <p class="shopping-intro">These purchase-ready picks cover the parts that matter most for local AI: VRAM, system memory, fast model storage, stable power, and cooling. Amazon search links are used so shoppers can compare current sellers, configurations, and availability.</p>
+
+        <h3 class="tier-heading"><span class="tier-badge">Starter</span> Compact AI &amp; First Upgrades</h3>
+        <div class="product-grid">
+            <article class="card product-card">
+                <h4>MINISFORUM AI X1 Pro Mini PC</h4>
+                <div class="specs">Ryzen AI 9 HX 370 | Compact AI PC</div>
+                <p>A space-saving choice for AI-assisted productivity, coding, office work, and smaller local models without building a full desktop.</p>
+                <a href="https://www.amazon.com/s?k=MINISFORUM+AI+X1+Pro&amp;tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener" aria-label="Shop MINISFORUM AI X1 Pro Mini PC on Amazon">Shop AI Mini PCs</a>
+            </article>
+            <article class="card product-card">
+                <h4>Crucial Pro 64GB DDR5 Memory Kit</h4>
+                <div class="specs">64GB Capacity | DDR5 Desktop Memory</div>
+                <p>More system memory gives CPU-offloaded models, coding tools, containers, and multitasking room to work. Confirm motherboard compatibility before ordering.</p>
+                <a href="https://www.amazon.com/s?k=Crucial+Pro+64GB+DDR5+kit&amp;tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener" aria-label="Shop Crucial Pro 64GB DDR5 memory kits on Amazon">Shop 64GB Memory</a>
+            </article>
+            <article class="card product-card">
+                <h4>Samsung 990 PRO 4TB NVMe SSD</h4>
+                <div class="specs">4TB | PCIe 4.0 NVMe</div>
+                <p>Fast, roomy storage for model files, vector databases, datasets, and development projects that can quickly consume a smaller drive.</p>
+                <a href="https://www.amazon.com/s?k=Samsung+990+PRO+4TB&amp;tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener" aria-label="Shop Samsung 990 PRO 4TB SSDs on Amazon">Shop 4TB SSDs</a>
+            </article>
+            <article class="card product-card">
+                <h4>Google Coral USB Accelerator</h4>
+                <div class="specs">Edge TPU | USB Add-On</div>
+                <p>A specialized accelerator for compatible TensorFlow Lite vision and edge-AI projects. It complements a local AI lab but is not a replacement for a high-VRAM GPU.</p>
+                <a href="https://www.amazon.com/s?k=Google+Coral+USB+Accelerator&amp;tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener" aria-label="Shop Google Coral USB Accelerators on Amazon">Shop Edge AI Add-Ons</a>
+            </article>
+        </div>
+
+        <h3 class="tier-heading"><span class="tier-badge">Advanced</span> Capable Local AI Desktop</h3>
+        <div class="product-grid">
+            <article class="card product-card">
+                <h4>GeForce RTX 5070 Ti 16GB Graphics Cards</h4>
+                <div class="specs">16GB VRAM | Current-Generation GPU</div>
+                <p>A practical entry point for fast 7B–14B model work, image generation, and AI-assisted coding when 24GB-class pricing is out of reach.</p>
+                <a href="https://www.amazon.com/s?k=RTX+5070+Ti+16GB&amp;tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener" aria-label="Shop RTX 5070 Ti 16GB graphics cards on Amazon">Compare 16GB GPUs</a>
+            </article>
+            <article class="card product-card">
+                <h4>Corsair RM1000x 1000W ATX 3.1 Power Supply</h4>
+                <div class="specs">1000W | ATX 3.1 | Fully Modular</div>
+                <p>A modern high-wattage foundation for demanding GPUs. Buyers should verify their exact graphics card, connector, and system power requirements.</p>
+                <a href="https://www.amazon.com/s?k=Corsair+RM1000x+ATX+3.1&amp;tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener" aria-label="Shop Corsair RM1000x ATX 3.1 power supplies on Amazon">Shop 1000W PSUs</a>
+            </article>
+            <article class="card product-card">
+                <h4>ARCTIC Liquid Freezer III 360 AIO Cooler</h4>
+                <div class="specs">360mm Radiator | CPU Cooling</div>
+                <p>Sustained inference and compiling can keep a powerful CPU busy. A large cooler helps control heat and noise when the case supports it.</p>
+                <a href="https://www.amazon.com/s?k=ARCTIC+Liquid+Freezer+III+360&amp;tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener" aria-label="Shop ARCTIC Liquid Freezer III 360 coolers on Amazon">Shop 360mm Cooling</a>
+            </article>
+        </div>
+
+        <h3 class="tier-heading"><span class="tier-badge">Professional</span> Maximum Local Model Capacity</h3>
+        <div class="product-grid">
+            <article class="card product-card">
+                <h4>GeForce RTX 4090 24GB Graphics Cards</h4>
+                <div class="specs">24GB VRAM | Proven Local AI Choice</div>
+                <p>Still a strong fit for larger quantized models and heavy creative AI workloads when a reputable seller offers better value than newer flagship cards.</p>
+                <a href="https://www.amazon.com/s?k=RTX+4090+24GB&amp;tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener" aria-label="Shop RTX 4090 24GB graphics cards on Amazon">Compare 24GB GPUs</a>
+            </article>
+            <article class="card product-card">
+                <h4>GeForce RTX 5090 32GB Graphics Cards</h4>
+                <div class="specs">32GB VRAM | Flagship Local AI GPU</div>
+                <p>More VRAM gives advanced users additional room for larger models, longer context, image generation, and demanding local AI workflows.</p>
+                <a href="https://www.amazon.com/s?k=RTX+5090+32GB&amp;tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener" aria-label="Shop RTX 5090 32GB graphics cards on Amazon">Compare 32GB GPUs</a>
+            </article>
+            <article class="card product-card">
+                <h4>Corsair 7000D Airflow Full-Tower Case</h4>
+                <div class="specs">Full Tower | High-Airflow Layout</div>
+                <p>Large AI builds need GPU clearance, cable room, and strong ventilation. Always compare case dimensions with the selected card and radiator.</p>
+                <a href="https://www.amazon.com/s?k=Corsair+7000D+Airflow&amp;tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener" aria-label="Shop Corsair 7000D Airflow cases on Amazon">Shop Full-Tower Cases</a>
+            </article>
+            <article class="card product-card">
+                <h4>APC 1500VA Battery Backup</h4>
+                <div class="specs">UPS Protection | Automatic Voltage Regulation</div>
+                <p>A battery backup can protect an expensive workstation from short outages and unstable power long enough to save work and shut down safely.</p>
+                <a href="https://www.amazon.com/s?k=APC+1500VA+UPS&amp;tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener" aria-label="Shop APC 1500VA battery backups on Amazon">Shop Battery Backups</a>
+            </article>
+        </div>
+
+        <aside class="buyer-note" aria-label="AI hardware buying note">
+            <p><strong>Before buying:</strong> Match the GPU, power supply, case clearance, cooling support, and motherboard. Prices and seller availability change frequently, so compare the current listing details and warranty.</p>
+        </aside>
+
+        <h2>3. Engine Configuration: Ollama &amp; LM Studio</h2>
         <p>Two essential tools anchor a high-performance local AI stack:</p>
 
         <div class="card">
@@ -310,7 +458,7 @@
             <div class="specs"><strong>Key Spec:</strong> Local API Server | Port 11434 | Vulkan / CUDA Acceleration</div>
             <p>Ollama runs quietly in the background as a local server, exposing an API compatible with OpenAI endpoints. It manages model downloads, context windows, and hardware acceleration seamlessly.</p>
             <p><em>Quick commands:</em> <code>ollama run llama3</code> or <code>ollama run codellama</code></p>
-            <a href="https://www.amazon.com/s?k=rtx+4090+gpu&tag=rmoxie-20" class="aff-btn" target="_blank">Check High-VRAM GPUs on Amazon</a>
+            <a href="https://www.amazon.com/s?k=rtx+4090+gpu&tag=rmoxie-20" class="aff-btn" target="_blank" rel="sponsored noopener">Check High-VRAM GPUs on Amazon</a>
         </div>
 
         <div class="card">
@@ -319,7 +467,7 @@
             <p>An incredible desktop application for browsing model repositories, testing custom system prompts, inspecting hardware utilization, and hosting a local OpenAI-compatible server with a clean chat interface.</p>
         </div>
 
-        <h2>3. Coding &amp; Security GUI Integration</h2>
+        <h2>4. Coding &amp; Security GUI Integration</h2>
         <p>When developing security tools, automation scripts, and HTML/JS frontends, connecting your local models to a dedicated interface supercharges productivity without exposing data to third-party servers.</p>
         <ul>
             <li><strong>Open-WebUI:</strong> A feature-rich, self-hosted web interface connecting directly to your local Ollama instance, supporting RAG and web search integration.</li>
