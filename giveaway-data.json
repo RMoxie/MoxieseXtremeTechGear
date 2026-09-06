@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T16:26:53.804904Z",
+  "updatedAt": "2026-09-06T20:26:18.939808Z",
   "source": "Giveaway of the Day",
   "items": [
     {
@@ -28,12 +28,12 @@
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Orbitrack",
-      "description": "Orbitrack is a brand-new, Augmented-Reality satellite tracker and spaceflight simulator!",
-      "price": "4.99",
-      "url": "https://android.giveawayoftheday.com/orbitrack/",
+      "title": "Strike Royale: Gun Shooter Pro",
+      "description": "Prepare for an adrenaline-fueled mobile gun shooting games experience like never before with Strike Royale.",
+      "price": "$0.99",
+      "url": "https://android.giveawayoftheday.com/strike-royale-gun-shooter-pro/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/03/com.southernstars.orbitrack_app_icon_1741021025.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2023/12/com.gemjem.gun.games.shooting.shooter.strike.fps.csgo.combat.sniper.zombie.modern.action.ops_app_icon_1702821985.png"
     },
     {
       "category": "iphone",
