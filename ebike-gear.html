@@ -29,10 +29,12 @@
     .footer-links{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin:.65rem 0}
     .footer-links a{color:var(--accent,#38bdf8)}
     .trust-note{border:1px solid var(--border-color,#334155);border-radius:12px;padding:1.15rem 1.25rem;margin:1.5rem 0;background:var(--card-bg,#1e293b)}
+    .ebike-tabs{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.35rem 0 1.8rem}.ebike-tabs a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:.65rem 1rem;border:1px solid var(--border-color);border-radius:999px;background:var(--card-bg);color:var(--accent);font-weight:850;text-decoration:none}.ebike-tabs a.featured{color:#fff;background:var(--flame-orange);border-color:var(--flame-orange)}
+    .bike-guide-callout{background:var(--card-bg);border:1px solid var(--border-color);border-left:5px solid var(--flame-orange);border-radius:12px;padding:1.25rem 1.35rem;margin:1.5rem 0 2.2rem}.bike-guide-callout h2{margin-top:0}.bike-guide-callout .btn-buy{margin-top:.4rem}
     @media (max-width:800px){#sitePrimaryNav a,.site-primary-nav a,.product-card a,.feature-card a,.guide-card a,.aff-btn,.btn,.cta{min-height:44px;display:inline-flex;align-items:center}.theme-toggle,#siteMenuToggle{min-width:44px;min-height:44px}}
   </style>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"E-Bike & Personal Mobility Gear | Moxies TechGear","description":"Compare e-bike upgrades, locks, lighting, charging gear, safety accessories, and comfort equipment for practical personal mobility.","url":"https://rmoxie.github.io/MoxieseXtremeTechGear/ebike-gear.html","isPartOf":{"@type":"WebSite","name":"Moxies eXtreme TechGear","url":"https://rmoxie.github.io/MoxieseXtremeTechGear/"},"dateModified":"2026-09-05"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"E-Bike & Personal Mobility Gear | Moxies TechGear","description":"Compare e-bike upgrades, locks, lighting, charging gear, safety accessories, and comfort equipment for practical personal mobility.","url":"https://rmoxie.github.io/MoxieseXtremeTechGear/ebike-gear.html","isPartOf":{"@type":"WebSite","name":"Moxies eXtreme TechGear","url":"https://rmoxie.github.io/MoxieseXtremeTechGear/"},"dateModified":"2026-09-07"}</script>
 </head>
 <body>
   <a class="site-skip-link" href="#main-content">Skip to main content</a>
@@ -62,11 +64,13 @@
 
 <main id="main-content" class="container">
         <h1>🚲 E-Bike & Personal Mobility Gear Hub</h1>
-        <p class="content-updated"><time datetime="2026-09-05">Updated September 5, 2026</time></p>
-        <p class="lead">High-torque upgrades, bulletproof security chains, and comfort gear designed to optimize fat-tire e-bikes and commuter builds for the long haul.</p>
+        <p class="content-updated"><time datetime="2026-09-07">Updated September 7, 2026</time></p>
+        <p class="lead">Choose the right electric bike first, then protect it and tune the ride with dependable security, braking, comfort, and commuter gear.</p>
+        <nav class="ebike-tabs" aria-label="E-bike guides"><a class="featured" href="best-electric-bikes.html">E-Bikes</a><a href="#security">Locks &amp; Security</a><a href="#upgrades">Comfort &amp; Upgrades</a></nav>
+        <section class="bike-guide-callout" aria-labelledby="bike-guide-title"><h2 id="bike-guide-title">Start with the electric bike itself</h2><p>Compare commuter, step-through, folding, cargo, fat-tire, and lightweight e-bikes by fit, range, battery safety, brakes, legal class, service, and support.</p><a class="btn-buy" href="best-electric-bikes.html">Open the Electric Bike Buying Guide →</a></section>
 
         <!-- SECTION 1: HEAVY-DUTY SECURITY & ANTI-THEFT -->
-        <section class="gear-section">
+        <section class="gear-section" id="security">
             <h2>🔒 Heavy-Duty E-Bike Security & Lock Systems</h2>
             <p>E-bikes are prime targets for thieves. Protect your high-value build with hardened steel chain locks, angle-grinder-resistant shackles, and heavy-duty locking systems.</p>
 
@@ -103,7 +107,7 @@
         </section>
 
         <!-- SECTION 2: HIGH-PERFORMANCE UPGRADES & COMFORT GEAR -->
-        <section class="gear-section">
+        <section class="gear-section" id="upgrades">
             <h2>⚙️ Performance Upgrades & Ergonomic Comfort Gear</h2>
             <p>Upgrade your ride quality, braking performance, and long-distance comfort with proven aftermarket hardware.</p>
             
