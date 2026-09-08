@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-08T04:28:18.349103Z",
+  "updatedAt": "2026-09-08T08:30:24.405800Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Sticky Password Premium 8.9.11.2346 (Win&Mac)",
-      "description": "Instead of dozens passwords, remember just one!",
-      "price": "$39.99",
-      "url": "https://www.giveawayoftheday.com/sticky-password-5/",
+      "title": "TicToz Video Downloader 10.9.5",
+      "description": "Specialized TikTok Video Downloader.",
+      "price": "$36.99",
+      "url": "https://www.giveawayoftheday.com/tictoz-video-downloader-2/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2016/10/b5fe1b77f50012173774fd43ee71e95e.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2024/11/4551311bfb3739c4cd80df254dfc0289.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Pipeline 3D",
-      "description": "Build a pipeline from start to finish, using the pipe parts.",
+      "title": "Tactical Overload",
+      "description": "Tactical Overload is an economic strategy game.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/pipeline-3d/",
+      "url": "https://game.giveawayoftheday.com/tactical-overload/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/08/f1be3b3b2d2a543a1e934b1d6cdd276f.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/08/daa25f80dbc0e7cb598b960021a5f810.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "SmallFish Chess for Stockfish",
-      "description": "SmallFish is a project based on the Stockfish chess engine.",
-      "price": "$4.99",
-      "url": "https://iphone.giveawayoftheday.com/smallfish-chess-for-stockfish/",
+      "title": "Adorable - Baby Photo Editor",
+      "description": "Adorable is a stunning editing app for every parent.",
+      "price": "$2.99",
+      "url": "https://iphone.giveawayoftheday.com/adorable-baby-photo-editor/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/675049147_app_icon_big_1788783105.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/08/1103680295_app_icon_big_1787388685.jpg"
     }
   ]
 }
