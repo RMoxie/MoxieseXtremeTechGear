@@ -1,184 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practical Tech Gear Guides | Moxies eXtreme TechGear</title>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Moxies eXtreme TechGear","url":"https://moxiesextremetechgear.com/","description":"Practical comparison guides for performance technology and mobile power gear."}</script>
-  <style>
-    :root {
-      --bg: #0b1220;
-      --surface: #111c30;
-      --surface-2: #17243a;
-      --text: #f8fafc;
-      --muted: #b7c3d4;
-      --border: #2d3c55;
-      --blue: #55c6ff;
-      --orange: #fb923c;
-      --orange-strong: #f97316;
-      --header: rgba(11, 18, 32, .94);
-      --shadow: 0 18px 50px rgba(0, 0, 0, .25);
-    }
-    [data-theme="light"] {
-      --bg: #f5f7fb;
-      --surface: #ffffff;
-      --surface-2: #edf3f9;
-      --text: #0f172a;
-      --muted: #44546a;
-      --border: #c7d2e1;
-      --blue: #0369a1;
-      --orange: #c2410c;
-      --orange-strong: #9a3412;
-      --header: rgba(255, 255, 255, .95);
-      --shadow: 0 18px 45px rgba(15, 23, 42, .10);
-    }
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.65;
-    }
-    a { color: inherit; }
-    .skip-link {
-      position: fixed; top: .75rem; left: .75rem; z-index: 1000;
-      transform: translateY(-180%); padding: .75rem 1rem;
-      background: var(--orange); color: #111827; border-radius: .55rem; font-weight: 800;
-    }
-    .skip-link:focus { transform: translateY(0); }
-    :focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; }
-    header {
-      position: sticky; top: 0; z-index: 100;
-      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
-      padding: 1rem clamp(1rem, 4vw, 4rem);
-      background: var(--header); border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(16px);
-    }
-    .logo { color: var(--blue); text-decoration: none; font-size: 1.22rem; font-weight: 900; letter-spacing: .01em; }
-    .nav-wrap, nav { display: flex; align-items: center; gap: .45rem; }
-    nav a { color: var(--muted); text-decoration: none; font-size: .91rem; padding: .65rem .7rem; border-radius: .5rem; }
-    nav a:hover, nav a[aria-current="page"] { color: var(--text); background: var(--surface-2); }
-    .icon-button {
-      min-height: 44px; min-width: 44px; padding: .55rem .75rem;
-      border: 1px solid var(--border); border-radius: .65rem;
-      background: var(--surface); color: var(--text); font: inherit; font-weight: 750; cursor: pointer;
-    }
-    .menu-toggle { display: none; }
-    main { overflow: hidden; }
-    .hero {
-      position: relative; isolation: isolate;
-      padding: clamp(5rem, 10vw, 8.5rem) 1.25rem clamp(4.5rem, 8vw, 7rem);
-      text-align: center;
-      background:
-        radial-gradient(circle at 15% 15%, rgba(85,198,255,.18), transparent 30%),
-        radial-gradient(circle at 85% 15%, rgba(251,146,60,.18), transparent 28%),
-        linear-gradient(180deg, var(--surface), var(--bg));
-    }
-    .hero::after {
-      content: ""; position: absolute; inset: 0; z-index: -1; opacity: .12;
-      background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
-      background-size: 44px 44px; mask-image: linear-gradient(to bottom, black, transparent 85%);
-    }
-    .eyebrow { display: inline-flex; gap: .5rem; align-items: center; color: var(--orange); font-weight: 850; letter-spacing: .09em; text-transform: uppercase; font-size: .8rem; }
-    h1 { max-width: 900px; margin: .8rem auto 1.2rem; font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.02; letter-spacing: -.045em; }
-    .hero-copy { max-width: 760px; margin: 0 auto; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.28rem); }
-    .hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .9rem; margin-top: 2rem; }
-    .button {
-      display: inline-flex; align-items: center; justify-content: center; min-height: 48px;
-      padding: .75rem 1.2rem; border: 1px solid transparent; border-radius: .7rem;
-      text-decoration: none; font-weight: 850;
-    }
-    .button.primary { background: var(--orange); color: #111827; }
-    [data-theme="light"] .button.primary { color: #fff; }
-    .button.secondary { background: var(--surface); border-color: var(--border); color: var(--text); }
-    .trust-strip { display: grid; grid-template-columns: repeat(3, 1fr); max-width: 1050px; margin: -1.75rem auto 0; padding: 0 1.25rem; position: relative; z-index: 2; }
-    .trust-item { background: var(--surface); border: 1px solid var(--border); padding: 1rem 1.2rem; text-align: center; color: var(--muted); font-weight: 700; }
-    .trust-item:first-child { border-radius: .8rem 0 0 .8rem; }
-    .trust-item:last-child { border-radius: 0 .8rem .8rem 0; }
-    .trust-item strong { color: var(--text); display: block; }
-    .container { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; padding: 4.5rem 0; }
-    .section-heading { max-width: 700px; margin-bottom: 2rem; }
-    .section-kicker { color: var(--orange); text-transform: uppercase; letter-spacing: .1em; font-weight: 850; font-size: .8rem; }
-    h2 { margin: .35rem 0 .7rem; font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.15; letter-spacing: -.025em; }
-    .section-heading p, .card p, .method p, footer p { color: var(--muted); }
-    .featured-grid, .category-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
-    .feature-card, .category-card, .method, .offers-panel {
-      background: linear-gradient(145deg, var(--surface-2), var(--surface)); border: 1px solid var(--border);
-      border-radius: 1rem; box-shadow: var(--shadow);
-    }
-    .feature-card { padding: 1.6rem; position: relative; min-height: 265px; display: flex; flex-direction: column; }
-    .feature-card::before { content: ""; height: 4px; position: absolute; left: 1.6rem; right: 1.6rem; top: 0; border-radius: 0 0 8px 8px; background: linear-gradient(90deg, var(--blue), var(--orange)); }
-    .visual { width: 58px; height: 58px; display: grid; place-items: center; margin-bottom: 1rem; border-radius: 1rem; font-size: 1.75rem; background: var(--bg); border: 1px solid var(--border); }
-    h3 { margin: 0 0 .25rem; color: var(--text); font-size: 1.28rem; }
-    .label { color: var(--blue); font-size: .88rem; font-weight: 800; }
-    .text-link { margin-top: auto; color: var(--blue); font-weight: 850; text-underline-offset: .25rem; }
-    .categories { background: var(--surface); border-block: 1px solid var(--border); }
-    .category-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .category-card { padding: 1.35rem; box-shadow: none; transition: transform .18s ease, border-color .18s ease; }
-    .category-card:hover { transform: translateY(-4px); border-color: var(--blue); }
-    .category-card .visual { width: 48px; height: 48px; font-size: 1.45rem; }
-    .category-card h3 { font-size: 1.08rem; }
-    .category-card p { font-size: .94rem; margin-bottom: 0; }
-    .method { padding: clamp(1.5rem, 4vw, 2.5rem); display: grid; grid-template-columns: .9fr 1.1fr; gap: 2.5rem; align-items: center; }
-    .method ol { margin: 0; padding: 0; list-style: none; counter-reset: steps; }
-    .method li { counter-increment: steps; display: grid; grid-template-columns: 40px 1fr; gap: .8rem; color: var(--muted); margin: 1rem 0; }
-    .method li::before { content: counter(steps); width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: var(--orange); color: #111827; font-weight: 900; }
-    .offers-panel { padding: clamp(1.5rem, 4vw, 2.5rem); display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-    .offers-panel h2 { font-size: clamp(1.6rem, 3vw, 2.35rem); }
-    footer { border-top: 1px solid var(--border); background: var(--surface); padding: 2.5rem 1rem; text-align: center; }
-    footer a { color: var(--blue); }
-    @media (max-width: 980px) {
-      .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .featured-grid { grid-template-columns: 1fr; }
-      .feature-card { min-height: auto; }
-      .method { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 800px) {
-      header { flex-wrap: wrap; }
-      .nav-wrap { margin-left: auto; }
-      .menu-toggle { display: inline-block; }
-      nav { display: none; width: 100%; order: 3; padding-top: .75rem; }
-      nav.open { display: grid; grid-template-columns: 1fr 1fr; }
-      nav a { min-height: 44px; display: flex; align-items: center; }
-      header:has(nav.open) { align-items: flex-start; }
-    }
-    @media (max-width: 620px) {
-      .logo { max-width: 175px; line-height: 1.15; }
-      .theme-text { display: none; }
-      .hero { padding-top: 4.5rem; }
-      .trust-strip { grid-template-columns: 1fr; margin-top: -1rem; }
-      .trust-item, .trust-item:first-child, .trust-item:last-child { border-radius: 0; }
-      .trust-item:first-child { border-radius: .8rem .8rem 0 0; }
-      .trust-item:last-child { border-radius: 0 0 .8rem .8rem; }
-      .category-grid { grid-template-columns: 1fr; }
-      .offers-panel { align-items: flex-start; flex-direction: column; }
-      nav.open { grid-template-columns: 1fr; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extreme Storage Gear Hub | Moxies TechGear</title>
 
-  <link rel="stylesheet" href="/style.css?v=20260904b">
+  <link rel="stylesheet" href="/style.css?v=20260909a">
 
-  <meta name="description" content="Clear, practical guides for charging, AI hardware, networking, mobile power, storage, audio, workspaces, and everyday technology.">
+  <meta name="description" content="Explore Gen 5 and Gen 4 NVMe SSDs, heatsinks, rugged enclosures, and practical storage upgrades for work, gaming, and local AI.">
   <meta name="theme-color" content="#0f172a">
-  <link rel="canonical" href="https://moxiesextremetechgear.com/">
+  <link rel="canonical" href="https://moxiesextremetechgear.com/storage-gear/index.html">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta property="og:site_name" content="Moxies eXtreme TechGear">
-  <meta property="og:title" content="Practical Tech Gear Guides | Moxies eXtreme TechGear">
-  <meta property="og:description" content="Clear, practical guides for charging, AI hardware, networking, mobile power, storage, audio, workspaces, and everyday technology.">
+  <meta property="og:title" content="Extreme Storage Gear Hub | Moxies TechGear">
+  <meta property="og:description" content="Explore Gen 5 and Gen 4 NVMe SSDs, heatsinks, rugged enclosures, and practical storage upgrades for work, gaming, and local AI.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://moxiesextremetechgear.com/">
+  <meta property="og:url" content="https://moxiesextremetechgear.com/storage-gear/index.html">
   <meta property="og:image" content="https://moxiesextremetechgear.com/social-card.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Moxies eXtreme TechGear practical technology guides">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Practical Tech Gear Guides | Moxies eXtreme TechGear">
-  <meta name="twitter:description" content="Clear, practical guides for charging, AI hardware, networking, mobile power, storage, audio, workspaces, and everyday technology.">
+  <meta name="twitter:title" content="Extreme Storage Gear Hub | Moxies TechGear">
+  <meta name="twitter:description" content="Explore Gen 5 and Gen 4 NVMe SSDs, heatsinks, rugged enclosures, and practical storage upgrades for work, gaming, and local AI.">
   <meta name="twitter:image" content="https://moxiesextremetechgear.com/social-card.png">
   <style id="site-quality-upgrades">
     .content-updated{color:var(--text-muted,#94a3b8);font-size:.92rem;margin:.35rem 0 1.5rem}
@@ -187,7 +31,9 @@
     .trust-note{border:1px solid var(--border-color,#334155);border-radius:12px;padding:1.15rem 1.25rem;margin:1.5rem 0;background:var(--card-bg,#1e293b)}
     @media (max-width:800px){#sitePrimaryNav a,.site-primary-nav a,.product-card a,.feature-card a,.guide-card a,.aff-btn,.btn,.cta{min-height:44px;display:inline-flex;align-items:center}.theme-toggle,#siteMenuToggle{min-width:44px;min-height:44px}}
   </style>
-<style>.guide-card-image{width:calc(100% + 3.2rem);max-width:none;height:auto;aspect-ratio:16/9;object-fit:cover;margin:-1.6rem -1.6rem 1.25rem;border-radius:1rem 1rem .4rem .4rem;border-bottom:1px solid var(--border)}</style></head>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Extreme Storage Gear Hub | Moxies TechGear","description":"Explore Gen 5 and Gen 4 NVMe SSDs, heatsinks, rugged enclosures, and practical storage upgrades for work, gaming, and local AI.","url":"https://moxiesextremetechgear.com/storage-gear/index.html","isPartOf":{"@type":"WebSite","name":"Moxies eXtreme TechGear","url":"https://moxiesextremetechgear.com/"},"dateModified":"2026-09-05"}</script>
+</head>
 <body>
   <a class="site-skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
@@ -197,11 +43,11 @@
       <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-expanded="false" aria-controls="sitePrimaryNav">Menu</button>
     </div>
     <nav class="site-primary-nav" id="sitePrimaryNav" aria-label="Primary navigation">
-      <a href="/index.html" aria-current="page">Home</a>
+      <a href="/index.html">Home</a>
       <a href="/offers.html">Exclusive Offers</a>
-
       <a href="/special-picks.html">Special Picks</a>
       <a href="/gan-chargers-guide.html">GaN Chargers</a>
+      <a href="/portable-computers/index.html">Computers</a>
       <a href="/ai-hardware.html">AI Hardware</a>
       <a href="/home-networking-security.html">Networking &amp; Security</a>
       <a href="/monitors-docks-desk-setup.html">Desk Setup</a>
@@ -214,158 +60,95 @@
       <a href="/coding-gear/index.html">Software</a>
     </nav>
   </header>
-  <div class="site-highlight-banner" role="note">⚡ PRACTICAL GUIDES FOR POWER, PERFORMANCE, MOBILITY &amp; MODERN TECH ⚡</div>
+  <div class="site-highlight-banner" role="note">💾 GEN 5 &amp; GEN 4 NVME SPEED, COOLING &amp; RUGGED STORAGE 💾</div>
 
-<main id="main-content">
-    <section class="hero" aria-labelledby="hero-title">
-      <span class="eyebrow">⚡ Clear answers for serious gear</span>
-      <h1 id="hero-title">Choose better tech without the guesswork.</h1>
-      <p class="hero-copy">Practical guides that turn confusing specifications into straightforward recommendations for power, performance, mobility, and everyday setups.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="#guides">Explore Gear Guides</a>
-        <a class="button secondary" href="#method">See How We Choose</a>
-      </div>
-    </section>
+<main id="main-content" class="container">
+        <h1>💾 Extreme Storage Gear Hub</h1>
+        <p class="content-updated"><time datetime="2026-09-05">Updated September 5, 2026</time></p>
+        <p class="lead">Maximize your data throughput, cut system load times to zero, and keep your high-performance rig running cool with blistering Gen 5 and Gen 4 NVMe solid-state drives.</p>
 
-    <div class="trust-strip" aria-label="What readers can expect">
-      <div class="trust-item"><strong>Practical research</strong>Focused on real use</div>
-      <div class="trust-item"><strong>Specs explained</strong>Less jargon, more clarity</div>
-      <div class="trust-item"><strong>Owner-tested picks</strong>Firsthand favorites clearly labeled</div>
-    </div>
+        <!-- SECTION 1: BLISTERING PCIe GEN 5 NVMe DRIVES -->
+        <section class="gear-section">
+            <h2>🚀 PCIe Gen 5 NVMe Speed Champions</h2>
+            <p>The bleeding edge of internal storage performance. Delivering mind-bending sequential read/write speeds that obliterate traditional data bottlenecks.</p>
 
-    <section class="container" aria-labelledby="start-title">
-      <div class="section-heading">
-        <span class="section-kicker">Popular starting points</span>
-        <h2 id="start-title">Find the right setup faster</h2>
-        <p>Start with three of the most useful areas for work, travel, and high-performance computing.</p>
-      </div>
-      <div class="featured-grid">
-        <article class="feature-card">
-          <div class="visual" aria-hidden="true">⚡</div>
-          <span class="label">POWER &amp; TRAVEL</span>
-          <h3>GaN Chargers &amp; Adapters</h3>
-          <p>Compare compact multi-port chargers and understand the wattage your laptop and mobile gear actually need.</p>
-          <a class="text-link" href="gan-chargers-guide.html">Explore charging gear →</a>
-        </article>
-        <article class="feature-card">
-          <div class="visual" aria-hidden="true">🤖</div>
-          <span class="label">PRIVATE AI</span>
-          <h3>Local AI &amp; Coding Rigs</h3>
-          <p>Plan GPU, memory, and storage around Ollama, LM Studio, coding assistants, and private local models.</p>
-          <a class="text-link" href="ai-hardware.html">Build an AI setup →</a>
-        </article>
-        <article class="feature-card">
-          <div class="visual" aria-hidden="true">🔋</div>
-          <span class="label">OFF-GRID POWER</span>
-          <h3>Mobile Power Solutions</h3>
-          <p>Make sense of power banks, portable solar, and automotive charging for commutes, travel, and emergencies.</p>
-          <a class="text-link" href="mobile-power.html">Compare mobile power →</a>
-        </article>
-      </div>
-    </section>
+            <div class="product-grid">
+                
+                <!-- TIER 1: FLAGSHIP -->
+                <div class="product-card flagship">
+                    <span class="badge tier-flagship">🏆 State-of-the-Art Flagship</span>
+                    <h3>WD_BLACK SN8100 NVMe SSD (Gen 5)</h3>
+                    <p class="specs"><strong>Specs:</strong> PCIe 5.0 x4 | Up to 14,900 MB/s Read | DRAM Cache | Optional Heatsink Version</p>
+                    <p>The absolute king of internal throughput speed. Combines phenomenal benchmark-topping sequential speeds with advanced thermal architecture that stays surprisingly cool under heavy gaming or video-editing workloads.</p>
+                    <a href="https://www.amazon.com/s?k=WD_BLACK+SN8100+NVMe+SSD+(Gen+5)&tag=rmoxie-20" class="btn-buy" target="_blank" rel="noopener sponsored noreferrer">Check Price on Amazon →</a>
+                </div>
 
-    <section class="categories" aria-labelledby="latest-guides-title"><div class="container"><div class="section-heading"><span class="section-kicker">New buyer resources</span><h2 id="latest-guides-title">Popular questions, clearly answered</h2><p>Start with a focused guide built around the choices shoppers search for most.</p></div><div class="featured-grid"><article class="feature-card"><img class="guide-card-image" src="/special-picks-security.svg" alt="Biometric lock, security camera, and e-bike alarm protecting a home" width="1200" height="675"><span class="label">OWNER-TESTED &amp; HANDPICKED</span><h3>Moxie’s Special Security Picks</h3><p>Start with a personally used biometric door knob, then compare e-bike alarms, cameras, alarm kits, and sensors.</p><a class="text-link" href="special-picks.html">Explore the Special Picks →</a></article><article class="feature-card"><img class="guide-card-image" src="/charging-guide.svg" alt="USB-C charger connected to a laptop and phone" width="1200" height="675"><span class="label">CHARGING</span><h3>Best 100W USB-C Travel Chargers</h3><p>Understand wattage, shared ports, EPR, and cable ratings.</p><a class="text-link" href="best-100w-usb-c-chargers-travel.html">Read the charger guide →</a></article><article class="feature-card"><img class="guide-card-image" src="/mobile-power-guide.svg" alt="Portable power-bank capacity illustration" width="1200" height="675"><span class="label">MOBILE POWER</span><h3>Airline-Safe Power-Bank Capacity</h3><p>Compare 10K, 20K, and near-100Wh packs for travel.</p><a class="text-link" href="airline-safe-power-bank-capacity-guide.html">Choose a power bank →</a></article><article class="feature-card"><img class="guide-card-image" src="/wifi-guide.svg" alt="Wi-Fi router connecting home devices" width="1200" height="675"><span class="label">HOME NETWORK</span><h3>Wi-Fi 7 vs Wi-Fi 6E</h3><p>Decide whether newer wireless features fit your home.</p><a class="text-link" href="wifi-7-vs-wifi-6e-guide.html">Compare Wi-Fi generations →</a></article><article class="feature-card"><img class="guide-card-image" src="/ai-vram-guide.svg" alt="Graphics cards compared by VRAM for local AI" width="1200" height="675"><span class="label">LOCAL AI</span><h3>How Much VRAM for Local AI?</h3><p>Compare 8GB, 12GB, 16GB, and 24GB+ GPU memory.</p><a class="text-link" href="local-ai-gpu-vram-guide.html">Choose an AI GPU →</a></article><article class="feature-card"><img class="guide-card-image" src="/dual-monitor-dock-guide.svg" alt="USB-C dock connected to two monitors" width="1200" height="675"><span class="label">DESK SETUP</span><h3>USB-C Docks for Dual Monitors</h3><p>Check laptop, video, charging, and display compatibility.</p><a class="text-link" href="best-usb-c-docks-dual-monitors.html">Choose a dock →</a></article><article class="feature-card"><img class="guide-card-image" src="/ebike-lock-guide.svg" alt="E-bike secured with two lock types" width="1200" height="675"><span class="label">E-BIKE SECURITY</span><h3>Best Locks for E-Bikes</h3><p>Layer a rated primary lock with safer parking habits.</p><a class="text-link" href="best-locks-for-ebikes.html">Build a lock strategy →</a></article></div></div></section>
+                <!-- TIER 2: SWEET SPOT -->
+                <div class="product-card sweetspot">
+                    <span class="badge tier-value">⭐ Workhorse Sweet Spot</span>
+                    <h3>Crucial T705 Gen 5 NVMe SSD with Heatsink</h3>
+                    <p class="specs"><strong>Specs:</strong> PCIe 5.0 x4 | Up to 14,500 MB/s Read | Premium Custom Heatsink | AES 256-Bit Encryption</p>
+                    <p>An elite performance powerhouse wrapped in an aggressive custom heatsink designed to dissipate heat efficiently. Delivers untouchable load times and massive file transfers for high-end builder rigs.</p>
+                    <a href="https://www.amazon.com/s?k=Crucial+T705+Gen+5+NVMe+SSD+with+Heatsink&tag=rmoxie-20" class="btn-buy" target="_blank" rel="noopener sponsored noreferrer">Check Price on Amazon →</a>
+                </div>
 
-    <section class="categories" id="guides" aria-labelledby="guides-title">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">All categories</span>
-          <h2 id="guides-title">Explore every gear guide</h2>
-          <p>Choose a category for practical explanations, useful specifications, and researched setup ideas.</p>
-        </div>
-        <div class="category-grid">
-          <article class="category-card"><div class="visual" aria-hidden="true">⭐</div><h3><a href="special-picks.html">Moxie’s Special Picks</a></h3><p>Personally used favorites and carefully selected gear, starting with smart home and e-bike security.</p></article>
-          <article class="category-card"><div class="visual" aria-hidden="true">⚡</div><h3><a href="gan-chargers-guide.html">GaN Chargers</a></h3><p>Compact high-wattage charging for laptops and mobile gear.</p></article>
-          <article class="category-card"><div class="visual" aria-hidden="true">🤖</div><h3><a href="ai-hardware.html">AI Hardware</a></h3><p>GPUs, VRAM, storage, and private local-model setups.</p></article>
-          <article class="category-card"><div class="visual" aria-hidden="true">📡</div><h3><a href="home-networking-security.html">Home Networking &amp; Smart Security</a></h3><p>Wi-Fi 7, mesh coverage, PoE, cameras, doorbells, and smart entry.</p></article>
-          <article class="category-card"><div class="visual" aria-hidden="true">🖥️</div><h3><a href="monitors-docks-desk-setup.html">Monitors, Docks &amp; Desk Setup</a></h3><p>Sharper displays, flexible docks, ergonomic mounts, and task lighting.</p></article>
-          <article class="category-card"><div class="visual" aria-hidden="true">🔋</div><h3><a href="mobile-power.html">Mobile Power</a></h3><p>Power banks, portable solar, and field charging.</p></article>
-          <article class="category-card"><div class="visual" aria-hidden="true">🚗</div><h3><a href="automotive-emergency.html">Automotive &amp; Emergency Tech</a></h3><p>Tire care, jump starters, battery diagnostics, dash cams, and roadside kits.</p></article>
-          <article class="category-card"><div class="visual" aria-hidden="true">💾</div><h3><a href="storage-gear/index.html">Storage Gear</a></h3><p>Fast NVMe drives, heatsinks, and rugged enclosures.</p></article>
-          <article class="category-card"><div class="visual" aria-hidden="true">🚲</div><h3><a href="ebike-gear.html">E-Bikes &amp; Gear</a></h3><p>Electric bike buying help, locks, safety, fit, range, and comfort upgrades.</p></article>
-          <article class="category-card"><div class="visual" aria-hidden="true">🔌</div><h3><a href="cable-management.html">Cable Management</a></h3><p>Sleeves, straps, hubs, and cleaner workspace routing.</p></article>
-          <article class="category-card"><div class="visual" aria-hidden="true">🎧</div><h3><a href="audio-gear.html">Audio Gear</a></h3><p>DACs, monitors, and noise-canceling headphones.</p></article>
-          <article class="category-card"><div class="visual" aria-hidden="true">🐧</div><h3><a href="coding-gear/index.html">Software &amp; Linux</a></h3><p>Linux distributions, open-source tools, Windows compatibility, and coding gear.</p></article>
-          <article class="category-card"><div class="visual" aria-hidden="true">🏷️</div><h3><a href="offers.html">Exclusive Offers</a></h3><p>Free trials, memberships, and curated savings.</p></article>
-        </div>
-      </div>
-    </section>
+                <!-- TIER 3: BUDGET -->
+                <div class="product-card budget">
+                    <span class="badge tier-budget">🛠️ Compact Budget Pick</span>
+                    <h3>Crucial P510 Gen 5 NVMe SSD</h3>
+                    <p class="specs"><strong>Specs:</strong> PCIe 5.0 x4 | Up to 11,000 MB/s Read | Phison E31T Controller | Mainstream Thermal Efficiency</p>
+                    <p>A brilliant entry point into Gen 5 speeds. Designed specifically to offer massive generational speed boosts without demanding a bulky, over-engineered cooling tower or a premium flagship price tag.</p>
+                    <a href="https://www.amazon.com/s?k=Crucial+P510+Gen+5+NVMe+SSD&tag=rmoxie-20" class="btn-buy" target="_blank" rel="noopener sponsored noreferrer">Check Price on Amazon →</a>
+                </div>
 
-    <section class="container" id="method" aria-labelledby="method-title">
-      <div class="method">
-        <div>
-          <span class="section-kicker">A clearer way to shop</span>
-          <h2 id="method-title">How we approach gear</h2>
-          <p>Recommendations should help you make a confident decision—not bury you in specifications.</p>
-        </div>
-        <ol>
-          <li><span><strong>Start with the use case.</strong><br>Work, travel, mobility, and performance needs come first.</span></li>
-          <li><span><strong>Explain the important specs.</strong><br>We focus on the numbers that affect everyday use.</span></li>
-          <li><span><strong>Show the tradeoffs.</strong><br>Price, power, portability, and compatibility all matter.</span></li>
-        </ol>
-      </div>
-    </section>
+            </div>
+        </section>
 
-<section class="container giveaway-showcase giveaway-showcase--home" data-giveaway-feed aria-labelledby="daily-giveaways-home-title">
-  <div class="giveaway-heading"><div><span class="section-kicker">Four fresh freebies</span><h2 id="daily-giveaways-home-title">Today’s Free Downloads</h2><p>See what is available before leaving Moxies. Offers are provided by Giveaway of the Day and can expire quickly.</p></div><p class="giveaway-updated" data-giveaway-updated aria-live="polite">Updated September 5, 2026</p></div>
-  <div class="giveaway-grid"><article class="giveaway-card" data-giveaway-category="windows">
-  <div class="giveaway-media"><span class="giveaway-icon" aria-hidden="true">💻</span><img data-giveaway-image src="https://giveawayoftheday.com/wp-content/uploads/2026/09/af86fe2d8590263e9f31150755eddf82.png" alt="Seed4.Me VPN 1.5.1 (Win, Mac, Android, iPhone/iPad) giveaway preview" loading="lazy" referrerpolicy="no-referrer"></div>
-  <div class="giveaway-card-body"><div class="giveaway-card-top"><span class="giveaway-platform">Windows Software</span><span class="giveaway-free">Free today</span></div>
-  <h3 data-giveaway-title>Seed4.Me VPN 1.5.1 (Win, Mac, Android, iPhone/iPad)</h3><p class="giveaway-price"><span class="sr-only">Regular price: </span><s data-giveaway-price>$5.00 / month</s> → <strong>FREE</strong></p>
-  <p data-giveaway-description>Your Internet, Your Rules!</p><a class="giveaway-cta" data-giveaway-link href="https://www.giveawayoftheday.com/seed4-me-vpn-2/" target="_blank" rel="noopener noreferrer">View today’s Windows Software →</a></div>
-</article>
-<article class="giveaway-card" data-giveaway-category="game">
-  <div class="giveaway-media"><span class="giveaway-icon" aria-hidden="true">🎮</span><img data-giveaway-image src="https://giveawayoftheday.com/wp-content/uploads/2026/08/feeb347bcf6420a3df159dd43d908206.jpeg" alt="Martian Transporter giveaway preview" loading="lazy" referrerpolicy="no-referrer"></div>
-  <div class="giveaway-card-body"><div class="giveaway-card-top"><span class="giveaway-platform">PC Game</span><span class="giveaway-free">Free today</span></div>
-  <h3 data-giveaway-title>Martian Transporter</h3><p class="giveaway-price"><span class="sr-only">Regular price: </span><s data-giveaway-price>$6.99</s> → <strong>FREE</strong></p>
-  <p data-giveaway-description>Explore vast expanses of Mars competing with other truckers!</p><a class="giveaway-cta" data-giveaway-link href="https://game.giveawayoftheday.com/martian-transporter/" target="_blank" rel="noopener noreferrer">View today’s PC Game →</a></div>
-</article>
-<article class="giveaway-card" data-giveaway-category="android">
-  <div class="giveaway-media"><span class="giveaway-icon" aria-hidden="true">🤖</span><img data-giveaway-image src="https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/03/com.southernstars.orbitrack_app_icon_1741021025.png" alt="Orbitrack giveaway preview" loading="lazy" referrerpolicy="no-referrer"></div>
-  <div class="giveaway-card-body"><div class="giveaway-card-top"><span class="giveaway-platform">Android App</span><span class="giveaway-free">Free today</span></div>
-  <h3 data-giveaway-title>Orbitrack</h3><p class="giveaway-price"><span class="sr-only">Regular price: </span><s data-giveaway-price>$4.99</s> → <strong>FREE</strong></p>
-  <p data-giveaway-description>An augmented-reality satellite tracker and spaceflight simulator.</p><a class="giveaway-cta" data-giveaway-link href="https://android.giveawayoftheday.com/orbitrack/" target="_blank" rel="noopener noreferrer">View today’s Android App →</a></div>
-</article>
-<article class="giveaway-card" data-giveaway-category="iphone">
-  <div class="giveaway-media"><span class="giveaway-icon" aria-hidden="true">📱</span><img data-giveaway-image src="https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/695187101_app_icon_big_1788612729.jpg" alt="3D Anatomy giveaway preview" loading="lazy" referrerpolicy="no-referrer"></div>
-  <div class="giveaway-card-body"><div class="giveaway-card-top"><span class="giveaway-platform">iPhone & iPad App</span><span class="giveaway-free">Free today</span></div>
-  <h3 data-giveaway-title>3D Anatomy</h3><p class="giveaway-price"><span class="sr-only">Regular price: </span><s data-giveaway-price>$2.99</s> → <strong>FREE</strong></p>
-  <p data-giveaway-description>A fully 3D learning app with position quizzes and audio pronunciation.</p><a class="giveaway-cta" data-giveaway-link href="https://iphone.giveawayoftheday.com/3d-anatomy/" target="_blank" rel="noopener noreferrer">View today’s iPhone & iPad App →</a></div>
-</article></div>
-  <p class="giveaway-attribution">Giveaway availability and licensing are controlled by <a href="https://www.giveawayoftheday.com/" target="_blank" rel="noopener noreferrer">Giveaway of the Day</a>. Check the destination page for installation deadlines and terms.</p>
-</section>
-  </main>
+        <!-- SECTION 2: WORKHORSE PCIe GEN 4 & EXTERNAL DRIVES -->
+        <section class="gear-section">
+            <h2>⚡ Value-Packed Gen 4 Workhorses & External Storage</h2>
+            <p>Reliable, battle-tested Gen 4 storage sticks and pocket-sized external drives offering the ultimate price-to-performance ratio.</p>
+            
+            <div class="product-grid">
 
-  <footer>
+                <!-- TIER 1: FLAGSHIP -->
+                <div class="product-card flagship">
+                    <span class="badge tier-flagship">🏆 State-of-the-Art Flagship</span>
+                    <h3>WD_BLACK SN850X NVMe SSD (Gen 4)</h3>
+                    <p class="specs"><strong>Specs:</strong> PCIe 4.0 x4 | Up to 7,300 MB/s Read | Optional RGB / Heatsink | Top-Tier Gaming Favorite</p>
+                    <p>The definitive enthusiast choice for Gen 4 stability. Incredible 4K random performance and sustained read/write speeds make it a legendary choice for loading massive games and handling heavy scratch disks.</p>
+                    <a href="https://www.amazon.com/s?k=WD_BLACK+SN850X+NVMe+SSD+(Gen+4)&tag=rmoxie-20" class="btn-buy" target="_blank" rel="noopener sponsored noreferrer">Check Price on Amazon →</a>
+                </div>
+
+                <!-- TIER 2: SWEET SPOT -->
+                <div class="product-card sweetspot">
+                    <span class="badge tier-value">⭐ Workhorse Sweet Spot</span>
+                    <h3>Crucial T500 Gen 4 NVMe SSD with Heatsink</h3>
+                    <p class="specs"><strong>Specs:</strong> PCIe 4.0 x4 | Up to 7,400 MB/s Read | Optimized for Creators & PS5 Expansion</p>
+                    <p>Punches well above its weight class. Perfect for content creators moving heavy video projects or PlayStation 5 owners wanting reliable, lightning-fast storage expansion with zero thermal throttling.</p>
+                    <a href="https://www.amazon.com/s?k=Crucial+T500+Gen+4+NVMe+SSD+with+Heatsink&tag=rmoxie-20" class="btn-buy" target="_blank" rel="noopener sponsored noreferrer">Check Price on Amazon →</a>
+                </div>
+
+                <!-- TIER 3: BUDGET -->
+                <div class="product-card budget">
+                    <span class="badge tier-budget">🛠️ Compact Budget Pick</span>
+                    <h3>Samsung T7 Portable External SSD (1TB / 2TB)</h3>
+                    <p class="specs"><strong>Specs:</strong> USB 3.2 Gen 2 | Up to 1,050 MB/s Transfer | Drop-Resistant Rugged Metal Body</p>
+                    <p>Pocket-sized, lightning-fast external storage that goes anywhere. Perfect for backing up workshop configs, carrying local AI models on the road, or transferring files between machines instantly.</p>
+                    <a href="https://www.amazon.com/s?k=Samsung+T7+Portable+External+SSD+(1TB+%2F+2TB)&tag=rmoxie-20" class="btn-buy" target="_blank" rel="noopener sponsored noreferrer">Check Price on Amazon →</a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
         <p class="footer-links"><a href="/about.html">About &amp; Editorial Standards</a></p>
-    <p><strong>Moxies eXtreme TechGear</strong> — practical guides for power, performance, and mobility.</p>
-    <p class="affiliate-disclosure"><strong>Affiliate disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases <strong class="no-additional-cost">AT NO ADDITIONAL COST TO YOU.</strong></p>
-    <p>&copy; 2026 Moxies eXtreme TechGear. All rights reserved.</p>
-  </footer>
+        <p>© 2026 Moxies eXtreme TechGear. All rights reserved.</p>
+        <p class="affiliate-disclosure"><strong>Affiliate disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases <strong class="no-additional-cost">AT NO ADDITIONAL COST TO YOU.</strong></p>
+    </footer>
 
-  <script>
-    const root = document.documentElement;
-    const themeButton = document.getElementById('themeToggleBtn');
-    const menuButton = document.getElementById('menuToggle');
-    const nav = document.getElementById('primaryNav');
-
-    function setTheme(theme) {
-      if (theme === 'light') root.setAttribute('data-theme', 'light'); else root.removeAttribute('data-theme');
-      const light = theme === 'light';
-      themeButton.innerHTML = light ? '🌙 <span class="theme-text">Dark</span>' : '☀️ <span class="theme-text">Light</span>';
-      themeButton.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
-      localStorage.setItem('theme', theme);
-    }
-    setTheme(localStorage.getItem('theme') === 'light' ? 'light' : 'dark');
-    themeButton.addEventListener('click', () => setTheme(root.hasAttribute('data-theme') ? 'dark' : 'light'));
-    menuButton.addEventListener('click', () => {
-      const open = nav.classList.toggle('open');
-      menuButton.setAttribute('aria-expanded', String(open));
-    });
-    nav.addEventListener('click', event => {
-      if (event.target.matches('a')) { nav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); }
-    });
-  </script>
 
   <script data-site-shell>
     (() => {
@@ -391,6 +174,5 @@
       });
     })();
   </script>
-  <script src="daily-giveaways.js" defer></script>
 </body>
 </html>
