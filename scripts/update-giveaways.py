@@ -23,7 +23,7 @@ def valid_gotd(url):
     return parsed.scheme == "https" and (parsed.hostname == "giveawayoftheday.com" or (parsed.hostname or "").endswith(".giveawayoftheday.com"))
 
 def fetch_item(category, label, icon, source):
-    request = Request(source, headers={"User-Agent": "Mozilla/5.0 (compatible; MoxiesDailyGiveaways/1.0; +https://rmoxie.github.io/MoxieseXtremeTechGear/)"})
+    request = Request(source, headers={"User-Agent": "Mozilla/5.0 (compatible; MoxiesDailyGiveaways/1.0; +https://moxiesextremetechgear.com/)"})
     with urlopen(request, timeout=25) as response:
         soup = BeautifulSoup(response.read(), "html.parser")
     wrap = soup.select_one(".col1.giveaway_day .giveaway_wrap, .giveaway_day .giveaway_wrap")
