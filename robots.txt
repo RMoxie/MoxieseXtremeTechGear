@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rmoxie.github.io/MoxieseXtremeTechGear/sitemap.xml
+Sitemap: https://moxiesextremetechgear.com/sitemap.xml
