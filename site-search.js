@@ -27,6 +27,9 @@
     .moxie-search-result strong{display:block;margin-bottom:5px;color:#6fe1e7;font-size:16px}
     .moxie-search-result span{display:block;color:#c0cad8;font-size:13px;line-height:1.45}
     .moxie-search-empty{padding:34px 18px;text-align:center;color:#b9c5d4}
+    .moxie-header-controls{grid-column:2;justify-self:center;display:flex;align-items:center;gap:.55rem}
+    .moxie-header-controls .site-theme-toggle{grid-column:auto;justify-self:auto}
+    .moxie-header-controls .moxie-search-button{position:static;right:auto;bottom:auto;z-index:auto;padding:10px 14px;box-shadow:0 6px 18px rgba(0,0,0,.24)}
     @media(max-width:600px){.moxie-search-button{right:12px;bottom:12px;padding:12px}.moxie-search-button span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.moxie-search-overlay{padding:14px}.moxie-search-dialog{max-height:calc(100vh - 28px);border-radius:16px}}
   `;
   document.head.appendChild(style);
@@ -50,7 +53,17 @@
       <div class="moxie-search-results" aria-live="polite"></div>
     </section>`;
 
-  document.body.append(button, overlay);
+  const headerTop = document.querySelector(".site-header-top");
+  const themeButton = headerTop?.querySelector(".site-theme-toggle");
+  if (headerTop && themeButton) {
+    const controls = document.createElement("div");
+    controls.className = "moxie-header-controls";
+    themeButton.before(controls);
+    controls.append(themeButton, button);
+    document.body.append(overlay);
+  } else {
+    document.body.append(button, overlay);
+  }
   const input = overlay.querySelector(".moxie-search-input");
   const closeButton = overlay.querySelector(".moxie-search-close");
   const status = overlay.querySelector(".moxie-search-status");
