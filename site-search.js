@@ -178,3 +178,61 @@
     }
   });
 })();
+
+(function () {
+  "use strict";
+
+  if (window.__moxieMotionLoaded) return;
+  window.__moxieMotionLoaded = true;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const style = document.createElement("style");
+  style.textContent = `
+    .moxie-ambient-glow{position:fixed;inset:-20%;z-index:-1;pointer-events:none;overflow:hidden;opacity:.34;background:radial-gradient(circle at 18% 28%,rgba(38,198,218,.18),transparent 24%),radial-gradient(circle at 82% 68%,rgba(91,134,229,.16),transparent 27%);animation:moxie-ambient-drift 16s ease-in-out infinite alternate;transform:translateZ(0)}
+    .moxie-hero-motion{position:relative;isolation:isolate;overflow:hidden}
+    .moxie-hero-motion::after{content:"";position:absolute;z-index:-1;width:34%;aspect-ratio:1;right:-8%;top:-24%;border-radius:50%;background:radial-gradient(circle,rgba(71,215,223,.23),rgba(91,134,229,.08) 45%,transparent 70%);filter:blur(8px);animation:moxie-hero-float 8s ease-in-out infinite alternate;pointer-events:none}
+    .moxie-reveal-item{opacity:0;transform:translateY(22px) scale(.985);transition:opacity .72s cubic-bezier(.2,.75,.25,1),transform .72s cubic-bezier(.2,.75,.25,1);transition-delay:var(--moxie-delay,0ms)}
+    .moxie-reveal-item.moxie-is-visible{opacity:1;transform:none}
+    .moxie-motion-card{transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease,background-color .24s ease}
+    .moxie-motion-card:hover{transform:translateY(-5px);border-color:rgba(78,220,228,.38)!important;box-shadow:0 16px 36px rgba(0,0,0,.25),0 0 24px rgba(61,196,216,.08)}
+    .moxie-search-button{animation:moxie-search-breathe 4.8s ease-in-out infinite}
+    @keyframes moxie-ambient-drift{0%{transform:translate3d(-2%,-1%,0) scale(1)}100%{transform:translate3d(3%,2%,0) scale(1.08)}}
+    @keyframes moxie-hero-float{0%{transform:translate3d(0,-5px,0) scale(.95)}100%{transform:translate3d(-22px,20px,0) scale(1.08)}}
+    @keyframes moxie-search-breathe{0%,72%,100%{box-shadow:0 10px 30px rgba(0,0,0,.35)}84%{box-shadow:0 12px 34px rgba(0,0,0,.42),0 0 0 8px rgba(54,209,220,.1)}}
+    @media(prefers-reduced-motion:reduce){.moxie-ambient-glow,.moxie-hero-motion::after,.moxie-search-button{animation:none!important}.moxie-reveal-item{opacity:1!important;transform:none!important;transition:none!important}.moxie-motion-card{transition:none!important}.moxie-motion-card:hover{transform:none}}
+  `;
+  document.head.appendChild(style);
+
+  const glow = document.createElement("div");
+  glow.className = "moxie-ambient-glow";
+  glow.setAttribute("aria-hidden", "true");
+  document.body.prepend(glow);
+
+  const main = document.querySelector("main");
+  const hero = main?.querySelector(":scope > section:first-child, :scope > header:first-child, .hero");
+  if (hero) hero.classList.add("moxie-hero-motion");
+
+  const cardSelectors = "main article, main .card, main .guide-card, main .feature-card, main .category-card, main [class$='-card']";
+  document.querySelectorAll(cardSelectors).forEach(card => card.classList.add("moxie-motion-card"));
+
+  const candidates = [...document.querySelectorAll("main > section, main > article, main .grid > *, main .cards > *, main .guide-grid > *, main .category-grid > *")]
+    .filter((element, index, all) => !all.some(other => other !== element && other.contains(element)));
+  candidates.forEach((element, index) => {
+    element.classList.add("moxie-reveal-item");
+    element.style.setProperty("--moxie-delay", `${Math.min(index % 5, 4) * 65}ms`);
+  });
+
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    candidates.forEach(element => element.classList.add("moxie-is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("moxie-is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, { rootMargin: "0px 0px -7%", threshold: .08 });
+  candidates.forEach(element => observer.observe(element));
+})();
