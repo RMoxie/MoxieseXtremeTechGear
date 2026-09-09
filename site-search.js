@@ -199,14 +199,20 @@
     .moxie-motion-card{transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease,background-color .24s ease}
     .moxie-motion-card:hover{transform:translateY(-5px);border-color:rgba(78,220,228,.38)!important;box-shadow:0 16px 36px rgba(0,0,0,.25),0 0 24px rgba(61,196,216,.08)}
     .moxie-search-button{animation:moxie-search-breathe 4.8s ease-in-out infinite}
+    html.moxie-page-ready body{animation:moxie-page-enter .42s cubic-bezier(.2,.75,.25,1) both}
+    .site-primary-nav{transition:opacity .24s ease,transform .24s ease}
+    .site-primary-nav.is-open{animation:moxie-menu-open .24s cubic-bezier(.2,.75,.25,1) both}
+    @keyframes moxie-page-enter{from{opacity:.01;transform:translateY(5px)}to{opacity:1;transform:none}}
+    @keyframes moxie-menu-open{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
     @keyframes moxie-ambient-drift{0%{transform:translate3d(-2%,-1%,0) scale(1)}100%{transform:translate3d(3%,2%,0) scale(1.08)}}
     @keyframes moxie-hero-float{0%{transform:translate3d(0,-5px,0) scale(.95)}100%{transform:translate3d(-22px,20px,0) scale(1.08)}}
     @keyframes moxie-hero-sweep{0%,18%{background-position:130% 0}72%,100%{background-position:-80% 0}}
     @keyframes moxie-title-glow{0%{text-shadow:0 0 0 rgba(80,217,229,0)}100%{text-shadow:0 0 24px rgba(80,217,229,.22)}}
     @keyframes moxie-search-breathe{0%,72%,100%{box-shadow:0 10px 30px rgba(0,0,0,.35)}84%{box-shadow:0 12px 34px rgba(0,0,0,.42),0 0 0 8px rgba(54,209,220,.1)}}
-    @media(prefers-reduced-motion:reduce){.moxie-ambient-glow,.moxie-hero-motion::after,.moxie-hero-sheen,.moxie-hero-motion h1,.moxie-search-button{animation:none!important}.moxie-reveal-item{opacity:1!important;transform:none!important;transition:none!important}.moxie-motion-card{transition:none!important}.moxie-motion-card:hover{transform:none}}
+    @media(prefers-reduced-motion:reduce){html.moxie-page-ready body,.site-primary-nav,.site-primary-nav.is-open{animation:none!important;transition:none!important}.moxie-ambient-glow,.moxie-hero-motion::after,.moxie-hero-sheen,.moxie-hero-motion h1,.moxie-search-button{animation:none!important}.moxie-reveal-item{opacity:1!important;transform:none!important;transition:none!important}.moxie-motion-card{transition:none!important}.moxie-motion-card:hover{transform:none}}
   `;
   document.head.appendChild(style);
+  requestAnimationFrame(() => document.documentElement.classList.add("moxie-page-ready"));
 
   const glow = document.createElement("div");
   glow.className = "moxie-ambient-glow";
