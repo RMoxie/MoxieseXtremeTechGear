@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T08:29:02.923821Z",
+  "updatedAt": "2026-09-09T12:34:18.511081Z",
   "source": "Giveaway of the Day",
   "items": [
     {
@@ -30,7 +30,7 @@
       "icon": "🤖",
       "title": "Sky Wings VIP : Pixel Fighters",
       "description": "Are you looking for a brand new style of arcade shooter?",
-      "price": "$0.99",
+      "price": "0.99",
       "url": "https://android.giveawayoftheday.com/sky-wings-vip-pixel-fighters/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
       "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2024/01/com.livezen.retroshooting.vip_app_icon_1705837740.png"
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Priime",
-      "description": "Control the editing for RAW and high-resolution photos.",
-      "price": "$2.99",
-      "url": "https://iphone.giveawayoftheday.com/priime/",
+      "title": "Snap Markup - Annotation Tool",
+      "description": "Markup or annotate the photo with various shapes and send it anywhere.",
+      "price": "$1.99",
+      "url": "https://iphone.giveawayoftheday.com/snap-markup-annotation-tool/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2019/05/934587545_app_icon_big_1558587311.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/1012363691_app_icon_big_1788944048.jpg"
     }
   ]
 }
