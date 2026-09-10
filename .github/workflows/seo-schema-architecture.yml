@@ -1,0 +1,67 @@
+name: SEO schema architecture
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Standardize editorial Article schema
+        shell: python
+        run: |
+          import html, json, pathlib, re
+          ROOT='https://moxiesextremetechgear.com/'
+          skip={'index.html','about.html','contact.html','privacy.html','affiliate-disclosure.html','terms.html','offers.html','special-picks.html','portable-computers/index.html','audio-gear/index.html','storage-gear/index.html','coding-gear/index.html'}
+          changed=[]
+          for f in sorted(pathlib.Path('.').rglob('*.html')):
+              p=f.as_posix()
+              if p.startswith('.git/') or p=='404.html' or p in skip: continue
+              s=f.read_text(encoding='utf-8')
+              if '"@type":"Article"' in s or '"@type": "Article"' in s: continue
+              cm=re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)',s,re.I|re.S) or re.search(r'<link[^>]+href=["\']([^"\']+)["\'][^>]+rel=["\']canonical["\']',s,re.I|re.S)
+              if not cm: continue
+              url=cm.group(1)
+              tm=re.search(r'<title[^>]*>(.*?)</title>',s,re.I|re.S)
+              title=html.unescape(re.sub(r'<[^>]+>','',tm.group(1)).strip()) if tm else ''
+              dm=re.search(r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']*)',s,re.I|re.S)
+              desc=html.unescape(dm.group(1).strip()) if dm else ''
+              im=re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)',s,re.I|re.S)
+              img=im.group(1) if im else None
+              date=None
+              for pat in [r'"dateModified"\s*:\s*"([0-9]{4}-[0-9]{2}-[0-9]{2})"',r'<time[^>]+datetime=["\']([0-9]{4}-[0-9]{2}-[0-9]{2})["\']']:
+                  m=re.search(pat,s,re.I|re.S)
+                  if m: date=m.group(1); break
+              data={'@context':'https://schema.org','@type':'Article','headline':re.sub(r'\s*\|\s*'+re.escape('Moxies eXtreme TechGear')+r'\s*$','',title,flags=re.I),'description':desc,'url':url,'author':{'@type':'Person','name':'Moxie','url':ROOT+'about.html'},'publisher':{'@type':'Organization','name':'Moxies eXtreme TechGear','url':ROOT}}
+              if date: data['dateModified']=date
+              if img: data['image']=img
+              block='<script type="application/ld+json">'+json.dumps(data,separators=(',',':'))+'</script>'
+              s2=re.sub(r'</head>',block+'</head>',s,count=1,flags=re.I)
+              if s2!=s:
+                  f.write_text(s2,encoding='utf-8'); changed.append(p)
+
+          # Home/About: add explicit Organization entity without inventing address or social profiles.
+          for p in ('index.html','about.html'):
+              f=pathlib.Path(p); s=f.read_text(encoding='utf-8')
+              if '"@type":"Organization"' in s or '"@type": "Organization"' in s: continue
+              data={'@context':'https://schema.org','@type':'Organization','name':'Moxies eXtreme TechGear','url':ROOT}
+              block='<script type="application/ld+json">'+json.dumps(data,separators=(',',':'))+'</script>'
+              s2=re.sub(r'</head>',block+'</head>',s,count=1,flags=re.I)
+              if s2!=s:
+                  f.write_text(s2,encoding='utf-8'); changed.append(p)
+          print('Changed:', *changed, sep='\n- ')
+      - name: Commit and remove one-shot workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git rm -f .github/workflows/seo-schema-architecture.yml
+          git commit -m "Standardize editorial and organization schema"
+          git push
