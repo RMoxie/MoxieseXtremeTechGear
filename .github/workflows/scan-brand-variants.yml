@@ -13,14 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Scan tracked text files and save report
+      - name: Scan brand phrases and save concise report
         run: |
           python - <<'PY'
           from pathlib import Path
           import subprocess, re
           suffixes = {'.html', '.css', '.js', '.json', '.xml', '.txt', '.svg', '.md', '.yml', '.yaml'}
+          pattern = re.compile(r'(?i)\bmoxies?\s+(?:e?xtreme\s+)?tech\s*[- ]?\s*gear\b')
           files = subprocess.check_output(['git', 'ls-files', '-z']).decode().split('\0')
-          lines = []
+          found = {}
           for name in files:
               if not name or name == 'brand-scan-report.txt':
                   continue
@@ -32,14 +33,18 @@ jobs:
               except Exception:
                   continue
               for number, line in enumerate(text.splitlines(), 1):
-                  if re.search(r'moxie', line, re.IGNORECASE):
-                      lines.append(f'{name}:{number}:{line}')
-          report = '\n'.join(lines) if lines else 'NO_MOXIE_MATCHES'
+                  for match in pattern.finditer(line):
+                      phrase = match.group(0)
+                      found.setdefault(phrase, []).append(f'{name}:{number}')
+          lines = []
+          for phrase in sorted(found, key=str.casefold):
+              lines.append(f'{phrase} | ' + ', '.join(found[phrase][:20]))
+          report = '\n'.join(lines) if lines else 'NO_BRAND_VARIANTS_FOUND'
           Path('brand-scan-report.txt').write_text(report + '\n', encoding='utf-8')
           print(report)
           PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add brand-scan-report.txt
-          git commit -m 'chore: save temporary brand scan report' || true
+          git commit -m 'chore: save concise brand scan report' || true
           git push
