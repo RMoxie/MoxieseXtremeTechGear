@@ -275,3 +275,58 @@
     });
   });
 })();
+
+
+(() => {
+  if (window.__moxieSiteBackgroundLoaded) return;
+  window.__moxieSiteBackgroundLoaded = true;
+
+  const style = document.createElement("style");
+  style.id = "moxie-site-background-v1";
+  style.textContent = `
+    html{background:#07111f}
+    body{
+      background-color:#07111f!important;
+      background-image:linear-gradient(rgba(2,8,23,.66),rgba(2,8,23,.66)),url('/moxie-ice-background.jpg')!important;
+      background-size:cover!important;
+      background-position:center!important;
+      background-repeat:no-repeat!important;
+      background-attachment:fixed!important;
+      min-height:100vh;
+    }
+    .hero{
+      background:linear-gradient(rgba(15,23,42,.72),rgba(15,23,42,.82))!important;
+      backdrop-filter:blur(1px);
+    }
+    [data-theme="light"] body{
+      background-color:#f8fafc!important;
+      background-image:linear-gradient(rgba(248,250,252,.84),rgba(248,250,252,.84)),url('/moxie-ice-background.jpg')!important;
+    }
+    [data-theme="light"] .hero{
+      background:linear-gradient(rgba(248,250,252,.78),rgba(248,250,252,.88))!important;
+    }
+    .site-background-credit{margin:.7rem auto 0;max-width:900px;font-size:.78rem;line-height:1.5;color:var(--text-muted,#94a3b8)}
+    .site-background-credit a{color:var(--accent,#38bdf8)}
+    @media(max-width:780px){body{background-attachment:scroll!important}}
+  `;
+  document.head.appendChild(style);
+
+  const footer = document.querySelector("footer");
+  if (!footer || footer.querySelector(".site-background-credit")) return;
+  const credit = document.createElement("p");
+  credit.className = "site-background-credit";
+  credit.append("Background image: ");
+  const source = document.createElement("a");
+  source.href = "https://commons.wikimedia.org/wiki/File:Shades_of_Blue_on_the_Greenland_Ice_Sheet_2.jpg";
+  source.target = "_blank";
+  source.rel = "noopener noreferrer";
+  source.textContent = "Shades of Blue on the Greenland Ice Sheet";
+  credit.append(source, " by NASA Goddard Photo and Video, licensed under ");
+  const license = document.createElement("a");
+  license.href = "https://creativecommons.org/licenses/by/2.0/";
+  license.target = "_blank";
+  license.rel = "license noopener noreferrer";
+  license.textContent = "CC BY 2.0";
+  credit.append(license, ".");
+  footer.appendChild(credit);
+})();
