@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-10T04:28:33.930540Z",
+  "updatedAt": "2026-09-10T12:55:44.641074Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Coolmuster Data Erasure 1.0.46",
-      "description": "Securely erase files/folders from HDD, SSD, or external drives.",
-      "price": "$25.95",
-      "url": "https://www.giveawayoftheday.com/coolmuster-data-erasure-1-0-46-2/",
+      "title": "AnyMP4 Video Repair 1.0.22",
+      "description": "Fix broken, corrupted, damaged, and unplayable MP4/MOV/3GP video.",
+      "price": "$14.50 / month",
+      "url": "https://www.giveawayoftheday.com/anymp4-video-repair-1-0-22/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2025/10/019239b50eae10a2dd306d5b125f0eb4.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2024/01/6b16a3d6d639a9f983b1ecb4826353b8.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Potato Digger 2D",
-      "description": "Control a brave potato digger exploring mysterious underground worlds.",
+      "title": "Pixel Checkersio 3D",
+      "description": "Welcome to an immersive pixelated tactical board experience on a grid board.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/potato-digger-2d/",
+      "url": "https://game.giveawayoftheday.com/pixel-checkersio-3d/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/08/90c0ee45101a0164f95f33299ad1287a.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/08/60e93df2a7a561228aebeeb97918f8ae.jpeg"
     },
     {
       "category": "android",
@@ -30,7 +30,7 @@
       "icon": "🤖",
       "title": "Reminder - Pro",
       "description": "Reminder app without advertisements.",
-      "price": "$3.75",
+      "price": "3.75",
       "url": "https://android.giveawayoftheday.com/reminder-pro/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
       "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/10/alarm.clock.calendar.reminder.pro_app_icon_1633873082.png"
