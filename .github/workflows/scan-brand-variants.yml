@@ -1,0 +1,41 @@
+name: Scan brand variants
+
+on:
+  push:
+    paths:
+      - '.github/workflows/scan-brand-variants.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan tracked text files
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import subprocess, re
+
+          suffixes = {'.html', '.css', '.js', '.json', '.xml', '.txt', '.svg', '.md', '.yml', '.yaml'}
+          files = subprocess.check_output(['git', 'ls-files', '-z']).decode().split('\0')
+          found = False
+          for name in files:
+              if not name:
+                  continue
+              p = Path(name)
+              if p.suffix.lower() not in suffixes:
+                  continue
+              try:
+                  text = p.read_text(encoding='utf-8')
+              except Exception:
+                  continue
+              for number, line in enumerate(text.splitlines(), 1):
+                  if re.search(r'moxie', line, re.IGNORECASE):
+                      print(f'{name}:{number}:{line}')
+                      found = True
+          if not found:
+              print('NO_MOXIE_MATCHES')
+          PY
