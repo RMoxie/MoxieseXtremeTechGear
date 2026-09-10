@@ -1,0 +1,53 @@
+name: SEO final inventory audit
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build SEO audit report
+        shell: python
+        run: |
+          import html, pathlib, re
+          root='https://moxiesextremetechgear.com/'
+          rows=[]
+          for f in sorted(pathlib.Path('.').rglob('*.html')):
+              p=f.as_posix()
+              if p.startswith('.git/') or p=='404.html': continue
+              s=f.read_text(encoding='utf-8')
+              title=re.search(r'<title[^>]*>(.*?)</title>',s,re.I|re.S)
+              desc=re.search(r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']*)',s,re.I|re.S)
+              can=re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)',s,re.I|re.S)
+              if not can: can=re.search(r'<link[^>]+href=["\']([^"\']+)["\'][^>]+rel=["\']canonical["\']',s,re.I|re.S)
+              h1=re.findall(r'<h1\b[^>]*>(.*?)</h1>',s,re.I|re.S)
+              h1=[re.sub(r'<[^>]+>','',html.unescape(x)).strip() for x in h1]
+              schema=re.findall(r'"@type"\s*:\s*"([^"]+)"',s,re.I)
+              imgs=re.findall(r'<img\b[^>]*>',s,re.I|re.S)
+              missing_alt=sum(1 for x in imgs if not re.search(r'\balt=["\']',x,re.I))
+              internal=len(re.findall(r'href=["\']/(?!/)[^"\']*["\']',s,re.I))
+              crumb='BreadcrumbList' in s
+              rows.append((p,title.group(1).strip() if title else '',desc.group(1).strip() if desc else '',can.group(1) if can else '',len(h1),h1[0] if h1 else '',','.join(sorted(set(schema))),len(imgs),missing_alt,internal,crumb))
+          out=['# Final SEO Inventory Audit','','Generated automatically from the repository HTML.','', '| Page | Title | Description | Canonical | H1 count | H1 | Schema | Images | Missing alt | Internal links | BreadcrumbList |','|---|---|---|---|---:|---|---|---:|---:|---:|:---:|']
+          for r in rows:
+              vals=[x.replace('|','\\|').replace('\n',' ') if isinstance(x,str) else x for x in r]
+              out.append('| '+' | '.join(map(str,vals))+' |')
+          out += ['', '## Audit rules', '- One meaningful H1 per indexable page.', '- Every indexable page needs a unique title, description, and canonical.', '- BreadcrumbList should match the intended user navigation path.', '- Images should have useful alt text when they convey content; decorative images may use empty alt text.', '- Internal links should connect hubs, child guides, and related content naturally.']
+          pathlib.Path('SEO-FINAL-AUDIT.md').write_text('\n'.join(out)+'\n',encoding='utf-8')
+      - name: Commit report and remove workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add SEO-FINAL-AUDIT.md
+          git rm -f .github/workflows/seo-final-audit.yml
+          git add -A
+          git commit -m "Add final SEO inventory audit"
+          git push
