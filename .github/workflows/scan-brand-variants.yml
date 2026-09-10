@@ -1,4 +1,4 @@
-name: Correct brand variants
+name: Verify brand sweep
 
 on:
   push:
@@ -6,23 +6,22 @@ on:
       - '.github/workflows/scan-brand-variants.yml'
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  correct:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Correct brand references
+      - name: Verify no noncanonical brand phrases remain
         run: |
           python - <<'PY'
           from pathlib import Path
-          import subprocess, re
+          import subprocess, re, sys
           suffixes = {'.html', '.css', '.js', '.json', '.xml', '.txt', '.svg', '.md', '.yml', '.yaml'}
           pattern = re.compile(r'(?i)\bmoxies?\s+(?:e?xtreme\s+)?tech\s*[- ]?\s*gear\b')
           files = subprocess.check_output(['git', 'ls-files', '-z']).decode().split('\0')
-          changed = []
-          replacement = 'Moxies eXtreme TechGear'
+          bad = []
           for name in files:
               if not name or name in {'.github/workflows/scan-brand-variants.yml', 'brand-scan-report.txt'}:
                   continue
@@ -30,23 +29,16 @@ jobs:
               if p.suffix.lower() not in suffixes:
                   continue
               try:
-                  data = p.read_bytes()
-                  text = data.decode('utf-8')
+                  text = p.read_text(encoding='utf-8')
               except Exception:
                   continue
-              new_text = pattern.sub(replacement, text)
-              if new_text != text:
-                  p.write_bytes(new_text.encode('utf-8'))
-                  changed.append(name)
-          print('Changed files:')
-          for name in changed:
-              print(name)
-          print(f'Total changed: {len(changed)}')
+              for number, line in enumerate(text.splitlines(), 1):
+                  for match in pattern.finditer(line):
+                      if match.group(0) != 'Moxies eXtreme TechGear':
+                          bad.append(f'{name}:{number}:{match.group(0)}')
+          if bad:
+              print('NONCANONICAL BRAND REFERENCES FOUND:')
+              print('\n'.join(bad))
+              sys.exit(1)
+          print('BRAND SWEEP VERIFIED: all matching brand phrases use "Moxies eXtreme TechGear".')
           PY
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A
-          git diff --cached --check
-          git diff --cached --stat
-          git commit -m 'fix: standardize site brand references' || true
-          git push
