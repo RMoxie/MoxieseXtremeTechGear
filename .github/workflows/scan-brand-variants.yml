@@ -1,4 +1,4 @@
-name: Scan brand variants
+name: Correct brand variants
 
 on:
   push:
@@ -9,11 +9,11 @@ permissions:
   contents: write
 
 jobs:
-  scan:
+  correct:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Scan brand phrases and save concise report
+      - name: Correct brand references
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -21,30 +21,32 @@ jobs:
           suffixes = {'.html', '.css', '.js', '.json', '.xml', '.txt', '.svg', '.md', '.yml', '.yaml'}
           pattern = re.compile(r'(?i)\bmoxies?\s+(?:e?xtreme\s+)?tech\s*[- ]?\s*gear\b')
           files = subprocess.check_output(['git', 'ls-files', '-z']).decode().split('\0')
-          found = {}
+          changed = []
+          replacement = 'Moxies eXtreme TechGear'
           for name in files:
-              if not name or name == 'brand-scan-report.txt':
+              if not name or name in {'.github/workflows/scan-brand-variants.yml', 'brand-scan-report.txt'}:
                   continue
               p = Path(name)
               if p.suffix.lower() not in suffixes:
                   continue
               try:
-                  text = p.read_text(encoding='utf-8')
+                  data = p.read_bytes()
+                  text = data.decode('utf-8')
               except Exception:
                   continue
-              for number, line in enumerate(text.splitlines(), 1):
-                  for match in pattern.finditer(line):
-                      phrase = match.group(0)
-                      found.setdefault(phrase, []).append(f'{name}:{number}')
-          lines = []
-          for phrase in sorted(found, key=str.casefold):
-              lines.append(f'{phrase} | ' + ', '.join(found[phrase][:20]))
-          report = '\n'.join(lines) if lines else 'NO_BRAND_VARIANTS_FOUND'
-          Path('brand-scan-report.txt').write_text(report + '\n', encoding='utf-8')
-          print(report)
+              new_text = pattern.sub(replacement, text)
+              if new_text != text:
+                  p.write_bytes(new_text.encode('utf-8'))
+                  changed.append(name)
+          print('Changed files:')
+          for name in changed:
+              print(name)
+          print(f'Total changed: {len(changed)}')
           PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add brand-scan-report.txt
-          git commit -m 'chore: save concise brand scan report' || true
+          git add -A
+          git diff --cached --check
+          git diff --cached --stat
+          git commit -m 'fix: standardize site brand references' || true
           git push
