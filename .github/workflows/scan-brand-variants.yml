@@ -6,24 +6,23 @@ on:
       - '.github/workflows/scan-brand-variants.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   scan:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Scan tracked text files
+      - name: Scan tracked text files and save report
         run: |
           python - <<'PY'
           from pathlib import Path
           import subprocess, re
-
           suffixes = {'.html', '.css', '.js', '.json', '.xml', '.txt', '.svg', '.md', '.yml', '.yaml'}
           files = subprocess.check_output(['git', 'ls-files', '-z']).decode().split('\0')
-          found = False
+          lines = []
           for name in files:
-              if not name:
+              if not name or name == 'brand-scan-report.txt':
                   continue
               p = Path(name)
               if p.suffix.lower() not in suffixes:
@@ -34,8 +33,13 @@ jobs:
                   continue
               for number, line in enumerate(text.splitlines(), 1):
                   if re.search(r'moxie', line, re.IGNORECASE):
-                      print(f'{name}:{number}:{line}')
-                      found = True
-          if not found:
-              print('NO_MOXIE_MATCHES')
+                      lines.append(f'{name}:{number}:{line}')
+          report = '\n'.join(lines) if lines else 'NO_MOXIE_MATCHES'
+          Path('brand-scan-report.txt').write_text(report + '\n', encoding='utf-8')
+          print(report)
           PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add brand-scan-report.txt
+          git commit -m 'chore: save temporary brand scan report' || true
+          git push
