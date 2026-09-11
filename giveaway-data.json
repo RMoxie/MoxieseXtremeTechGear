@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-11T04:42:17.895844Z",
+  "updatedAt": "2026-09-11T12:50:00.083672Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "AnyMP4 Video Repair 1.0.22",
-      "description": "Fix broken, corrupted, damaged, and unplayable MP4/MOV/3GP video.",
-      "price": "$14.50 / month",
-      "url": "https://www.giveawayoftheday.com/anymp4-video-repair-1-0-22/",
+      "title": "Coolmuster PDF Password Remover 2.3.3",
+      "description": "Remove password from a PDF for editing, copying or sharing.",
+      "price": "$19.95",
+      "url": "https://www.giveawayoftheday.com/coolmuster-pdf-password-remover-2-3-3/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2024/01/6b16a3d6d639a9f983b1ecb4826353b8.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/05/e56a5a9e0943377aba532e4393844df7.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Pixel Checkersio 3D",
-      "description": "Welcome to an immersive pixelated tactical board experience on a grid board.",
+      "title": "Trio: The Great Settlement",
+      "description": "Free the colorful and cute Orbics from their underground prisons!",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/pixel-checkersio-3d/",
+      "url": "https://game.giveawayoftheday.com/trio-the-great-settlement-4/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/08/60e93df2a7a561228aebeeb97918f8ae.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2023/01/fa21acb5f1419890b8177639c75e9ffd.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Little Kitten Favorite Pet Cat",
-      "description": "Little Kitten is every child's dream - a cheeky, funny and adorable little pet.",
-      "price": "$4.99",
-      "url": "https://iphone.giveawayoftheday.com/little-kitten-my-favorite-cat/",
+      "title": "Weight Loss, Lose Weight Fast - Guided Meditation",
+      "description": "ncludes NEW playlist feature!",
+      "price": "$3.99",
+      "url": "https://iphone.giveawayoftheday.com/weight-loss-lose-weight-fast-guided-meditation/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/08/1171095810_app_icon_big_1785737291.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/472177882_app_icon_big_1789121108.jpg"
     }
   ]
 }
