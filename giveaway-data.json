@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T18:24:17.160068Z",
+  "updatedAt": "2026-09-12T22:19:04.894593Z",
   "source": "Giveaway of the Day",
   "items": [
     {
@@ -28,12 +28,12 @@
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Reminder - Pro",
-      "description": "Reminder app without advertisements.",
-      "price": "3.75",
-      "url": "https://android.giveawayoftheday.com/reminder-pro/",
+      "title": "MSafe - Pro",
+      "description": "Encrypt your passwords using the advanced AES encryption algorithm.",
+      "price": "$11.99",
+      "url": "https://android.giveawayoftheday.com/msafe-pro/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/10/alarm.clock.calendar.reminder.pro_app_icon_1633873082.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/06/com.codfishworks.msafe.pro_app_icon_1781532763.png"
     },
     {
       "category": "iphone",
