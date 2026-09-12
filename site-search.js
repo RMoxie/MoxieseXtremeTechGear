@@ -4,7 +4,7 @@
   if (window.__moxieSiteSearchLoaded) return;
   window.__moxieSiteSearchLoaded = true;
 
-  const CACHE_KEY = "moxie-site-search-v1";
+  const CACHE_KEY = "moxie-site-search-v2";
   const CACHE_MAX_AGE = 24 * 60 * 60 * 1000;
   let indexPromise;
 
