@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-12T04:36:37.671603Z",
+  "updatedAt": "2026-09-12T12:11:19.721774Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Coolmuster PDF Password Remover 2.3.3",
-      "description": "Remove password from a PDF for editing, copying or sharing.",
-      "price": "$19.95",
-      "url": "https://www.giveawayoftheday.com/coolmuster-pdf-password-remover-2-3-3/",
+      "title": "SurFlex Screen Recorder 2.0.5 (Win&Mac)",
+      "description": "Experience seamless screen recording like never before!",
+      "price": "$9.95 / month",
+      "url": "https://www.giveawayoftheday.com/surflex-screen-recorder-2/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/05/e56a5a9e0943377aba532e4393844df7.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2023/10/aad13cf8151922aa9e48837ea3b1a568.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Trio: The Great Settlement",
-      "description": "Free the colorful and cute Orbics from their underground prisons!",
-      "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/trio-the-great-settlement-4/",
+      "title": "The Joy of Farming",
+      "description": "Help Joy turn a shabby homestead into the Farm of the Year!",
+      "price": "$9.99",
+      "url": "https://game.giveawayoftheday.com/the-joy-of-farming-3/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2023/01/fa21acb5f1419890b8177639c75e9ffd.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2018/12/c801563e5dad03b5f084715ff6a2de29.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Weight Loss, Lose Weight Fast - Guided Meditation",
-      "description": "ncludes NEW playlist feature!",
-      "price": "$3.99",
-      "url": "https://iphone.giveawayoftheday.com/weight-loss-lose-weight-fast-guided-meditation/",
+      "title": "Calculator Easy HD",
+      "description": "The FIRST and the ONLY calculator supports Retina display in the market.",
+      "price": "$0.99",
+      "url": "https://iphone.giveawayoftheday.com/calculator-easy-hd-2/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/472177882_app_icon_big_1789121108.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/448246366_app_icon_big_1789206717.jpg"
     }
   ]
 }
