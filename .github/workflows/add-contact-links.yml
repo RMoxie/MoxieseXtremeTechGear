@@ -1,0 +1,127 @@
+name: Add Contact links site-wide
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/add-contact-links.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  add-contact-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add Contact to navigation and footers
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          changed = []
+          html_files = sorted(Path(".").rglob("*.html"))
+
+          nav_pattern = re.compile(
+              r'<nav\b[^>]*\bid=["\']sitePrimaryNav["\'][^>]*>[\s\S]*?</nav>',
+              re.IGNORECASE,
+          )
+          footer_pattern = re.compile(r'<footer\b[^>]*>[\s\S]*?</footer>', re.IGNORECASE)
+          contact_link_pattern = re.compile(
+              r'<a\b[^>]*href=["\']/contact\.html["\'][^>]*>\s*Contact\s*</a>',
+              re.IGNORECASE,
+          )
+          footer_links_pattern = re.compile(
+              r'(<p\b[^>]*class=["\'][^"\']*\bfooter-links\b[^"\']*["\'][^>]*>)([\s\S]*?)(</p>)',
+              re.IGNORECASE,
+          )
+
+          for path in html_files:
+              original = path.read_text(encoding="utf-8")
+              text = original
+
+              def update_nav(match):
+                  block = match.group(0)
+                  if contact_link_pattern.search(block):
+                      return block
+                  close = re.search(r'\n([ \t]*)</nav>\s*$', block, re.IGNORECASE)
+                  link_indent_match = list(re.finditer(r'\n([ \t]*)<a\b', block, re.IGNORECASE))
+                  link_indent = link_indent_match[-1].group(1) if link_indent_match else "      "
+                  current = ' aria-current="page"' if path.as_posix() == "contact.html" else ""
+                  link = f'\n{link_indent}<a href="/contact.html"{current}>Contact</a>'
+                  if close:
+                      return block[:close.start()] + link + block[close.start():]
+                  return re.sub(r'</nav>\s*$', link + '\n</nav>', block, flags=re.IGNORECASE)
+
+              text = nav_pattern.sub(update_nav, text)
+
+              def update_footer(match):
+                  block = match.group(0)
+                  if contact_link_pattern.search(block):
+                      return block
+
+                  def update_footer_links(links_match):
+                      body = links_match.group(2).rstrip()
+                      addition = (
+                          ' <span aria-hidden="true"> · </span>'
+                          '<a href="/contact.html">Contact</a>'
+                      )
+                      return links_match.group(1) + body + addition + links_match.group(3)
+
+                  updated, count = footer_links_pattern.subn(update_footer_links, block, count=1)
+                  if count:
+                      return updated
+
+                  opening = re.match(r'<footer\b[^>]*>', block, re.IGNORECASE)
+                  if not opening:
+                      return block
+                  addition = (
+                      '\n    <p class="footer-links">'
+                      '<a href="/contact.html">Contact</a></p>'
+                  )
+                  return block[:opening.end()] + addition + block[opening.end():]
+
+              text = footer_pattern.sub(update_footer, text)
+
+              if text != original:
+                  path.write_text(text, encoding="utf-8")
+                  changed.append(path.as_posix())
+
+          nav_pages = 0
+          footer_pages = 0
+          for path in html_files:
+              text = path.read_text(encoding="utf-8")
+              navs = nav_pattern.findall(text)
+              footers = footer_pattern.findall(text)
+              if navs:
+                  nav_pages += 1
+                  assert all(len(contact_link_pattern.findall(nav)) == 1 for nav in navs), path
+              if footers:
+                  footer_pages += 1
+                  assert all(len(contact_link_pattern.findall(footer)) == 1 for footer in footers), path
+
+          assert nav_pages >= 30, f"Unexpected navigation page count: {nav_pages}"
+          assert footer_pages >= 40, f"Unexpected footer page count: {footer_pages}"
+          assert len(changed) >= 30, f"Unexpected changed page count: {len(changed)}"
+          print(f"Updated {len(changed)} pages; checked {nav_pages} menus and {footer_pages} footers.")
+          PY
+
+      - name: Commit the completed site update
+        shell: bash
+        run: |
+          rm -f .github/workflows/add-contact-links.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes were needed."
+            exit 0
+          fi
+          git commit -m "Add site-wide Contact navigation"
+          git push
