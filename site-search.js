@@ -12,6 +12,16 @@
   style.textContent = `
     html,body{max-width:100%;overflow-x:clip}
     @supports not (overflow:clip){html,body{overflow-x:hidden}}
+
+    .site-nav-more{position:relative;color:inherit}
+    .site-nav-more>summary{display:inline-flex;align-items:center;min-height:44px;padding:.65rem .9rem;border-radius:10px;color:inherit;font:inherit;font-weight:750;cursor:pointer;list-style:none;white-space:nowrap}
+    .site-nav-more>summary::-webkit-details-marker{display:none}
+    .site-nav-more>summary::after{content:"▾";margin-left:.4rem;font-size:.75em;transition:transform .18s ease}
+    .site-nav-more[open]>summary::after{transform:rotate(180deg)}
+    .site-nav-more>summary:hover,.site-nav-more>summary:focus-visible,.site-nav-more.is-current>summary{background:rgba(255,255,255,.08);outline:none}
+    .site-nav-more-menu{position:absolute;z-index:120;top:calc(100% + .45rem);right:0;width:min(520px,90vw);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.25rem;padding:.65rem;border:1px solid var(--border-color,#334155);border-radius:14px;background:var(--card-bg,#111c2f);box-shadow:0 22px 55px rgba(0,0,0,.38)}
+    .site-nav-more-menu a{display:flex;align-items:center;min-height:44px;padding:.7rem .8rem;border-radius:9px;text-align:left}
+    @media(max-width:800px){.site-nav-more{width:100%}.site-nav-more>summary{width:100%;justify-content:space-between}.site-nav-more-menu{position:static;width:100%;margin-top:.35rem;grid-template-columns:1fr;box-sizing:border-box;box-shadow:none}.site-nav-more-menu a{width:100%;box-sizing:border-box}}
     .moxie-search-button{position:fixed;right:18px;bottom:18px;z-index:9997;display:flex;align-items:center;gap:8px;padding:12px 17px;border:1px solid rgba(255,255,255,.3);border-radius:999px;background:linear-gradient(135deg,#36d1dc,#5b86e5);color:#07111f;font:800 15px/1 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.35);cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}
     .moxie-search-button:hover,.moxie-search-button:focus-visible{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.45);outline:3px solid rgba(54,209,220,.32);outline-offset:3px}
     .moxie-search-button svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2.4}
@@ -66,6 +76,19 @@
   } else {
     document.body.append(button, overlay);
   }
+
+  document.querySelectorAll(".site-nav-more").forEach(details => {
+    const summary = details.querySelector("summary");
+    details.addEventListener("keydown", event => {
+      if (event.key === "Escape" && details.open) { details.open = false; summary?.focus(); }
+    });
+  });
+  document.addEventListener("click", event => {
+    document.querySelectorAll(".site-nav-more[open]").forEach(details => {
+      if (!details.contains(event.target)) details.open = false;
+    });
+  });
+
   const input = overlay.querySelector(".moxie-search-input");
   const closeButton = overlay.querySelector(".moxie-search-close");
   const status = overlay.querySelector(".moxie-search-status");
