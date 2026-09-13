@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T18:47:40.243392Z",
+  "updatedAt": "2026-09-13T22:25:16.465906Z",
   "source": "Giveaway of the Day",
   "items": [
     {
@@ -28,12 +28,12 @@
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "MSafe - Pro",
-      "description": "Encrypt your passwords using the advanced AES encryption algorithm.",
-      "price": "11.99",
-      "url": "https://android.giveawayoftheday.com/msafe-pro/",
+      "title": "Date Calculator Pro",
+      "description": "Calculate date related operations like total years, months, days, weeks, hours, minutes and seconds between two dates.",
+      "price": "$0.49",
+      "url": "https://android.giveawayoftheday.com/date-calculator-pro/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/06/com.codfishworks.msafe.pro_app_icon_1781532763.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/11/com.ng_labs.dateandtime.pro_app_icon_1763553516.png"
     },
     {
       "category": "iphone",
