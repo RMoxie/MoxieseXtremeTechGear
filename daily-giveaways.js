@@ -15,7 +15,7 @@
     const href = safeUrl(item.url) || safeUrl(item.categoryUrl);
     if (link && href) link.href = href;
     const imageUrl = safeUrl(item.image);
-    if (image && imageUrl) { image.hidden = true; image.onload = () => { image.hidden = false; }; image.onerror = () => { image.hidden = true; }; image.alt = `${item.title || item.label || 'Daily'} giveaway preview`; image.src = imageUrl; if (image.complete && image.naturalWidth) image.hidden = false; }
+    if (image && imageUrl) { image.loading = 'eager'; image.hidden = true; image.onload = () => { image.hidden = false; }; image.onerror = () => { image.hidden = true; }; image.alt = `${item.title || item.label || 'Daily'} giveaway preview`; image.src = imageUrl; if (image.complete && image.naturalWidth) image.hidden = false; }
   };
   fetch(dataUrl, { cache: 'no-store' }).then(response => { if (!response.ok) throw new Error('Giveaway feed unavailable'); return response.json(); }).then(data => {
     if (!Array.isArray(data.items)) return;
