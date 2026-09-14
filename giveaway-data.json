@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-14T04:58:27.647814Z",
+  "updatedAt": "2026-09-14T15:01:36.986070Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "iCare SD Card Recovery Pro 9.0.1.1",
-      "description": "Easiest way to get back your lost data from all kinds of memory cards!",
-      "price": "$69.99",
-      "url": "https://www.giveawayoftheday.com/icare-sd-card-recovery-9-0-1-1/",
+      "title": "Apeaksoft Video Converter Ultimate 2.3.62",
+      "description": "Convert, enhance and edit videos in 1,000 formats and more.",
+      "price": "$14.95 / month",
+      "url": "https://www.giveawayoftheday.com/apeaksoft-video-converter-ultimate-2-3-62/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2017/07/c020782a92376af88c1a77845eb5852c.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2025/11/9e400cb20ec261abdbb95d3f99fa4f2a.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Rescue Team: Ancient Guardian",
-      "description": "Balance urgent humanitarian efforts with groundbreaking scientific exploration",
-      "price": "$6.99",
-      "url": "https://game.giveawayoftheday.com/rescue-team-ancient-guardian/",
+      "title": "Nine Morris Strategy",
+      "description": "Players take turns placing their colored pieces on empty board nodes.",
+      "price": "$5.00",
+      "url": "https://game.giveawayoftheday.com/nine-morris-strategy/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/f8e200d0fdf6aaa52e0af384a411c22d.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/046e36ae5a69cb4a9a0fbe6570dd67b5.jpeg"
     },
     {
       "category": "android",
@@ -30,7 +30,7 @@
       "icon": "🤖",
       "title": "Date Calculator Pro",
       "description": "Calculate date related operations like total years, months, days, weeks, hours, minutes and seconds between two dates.",
-      "price": "$0.49",
+      "price": "0.49",
       "url": "https://android.giveawayoftheday.com/date-calculator-pro/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
       "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/11/com.ng_labs.dateandtime.pro_app_icon_1763553516.png"
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Helios - Sun & Moon Tracker",
-      "description": "Your essential companion for capturing stunning outdoor photos and videos.",
-      "price": "$5.99",
-      "url": "https://iphone.giveawayoftheday.com/helios-sun-moon-tracker/",
+      "title": "Art Wallpapers by Artpaper",
+      "description": "Artpaper turns your iOS device into an art exhibition.",
+      "price": "$4.99",
+      "url": "https://iphone.giveawayoftheday.com/art-wallpapers-by-artpaper/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/06/1260649184_app_icon_big_1782473701.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/1469549158_app_icon_big_1789377062.jpg"
     }
   ]
 }
