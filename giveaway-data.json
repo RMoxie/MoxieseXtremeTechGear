@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-15T04:56:07.743840Z",
+  "updatedAt": "2026-09-15T13:34:27.784028Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Apeaksoft Video Converter Ultimate 2.3.62",
-      "description": "Convert, enhance and edit videos in 1,000 formats and more.",
-      "price": "$14.95 / month",
-      "url": "https://www.giveawayoftheday.com/apeaksoft-video-converter-ultimate-2-3-62/",
+      "title": "Geekersoft Video Converter 4.6.24",
+      "description": "Professional and efficient Video Converter!",
+      "price": "$29.99",
+      "url": "https://www.giveawayoftheday.com/geekersoft-video-converter-2/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2025/11/9e400cb20ec261abdbb95d3f99fa4f2a.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2023/07/4e69766760d27eabb3527f9dfce81b24.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Nine Morris Strategy",
-      "description": "Players take turns placing their colored pieces on empty board nodes.",
+      "title": "KL Sokoban",
+      "description": "Push heavy crates onto marked storage spots.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/nine-morris-strategy/",
+      "url": "https://game.giveawayoftheday.com/kl-sokoban/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/046e36ae5a69cb4a9a0fbe6570dd67b5.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/8ddc4717eb0f42f5f3afb52a262256fc.jpeg"
     },
     {
       "category": "android",
