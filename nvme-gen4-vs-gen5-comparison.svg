@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">PCIe Gen 4 versus Gen 5 NVMe SSD comparison</title>
+  <desc id="desc">Gen 4 is highlighted for value, gaming, consoles and laptops. Gen 5 is highlighted for maximum speed, huge file transfers and high-end workstations.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#172554"/></linearGradient>
+    <linearGradient id="g4" x1="0" x2="1"><stop stop-color="#0ea5e9"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <linearGradient id="g5" x1="0" x2="1"><stop stop-color="#f97316"/><stop offset="1" stop-color="#fb7185"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-opacity=".35"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity=".1" stroke="#7dd3fc"><path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M0 540h1200"/><path d="M100 0v630M300 0v630M500 0v630M700 0v630M900 0v630M1100 0v630"/></g>
+  <text x="60" y="70" fill="#f8fafc" font-family="system-ui,sans-serif" font-size="42" font-weight="800">GEN 4 vs GEN 5 NVMe</text>
+  <text x="60" y="108" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="22">The faster benchmark is not always the better buy.</text>
+  <g filter="url(#shadow)">
+    <rect x="60" y="145" width="505" height="400" rx="26" fill="#0f2035" stroke="#38bdf8" stroke-width="3"/>
+    <rect x="635" y="145" width="505" height="400" rx="26" fill="#261927" stroke="#fb7c35" stroke-width="3"/>
+  </g>
+  <text x="100" y="205" fill="#67e8f9" font-family="system-ui,sans-serif" font-size="34" font-weight="900">PCIe GEN 4</text>
+  <text x="675" y="205" fill="#fb923c" font-family="system-ui,sans-serif" font-size="34" font-weight="900">PCIe GEN 5</text>
+  <text x="100" y="252" fill="#f8fafc" font-family="system-ui,sans-serif" font-size="24" font-weight="700">≈ 7,000–7,450 MB/s</text>
+  <rect x="100" y="272" width="380" height="24" rx="12" fill="#1e3a5f"/><rect x="100" y="272" width="190" height="24" rx="12" fill="url(#g4)"/>
+  <text x="675" y="252" fill="#f8fafc" font-family="system-ui,sans-serif" font-size="24" font-weight="700">≈ 10,000–14,900 MB/s</text>
+  <rect x="675" y="272" width="380" height="24" rx="12" fill="#4a2634"/><rect x="675" y="272" width="370" height="24" rx="12" fill="url(#g5)"/>
+  <g fill="#dbeafe" font-family="system-ui,sans-serif" font-size="23"><text x="100" y="345">✓ Best value for most buyers</text><text x="100" y="390">✓ Gaming, PS5 and everyday PCs</text><text x="100" y="435">✓ Easier cooling and laptop fit</text><text x="100" y="480">✓ More capacity for the money</text></g>
+  <g fill="#ffe4d6" font-family="system-ui,sans-serif" font-size="23"><text x="675" y="345">✓ Maximum sequential speed</text><text x="675" y="390">✓ Huge files and scratch disks</text><text x="675" y="435">✓ Premium creator workstations</text><text x="675" y="480">⚠ More heat and higher cost</text></g>
+  <rect x="60" y="570" width="1080" height="3" fill="url(#g4)"/>
+  <text x="60" y="608" fill="#f8fafc" font-family="system-ui,sans-serif" font-size="22" font-weight="700">Moxies eXtreme TechGear</text>
+  <text x="1140" y="608" text-anchor="end" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="18">moxiesextremetechgear.com</text>
+</svg>
