@@ -91,6 +91,16 @@
   ]
 }
 </script>
+
+<style id="site-nebula-background">
+:root{--site-background-overlay:rgba(2,6,23,.62)}
+[data-theme="light"]{--site-background-overlay:rgba(248,250,252,.78)}
+html{background-color:#020617}
+body{position:relative;isolation:isolate;min-height:100vh;background:transparent}
+body::before,body::after{content:"";position:fixed;inset:0;pointer-events:none}
+body::before{z-index:-2;background:url("/moxie-nebula-background.jpg") center/cover no-repeat}
+body::after{z-index:-1;background:var(--site-background-overlay)}
+</style>
 </head>
 <body>
 <a class="site-skip-link" href="#main-content">Skip to main content</a>
