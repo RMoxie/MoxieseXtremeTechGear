@@ -186,7 +186,17 @@ body{overflow-x:hidden}.visual-break{margin:2.2rem 0}.visual-break img{display:b
 .site-primary-nav a{color:var(--muted);text-decoration:none;font-size:.85rem;padding:.55rem .6rem;border-radius:.5rem}
 .site-primary-nav a:hover,.site-primary-nav a[aria-current="page"]{color:var(--text);background:var(--surface-2)}
 @media(max-width:900px){.site-header-top{margin-bottom:0}.site-menu-toggle{display:inline-flex;align-items:center;justify-content:center}.site-primary-nav{display:none;flex-direction:column;align-items:stretch;padding:.8rem 0 0}.site-primary-nav.is-open{display:flex}.site-primary-nav a{display:flex;align-items:center;min-height:44px;padding:.7rem .8rem}.site-theme-toggle span{display:none}}
-</style></head><body><a class="site-skip-link" href="#main-content">Skip to main content</a>
+</style>
+<style id="site-nebula-background">
+:root{--site-background-overlay:rgba(2,6,23,.62)}
+[data-theme="light"]{--site-background-overlay:rgba(248,250,252,.78)}
+html{background-color:#020617}
+body{position:relative;isolation:isolate;min-height:100vh;background:transparent}
+body::before,body::after{content:"";position:fixed;inset:0;pointer-events:none}
+body::before{z-index:-2;background:url("/moxie-nebula-background.jpg") center/cover no-repeat}
+body::after{z-index:-1;background:var(--site-background-overlay)}
+</style>
+</head><body><a class="site-skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <div class="site-header-top">
       <a class="site-brand" href="/index.html">Moxies eXtreme TechGear</a>
