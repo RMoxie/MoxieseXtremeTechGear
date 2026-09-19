@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19T18:37:07.981453Z",
+  "updatedAt": "2026-09-19T22:19:55.638991Z",
   "source": "Giveaway of the Day",
   "items": [
     {
@@ -28,23 +28,23 @@
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Avalar: Shadow War Premium",
-      "description": "Claim Your Premium Advantage - Exclusive Rewards!",
-      "price": "0.99",
-      "url": "https://android.giveawayoftheday.com/avalar-shadow-war-premium/",
+      "title": "Space Shooter: Alien vs Galaxy Attack (Premium)",
+      "description": "A dynamic space-themed action game.",
+      "price": "$19.99",
+      "url": "https://android.giveawayoftheday.com/space-shooter-alien-vs-galaxy-attack-premium/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/08/com.avalar.athree.epl.gp_app_icon_1756465716.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2023/12/com.space.shooter.alien.galaxyattack_app_icon_1703345294.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Mobile Mouse & Keyboard",
-      "description": "Turn your iPhone/iPad device into handy mobile keyboard for your computer.",
-      "price": "$5.00",
-      "url": "https://iphone.giveawayoftheday.com/wireless-keyboard-trackpad/",
+      "title": "Distressed FX",
+      "description": "Transform even the most mundane photo into a work of art.",
+      "price": "$0.99",
+      "url": "https://iphone.giveawayoftheday.com/distressed-fx-2/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/1515294700_app_icon_big_1789799172.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2024/09/585702631_app_icon_big_1726229201.jpg"
     }
   ]
 }
