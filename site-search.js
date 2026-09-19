@@ -74,12 +74,22 @@
     const headerTop = document.querySelector(".site-header-top");
     if (!headerTop) return;
 
-    document.querySelectorAll(".site-primary-nav a[href]").forEach(link => {
+    const navLinks = [...document.querySelectorAll(".site-primary-nav a[href]")];
+    navLinks.forEach(link => {
       const path = normalizePath(new URL(link.getAttribute("href"), location.origin).pathname);
       if (CATEGORY_LABELS[path]) renderLabel(link, CATEGORY_LABELS[path]);
     });
 
     const categoryPath = categoryPathForPage(location.pathname);
+    if (categoryPath) {
+      navLinks.forEach(link => link.removeAttribute("aria-current"));
+      document.querySelectorAll(".site-nav-more.is-current").forEach(item => item.classList.remove("is-current"));
+      const activeLink = navLinks.find(link => normalizePath(new URL(link.getAttribute("href"), location.origin).pathname) === categoryPath);
+      if (activeLink) {
+        activeLink.setAttribute("aria-current", "page");
+        activeLink.closest(".site-nav-more")?.classList.add("is-current");
+      }
+    }
     const fallbackTitle = (document.querySelector("main h1")?.textContent || document.title.split("|")[0] || "Moxies eXtreme TechGear").trim();
     const pageLabel = categoryPath ? CATEGORY_LABELS[categoryPath] : { title: fallbackTitle };
     const heading = document.createElement("div");
