@@ -62,12 +62,12 @@
 
   <header class="site-header">
     <div class="site-header-top">
-      <a class="site-brand" href="/">Moxies eXtreme TechGear</a>
-      <button class="site-theme-toggle" type="button" aria-label="Toggle light and dark theme" aria-pressed="false"><span>Theme</span> ◐</button>
-      <button class="site-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <a class="site-brand" href="/index.html">Moxies eXtreme TechGear</a>
+      <button class="site-theme-toggle" id="siteThemeToggle" type="button" aria-label="Switch to light mode">☀️ <span>Light Mode</span></button>
+      <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-expanded="false" aria-controls="sitePrimaryNav">Menu</button>
     </div>
     <nav class="site-primary-nav" id="sitePrimaryNav" aria-label="Primary navigation">
-      <a href="/index.html">Home</a>
+      <a href="/index.html" aria-current="page">Home</a>
       <a href="/offers.html">Current Offers, Deals &amp; Daily Giveaways</a>
       <a href="/special-picks.html">Best Special Picks &amp; Deals</a>
       <a href="/computers.html">Best Computers &amp; Mini PCs</a>
@@ -75,7 +75,7 @@
       <a href="/ai-hardware.html">Best AI Hardware &amp; Mini PCs</a>
       <a href="/home-networking-security.html">Best Networking Gear</a>
       <a href="/monitors-docks-desk-setup.html">Best Desk Setup &amp; Monitors</a>
-      <details class="site-nav-more is-current">
+      <details class="site-nav-more">
         <summary>More Guides</summary>
         <div class="site-nav-more-menu"><a href="/gan-chargers-guide.html">Best Fast Wall Chargers &amp; GaN Bricks</a><a href="/automotive-emergency.html">Best Auto &amp; Emergency Gear</a><a href="/storage-gear/index.html">Best Storage &amp; SSDs</a><a href="/ebike-gear.html">Best E-Bike Gear &amp; Accessories</a><a href="/scuba-diving/index.html">Scuba Diving Gear, Classes &amp; Local Guides</a><a href="/cable-management.html">Best Cable Organizers</a><a href="/audio-gear.html">Best Audio Gear</a><a href="/coding-gear/index.html">Software, Linux, Open Source &amp; Coding Guides</a><a href="/contact.html">Contact</a></div>
       </details>
@@ -134,47 +134,37 @@
   </main>
 
   <footer>
-    <p><strong>Moxies eXtreme TechGear</strong></p>
-    <div class="footer-links">
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/privacy.html" aria-current="page">Privacy</a>
-      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
-      <a href="/terms.html">Terms</a>
-    </div>
-    <p>Practical technology guidance focused on compatibility, value, and real-world usefulness.</p>
+    <p class="footer-links"><a href="/about.html">About &amp; Editorial Standards</a> <span aria-hidden="true"> · </span><a href="/contact.html">Contact</a> <span aria-hidden="true"> · </span><a href="/privacy.html">Privacy</a> <span aria-hidden="true"> · </span><a href="/affiliate-disclosure.html">Affiliate Disclosure</a> <span aria-hidden="true"> · </span><a href="/terms.html">Terms</a></p>
+    <p><strong>Moxies eXtreme TechGear</strong> — practical technology guidance without the guesswork.</p>
+    <p class="affiliate-disclosure"><strong>Affiliate disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases <strong class="no-additional-cost">AT NO ADDITIONAL COST TO YOU.</strong></p>
+    <p>&copy; 2026 Moxies eXtreme TechGear. All rights reserved.</p>
   </footer>
 
-  <script>
-    (function () {
-      const root = document.body;
-      const themeButton = document.querySelector('.site-theme-toggle');
-      const menuButton = document.querySelector('.site-menu-toggle');
-      const nav = document.querySelector('.site-primary-nav');
-
-      const savedTheme = localStorage.getItem('moxies-theme');
-      if (savedTheme === 'light' || savedTheme === 'dark') root.dataset.theme = savedTheme;
-
-      function updateThemeButton() {
-        const isLight = root.dataset.theme === 'light';
-        themeButton.setAttribute('aria-pressed', String(isLight));
-        themeButton.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
-      }
-
-      themeButton.addEventListener('click', function () {
-        root.dataset.theme = root.dataset.theme === 'light' ? 'dark' : 'light';
-        localStorage.setItem('moxies-theme', root.dataset.theme);
-        updateThemeButton();
-      });
-      updateThemeButton();
-
-      menuButton.addEventListener('click', function () {
+  
+  <script src="/site-search.js?v=20260913-prepared-updates" defer></script>
+<script data-site-shell>
+    (() => {
+      const root = document.documentElement;
+      const themeButton = document.getElementById('siteThemeToggle');
+      const menuButton = document.getElementById('siteMenuToggle');
+      const nav = document.getElementById('sitePrimaryNav');
+      const applyTheme = theme => {
+        const light = theme === 'light';
+        if (light) root.setAttribute('data-theme', 'light'); else root.removeAttribute('data-theme');
+        themeButton.innerHTML = light ? '🌙 <span>Dark Mode</span>' : '☀️ <span>Light Mode</span>';
+        themeButton.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+        localStorage.setItem('theme', light ? 'light' : 'dark');
+      };
+      applyTheme(localStorage.getItem('theme') === 'light' ? 'light' : 'dark');
+      themeButton.addEventListener('click', () => applyTheme(root.hasAttribute('data-theme') ? 'dark' : 'light'));
+      menuButton.addEventListener('click', () => {
         const open = nav.classList.toggle('is-open');
         menuButton.setAttribute('aria-expanded', String(open));
-        menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
       });
-    }());
+      nav.addEventListener('click', event => {
+        if (event.target.closest('a')) { nav.classList.remove('is-open'); menuButton.setAttribute('aria-expanded', 'false'); }
+      });
+    })();
   </script>
-  <script src="/site-search.js?v=20260913-prepared-updates" defer></script>
 </body>
 </html>
