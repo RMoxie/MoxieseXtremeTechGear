@@ -58,6 +58,7 @@
   function renderLabel(element, label) {
     if (!element || !label) return;
     element.replaceChildren();
+    element.classList.toggle("moxie-nav-has-subtitle", Boolean(label.subtitle));
     const title = document.createElement("span");
     title.className = "moxie-label-title";
     title.textContent = label.title;
@@ -145,7 +146,8 @@
     .moxie-page-heading .moxie-label-title,.moxie-page-heading .moxie-label-subtitle{display:block}
     .moxie-page-heading .moxie-label-subtitle{margin-top:.18rem;color:var(--text-muted,#b7c3d4);font-size:clamp(.68rem,.8vw,.82rem);font-weight:700;letter-spacing:.01em}
     .site-primary-nav a .moxie-label-title,.site-primary-nav a .moxie-label-subtitle{display:block}
-    .site-primary-nav a .moxie-label-subtitle{margin-top:.15rem;font-size:.72em;font-weight:650;line-height:1.2;opacity:.82}
+    .site-primary-nav a.moxie-nav-has-subtitle{flex-direction:column;align-items:flex-start;justify-content:center}
+    .site-primary-nav a .moxie-label-subtitle{margin-top:.18rem;font-size:.72em;font-weight:650;line-height:1.2;opacity:.82}
     .moxie-header-controls{grid-column:3;justify-self:end}
     @media(max-width:800px){.site-header-top{grid-template-columns:minmax(0,1fr) auto!important;gap:.55rem 1rem!important}.site-brand{grid-column:1!important;grid-row:1!important}.site-menu-toggle{grid-column:2!important;grid-row:1!important;justify-self:end!important}.moxie-page-heading{grid-column:1/-1!important;grid-row:2!important;max-width:100%;padding:.2rem .35rem;font-size:clamp(1.1rem,5vw,1.45rem)}.moxie-header-controls{grid-column:1/-1!important;grid-row:3!important;justify-self:center!important}.site-primary-nav a{text-align:left}.site-primary-nav a .moxie-label-subtitle{font-size:.76em}}
     .moxie-header-controls{display:flex;align-items:center;gap:.55rem}
