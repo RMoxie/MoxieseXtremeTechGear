@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-19T04:39:11.963327Z",
+  "updatedAt": "2026-09-19T12:30:30.398060Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Ashampoo Photo Optimizer 2026",
-      "description": "Better images in a single click!",
-      "price": "$30.00",
-      "url": "https://www.giveawayoftheday.com/ashampoo-photo-optimizer-2026/",
+      "title": "Coolmuster PDF Creator Pro 2.7.3",
+      "description": "Convert all similar or related files into a large PDF file.",
+      "price": "$29.95",
+      "url": "https://www.giveawayoftheday.com/coolmuster-pdf-creator-pro-2-7-3/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/08/c409b5a72bc665ca0086263475858e78.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2024/01/d8b24e5631d3bfc2f0f5b3f57a7c3dfd.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Match and Remove",
-      "description": "Pyramids of bright-colored figures are floating in weightlessness.",
-      "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/match-and-remove/",
+      "title": "Towers of Oz",
+      "description": "Help Timothy protect the land of Oz from the Dwarf King!",
+      "price": "$9.99",
+      "url": "https://game.giveawayoftheday.com/towers-of-oz-3/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/2231bf0a382271938c68a0338b563458.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2019/09/4930687e97b6e02ed0426bc692646031.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "San Fransymbols: SF Symbols",
-      "description": "Designed to help developers and designers easily discover and use the perfect icon for any situation.",
-      "price": "$3.99",
-      "url": "https://iphone.giveawayoftheday.com/san-fransymbols-sf-symbols/",
+      "title": "Mobile Mouse & Keyboard",
+      "description": "Turn your iPhone/iPad device into handy mobile keyboard for your computer.",
+      "price": "$5.00",
+      "url": "https://iphone.giveawayoftheday.com/wireless-keyboard-trackpad/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/1504761986_app_icon_big_1789713389.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/1515294700_app_icon_big_1789799172.jpg"
     }
   ]
 }
