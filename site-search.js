@@ -4,6 +4,95 @@
   if (window.__moxieSiteSearchLoaded) return;
   window.__moxieSiteSearchLoaded = true;
 
+
+  const CATEGORY_LABELS = {
+    "/index.html": { title: "🏠 Home" },
+    "/offers.html": { title: "🎁 Deals, Drops & Giveaways" },
+    "/special-picks.html": { title: "⭐ Featured Gear Picks" },
+    "/computers.html": { title: "💻 Computers & Mini PCs" },
+    "/mobile-power.html": { title: "🔋 Portable Power & Battery Packs" },
+    "/ai-hardware.html": { title: "🤖 AI Hardware & Smart Mini Rigs" },
+    "/home-networking-security.html": { title: "📡 Best Networking & Wi-Fi Gear" },
+    "/monitors-docks-desk-setup.html": { title: "🖥️ Desk Setups & Monitors" },
+    "/gan-chargers-guide.html": { title: "⚡ Fast Chargers & Wall Power" },
+    "/storage-gear/index.html": { title: "💾 Massive Storage Solutions" },
+    "/scuba-diving/index.html": { title: "🤿 Scuba Gear, Classes & Dive Guides" },
+    "/audio-gear.html": { title: "🎧 State-of-the-Art Audio Gear" },
+    "/automotive-emergency.html": { title: "🔧 Auto, Road & Emergency Tech" },
+    "/ebike-gear.html": { title: "🚴 E-Bikes, Tech & Riding Accessories" },
+    "/cable-management.html": { title: "🔌 Cable Management Made Easy" },
+    "/coding-gear/index.html": { title: "💻 Your Software Hub", subtitle: "Windows, macOS, Linux & More" },
+    "/contact.html": { title: "📬 Contact Moxie Anytime", subtitle: "Support, Questions, Help & Tech Advice" }
+  };
+
+  const PAGE_CATEGORY_PATHS = {
+    "/": "/index.html",
+    "/index.html": "/index.html",
+    "/airline-safe-power-bank-capacity-guide.html": "/mobile-power.html",
+    "/best-power-banks-camping-field-charging.html": "/mobile-power.html",
+    "/local-ai-gpu-vram-guide.html": "/ai-hardware.html",
+    "/wifi-7-vs-wifi-6e-guide.html": "/home-networking-security.html",
+    "/best-usb-c-docks-dual-monitors.html": "/monitors-docks-desk-setup.html",
+    "/best-100w-usb-c-chargers-travel.html": "/gan-chargers-guide.html",
+    "/gen4-vs-gen5-nvme-ssd-guide.html": "/storage-gear/index.html",
+    "/best-electric-bikes.html": "/ebike-gear.html",
+    "/best-locks-for-ebikes.html": "/ebike-gear.html"
+  };
+
+  function normalizePath(path) {
+    const clean = String(path || "/").replace(/\/{2,}/g, "/");
+    return clean !== "/" && clean.endsWith("/") ? `${clean}index.html` : clean;
+  }
+
+  function categoryPathForPage(pathname) {
+    const path = normalizePath(pathname);
+    if (PAGE_CATEGORY_PATHS[path]) return PAGE_CATEGORY_PATHS[path];
+    if (path.startsWith("/portable-computers/") || path.startsWith("/desktop-systems/")) return "/computers.html";
+    if (path.startsWith("/storage-gear/")) return "/storage-gear/index.html";
+    if (path.startsWith("/scuba-diving/")) return "/scuba-diving/index.html";
+    if (path.startsWith("/audio-gear/")) return "/audio-gear.html";
+    if (path.startsWith("/coding-gear/")) return "/coding-gear/index.html";
+    return CATEGORY_LABELS[path] ? path : null;
+  }
+
+  function renderLabel(element, label) {
+    if (!element || !label) return;
+    element.replaceChildren();
+    const title = document.createElement("span");
+    title.className = "moxie-label-title";
+    title.textContent = label.title;
+    element.append(title);
+    if (label.subtitle) {
+      const subtitle = document.createElement("span");
+      subtitle.className = "moxie-label-subtitle";
+      subtitle.textContent = label.subtitle;
+      element.append(subtitle);
+    }
+  }
+
+  function enhanceHeader() {
+    const headerTop = document.querySelector(".site-header-top");
+    if (!headerTop) return;
+
+    document.querySelectorAll(".site-primary-nav a[href]").forEach(link => {
+      const path = normalizePath(new URL(link.getAttribute("href"), location.origin).pathname);
+      if (CATEGORY_LABELS[path]) renderLabel(link, CATEGORY_LABELS[path]);
+    });
+
+    const categoryPath = categoryPathForPage(location.pathname);
+    const fallbackTitle = (document.querySelector("main h1")?.textContent || document.title.split("|")[0] || "Moxies eXtreme TechGear").trim();
+    const pageLabel = categoryPath ? CATEGORY_LABELS[categoryPath] : { title: fallbackTitle };
+    const heading = document.createElement("div");
+    heading.className = "moxie-page-heading";
+    heading.setAttribute("role", "heading");
+    heading.setAttribute("aria-level", "1");
+    heading.setAttribute("aria-label", pageLabel.subtitle ? `${pageLabel.title}. ${pageLabel.subtitle}` : pageLabel.title);
+    renderLabel(heading, pageLabel);
+
+    const themeButton = headerTop.querySelector(".site-theme-toggle");
+    headerTop.insertBefore(heading, themeButton || headerTop.querySelector(".site-menu-toggle"));
+  }
+
   const CACHE_KEY = "moxie-site-search-v1";
   const CACHE_MAX_AGE = 24 * 60 * 60 * 1000;
   let indexPromise;
@@ -39,12 +128,23 @@
     .moxie-search-result strong{display:block;margin-bottom:5px;color:#6fe1e7;font-size:16px}
     .moxie-search-result span{display:block;color:#c0cad8;font-size:13px;line-height:1.45}
     .moxie-search-empty{padding:34px 18px;text-align:center;color:#b9c5d4}
-    .moxie-header-controls{grid-column:2;justify-self:center;display:flex;align-items:center;gap:.55rem}
+
+    .site-header-top{grid-template-columns:minmax(230px,1fr) minmax(280px,auto) minmax(230px,1fr)}
+    .site-brand{grid-column:1;justify-self:start}
+    .moxie-page-heading{grid-column:2;justify-self:center;align-self:center;max-width:min(44vw,720px);padding:.25rem .8rem;color:var(--text-main,#f8fafc);font:900 clamp(1.15rem,1.75vw,1.8rem)/1.12 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:-.02em;text-align:center;text-wrap:balance}
+    .moxie-page-heading .moxie-label-title,.moxie-page-heading .moxie-label-subtitle{display:block}
+    .moxie-page-heading .moxie-label-subtitle{margin-top:.18rem;color:var(--text-muted,#b7c3d4);font-size:clamp(.68rem,.8vw,.82rem);font-weight:700;letter-spacing:.01em}
+    .site-primary-nav a .moxie-label-title,.site-primary-nav a .moxie-label-subtitle{display:block}
+    .site-primary-nav a .moxie-label-subtitle{margin-top:.15rem;font-size:.72em;font-weight:650;line-height:1.2;opacity:.82}
+    .moxie-header-controls{grid-column:3;justify-self:end}
+    @media(max-width:800px){.site-header-top{grid-template-columns:minmax(0,1fr) auto!important;gap:.55rem 1rem!important}.site-brand{grid-column:1!important;grid-row:1!important}.site-menu-toggle{grid-column:2!important;grid-row:1!important;justify-self:end!important}.moxie-page-heading{grid-column:1/-1!important;grid-row:2!important;max-width:100%;padding:.2rem .35rem;font-size:clamp(1.1rem,5vw,1.45rem)}.moxie-header-controls{grid-column:1/-1!important;grid-row:3!important;justify-self:center!important}.site-primary-nav a{text-align:left}.site-primary-nav a .moxie-label-subtitle{font-size:.76em}}
+    .moxie-header-controls{display:flex;align-items:center;gap:.55rem}
     .moxie-header-controls .site-theme-toggle{grid-column:auto;justify-self:auto}
     .moxie-header-controls .moxie-search-button{position:static;right:auto;bottom:auto;z-index:auto;padding:10px 14px;box-shadow:0 6px 18px rgba(0,0,0,.24)}
     @media(max-width:600px){.moxie-search-button{right:12px;bottom:12px;padding:12px}.moxie-search-button span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.moxie-search-overlay{padding:14px}.moxie-search-dialog{max-height:calc(100vh - 28px);border-radius:16px}}
   `;
   document.head.appendChild(style);
+  enhanceHeader();
 
   const button = document.createElement("button");
   button.type = "button";
