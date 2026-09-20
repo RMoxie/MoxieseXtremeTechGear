@@ -196,6 +196,15 @@ body::before,body::after{content:"";position:fixed;inset:0;pointer-events:none}
 body::before{z-index:-2;background:url("/moxie-nebula-background.jpg") center/cover no-repeat}
 body::after{z-index:-1;background:var(--site-background-overlay)}
 </style>
+<style id="moxie-cosmic-glass-20260920">
+:root{--moxie-panel-glass:rgba(17,28,48,.68);--moxie-panel-glass-strong:rgba(17,28,48,.78);--moxie-panel-edge:rgba(148,163,184,.28)}
+html[data-theme="light"]{--moxie-panel-glass:rgba(248,250,252,.72);--moxie-panel-glass-strong:rgba(248,250,252,.82);--moxie-panel-edge:rgba(71,85,105,.24)}
+html body :is(.card,.product-card,.feature-card,.category-card,.giveaway-card,.owner-note,.label-guide,.decision-box,.guide-card,.recommendation-card,.info-card,.pick-card){background-color:var(--moxie-panel-glass)!important;background-image:linear-gradient(145deg,var(--moxie-panel-glass-strong),var(--moxie-panel-glass))!important;border-color:var(--moxie-panel-edge)!important;-webkit-backdrop-filter:blur(5px) saturate(112%);backdrop-filter:blur(5px) saturate(112%)}
+html body :is(.categories,.related,.compare,table,.content-panel,.guide-section,.recommendations,.buying-guide,.faq-section){background-color:var(--moxie-panel-glass)!important;border-color:var(--moxie-panel-edge)!important;-webkit-backdrop-filter:blur(4px) saturate(108%);backdrop-filter:blur(4px) saturate(108%)}
+html body table :is(th,td),html body tr:nth-child(even){background-color:color-mix(in srgb,var(--moxie-panel-glass-strong) 78%,transparent)!important}
+html body .hero{background:linear-gradient(rgba(15,23,42,.30),rgba(15,23,42,.42))!important}
+html[data-theme="light"] body .hero{background:linear-gradient(rgba(248,250,252,.32),rgba(248,250,252,.46))!important}
+</style>
 </head><body><a class="site-skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <div class="site-header-top">
