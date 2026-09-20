@@ -336,9 +336,9 @@ main.container > h1 {
 @media(max-width:620px){.giveaway-heading{align-items:start;flex-direction:column}.giveaway-grid{grid-template-columns:1fr}.giveaway-media{aspect-ratio:16/8}.giveaway-showcase{padding-top:2rem;padding-bottom:2rem}}
 @media(prefers-reduced-motion:reduce){.giveaway-card{transition:none}.giveaway-card:hover{transform:none}}
 
-/* Site-wide user-selected nebula background */
-:root { --site-background-overlay: rgba(2, 6, 23, .62); }
-[data-theme="light"] { --site-background-overlay: rgba(248, 250, 252, .78); }
+/* Site-wide Cosmic Cliffs background — NASA/ESA/CSA/STScI */
+:root { --site-background-overlay: rgba(2, 6, 23, .34); }
+[data-theme="light"] { --site-background-overlay: rgba(248, 250, 252, .58); }
 html { background-color: #020617; }
 body {
   position: relative;
@@ -355,7 +355,7 @@ body::after {
 }
 body::before {
   z-index: -2;
-  background: url("/moxie-nebula-background.jpg") center center / cover no-repeat;
+  background: url("/moxie-cosmic-cliffs-background.webp") center center / cover no-repeat;
 }
 body::after {
   z-index: -1;
@@ -364,8 +364,8 @@ body::after {
 .hero {
   background: linear-gradient(
     to bottom,
-    color-mix(in srgb, var(--hero-grad-start) 84%, transparent),
-    color-mix(in srgb, var(--hero-grad-end) 84%, transparent)
+    color-mix(in srgb, var(--hero-grad-start) 70%, transparent),
+    color-mix(in srgb, var(--hero-grad-end) 70%, transparent)
   );
 }
 
