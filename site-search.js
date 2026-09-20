@@ -206,6 +206,17 @@
       --moxie-panel-glass-strong: rgba(248, 250, 252, .70) !important;
       --moxie-panel-edge: rgba(71, 85, 105, .28) !important;
     }
+    /* moxie-fixed-viewport-20260920h */
+    html body::before,
+    html body::after {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: auto !important;
+      bottom: auto !important;
+      width: 100vw !important;
+      height: 100vh !important;
+    }
     html body::before {
       background-image: url("/moxie-cosmic-cliffs-background.webp") !important;
       background-position: center center !important;
