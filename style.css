@@ -369,3 +369,23 @@ body::after {
   );
 }
 
+
+/* Override the legacy script-injected background so the shared Cosmic Cliffs layer stays visible. */
+html body,
+html[data-theme="dark"] body,
+html[data-theme="light"] body {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+body::before { background-position: center 42%; }
+
+/* Keep the site-wide image credit accurate and visible on every page. */
+.site-background-credit { font-size: 0 !important; }
+.site-background-credit > * { display: none !important; }
+.site-background-credit::after {
+  content: "Background image: \201C Cosmic Cliffs\201D  in the Carina Nebula. Credit: NASA, ESA, CSA, STScI.";
+  display: block;
+  font-size: .78rem;
+  line-height: 1.5;
+  color: var(--text-muted, #94a3b8);
+}
