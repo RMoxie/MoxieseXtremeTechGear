@@ -156,6 +156,43 @@
     @media(max-width:600px){.moxie-search-button{right:12px;bottom:12px;padding:12px}.moxie-search-button span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.moxie-search-overlay{padding:14px}.moxie-search-dialog{max-height:calc(100vh - 28px);border-radius:16px}}
   `;
   document.head.appendChild(style);
+  const glassParityStyle = document.createElement("style");
+  glassParityStyle.id = "moxie-category-glass-parity-20260920";
+  glassParityStyle.textContent = `
+    html body,
+    html[data-theme="dark"] body,
+    html[data-theme="light"] body {
+      background-color: transparent !important;
+      background-image: none !important;
+    }
+    html body .hero,
+    html body .guide-hero,
+    html body .contact-hero {
+      background: linear-gradient(rgba(15,23,42,.30),rgba(15,23,42,.42)) !important;
+      backdrop-filter: blur(2px) saturate(108%) !important;
+    }
+    html[data-theme="light"] body .hero,
+    html[data-theme="light"] body .guide-hero,
+    html[data-theme="light"] body .contact-hero {
+      background: linear-gradient(rgba(248,250,252,.32),rgba(248,250,252,.46)) !important;
+    }
+    html body :is(
+      .computer-card,.computer-note,.buyer-note,.trust-note,
+      .auto-card,.auto-checklist,.auto-tier,.bike-guide-callout,
+      .dive-card,.guide-hero,.contact-hero
+    ) {
+      background-color: var(--moxie-panel-glass,rgba(17,28,48,.68)) !important;
+      background-image: linear-gradient(
+        145deg,
+        var(--moxie-panel-glass-strong,rgba(17,28,48,.78)),
+        var(--moxie-panel-glass,rgba(17,28,48,.68))
+      ) !important;
+      border-color: var(--moxie-panel-edge,rgba(148,163,184,.28)) !important;
+      -webkit-backdrop-filter: blur(5px) saturate(112%);
+      backdrop-filter: blur(5px) saturate(112%);
+    }
+  `;
+  document.head.appendChild(glassParityStyle);
   enhanceHeader();
 
   const button = document.createElement("button");
@@ -424,7 +461,7 @@
     html{background:#07111f}
     body{
       background-color:#07111f!important;
-      background-image:linear-gradient(rgba(2,8,23,.66),rgba(2,8,23,.66)),url('/moxie-ice-background.jpg')!important;
+      background-image:linear-gradient(rgba(2,8,23,.66),rgba(2,8,23,.66)),url('/moxie-cosmic-cliffs-background.webp')!important;
       background-size:cover!important;
       background-position:center!important;
       background-repeat:no-repeat!important;
@@ -437,7 +474,7 @@
     }
     [data-theme="light"] body{
       background-color:#f8fafc!important;
-      background-image:linear-gradient(rgba(248,250,252,.84),rgba(248,250,252,.84)),url('/moxie-ice-background.jpg')!important;
+      background-image:linear-gradient(rgba(248,250,252,.84),rgba(248,250,252,.84)),url('/moxie-cosmic-cliffs-background.webp')!important;
     }
     [data-theme="light"] .hero{
       background:linear-gradient(rgba(248,250,252,.78),rgba(248,250,252,.88))!important;
