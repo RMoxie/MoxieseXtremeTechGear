@@ -503,8 +503,8 @@ html body :is(
   overflow: hidden;
   background: linear-gradient(135deg, rgba(7, 17, 36, .20), rgba(7, 17, 36, .38)) !important;
   border-color: var(--moxie-panel-edge) !important;
-  -webkit-backdrop-filter: blur(2px) saturate(112%);
-  backdrop-filter: blur(2px) saturate(112%);
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
   box-shadow: 0 22px 65px rgba(2, 6, 23, .24);
 }
 
@@ -551,8 +551,8 @@ html body :is(
     color-mix(in srgb, var(--moxie-panel-glass) 78%, transparent)
   ) !important;
   border-color: var(--moxie-panel-edge) !important;
-  -webkit-backdrop-filter: blur(7px) saturate(118%);
-  backdrop-filter: blur(7px) saturate(118%);
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
   box-shadow: 0 16px 42px rgba(2, 6, 23, .18);
 }
 
@@ -563,8 +563,8 @@ html body :is(.table-container,.table-wrap,[class$="-table-wrap"],.comparison-wr
 
 html body footer {
   background: linear-gradient(180deg, rgba(17, 28, 48, .62), rgba(7, 17, 36, .72)) !important;
-  -webkit-backdrop-filter: blur(8px) saturate(112%);
-  backdrop-filter: blur(8px) saturate(112%);
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
 }
 
 html[data-theme="light"] body footer {
