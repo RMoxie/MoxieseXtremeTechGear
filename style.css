@@ -401,3 +401,11 @@ body > * { position: relative; z-index: 1; }
 html[data-theme="light"] .hero {
   background: linear-gradient(rgba(248, 250, 252, .42), rgba(248, 250, 252, .52)) !important;
 }
+
+/* Beat the later shared-script hero rule without changing page markup. */
+html body .hero {
+  background: linear-gradient(rgba(15, 23, 42, .42), rgba(15, 23, 42, .52)) !important;
+}
+html[data-theme="light"] body .hero {
+  background: linear-gradient(rgba(248, 250, 252, .42), rgba(248, 250, 252, .52)) !important;
+}
