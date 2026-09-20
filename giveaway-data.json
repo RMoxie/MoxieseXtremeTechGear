@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-20T04:55:18.925276Z",
+  "updatedAt": "2026-09-20T13:03:32.423163Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Coolmuster PDF Creator Pro 2.7.3",
-      "description": "Convert all similar or related files into a large PDF file.",
-      "price": "$29.95",
-      "url": "https://www.giveawayoftheday.com/coolmuster-pdf-creator-pro-2-7-3/",
+      "title": "MobiKin Backup Manager for Android 2.0.32",
+      "description": "Flexibly back up and restore Android files so as to avoid data loss issue.",
+      "price": "$19.95",
+      "url": "https://www.giveawayoftheday.com/mobikin-backup-manager-for-android-2-0-32/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2024/01/d8b24e5631d3bfc2f0f5b3f57a7c3dfd.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2021/06/25148d8913dcfbb82c26e4469813bc8f.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Towers of Oz",
-      "description": "Help Timothy protect the land of Oz from the Dwarf King!",
-      "price": "$9.99",
-      "url": "https://game.giveawayoftheday.com/towers-of-oz-3/",
+      "title": "Golden Rails: Valuable Package",
+      "description": "Join on an exciting new adventure in the world of postal deliveries!",
+      "price": "$6.99",
+      "url": "https://game.giveawayoftheday.com/golden-rails-valuable-package/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2019/09/4930687e97b6e02ed0426bc692646031.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/a199f1031c9584f594a0254838e1797d.jpeg"
     },
     {
       "category": "android",
@@ -30,7 +30,7 @@
       "icon": "🤖",
       "title": "Space Shooter: Alien vs Galaxy Attack (Premium)",
       "description": "A dynamic space-themed action game.",
-      "price": "$19.99",
+      "price": "19.99",
       "url": "https://android.giveawayoftheday.com/space-shooter-alien-vs-galaxy-attack-premium/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
       "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2023/12/com.space.shooter.alien.galaxyattack_app_icon_1703345294.png"
