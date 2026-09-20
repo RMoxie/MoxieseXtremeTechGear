@@ -456,3 +456,141 @@ html body .hero {
 html[data-theme="light"] body .hero {
   background: linear-gradient(rgba(248, 250, 252, .32), rgba(248, 250, 252, .46)) !important;
 }
+
+/* Moxies panoramic category glass — 2026-09-20
+   Unifies every category template while keeping Cosmic Cliffs visible during the full scroll. */
+html body main,
+html body main.container {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+html body main > :is(section, article):not(
+  .hero,
+  .guide-hero,
+  .contact-hero,
+  .computer-hero,
+  .auto-hero,
+  .bike-hero,
+  .linux-hero,
+  .compare-hero,
+  .portable-hero,
+  .article-hero,
+  .policy-hero,
+  .dive-hero,
+  .community-hero
+) {
+  background-color: transparent !important;
+}
+
+html body :is(
+  .hero,
+  .guide-hero,
+  .contact-hero,
+  .computer-hero,
+  .auto-hero,
+  .bike-hero,
+  .linux-hero,
+  .compare-hero,
+  .portable-hero,
+  .article-hero,
+  .policy-hero,
+  .dive-hero,
+  .community-hero
+) {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(7, 17, 36, .20), rgba(7, 17, 36, .38)) !important;
+  border-color: var(--moxie-panel-edge) !important;
+  -webkit-backdrop-filter: blur(2px) saturate(112%);
+  backdrop-filter: blur(2px) saturate(112%);
+  box-shadow: 0 22px 65px rgba(2, 6, 23, .24);
+}
+
+html[data-theme="light"] body :is(
+  .hero,
+  .guide-hero,
+  .contact-hero,
+  .computer-hero,
+  .auto-hero,
+  .bike-hero,
+  .linux-hero,
+  .compare-hero,
+  .portable-hero,
+  .article-hero,
+  .policy-hero,
+  .dive-hero,
+  .community-hero
+) {
+  background: linear-gradient(135deg, rgba(248, 250, 252, .25), rgba(248, 250, 252, .44)) !important;
+}
+
+html body :is(
+  [class$="-card"],
+  [class$="-note"],
+  .panel,
+  .table-container,
+  .table-wrap,
+  [class$="-table-wrap"],
+  .comparison-wrap,
+  .compare-wrap,
+  .guide-wrap,
+  .dive-wrap,
+  .community-wrap,
+  .product-pick,
+  .auto-checklist,
+  .auto-tier,
+  .bike-guide-callout,
+  .portable-tabs
+) {
+  background-color: var(--moxie-panel-glass) !important;
+  background-image: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--moxie-panel-glass-strong) 88%, transparent),
+    color-mix(in srgb, var(--moxie-panel-glass) 78%, transparent)
+  ) !important;
+  border-color: var(--moxie-panel-edge) !important;
+  -webkit-backdrop-filter: blur(7px) saturate(118%);
+  backdrop-filter: blur(7px) saturate(118%);
+  box-shadow: 0 16px 42px rgba(2, 6, 23, .18);
+}
+
+html body :is(.table-container,.table-wrap,[class$="-table-wrap"],.comparison-wrap,.compare-wrap) table {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+html body footer {
+  background: linear-gradient(180deg, rgba(17, 28, 48, .62), rgba(7, 17, 36, .72)) !important;
+  -webkit-backdrop-filter: blur(8px) saturate(112%);
+  backdrop-filter: blur(8px) saturate(112%);
+}
+
+html[data-theme="light"] body footer {
+  background: linear-gradient(180deg, rgba(248, 250, 252, .66), rgba(241, 245, 249, .78)) !important;
+}
+
+@media (max-width: 780px) {
+  html body :is(
+    .hero,.guide-hero,.contact-hero,.computer-hero,.auto-hero,.bike-hero,
+    .linux-hero,.compare-hero,.portable-hero,.article-hero,.policy-hero,
+    .dive-hero,.community-hero
+  ) {
+    background: linear-gradient(180deg, rgba(7, 17, 36, .22), rgba(7, 17, 36, .42)) !important;
+  }
+  html[data-theme="light"] body :is(
+    .hero,.guide-hero,.contact-hero,.computer-hero,.auto-hero,.bike-hero,
+    .linux-hero,.compare-hero,.portable-hero,.article-hero,.policy-hero,
+    .dive-hero,.community-hero
+  ) {
+    background: linear-gradient(180deg, rgba(248, 250, 252, .30), rgba(248, 250, 252, .50)) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body :is([class$="-card"],[class$="-note"],.panel) {
+    transition: none !important;
+  }
+}
+
