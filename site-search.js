@@ -12,7 +12,7 @@
     "/computers.html": { title: "💻 Computers & Mini PCs" },
     "/mobile-power.html": { title: "🔋 Portable Power & Battery Packs" },
     "/ai-hardware.html": { title: "🤖 AI Hardware & Smart Mini Rigs" },
-    "/home-networking-security.html": { title: "📡 Best Networking & Wi-Fi Gear" },
+    "/home-networking-security.html": { title: "📡 Networking & Wi-Fi Gear" },
     "/monitors-docks-desk-setup.html": { title: "🖥️ Desk Setups & Monitors" },
     "/gan-chargers-guide.html": { title: "⚡ Fast Chargers & Wall Power" },
     "/storage-gear/index.html": { title: "💾 Massive Storage Solutions" },
