@@ -409,3 +409,14 @@ html body .hero {
 html[data-theme="light"] body .hero {
   background: linear-gradient(rgba(248, 250, 252, .42), rgba(248, 250, 252, .52)) !important;
 }
+
+/* Keep fixed background layers tied to the viewport, not the full document height. */
+body::before,
+body::after {
+  width: 100vw;
+  height: 100vh;
+  right: auto;
+  bottom: auto;
+}
+.moxie-ambient-glow { opacity: .28 !important; }
+.moxie-hero-sheen { opacity: .45 !important; }
