@@ -193,6 +193,35 @@
     }
   `;
   document.head.appendChild(glassParityStyle);
+  const cosmicVisibilityStyle = document.createElement("style");
+  cosmicVisibilityStyle.id = "moxie-background-visibility-20260920g";
+  cosmicVisibilityStyle.textContent = `
+    :root {
+      --moxie-panel-glass: rgba(7, 17, 36, .48) !important;
+      --moxie-panel-glass-strong: rgba(7, 17, 36, .60) !important;
+      --moxie-panel-edge: rgba(186, 230, 253, .34) !important;
+    }
+    html[data-theme="light"] {
+      --moxie-panel-glass: rgba(248, 250, 252, .58) !important;
+      --moxie-panel-glass-strong: rgba(248, 250, 252, .70) !important;
+      --moxie-panel-edge: rgba(71, 85, 105, .28) !important;
+    }
+    html body::before {
+      background-image: url("/moxie-cosmic-cliffs-background.webp") !important;
+      background-position: center center !important;
+      background-size: cover !important;
+      filter: saturate(1.08) contrast(1.03);
+    }
+    html body::after { background: rgba(2, 6, 23, .16) !important; }
+    html[data-theme="light"] body::after { background: rgba(248, 250, 252, .42) !important; }
+    html body :is(.hero,.guide-hero,.contact-hero) {
+      background: linear-gradient(rgba(7,17,36,.24),rgba(7,17,36,.32)) !important;
+    }
+    html[data-theme="light"] body :is(.hero,.guide-hero,.contact-hero) {
+      background: linear-gradient(rgba(248,250,252,.30),rgba(248,250,252,.40)) !important;
+    }
+  `;
+  document.head.appendChild(cosmicVisibilityStyle);
   enhanceHeader();
 
   const button = document.createElement("button");
