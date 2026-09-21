@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-21T04:57:35.807163Z",
+  "updatedAt": "2026-09-21T15:06:58.025103Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "MobiKin Backup Manager for Android 2.0.32",
-      "description": "Flexibly back up and restore Android files so as to avoid data loss issue.",
-      "price": "$19.95",
-      "url": "https://www.giveawayoftheday.com/mobikin-backup-manager-for-android-2-0-32/",
+      "title": "AntiRansomware 2",
+      "description": "The best protection from Ransomware and data hijacking ever!",
+      "price": "$29.95",
+      "url": "https://www.giveawayoftheday.com/antiransomware/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2021/06/25148d8913dcfbb82c26e4469813bc8f.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/ba0ace512a7a2b9af9067d5f570d8974.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Golden Rails: Valuable Package",
-      "description": "Join on an exciting new adventure in the world of postal deliveries!",
-      "price": "$6.99",
-      "url": "https://game.giveawayoftheday.com/golden-rails-valuable-package/",
+      "title": "KL Peg Solitaire",
+      "description": "Clear the board of all pieces until only one remains.",
+      "price": "$5.00",
+      "url": "https://game.giveawayoftheday.com/kl-peg-solitaire/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/a199f1031c9584f594a0254838e1797d.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/b65e529b880fa1f1f5b01b82244f9d32.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Distressed FX",
-      "description": "Transform even the most mundane photo into a work of art.",
-      "price": "$0.99",
-      "url": "https://iphone.giveawayoftheday.com/distressed-fx-2/",
+      "title": "Merge Voice Memos",
+      "description": "The simplest way to merge voice memos is with the Merge Voice Memos app.",
+      "price": "$4.99",
+      "url": "https://iphone.giveawayoftheday.com/merge-voice-memos/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2024/09/585702631_app_icon_big_1726229201.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/6476123178_app_icon_big_1789977130.jpg"
     }
   ]
 }
