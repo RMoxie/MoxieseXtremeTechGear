@@ -108,6 +108,11 @@
   const CACHE_MAX_AGE = 24 * 60 * 60 * 1000;
   let indexPromise;
 
+  const backgroundCategoryPath = categoryPathForPage(location.pathname);
+  if (backgroundCategoryPath && !["/index.html", "/offers.html", "/contact.html"].includes(backgroundCategoryPath)) {
+    document.documentElement.classList.add("moxie-category-page");
+  }
+
   const style = document.createElement("style");
   style.textContent = `
     html,body{max-width:100%;overflow-x:clip}
@@ -230,6 +235,38 @@
     }
     html[data-theme="light"] body :is(.hero,.guide-hero,.contact-hero) {
       background: linear-gradient(rgba(248,250,252,.30),rgba(248,250,252,.40)) !important;
+    }
+
+    /* Keep Cosmic Cliffs fixed to the root canvas for the entire document. */
+    html {
+      background-color: #020617 !important;
+      background-image: linear-gradient(rgba(2,6,23,.16),rgba(2,6,23,.16)), url("/moxie-cosmic-cliffs-background.webp") !important;
+      background-position: center center !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      background-attachment: fixed !important;
+    }
+    html[data-theme="light"] {
+      background-color: #f8fafc !important;
+      background-image: linear-gradient(rgba(248,250,252,.42),rgba(248,250,252,.42)), url("/moxie-cosmic-cliffs-background.webp") !important;
+    }
+    html body::before,
+    html body::after { display: none !important; }
+
+    /* Preserve product cards while clearing only full-width category wrappers. */
+    html.moxie-category-page body main > section:not(.hero,.guide-hero,.contact-hero,.computer-hero,.auto-hero,.bike-hero,.linux-hero,.compare-hero,.portable-hero,.article-hero,.policy-hero,.dive-hero,.community-hero) {
+      background-color: transparent !important;
+      background-image: none !important;
+      -webkit-backdrop-filter: none !important;
+      backdrop-filter: none !important;
+    }
+    html.moxie-category-page body footer {
+      background: linear-gradient(180deg,rgba(17,28,48,.58),rgba(7,17,36,.68)) !important;
+      -webkit-backdrop-filter: none !important;
+      backdrop-filter: none !important;
+    }
+    html[data-theme="light"].moxie-category-page body footer {
+      background: linear-gradient(180deg,rgba(248,250,252,.66),rgba(241,245,249,.76)) !important;
     }
   `;
   document.head.appendChild(cosmicVisibilityStyle);
