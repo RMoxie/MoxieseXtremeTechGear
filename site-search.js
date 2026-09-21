@@ -415,7 +415,7 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const style = document.createElement("style");
   style.textContent = `
-    .moxie-ambient-glow{position:fixed;inset:-20%;z-index:0;pointer-events:none;overflow:hidden;opacity:.42;mix-blend-mode:screen;background:radial-gradient(circle at 18% 28%,rgba(38,198,218,.58),transparent 25%),radial-gradient(circle at 82% 68%,rgba(91,134,229,.52),transparent 30%);animation:moxie-ambient-drift 8s ease-in-out infinite alternate;transform:translateZ(0)}
+    .moxie-ambient-glow{display:none!important}
     .moxie-hero-motion{position:relative;isolation:isolate;overflow:hidden}
     .moxie-hero-motion>*:not(.moxie-hero-sheen){position:relative;z-index:1}
     .moxie-hero-sheen{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.76;background:linear-gradient(115deg,transparent 10%,rgba(42,193,218,.28) 36%,rgba(91,134,229,.34) 54%,transparent 76%);background-size:220% 100%;animation:moxie-hero-sweep 5.6s ease-in-out infinite}
