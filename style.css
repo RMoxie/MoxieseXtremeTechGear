@@ -594,3 +594,14 @@ html[data-theme="light"] body footer {
   }
 }
 
+/* Moxies transparent full-page shells — 2026-09-22
+   Keep layout wrappers clear so Cosmic Cliffs remains visible; cards and tables retain the shared glass treatment above. */
+html.moxie-category-page body main > :is(.dive-wrap, .community-wrap),
+html.moxie-category-page body > main.guide-wrap {
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
