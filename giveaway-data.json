@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-22T04:57:59.509131Z",
+  "updatedAt": "2026-09-22T13:25:29.760586Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "AntiRansomware 2",
-      "description": "The best protection from Ransomware and data hijacking ever!",
-      "price": "$29.95",
-      "url": "https://www.giveawayoftheday.com/antiransomware/",
+      "title": "SEO Checker 11.1",
+      "description": "Website analyzer and SEO audit tool.",
+      "price": "$19.00",
+      "url": "https://www.giveawayoftheday.com/seo-checker-11-1/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/ba0ace512a7a2b9af9067d5f570d8974.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2021/05/81760c66c2f13b484e5449b4520d8999.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "KL Peg Solitaire",
-      "description": "Clear the board of all pieces until only one remains.",
+      "title": "KL Jelly Sort",
+      "description": "Complete the stage by grouping similar colors together on individual skewers.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/kl-peg-solitaire/",
+      "url": "https://game.giveawayoftheday.com/kl-jelly-sort/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/b65e529b880fa1f1f5b01b82244f9d32.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/168ffa1df356378ec40195c4cfc3df88.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Merge Voice Memos",
-      "description": "The simplest way to merge voice memos is with the Merge Voice Memos app.",
-      "price": "$4.99",
-      "url": "https://iphone.giveawayoftheday.com/merge-voice-memos/",
+      "title": "Tayasui Color",
+      "description": "Tayasui Color is a unique coloring book and an incredibly relaxing experience.",
+      "price": "$7.99",
+      "url": "https://iphone.giveawayoftheday.com/tayasui-color/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/6476123178_app_icon_big_1789977130.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/07/1106374233_app_icon_big_1784288783.jpg"
     }
   ]
 }
