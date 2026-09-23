@@ -9,6 +9,7 @@
     "/index.html": { title: "🏠 Home" },
     "/offers.html": { title: "🎁 Deals, Drops & Giveaways" },
     "/special-picks.html": { title: "⭐ Featured Gear Picks" },
+    "/temu/index.html": { title: "🛒 Temu Finds & Shopping Guide" },
     "/computers.html": { title: "💻 Computers & Mini PCs" },
     "/mobile-power.html": { title: "🔋 Portable Power & Battery Packs" },
     "/ai-hardware.html": { title: "🤖 AI Hardware & Smart Mini Rigs" },
@@ -52,6 +53,7 @@
     if (path.startsWith("/scuba-diving/")) return "/scuba-diving/index.html";
     if (path.startsWith("/audio-gear/")) return "/audio-gear.html";
     if (path.startsWith("/coding-gear/")) return "/coding-gear/index.html";
+    if (path.startsWith("/temu/")) return "/temu/index.html";
     return CATEGORY_LABELS[path] ? path : null;
   }
 
