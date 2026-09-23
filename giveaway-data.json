@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-23T04:46:32.454694Z",
+  "updatedAt": "2026-09-23T13:39:34.430080Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "SEO Checker 11.1",
-      "description": "Website analyzer and SEO audit tool.",
-      "price": "$19.00",
-      "url": "https://www.giveawayoftheday.com/seo-checker-11-1/",
+      "title": "Text-R Professional 2.011",
+      "description": "Recognize text from PDFs and images.",
+      "price": "$29.90",
+      "url": "https://www.giveawayoftheday.com/text-r/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2021/05/81760c66c2f13b484e5449b4520d8999.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2020/03/58d8976de0fdcfdf4ac2d266b54e51cd.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "KL Jelly Sort",
-      "description": "Complete the stage by grouping similar colors together on individual skewers.",
+      "title": "The Lady's Last Sip",
+      "description": "A narrative comedy focused on the delicate art of conversation and wit.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/kl-jelly-sort/",
+      "url": "https://game.giveawayoftheday.com/the-lady-s-last-sip/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/168ffa1df356378ec40195c4cfc3df88.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/2700ff71e59a4624a46f875d02c4ff36.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Tayasui Color",
-      "description": "Tayasui Color is a unique coloring book and an incredibly relaxing experience.",
-      "price": "$7.99",
-      "url": "https://iphone.giveawayoftheday.com/tayasui-color/",
+      "title": "Live Wallpapers & Backgrounds+",
+      "description": "100+ beautifully designed moving wallpapers to choose from.",
+      "price": "$0.99",
+      "url": "https://iphone.giveawayoftheday.com/live-wallpapers-backgrounds/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/07/1106374233_app_icon_big_1784288783.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/1067651799_app_icon_big_1790150263.jpg"
     }
   ]
 }
