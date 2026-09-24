@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-24T04:53:12.131439Z",
+  "updatedAt": "2026-09-24T13:33:55.251597Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Text-R Professional 2.011",
-      "description": "Recognize text from PDFs and images.",
-      "price": "$29.90",
-      "url": "https://www.giveawayoftheday.com/text-r/",
+      "title": "SayOnce Voice Dictation Software 1.2",
+      "description": "Convert speech to text on the fly.",
+      "price": "$19.99",
+      "url": "https://www.giveawayoftheday.com/voice-dictation-software/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2020/03/58d8976de0fdcfdf4ac2d266b54e51cd.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/05c4f0879e0edf2933bb92932cd6d317.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "The Lady's Last Sip",
-      "description": "A narrative comedy focused on the delicate art of conversation and wit.",
+      "title": "KL Rubik",
+      "description": "Your primary goal is to match all colors on each side of the puzzle.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/the-lady-s-last-sip/",
+      "url": "https://game.giveawayoftheday.com/kl-rubik/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/2700ff71e59a4624a46f875d02c4ff36.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/73dadefb19f3d29985f54b99c9bd0f30.jpeg"
     },
     {
       "category": "android",
