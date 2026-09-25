@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T13:49:00.202677Z",
+  "updatedAt": "2026-09-25T20:01:41.472806Z",
   "source": "Giveaway of the Day",
   "items": [
     {
@@ -28,12 +28,12 @@
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Space Shooter: Alien vs Galaxy Attack (Premium)",
-      "description": "A dynamic space-themed action game.",
-      "price": "19.99",
-      "url": "https://android.giveawayoftheday.com/space-shooter-alien-vs-galaxy-attack-premium/",
+      "title": "Trivia Master - Quiz Games",
+      "description": "Trivia master is a multiple choice quiz game.",
+      "price": "$4.49",
+      "url": "https://android.giveawayoftheday.com/trivia-master-quiz-games/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2023/12/com.space.shooter.alien.galaxyattack_app_icon_1703345294.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/07/com.eggies.triviamaster_app_icon_1625724567.png"
     },
     {
       "category": "iphone",
