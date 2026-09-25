@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-25T04:59:04.304272Z",
+  "updatedAt": "2026-09-25T13:49:00.202677Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "SayOnce Voice Dictation Software 1.2",
-      "description": "Convert speech to text on the fly.",
-      "price": "$19.99",
-      "url": "https://www.giveawayoftheday.com/voice-dictation-software/",
+      "title": "Donemax Disk Clone 3.5",
+      "description": "Best disk cloning software to clone and migrate hard drive with ease.",
+      "price": "$49.95",
+      "url": "https://www.giveawayoftheday.com/donemax-disk-clone-3-5/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/05c4f0879e0edf2933bb92932cd6d317.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2023/05/05867de6fc51b0425209c4232901c4f0.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "KL Rubik",
-      "description": "Your primary goal is to match all colors on each side of the puzzle.",
+      "title": "4096",
+      "description": "A number puzzle game requires strategic thinking and careful planning.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/kl-rubik/",
+      "url": "https://game.giveawayoftheday.com/g4096/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/73dadefb19f3d29985f54b99c9bd0f30.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/7fb200ff8d6837f3857f0b644cc91766.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "PDF Max 5 Pro",
-      "description": "An app designed for full-featured PDF annotating, form-filling and note-taking.",
-      "price": "$9.99",
-      "url": "https://iphone.giveawayoftheday.com/pdf-max-3-pro-read-annotate-edit-pdfs-fill-pdf-forms-2/",
+      "title": "Retro Twist - Mini Watch Games",
+      "description": "RETRO TWIST is a new take on some old and modern classic games.",
+      "price": "$1.99",
+      "url": "https://iphone.giveawayoftheday.com/retro-twist-mini-watch-games/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/08/552664144_app_icon_big_1785674617.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/1519386476_app_icon_big_1790331144.jpg"
     }
   ]
 }
