@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-26T04:59:35.314909Z",
+  "updatedAt": "2026-09-26T16:26:47Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Donemax Disk Clone 3.5",
-      "description": "Best disk cloning software to clone and migrate hard drive with ease.",
-      "price": "$49.95",
-      "url": "https://www.giveawayoftheday.com/donemax-disk-clone-3-5/",
+      "title": "MobiKin Transfer for Mobile 5.1.21",
+      "description": "Manage data between mobile devices.",
+      "price": "$29.95",
+      "url": "https://www.giveawayoftheday.com/mobikin-transfer-for-mobile-5-1-21/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2023/05/05867de6fc51b0425209c4232901c4f0.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/03/602229bccba0fdc2aafa1472eb669a0f.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "4096",
-      "description": "A number puzzle game requires strategic thinking and careful planning.",
-      "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/g4096/",
+      "title": "Pirate Solitaire 2",
+      "description": "Play the new Pirate Solitaire right on the shores of Britain!",
+      "price": "$14.99",
+      "url": "https://game.giveawayoftheday.com/pirate-solitaire-2/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/7fb200ff8d6837f3857f0b644cc91766.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/757aaa1fc8550d00de6b21570ef46e28.jpeg"
     },
     {
       "category": "android",
@@ -30,7 +30,7 @@
       "icon": "🤖",
       "title": "Trivia Master - Quiz Games",
       "description": "Trivia master is a multiple choice quiz game.",
-      "price": "$4.49",
+      "price": "4.49",
       "url": "https://android.giveawayoftheday.com/trivia-master-quiz-games/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
       "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/07/com.eggies.triviamaster_app_icon_1625724567.png"
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Retro Twist - Mini Watch Games",
-      "description": "RETRO TWIST is a new take on some old and modern classic games.",
-      "price": "$1.99",
-      "url": "https://iphone.giveawayoftheday.com/retro-twist-mini-watch-games/",
+      "title": "Track and Check Air Quality",
+      "description": "All of the air quality information near you everywhere to check smog and pollution outdoor.",
+      "price": "$0.99",
+      "url": "https://iphone.giveawayoftheday.com/track-and-check-air-quality/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/1519386476_app_icon_big_1790331144.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/1123389888_app_icon_big_1790408955.jpg"
     }
   ]
 }
