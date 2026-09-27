@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-26T16:26:47Z",
+  "updatedAt": "2026-09-27T17:00:23Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "MobiKin Transfer for Mobile 5.1.21",
-      "description": "Manage data between mobile devices.",
-      "price": "$29.95",
-      "url": "https://www.giveawayoftheday.com/mobikin-transfer-for-mobile-5-1-21/",
+      "title": "Epubor Kobo Mate 1.0.1.37",
+      "description": "Seamlessly download your purchased Kobo eBooks as EPUB and audiobooks as MP3.",
+      "price": "$29.99",
+      "url": "https://www.giveawayoftheday.com/epubor-kobo-mate-1-0-1-37/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/03/602229bccba0fdc2aafa1472eb669a0f.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/02f83735002443b790b04bee9d1a5e62.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Pirate Solitaire 2",
-      "description": "Play the new Pirate Solitaire right on the shores of Britain!",
-      "price": "$14.99",
-      "url": "https://game.giveawayoftheday.com/pirate-solitaire-2/",
+      "title": "The Beardless Wizard",
+      "description": "Fight with a mad scientist to set your master free!",
+      "price": "$9.99",
+      "url": "https://game.giveawayoftheday.com/the-beardless-wizard-2/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/757aaa1fc8550d00de6b21570ef46e28.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2017/04/7e9191a0b3830c7a046e216e61fa32c4.jpeg"
     },
     {
       "category": "android",
