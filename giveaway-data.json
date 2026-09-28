@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-27T17:00:23Z",
+  "updatedAt": "2026-09-28T19:42:02Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Epubor Kobo Mate 1.0.1.37",
-      "description": "Seamlessly download your purchased Kobo eBooks as EPUB and audiobooks as MP3.",
-      "price": "$29.99",
-      "url": "https://www.giveawayoftheday.com/epubor-kobo-mate-1-0-1-37/",
+      "title": "Tipard 4K UHD Converter 9.2.60",
+      "description": "An all-in-one 4K video converter.",
+      "price": "$24.00 / month",
+      "url": "https://www.giveawayoftheday.com/tipard-4k-uhd-converter-9-2-60/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/02f83735002443b790b04bee9d1a5e62.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2020/05/744e237e829c1c2a5ca414a2a8e897f6.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "The Beardless Wizard",
-      "description": "Fight with a mad scientist to set your master free!",
-      "price": "$9.99",
-      "url": "https://game.giveawayoftheday.com/the-beardless-wizard-2/",
+      "title": "KL Classic Loto",
+      "description": "Select tickets with random numbers and watch the drum spin.",
+      "price": "$5.00",
+      "url": "https://game.giveawayoftheday.com/kl-classic-lotto/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2017/04/7e9191a0b3830c7a046e216e61fa32c4.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/ddc1ce5058d6c6f6427414c4078157f0.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Track and Check Air Quality",
-      "description": "All of the air quality information near you everywhere to check smog and pollution outdoor.",
-      "price": "$0.99",
-      "url": "https://iphone.giveawayoftheday.com/track-and-check-air-quality/",
+      "title": "Attack Balls™ Bubble Shooter",
+      "description": "See why so many people are addicted to Attack Balls!",
+      "price": "$4.99",
+      "url": "https://iphone.giveawayoftheday.com/attack-balls-bubble-shooter/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/1123389888_app_icon_big_1790408955.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/414481040_app_icon_big_1790587260.jpg"
     }
   ]
 }
