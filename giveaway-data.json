@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-28T19:42:02Z",
+  "updatedAt": "2026-09-29T18:06:27Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Tipard 4K UHD Converter 9.2.60",
-      "description": "An all-in-one 4K video converter.",
-      "price": "$24.00 / month",
-      "url": "https://www.giveawayoftheday.com/tipard-4k-uhd-converter-9-2-60/",
+      "title": "Leawo Photo Enlarger 4.0.0.2",
+      "description": "Enlarge photos and upscale image resolution by AI.",
+      "price": "$39.95",
+      "url": "https://www.giveawayoftheday.com/leawo-photo-enlarger-3/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2020/05/744e237e829c1c2a5ca414a2a8e897f6.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/09/8c9db9549ac7ea285c5be95d4f645697.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "KL Classic Loto",
-      "description": "Select tickets with random numbers and watch the drum spin.",
+      "title": "Draw in Seconds",
+      "description": "Draw the given prompt word on the canvas before the timer runs out.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/kl-classic-lotto/",
+      "url": "https://game.giveawayoftheday.com/draw-in-seconds/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/ddc1ce5058d6c6f6427414c4078157f0.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/9871e9dbce63fbbc80c15b44933f9a9d.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Attack Balls™ Bubble Shooter",
-      "description": "See why so many people are addicted to Attack Balls!",
-      "price": "$4.99",
-      "url": "https://iphone.giveawayoftheday.com/attack-balls-bubble-shooter/",
+      "title": "Distressed FX",
+      "description": "Transform even the most mundane photo into a work of art.",
+      "price": "$0.99",
+      "url": "https://iphone.giveawayoftheday.com/distressed-fx-2/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/414481040_app_icon_big_1790587260.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2024/09/585702631_app_icon_big_1726229201.jpg"
     }
   ]
 }
