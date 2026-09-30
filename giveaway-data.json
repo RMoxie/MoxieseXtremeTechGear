@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-09-29T18:06:27Z",
+  "updatedAt": "2026-09-30T18:00:58Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Leawo Photo Enlarger 4.0.0.2",
-      "description": "Enlarge photos and upscale image resolution by AI.",
-      "price": "$39.95",
-      "url": "https://www.giveawayoftheday.com/leawo-photo-enlarger-3/",
+      "title": "Aiseesoft Total Video Converter 9.2.70",
+      "description": "Сomplete set of video conversion and editing tools.",
+      "price": "$12.50 / month",
+      "url": "https://www.giveawayoftheday.com/aiseesoft-total-video-converter-9-2-70/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/09/8c9db9549ac7ea285c5be95d4f645697.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/01/a923f068c87367b02fdb846a2ecad73a.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Draw in Seconds",
-      "description": "Draw the given prompt word on the canvas before the timer runs out.",
+      "title": "KL Bubble Pop",
+      "description": "Enjoy a vibrant and relaxing casual arcade experience for everyone.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/draw-in-seconds/",
+      "url": "https://game.giveawayoftheday.com/kl-bubble-pop/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/9871e9dbce63fbbc80c15b44933f9a9d.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/006a44ee58cc1e593f5067988af57a2f.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Distressed FX",
-      "description": "Transform even the most mundane photo into a work of art.",
-      "price": "$0.99",
-      "url": "https://iphone.giveawayoftheday.com/distressed-fx-2/",
+      "title": "Military Retirement",
+      "description": "Military Retirement gives assistance by calculating an estimation of retirement pay based on the data you enter.",
+      "price": "$5.99",
+      "url": "https://iphone.giveawayoftheday.com/military-retirement/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2024/09/585702631_app_icon_big_1726229201.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/09/563082328_app_icon_big_1790745655.jpg"
     }
   ]
 }
