@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-10-01T18:26:40Z",
+  "updatedAt": "2026-10-02T17:53:38Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "NexSub Pro 8.0",
-      "description": "World’s first fully offline AI video subtitle translator!",
-      "price": "$19.00",
-      "url": "https://www.giveawayoftheday.com/nexsub/",
+      "title": "Shortcut MagicBox 1.0.1.4 (Win&Mac)",
+      "description": "A tool for improving work efficiency!",
+      "price": "$24.00",
+      "url": "https://www.giveawayoftheday.com/shortcut-magicbox/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/08/9fc6a507d36c40bab37a5fc397acc073.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/02/84038a3b8e52598bd458ed9d386edc72.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Woodcutter Crosser",
-      "description": "Guide the hero through the stream of steel monsters as far as possible.",
-      "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/woodcutter-crosser/",
+      "title": "Mechanicus",
+      "description": "Protect the Earth by solving perplexing puzzles and solving tricky problems.",
+      "price": "$9.99",
+      "url": "https://game.giveawayoftheday.com/mechanicus-3/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/7600ceffc0b488cf36fdc15b0a25bb0a.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/7f60a118eabe229f4369a4fd92fda031.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "ToonCamera",
-      "description": "Transform your world into a live cartoon!",
-      "price": "$4.99",
-      "url": "https://iphone.giveawayoftheday.com/tooncamera/",
+      "title": "Funk Drummer: Drum Machine",
+      "description": "Your virtual funk drummer, playing tight pocket grooves with the swing and feel of a real session player.",
+      "price": "$17.99",
+      "url": "https://iphone.giveawayoftheday.com/funk-drummer-drum-machine/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2017/04/392538848_app_icon_big_1493366529.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1051262865_app_icon_big_1790919398.jpg"
     }
   ]
 }
