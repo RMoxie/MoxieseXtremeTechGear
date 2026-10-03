@@ -605,3 +605,40 @@ html.moxie-category-page body > main.guide-wrap {
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
 }
+/* Homepage readability — preserve the cosmic background */
+html body.moxie-home .hero {
+  background: rgba(15, 23, 42, .94) !important;
+}
+
+html[data-theme="light"] body.moxie-home .hero {
+  background: rgba(248, 250, 252, .96) !important;
+}
+
+html body.moxie-home :is(
+  .section-heading,
+  .feature-card,
+  .category-card,
+  .trust-item,
+  .method,
+  .giveaway-heading,
+  .giveaway-card
+) {
+  background: var(--card-bg) !important;
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+}
+
+.moxie-home :is(.section-heading, .giveaway-heading) {
+  padding: 1.25rem;
+}
+
+.moxie-home :is(.feature-card, .category-card) h3 {
+  margin-top: .5rem;
+  color: var(--text-main);
+}
+
+.moxie-home .hero-copy {
+  color: var(--text-muted);
+}
+
+
