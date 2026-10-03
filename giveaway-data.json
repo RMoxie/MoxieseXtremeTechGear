@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-10-02T17:53:38Z",
+  "updatedAt": "2026-10-03T16:20:23Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Shortcut MagicBox 1.0.1.4 (Win&Mac)",
-      "description": "A tool for improving work efficiency!",
-      "price": "$24.00",
-      "url": "https://www.giveawayoftheday.com/shortcut-magicbox/",
+      "title": "Wise Care 365 Pro 8.0.6",
+      "description": "Protect and Speed Up Your PC with Wise Care 365 PRO!",
+      "price": "$39.95",
+      "url": "https://www.giveawayoftheday.com/wise-care-365-6/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/02/84038a3b8e52598bd458ed9d386edc72.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2019/06/571681e34e842936b00eda55dc964aad.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Mechanicus",
-      "description": "Protect the Earth by solving perplexing puzzles and solving tricky problems.",
+      "title": "Gnumz 2: Arcane Power",
+      "description": "Stand up to foes with the use of clever traps and magical powers.",
       "price": "$9.99",
-      "url": "https://game.giveawayoftheday.com/mechanicus-3/",
+      "url": "https://game.giveawayoftheday.com/gnumz-2-arcane-power/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/7f60a118eabe229f4369a4fd92fda031.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/2c1bbc2d312ea3ec0520db56e754fe43.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Trivia Master - Quiz Games",
-      "description": "Trivia master is a multiple choice quiz game.",
-      "price": "4.49",
-      "url": "https://android.giveawayoftheday.com/trivia-master-quiz-games/",
+      "title": "Dead God Land - Light Survival",
+      "description": "Explore mysterious islands and face a lot of dangers!",
+      "price": "6.99",
+      "url": "https://android.giveawayoftheday.com/dead-god-land-light-survival/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/07/com.eggies.triviamaster_app_icon_1625724567.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/11/com.devvisiongames.dglandlight.survival_app_icon_1762173047.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Funk Drummer: Drum Machine",
-      "description": "Your virtual funk drummer, playing tight pocket grooves with the swing and feel of a real session player.",
-      "price": "$17.99",
-      "url": "https://iphone.giveawayoftheday.com/funk-drummer-drum-machine/",
+      "title": "Math Racing 2 Pro",
+      "description": "Math Racing 2 Pro is the fastest way to learn math in the app store!",
+      "price": "$2.99",
+      "url": "https://iphone.giveawayoftheday.com/math-racing-2-pro/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1051262865_app_icon_big_1790919398.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1208025241_app_icon_big_1791017549.jpg"
     }
   ]
 }
