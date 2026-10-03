@@ -228,7 +228,7 @@
   "@type": "ItemList",
   "@id": "https://moxiesextremetechgear.com/index.html#item-list",
   "name": "Moxies technology guide categories",
-  "numberOfItems": 15,
+  "numberOfItems": 16,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -325,7 +325,7 @@
 </script>
   <meta name="google-site-verification" content="koWjCrKH-ORkeLcW9eoQ7WwrbfxCllX7qdwUjP_UXoA" />
 </head>
-<body>
+<body class="moxie-home">
   <a class="site-skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <div class="site-header-top">
@@ -479,30 +479,6 @@
     <p class="affiliate-disclosure"><strong>Affiliate disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases <strong class="no-additional-cost">AT NO ADDITIONAL COST TO YOU.</strong></p>
     <p>&copy; 2026 Moxies eXtreme TechGear. All rights reserved.</p>
   </footer>
-
-  <script>
-    const root = document.documentElement;
-    const themeButton = document.getElementById('themeToggleBtn');
-    const menuButton = document.getElementById('menuToggle');
-    const nav = document.getElementById('primaryNav');
-
-    function setTheme(theme) {
-      if (theme === 'light') root.setAttribute('data-theme', 'light'); else root.removeAttribute('data-theme');
-      const light = theme === 'light';
-      themeButton.innerHTML = light ? '🌙 <span class="theme-text">Dark</span>' : '☀️ <span class="theme-text">Light</span>';
-      themeButton.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
-      localStorage.setItem('theme', theme);
-    }
-    setTheme(localStorage.getItem('theme') === 'light' ? 'light' : 'dark');
-    themeButton.addEventListener('click', () => setTheme(root.hasAttribute('data-theme') ? 'dark' : 'light'));
-    menuButton.addEventListener('click', () => {
-      const open = nav.classList.toggle('open');
-      menuButton.setAttribute('aria-expanded', String(open));
-    });
-    nav.addEventListener('click', event => {
-      if (event.target.matches('a')) { nav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); }
-    });
-  </script>
 
   <script data-site-shell>
     (() => {
