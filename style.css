@@ -640,5 +640,36 @@ html body.moxie-home :is(
 .moxie-home .hero-copy {
   color: var(--text-muted);
 }
+/* Match the homepage to the cosmic category backgrounds */
+html body.moxie-home .hero {
+  background: linear-gradient(
+    135deg,
+    rgba(7, 17, 36, .20),
+    rgba(7, 17, 36, .38)
+  ) !important;
+}
 
+html[data-theme="light"] body.moxie-home .hero {
+  background: linear-gradient(
+    135deg,
+    rgba(248, 250, 252, .25),
+    rgba(248, 250, 252, .44)
+  ) !important;
+}
+
+html body.moxie-home :is(
+  .section-heading,
+  .feature-card,
+  .category-card,
+  .trust-item,
+  .method,
+  .giveaway-heading,
+  .giveaway-card
+) {
+  background: linear-gradient(
+    145deg,
+    var(--moxie-panel-glass-strong),
+    var(--moxie-panel-glass)
+  ) !important;
+}
 
