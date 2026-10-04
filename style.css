@@ -672,4 +672,42 @@ html body.moxie-home :is(
     var(--moxie-panel-glass)
   ) !important;
 }
-
+/* Remove the pale heading bands across the site */
+html body .hero,
+html body.moxie-home .hero,
+html[data-theme="light"] body.moxie-home .hero,
+html body :is(
+  .guide-hero,
+  .contact-hero,
+  .computer-hero,
+  .auto-hero,
+  .bike-hero,
+  .linux-hero,
+  .compare-hero,
+  .portable-hero,
+  .article-hero,
+  .policy-hero,
+  .dive-hero,
+  .community-hero
+),
+html[data-theme="light"] body :is(
+  .hero,
+  .guide-hero,
+  .contact-hero,
+  .computer-hero,
+  .auto-hero,
+  .bike-hero,
+  .linux-hero,
+  .compare-hero,
+  .portable-hero,
+  .article-hero,
+  .policy-hero,
+  .dive-hero,
+  .community-hero
+) {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
