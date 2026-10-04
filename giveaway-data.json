@@ -1,39 +1,39 @@
 {
-  "updatedAt": "2026-10-03T16:20:23Z",
+  "updatedAt": "2026-10-04T16:52:10Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Wise Care 365 Pro 8.0.6",
-      "description": "Protect and Speed Up Your PC with Wise Care 365 PRO!",
-      "price": "$39.95",
-      "url": "https://www.giveawayoftheday.com/wise-care-365-6/",
+      "title": "ThunderSoft EXE Lock 12.1",
+      "description": "Lock specified Windows Apps with a password.",
+      "price": "$34.99",
+      "url": "https://www.giveawayoftheday.com/thundersoft-exe-lock/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2019/06/571681e34e842936b00eda55dc964aad.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/645c50ba44f0d19ca0cbcc642857bb69.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Gnumz 2: Arcane Power",
-      "description": "Stand up to foes with the use of clever traps and magical powers.",
-      "price": "$9.99",
-      "url": "https://game.giveawayoftheday.com/gnumz-2-arcane-power/",
+      "title": "Viking Heroes 5",
+      "description": "Embark on a festive journey as the vikings prepare for Yule!",
+      "price": "$6.99",
+      "url": "https://game.giveawayoftheday.com/viking-heroes-5/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/2c1bbc2d312ea3ec0520db56e754fe43.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/e3f38bdd84af0b0fd519c2bc53e73c11.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Dead God Land - Light Survival",
-      "description": "Explore mysterious islands and face a lot of dangers!",
-      "price": "6.99",
-      "url": "https://android.giveawayoftheday.com/dead-god-land-light-survival/",
+      "title": "Shadow Hunter: Offline Premium",
+      "description": "The must try game for any real hack and slash fan who already got bored with just mindlessly smashing buttons.",
+      "price": "0.99",
+      "url": "https://android.giveawayoftheday.com/demon-hunter-premium/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/11/com.devvisiongames.dglandlight.survival_app_icon_1762173047.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/04/com.eapublishing.dhsw.paid_app_icon_1744443496.png"
     },
     {
       "category": "iphone",
