@@ -1,147 +1,803 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="moxie-category-page">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Home Safety &amp; Security Gear | Moxies eXtreme TechGear</title>
-  <meta name="description"
-        content="Explore home safety and security gear, including alarms, cameras, entry sensors, and security lighting.">
 
-  <link rel="canonical"
-        href="https://moxiesextremetechgear.com/home-safety-security.html">
+  <meta
+    name="description"
+    content="Explore practical home safety and security gear, including alarms, cameras, video doorbells, security lighting, and smart locks."
+  >
+  <meta name="theme-color" content="#0f172a">
+
+  <link
+    rel="canonical"
+    href="https://moxiesextremetechgear.com/home-safety-security.html"
+  >
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/style.css?v=20260920a">
 
+  <meta property="og:site_name" content="Moxies eXtreme TechGear">
+  <meta property="og:title" content="Home Safety &amp; Security Gear">
+  <meta
+    property="og:description"
+    content="Explore alarms, cameras, lighting, and smart entry options for your home."
+  >
+  <meta property="og:type" content="website">
+  <meta
+    property="og:url"
+    content="https://moxiesextremetechgear.com/home-safety-security.html"
+  >
+
+  <!-- Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-H6TMQMLGXP"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-H6TMQMLGXP');
+  </script>
+
+  <!-- Page structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Home Safety & Security Gear",
+    "url": "https://moxiesextremetechgear.com/home-safety-security.html",
+    "description": "Home safety and security categories covering alarms, cameras, lighting, and smart entry.",
+    "inLanguage": "en-US",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Moxies eXtreme TechGear",
+      "url": "https://moxiesextremetechgear.com/"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://moxiesextremetechgear.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Home Safety & Security Gear",
+        "item": "https://moxiesextremetechgear.com/home-safety-security.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Styling specific to this page -->
   <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 180px;
+    }
+
     body {
       margin: 0;
-      background: #0b1220;
-      color: #f8fafc;
-      font-family: system-ui, sans-serif;
+      color: var(--text-main, #f8fafc);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
       line-height: 1.65;
     }
-    a { color: #55c6ff; }
-    a:focus-visible {
+
+    a {
+      color: var(--accent, #38bdf8);
+    }
+
+    :focus-visible {
       outline: 3px solid #fb923c;
       outline-offset: 4px;
     }
-    .safety-header, .safety-main, .safety-footer {
+
+    .safety-wrap {
       width: min(1180px, calc(100% - 2rem));
-      margin: auto;
+      margin: 0 auto;
+      padding-bottom: 4rem;
     }
-    .safety-header { padding: 1.5rem 0; }
-    .safety-nav {
+
+    .safety-breadcrumb {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 1rem;
+      align-items: center;
+      justify-content: flex-start;
+      gap: .65rem;
+      margin: 1.25rem 0 0;
+      padding: .5rem 0;
+      font-size: .92rem;
+      color: var(--text-muted, #94a3b8);
     }
-    .safety-nav a {
+
+    .safety-breadcrumb a {
+      text-decoration: none;
+    }
+
+    .safety-breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .safety-breadcrumb [aria-current="page"] {
+      color: var(--text-main, #f8fafc);
+      font-weight: 700;
+    }
+
+    .safety-hero {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      align-items: center;
+      gap: 3rem;
+      padding: clamp(2.5rem, 6vw, 5rem) 0;
+      text-align: left;
+    }
+
+    .safety-kicker {
+      display: inline-block;
+      color: #fb923c;
+      font-size: .85rem;
+      font-weight: 850;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    [data-theme="light"] .safety-kicker {
+      color: #c2410c;
+    }
+
+    .safety-hero h1 {
+      margin: .9rem 0 1.25rem;
+      max-width: 680px;
+      color: var(--text-main, #f8fafc);
+      font-size: clamp(2.5rem, 5vw, 4.6rem);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -.035em;
+      text-align: left;
+    }
+
+    .safety-intro {
+      max-width: 650px;
+      margin: 0 0 1.5rem;
+      color: var(--text-muted, #94a3b8);
+      font-size: 1.15rem;
+      line-height: 1.8;
+    }
+
+    .safety-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: .85rem 1.2rem;
+      border: 1px solid transparent;
+      border-radius: .7rem;
+      background: #fb923c;
+      color: #111827;
+      font-weight: 850;
+      text-decoration: none;
+    }
+
+    .safety-button:hover {
+      background: #fdba74;
+    }
+
+    .safety-art {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--border-color, #334155);
+      border-radius: 1.25rem;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, .25);
+    }
+
+    .safety-section-heading {
+      max-width: 750px;
+      margin-bottom: 1.75rem;
+    }
+
+    .safety-section-heading h2 {
+      margin: .5rem 0 .75rem;
+      color: var(--text-main, #f8fafc);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      line-height: 1.2;
+    }
+
+    .safety-section-heading p,
+    .safety-card p,
+    .safety-note p {
+      color: var(--text-muted, #94a3b8);
+    }
+
+    .safety-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .safety-card,
+    .safety-note {
+      padding: clamp(1.4rem, 3vw, 2rem);
+      border: 1px solid var(--border-color, #334155);
+      border-radius: 1rem;
+      background: var(--card-bg, #1e293b);
+    }
+
+    .safety-card {
+      scroll-margin-top: 180px;
+    }
+
+    .safety-icon {
+      display: grid;
+      place-items: center;
+      width: 54px;
+      height: 54px;
+      margin-bottom: 1rem;
+      border: 1px solid var(--border-color, #334155);
+      border-radius: .85rem;
+      background: rgba(56, 189, 248, .1);
+      font-size: 1.7rem;
+    }
+
+    .safety-card h3 {
+      margin: 0 0 .75rem;
+      color: var(--text-main, #f8fafc);
+      font-size: 1.4rem;
+      line-height: 1.3;
+    }
+
+    .safety-card ul {
+      padding-left: 1.25rem;
+      color: var(--text-muted, #94a3b8);
+    }
+
+    .safety-card li {
+      margin: .35rem 0;
+    }
+
+    .safety-status {
+      display: inline-block;
+      margin-top: .75rem;
+      padding: .35rem .7rem;
+      border: 1px solid var(--border-color, #334155);
+      border-radius: 999px;
+      color: var(--accent, #38bdf8);
+      font-size: .85rem;
+      font-weight: 750;
+    }
+
+    .safety-note {
+      margin-top: 2rem;
+    }
+
+    .safety-note h2 {
+      margin: 0 0 .75rem;
+      color: var(--text-main, #f8fafc);
+      font-size: 1.5rem;
+      line-height: 1.3;
+    }
+
+    .safety-note a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      font-weight: 800;
+      text-underline-offset: .25rem;
+    }
+
+    .safety-footer {
+      padding: 2.5rem 1rem;
+      border-top: 1px solid var(--border-color, #334155);
+      text-align: center;
+      color: var(--text-muted, #94a3b8);
+    }
+
+    .safety-footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .5rem 1.25rem;
+    }
+
+    .safety-footer-links a {
       display: inline-flex;
       align-items: center;
       min-height: 44px;
     }
-    .safety-main { padding: 2rem 0 4rem; }
-    .safety-main h1 {
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      line-height: 1.15;
+
+    @media (max-width: 900px) {
+      .safety-hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .safety-art {
+        max-width: 640px;
+        margin-inline: auto;
+      }
     }
-    .safety-intro { max-width: 760px; color: #b7c3d4; }
-    .safety-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.25rem;
-      margin-top: 2rem;
+
+    @media (max-width: 620px) {
+      .safety-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .safety-hero h1 {
+        font-size: clamp(2.25rem, 9vw, 3.25rem);
+      }
+
+      .safety-intro {
+        font-size: 1.05rem;
+      }
     }
-    .safety-card {
-      padding: 1.5rem;
-      background: #111c30;
-      border: 1px solid #2d3c55;
-      border-radius: 1rem;
-    }
-    .safety-card h2 { margin-top: 0; font-size: 1.35rem; }
-    .safety-card p { color: #b7c3d4; }
-    .safety-footer {
-      padding: 2rem 0;
-      border-top: 1px solid #2d3c55;
-      color: #b7c3d4;
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
     }
   </style>
 </head>
-<body>
-  <header class="safety-header">
-    <a href="/index.html">Moxies eXtreme TechGear</a>
 
-    <nav class="safety-nav" aria-label="Primary navigation">
+<body>
+  <a class="site-skip-link" href="#main-content">
+    Skip to main content
+  </a>
+
+  <!-- Same header structure used by the other category pages -->
+  <header class="site-header">
+    <div class="site-header-top">
+      <a class="site-brand" href="/index.html">
+        Moxies eXtreme TechGear
+      </a>
+
+      <button
+        class="site-theme-toggle"
+        id="siteThemeToggle"
+        type="button"
+        aria-label="Switch to light mode"
+      >
+        ☀️ <span>Light Mode</span>
+      </button>
+
+      <button
+        class="site-menu-toggle"
+        id="siteMenuToggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="sitePrimaryNav"
+      >
+        Menu
+      </button>
+    </div>
+
+    <nav
+      class="site-primary-nav"
+      id="sitePrimaryNav"
+      aria-label="Primary navigation"
+    >
       <a href="/index.html">Home</a>
       <a href="/offers.html">Deals, Drops &amp; Giveaways</a>
       <a href="/special-picks.html">Featured Gear Picks</a>
+
       <a href="/home-safety-security.html" aria-current="page">
-        Home Safety &amp; Security Gear
+        🛡️ Home Safety &amp; Security Gear
       </a>
+
+      <a href="/computers.html">Computers &amp; Mini PCs</a>
+      <a href="/mobile-power.html">Portable Power &amp; Battery Packs</a>
+      <a href="/ai-hardware.html">AI Hardware &amp; Smart Mini Rigs</a>
+      <a href="/home-networking-security.html">Networking &amp; Wi-Fi Gear</a>
+      <a href="/monitors-docks-desk-setup.html">Desk Setups &amp; Monitors</a>
+
+      <details class="site-nav-more">
+        <summary>More Categories</summary>
+        <div class="site-nav-more-menu">
+          <a href="/gan-chargers-guide.html">
+            Fast Chargers &amp; Wall Power
+          </a>
+          <a href="/automotive-emergency.html">
+            Auto, Road &amp; Emergency Tech
+          </a>
+          <a href="/storage-gear/index.html">
+            Massive Storage Solutions
+          </a>
+          <a href="/ebike-gear.html">
+            E-Bikes, Tech &amp; Riding Accessories
+          </a>
+          <a href="/scuba-diving/index.html">
+            Scuba Diving Gear, Classes &amp; Local Guides
+          </a>
+          <a href="/cable-management.html">
+            Cable Management Made Easy
+          </a>
+          <a href="/audio-gear.html">State-of-the-Art Audio Gear</a>
+          <a href="/coding-gear/index.html">
+            Software, Linux, Open Source &amp; Coding Guides
+          </a>
+          <a href="/temu/index.html">Temu Finds &amp; Shopping Guide</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+      </details>
     </nav>
   </header>
 
-  <main id="main-content" class="safety-main">
-    <h1>Home Safety &amp; Security Gear</h1>
-    <p class="safety-intro">
-      Explore practical home-security categories—from entry alerts
-      and cameras to lighting. Specific product picks and shopping
-      links will be added as they are reviewed.
-    </p>
+  <!-- Orange category banner -->
+  <div class="site-highlight-banner" role="note">
+    🛡️ SMARTER ENTRY, BETTER VISIBILITY &amp; PRACTICAL HOME SECURITY 🛡️
+  </div>
 
-    <div class="safety-grid">
-      <section class="safety-card">
-        <h2>🚨 Alarms &amp; Entry Sensors</h2>
-        <p>
-          Door and window sensors, standalone alerts,
-          and home alarm systems.
+  <main id="main-content" class="safety-wrap">
+    <nav class="safety-breadcrumb" aria-label="Breadcrumb">
+      <a href="/index.html">Home</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Home Safety &amp; Security Gear</span>
+    </nav>
+
+    <!-- Introduction and built-in illustration -->
+    <section class="guide-hero safety-hero" aria-labelledby="safety-title">
+      <div>
+        <span class="safety-kicker">
+          Practical protection • Everyday peace of mind
+        </span>
+
+        <h1 id="safety-title">Home Safety &amp; Security Gear</h1>
+
+        <p class="safety-intro">
+          Explore alarms, cameras, lighting, and smart entry options
+          for your home. Start with the areas you want to improve,
+          then compare features, installation needs, and ongoing costs.
         </p>
-      </section>
 
-      <section class="safety-card">
-        <h2>📷 Cameras &amp; Video Doorbells</h2>
+        <a class="safety-button" href="#security-categories">
+          Explore security categories →
+        </a>
+      </div>
+
+      <!-- Inline SVG: no separate image upload required -->
+      <svg
+        class="safety-art"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 720 480"
+        width="720"
+        height="480"
+        role="img"
+        aria-labelledby="security-art-title security-art-description"
+      >
+        <title id="security-art-title">Smart home security illustration</title>
+        <desc id="security-art-description">
+          A home with a shield, smart lock, security camera,
+          and motion-activated lighting.
+        </desc>
+
+        <defs>
+          <linearGradient id="security-background" x2="1" y2="1">
+            <stop offset="0" stop-color="#071424"/>
+            <stop offset="1" stop-color="#17283f"/>
+          </linearGradient>
+
+          <linearGradient id="security-roof" x2="1" y2="0">
+            <stop offset="0" stop-color="#38bdf8"/>
+            <stop offset="1" stop-color="#fb923c"/>
+          </linearGradient>
+        </defs>
+
+        <rect
+          width="720"
+          height="480"
+          rx="24"
+          fill="url(#security-background)"
+        />
+
+        <circle cx="110" cy="100" r="70" fill="#38bdf8" opacity=".08"/>
+        <circle cx="620" cy="100" r="80" fill="#fb923c" opacity=".08"/>
+
+        <!-- House -->
+        <path
+          d="M145 245 L360 95 L575 245"
+          fill="none"
+          stroke="url(#security-roof)"
+          stroke-width="12"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M175 230 V395 H545 V230"
+          fill="#0d2034"
+          stroke="#7dd3fc"
+          stroke-width="9"
+          stroke-linejoin="round"
+        />
+
+        <!-- Windows -->
+        <g fill="#183b55" stroke="#bae6fd" stroke-width="6">
+          <rect x="210" y="265" width="75" height="75" rx="8"/>
+          <rect x="435" y="265" width="75" height="75" rx="8"/>
+        </g>
+
+        <g stroke="#bae6fd" stroke-width="4">
+          <path d="M247 265 V340 M210 302 H285"/>
+          <path d="M472 265 V340 M435 302 H510"/>
+        </g>
+
+        <!-- Door and smart lock -->
+        <rect
+          x="315" y="260" width="90" height="135" rx="10"
+          fill="#112b43" stroke="#bae6fd" stroke-width="6"
+        />
+        <rect
+          x="342" y="280" width="36" height="65" rx="12"
+          fill="#071424" stroke="#fb923c" stroke-width="5"
+        />
+        <circle cx="360" cy="302" r="7" fill="#38bdf8"/>
+        <circle cx="360" cy="328" r="4" fill="#fb923c"/>
+
+        <!-- Shield -->
+        <path
+          d="M360 145 L405 164 V198
+             C405 232 385 250 360 263
+             C335 250 315 232 315 198
+             V164 Z"
+          fill="#153b53"
+          stroke="#38bdf8"
+          stroke-width="6"
+        />
+        <path
+          d="M339 199 L354 214 L382 182"
+          fill="none"
+          stroke="#fb923c"
+          stroke-width="7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+
+        <!-- Security camera -->
+        <g stroke="#bae6fd" stroke-width="6" stroke-linejoin="round">
+          <rect x="535" y="160" width="100" height="55" rx="12" fill="#13334c"/>
+          <path d="M635 172 L665 157 V216 L635 201 Z" fill="#0b1b2e"/>
+          <path d="M565 215 V242 H602" fill="none"/>
+        </g>
+        <circle cx="585" cy="187" r="15" fill="#071424" stroke="#38bdf8" stroke-width="5"/>
+        <circle cx="585" cy="187" r="5" fill="#fb923c"/>
+
+        <!-- Security light -->
+        <rect x="88" y="175" width="54" height="32" rx="8"
+              fill="#153b53" stroke="#bae6fd" stroke-width="5"/>
+        <path d="M114 207 V230" stroke="#bae6fd" stroke-width="5"/>
+        <g stroke="#fb923c" stroke-width="5" stroke-linecap="round">
+          <path d="M92 217 L75 244"/>
+          <path d="M115 222 V253"/>
+          <path d="M137 217 L154 244"/>
+        </g>
+
+        <text
+          x="360" y="445"
+          text-anchor="middle"
+          fill="#e2e8f0"
+          font-family="system-ui, sans-serif"
+          font-size="19"
+          font-weight="800"
+        >
+          ALERTS • CAMERAS • LIGHTING • SMART ENTRY
+        </text>
+      </svg>
+    </section>
+
+    <!-- Category cards -->
+    <section id="security-categories" aria-labelledby="categories-title">
+      <div class="safety-section-heading">
+        <span class="safety-kicker">Choose your starting point</span>
+        <h2 id="categories-title">Build your home-security setup</h2>
         <p>
-          Indoor and outdoor cameras, video doorbells,
-          and recording options.
+          These four categories provide room for future product picks
+          and shopping links. No individual products are listed yet.
         </p>
-      </section>
+      </div>
 
-      <section class="safety-card">
-        <h2>💡 Security Lighting</h2>
-        <p>
-          Motion-activated lights, entryway lighting,
-          and outdoor visibility.
-        </p>
-      </section>
+      <div class="safety-grid">
+        <article class="safety-card" id="alarms">
+          <div class="safety-icon" aria-hidden="true">🚨</div>
+          <h3>Alarms &amp; Entry Sensors</h3>
+          <p>
+            Explore standalone alerts, door and window sensors,
+            and connected alarm systems.
+          </p>
+          <ul>
+            <li>Door and window alerts</li>
+            <li>Motion sensors and alarm kits</li>
+            <li>Battery backup and monitoring options</li>
+          </ul>
+          <span class="safety-status">Product picks coming soon</span>
+        </article>
 
-      <section class="safety-card">
-        <h2>🔒 Locks &amp; Smart Entry</h2>
-        <p>
-          Door hardware, smart locks, and access-control options.
-        </p>
-      </section>
-    </div>
+        <article class="safety-card" id="cameras">
+          <div class="safety-icon" aria-hidden="true">📷</div>
+          <h3>Cameras &amp; Video Doorbells</h3>
+          <p>
+            Compare cameras and doorbells by placement, power,
+            recording options, and privacy controls.
+          </p>
+          <ul>
+            <li>Indoor and outdoor cameras</li>
+            <li>Video doorbells and entry coverage</li>
+            <li>Local storage and subscription costs</li>
+          </ul>
+          <span class="safety-status">Product picks coming soon</span>
+        </article>
 
-    <p>
-      <a href="/special-picks.html">Explore existing Featured Gear Picks →</a>
-    </p>
+        <article class="safety-card" id="lighting">
+          <div class="safety-icon" aria-hidden="true">💡</div>
+          <h3>Security Lighting</h3>
+          <p>
+            Explore lighting options for entrances, walkways,
+            garages, and outdoor spaces.
+          </p>
+          <ul>
+            <li>Motion-activated lights</li>
+            <li>Wired, battery, and solar options</li>
+            <li>Placement and weather ratings</li>
+          </ul>
+          <span class="safety-status">Product picks coming soon</span>
+        </article>
+
+        <article class="safety-card" id="locks">
+          <div class="safety-icon" aria-hidden="true">🔒</div>
+          <h3>Locks &amp; Smart Entry</h3>
+          <p>
+            Compare door hardware and smart-entry options
+            with your existing door and household needs in mind.
+          </p>
+          <ul>
+            <li>Smart locks and keypad entry</li>
+            <li>Door fit and installation requirements</li>
+            <li>Backup access and battery alerts</li>
+          </ul>
+          <span class="safety-status">Product picks coming soon</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="safety-note" aria-labelledby="existing-picks-title">
+      <h2 id="existing-picks-title">Looking for existing gear picks?</h2>
+      <p>
+        Visit Featured Gear Picks for the products already listed
+        on Moxies while this new category grows.
+      </p>
+      <a href="/special-picks.html">Explore Featured Gear Picks →</a>
+    </section>
   </main>
 
   <footer class="safety-footer">
-    <p>
-      <a href="/about.html">About &amp; Editorial Standards</a> ·
-      <a href="/contact.html">Contact</a> ·
-      <a href="/privacy.html">Privacy</a> ·
-      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a> ·
+    <div class="safety-footer-links">
+      <a href="/about.html">About &amp; Editorial Standards</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
       <a href="/terms.html">Terms</a>
-    </p>
+    </div>
+
     <p>
-      As an Amazon Associate, I earn from qualifying purchases
-      at no additional cost to you.
+      <strong>Moxies eXtreme TechGear</strong>
+      — practical technology guidance without the guesswork.
     </p>
+
+    <p class="affiliate-disclosure">
+      <strong>Affiliate disclosure:</strong>
+      As an Amazon Associate, I earn from qualifying purchases
+      <strong class="no-additional-cost">
+        AT NO ADDITIONAL COST TO YOU.
+      </strong>
+    </p>
+
     <p>&copy; 2026 Moxies eXtreme TechGear. All rights reserved.</p>
   </footer>
+
+  <!-- Theme and mobile menu -->
+  <script data-site-shell>
+    (() => {
+      const root = document.documentElement;
+      const themeButton = document.getElementById('siteThemeToggle');
+      const menuButton = document.getElementById('siteMenuToggle');
+      const nav = document.getElementById('sitePrimaryNav');
+
+      let savedTheme = 'dark';
+
+      try {
+        savedTheme = localStorage.getItem('theme') || 'dark';
+      } catch {
+        // The page still works if browser storage is unavailable.
+      }
+
+      const applyTheme = theme => {
+        const light = theme === 'light';
+
+        if (light) {
+          root.setAttribute('data-theme', 'light');
+        } else {
+          root.removeAttribute('data-theme');
+        }
+
+        themeButton.innerHTML = light
+          ? '🌙 <span>Dark Mode</span>'
+          : '☀️ <span>Light Mode</span>';
+
+        themeButton.setAttribute(
+          'aria-label',
+          light ? 'Switch to dark mode' : 'Switch to light mode'
+        );
+
+        try {
+          localStorage.setItem('theme', light ? 'light' : 'dark');
+        } catch {
+          // Theme changes do not require browser storage.
+        }
+      };
+
+      applyTheme(savedTheme);
+
+      themeButton.addEventListener('click', () => {
+        applyTheme(
+          root.hasAttribute('data-theme') ? 'dark' : 'light'
+        );
+      });
+
+      const closeMenu = () => {
+        nav.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+
+        nav.querySelectorAll('details[open]').forEach(details => {
+          details.open = false;
+        });
+      };
+
+      menuButton.addEventListener('click', () => {
+        const open = nav.classList.toggle('is-open');
+        menuButton.setAttribute('aria-expanded', String(open));
+      });
+
+      nav.addEventListener('click', event => {
+        if (
+          event.target instanceof Element &&
+          event.target.closest('a')
+        ) {
+          closeMenu();
+        }
+      });
+
+      document.addEventListener('keydown', event => {
+        if (
+          event.key === 'Escape' &&
+          nav.classList.contains('is-open')
+        ) {
+          closeMenu();
+          menuButton.focus();
+        }
+      });
+    })();
+  </script>
+
+  <!-- Existing website search and header enhancements -->
+  <script src="/site-search.js?v=20260921a" defer></script>
 </body>
 </html>
