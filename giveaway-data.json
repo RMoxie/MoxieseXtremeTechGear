@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-10-04T16:52:10Z",
+  "updatedAt": "2026-10-06T18:25:02Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "ThunderSoft EXE Lock 12.1",
-      "description": "Lock specified Windows Apps with a password.",
-      "price": "$34.99",
-      "url": "https://www.giveawayoftheday.com/thundersoft-exe-lock/",
+      "title": "MobiKin Assistant for iOS 3.6.29",
+      "description": "Backup and manage all contents on your device.",
+      "price": "$29.95",
+      "url": "https://www.giveawayoftheday.com/mobikin-assistant-for-ios-3-6-29/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/645c50ba44f0d19ca0cbcc642857bb69.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/03/c37455c8323541d242697902211132b9.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Viking Heroes 5",
-      "description": "Embark on a festive journey as the vikings prepare for Yule!",
-      "price": "$6.99",
-      "url": "https://game.giveawayoftheday.com/viking-heroes-5/",
+      "title": "Falco Cheese Siege",
+      "description": "Safe the Camembert from the rodents.",
+      "price": "$5.00",
+      "url": "https://game.giveawayoftheday.com/falco-cheese-siege/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/e3f38bdd84af0b0fd519c2bc53e73c11.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/a64b0ab41689e6c85cd6d01b5f8e48f1.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Math Racing 2 Pro",
-      "description": "Math Racing 2 Pro is the fastest way to learn math in the app store!",
+      "title": "Merge Videos - Compilation",
+      "description": "This app is great for creating stories especially if you have recorded multiple videos.",
       "price": "$2.99",
-      "url": "https://iphone.giveawayoftheday.com/math-racing-2-pro/",
+      "url": "https://iphone.giveawayoftheday.com/merge-videos-compilation/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1208025241_app_icon_big_1791017549.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/08/1278169874_app_icon_big_1787729550.jpg"
     }
   ]
 }
