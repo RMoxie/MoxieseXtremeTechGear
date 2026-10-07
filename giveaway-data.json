@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-10-06T18:25:02Z",
+  "updatedAt": "2026-10-07T18:57:58Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "MobiKin Assistant for iOS 3.6.29",
-      "description": "Backup and manage all contents on your device.",
-      "price": "$29.95",
-      "url": "https://www.giveawayoftheday.com/mobikin-assistant-for-ios-3-6-29/",
+      "title": "GeekerPDF 3.3.1",
+      "description": "A professional PDF editing tool!",
+      "price": "$39.99",
+      "url": "https://www.giveawayoftheday.com/geekerpdf-2/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/03/c37455c8323541d242697902211132b9.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/09/355d988ce0cb5e51f2a55ea8f1362b7a.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Falco Cheese Siege",
-      "description": "Safe the Camembert from the rodents.",
+      "title": "Falco Puzzle Quest",
+      "description": "Collect the Mosaic of Eternity and return it to the altar.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/falco-cheese-siege/",
+      "url": "https://game.giveawayoftheday.com/falco-puzzle-quest/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/a64b0ab41689e6c85cd6d01b5f8e48f1.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/5bcc419925e1e6092ca3fdb4e3658d28.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Shadow Hunter: Offline Premium",
-      "description": "The must try game for any real hack and slash fan who already got bored with just mindlessly smashing buttons.",
+      "title": "Summoners Era: Idle Strategy",
+      "description": "Premium version of the beloved Idle RPG game Summoners Era.",
       "price": "0.99",
-      "url": "https://android.giveawayoftheday.com/demon-hunter-premium/",
+      "url": "https://android.giveawayoftheday.com/summoners-era-epic-idle-rpg/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/04/com.eapublishing.dhsw.paid_app_icon_1744443496.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2024/08/com.fansipan.idle.summoners.era.heroes.afk_app_icon_1724575097.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Merge Videos - Compilation",
-      "description": "This app is great for creating stories especially if you have recorded multiple videos.",
-      "price": "$2.99",
-      "url": "https://iphone.giveawayoftheday.com/merge-videos-compilation/",
+      "title": "Neo Monsters",
+      "description": "Become a Legend! Capture & Evolve over 1000 Animated Monsters!",
+      "price": "$0.99",
+      "url": "https://iphone.giveawayoftheday.com/neo-monsters/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/08/1278169874_app_icon_big_1787729550.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/983143183_app_icon_big_1791352542.jpg"
     }
   ]
 }
