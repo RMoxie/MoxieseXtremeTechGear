@@ -6,7 +6,7 @@
 
 
   const CATEGORY_LABELS = {
-    "/index.html": { title: "🏠 Home" },
+    "/": { title: "🏠 Home" },
     "/offers.html": { title: "🎁 Deals, Drops & Giveaways" },
     "/special-picks.html": { title: "⭐ Featured Gear Picks" },
     "/computers.html": { title: "💻 Computers & Mini PCs" },
@@ -41,6 +41,7 @@
 
   function normalizePath(path) {
     const clean = String(path || "/").replace(/\/{2,}/g, "/");
+    if (clean === "/index.html") return "/";
     return clean !== "/" && clean.endsWith("/") ? `${clean}index.html` : clean;
   }
 
