@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" width="480" height="280" role="img" aria-labelledby="t-lighting-ring-smart-lighting-spotlight-battery d-lighting-ring-smart-lighting-spotlight-battery">
+  <title id="t-lighting-ring-smart-lighting-spotlight-battery">Ring Smart Lighting Spotlight (Battery)</title>
+  <desc id="d-lighting-ring-smart-lighting-spotlight-battery">Illustration for Ring Smart Lighting Spotlight (Battery)</desc>
+  <defs>
+    <linearGradient id="bg-lighting-ring-smart-lighting-spotlight-battery" x2="1" y2="1">
+      <stop offset="0" stop-color="#071424"/>
+      <stop offset="1" stop-color="#17283f"/>
+    </linearGradient>
+    <linearGradient id="acc-lighting-ring-smart-lighting-spotlight-battery" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#fb923c"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="280" rx="18" fill="url(#bg-lighting-ring-smart-lighting-spotlight-battery)"/>
+  <circle cx="80" cy="60" r="52" fill="#38bdf8" opacity=".08"/>
+  <circle cx="410" cy="70" r="60" fill="#fb923c" opacity=".08"/>
+  <rect x="24" y="24" width="432" height="232" rx="14" fill="none" stroke="#243c57" stroke-width="2"/>
+  <text x="240" y="140" text-anchor="middle" font-size="96" font-family="'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',system-ui,sans-serif">🔦</text>
+  <rect x="24" y="196" width="432" height="60" rx="14" fill="#0b1b2e" opacity=".72"/>
+  <text x="240" y="222" text-anchor="middle" fill="#e2e8f0" font-size="17" font-weight="800" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">Security Lighting</text>
+  <text x="240" y="244" text-anchor="middle" fill="#7dd3fc" font-size="13" font-weight="700" font-family="system-ui,-apple-system,'Segoe UI',sans-serif">Ring Smart Lighting Spotlight (Battery)</text>
+  <rect x="24" y="24" width="90" height="5" rx="2.5" fill="url(#acc-lighting-ring-smart-lighting-spotlight-battery)"/>
+</svg>
