@@ -1,39 +1,39 @@
 {
-  "updatedAt": "2026-10-07T18:57:58Z",
+  "updatedAt": "2026-10-08T18:52:32Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "GeekerPDF 3.3.1",
-      "description": "A professional PDF editing tool!",
+      "title": "BeeConverter 3.3.1 for Win",
+      "description": "Let BeeConverter endow your video with vitality!",
       "price": "$39.99",
-      "url": "https://www.giveawayoftheday.com/geekerpdf-2/",
+      "url": "https://www.giveawayoftheday.com/beeconverter-3-3-1/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/09/355d988ce0cb5e51f2a55ea8f1362b7a.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/02/794f2a4065f27f550343939edf19f0f3.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Falco Puzzle Quest",
-      "description": "Collect the Mosaic of Eternity and return it to the altar.",
+      "title": "KL Diamond Rush",
+      "description": "Swap objects to form horizontal or vertical chains of three or more items.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/falco-puzzle-quest/",
+      "url": "https://game.giveawayoftheday.com/kl-diamond-rush/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/5bcc419925e1e6092ca3fdb4e3658d28.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/38217e9063f09c88baaa548c9eef260b.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Summoners Era: Idle Strategy",
-      "description": "Premium version of the beloved Idle RPG game Summoners Era.",
+      "title": "Cooking Kawaii - cooking games",
+      "description": "Come to the cooking adventure, as a passionate chef, you are invited to take part in those challenges.",
       "price": "0.99",
-      "url": "https://android.giveawayoftheday.com/summoners-era-epic-idle-rpg/",
+      "url": "https://android.giveawayoftheday.com/cooking-kawaii-cooking-games/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2024/08/com.fansipan.idle.summoners.era.heroes.afk_app_icon_1724575097.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/06/com.cscmobi.cooking.love_app_icon_1781349499.png"
     },
     {
       "category": "iphone",
