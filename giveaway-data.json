@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-10-08T18:52:32Z",
+  "updatedAt": "2026-10-09T18:23:03Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "BeeConverter 3.3.1 for Win",
-      "description": "Let BeeConverter endow your video with vitality!",
-      "price": "$39.99",
-      "url": "https://www.giveawayoftheday.com/beeconverter-3-3-1/",
+      "title": "MiniTool ShadowMaker Pro 4.8.1",
+      "description": "Reliable data protection and disaster recovery solution.",
+      "price": "$12.99 / month",
+      "url": "https://www.giveawayoftheday.com/minitool-shadowmaker-4-8-1/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/02/794f2a4065f27f550343939edf19f0f3.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/69b697e3e2b21610333c5e80c9dfef31.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "KL Diamond Rush",
-      "description": "Swap objects to form horizontal or vertical chains of three or more items.",
+      "title": "Samurai Panda",
+      "description": "Pass through a number of traps in different places.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/kl-diamond-rush/",
+      "url": "https://game.giveawayoftheday.com/samurai-panda/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/38217e9063f09c88baaa548c9eef260b.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/1e561525d29d08ddb31f2baab57e9f26.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Cooking Kawaii - cooking games",
-      "description": "Come to the cooking adventure, as a passionate chef, you are invited to take part in those challenges.",
+      "title": "Stickman Legends: Shadow Wars",
+      "description": "This game is the greatest combination of Role-playing game (RPG) and Player vs Player (PvP).",
       "price": "0.99",
-      "url": "https://android.giveawayoftheday.com/cooking-kawaii-cooking-games/",
+      "url": "https://android.giveawayoftheday.com/stickman-legends-shadow-wars/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/06/com.cscmobi.cooking.love_app_icon_1781349499.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/08/com.zitga.ninja.stickman.legends.shadow.wars_app_icon_1628929989.jpeg"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Neo Monsters",
-      "description": "Become a Legend! Capture & Evolve over 1000 Animated Monsters!",
-      "price": "$0.99",
-      "url": "https://iphone.giveawayoftheday.com/neo-monsters/",
+      "title": "Blackthorn Castle",
+      "description": "Embark on your own quest in this beautifully designed classic point and click adventure puzzle game.",
+      "price": "$2.99",
+      "url": "https://iphone.giveawayoftheday.com/blackthorn-castle/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/983143183_app_icon_big_1791352542.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/966038711_app_icon_big_1791547769.jpg"
     }
   ]
 }
