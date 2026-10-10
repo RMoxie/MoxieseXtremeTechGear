@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-10-09T18:23:03Z",
+  "updatedAt": "2026-10-10T17:21:46Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "MiniTool ShadowMaker Pro 4.8.1",
-      "description": "Reliable data protection and disaster recovery solution.",
-      "price": "$12.99 / month",
-      "url": "https://www.giveawayoftheday.com/minitool-shadowmaker-4-8-1/",
+      "title": "VideoProc Converter AI 7.8 (Win&Mac)",
+      "description": "All-in-one solution to enhance video/image quality, convert, compress, edit.",
+      "price": "$89.95",
+      "url": "https://www.giveawayoftheday.com/videoproc-converter-ai-7-8/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/69b697e3e2b21610333c5e80c9dfef31.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2023/12/226a719a4c71946c3d129bc44ad1e214.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Samurai Panda",
-      "description": "Pass through a number of traps in different places.",
-      "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/samurai-panda/",
+      "title": "Solitaire Beach Season",
+      "description": "Solitaire Beach Season is a new card game set in exotic seaside locations!",
+      "price": "$14.99",
+      "url": "https://game.giveawayoftheday.com/solitaire-beach-season/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/1e561525d29d08ddb31f2baab57e9f26.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/31acc2cdee3d8b8e23262b62124f2221.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Stickman Legends: Shadow Wars",
-      "description": "This game is the greatest combination of Role-playing game (RPG) and Player vs Player (PvP).",
+      "title": "Healing Wood Block Travel",
+      "description": "Welcome to the colorful world of Healing WoodBlock Puzzles!",
       "price": "0.99",
-      "url": "https://android.giveawayoftheday.com/stickman-legends-shadow-wars/",
+      "url": "https://android.giveawayoftheday.com/healing-wood-block-travel/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/08/com.zitga.ninja.stickman.legends.shadow.wars_app_icon_1628929989.jpeg"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/10/com.whitewind.woodblock_app_icon_1635592624.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Blackthorn Castle",
-      "description": "Embark on your own quest in this beautifully designed classic point and click adventure puzzle game.",
-      "price": "$2.99",
-      "url": "https://iphone.giveawayoftheday.com/blackthorn-castle/",
+      "title": "Relight - Better Photos",
+      "description": "Instantly correct lighting and exposure and transform your photos and videos into something extraordinary.",
+      "price": "$4.99",
+      "url": "https://iphone.giveawayoftheday.com/relight-better-photos/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/966038711_app_icon_big_1791547769.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1055538670_app_icon_big_1791623625.jpg"
     }
   ]
 }
