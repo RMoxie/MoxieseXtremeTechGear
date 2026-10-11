@@ -1,39 +1,39 @@
 {
-  "updatedAt": "2026-10-10T17:21:46Z",
+  "updatedAt": "2026-10-11T17:42:06Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "VideoProc Converter AI 7.8 (Win&Mac)",
-      "description": "All-in-one solution to enhance video/image quality, convert, compress, edit.",
-      "price": "$89.95",
-      "url": "https://www.giveawayoftheday.com/videoproc-converter-ai-7-8/",
+      "title": "MobiKin HEIC to JPG Converter 3.10.18",
+      "description": "Convert iPhone, iPad, iPod HEIC files.",
+      "price": "$9.95",
+      "url": "https://www.giveawayoftheday.com/mobikin-heic-to-jpg-converter-3-10-18-3/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2023/12/226a719a4c71946c3d129bc44ad1e214.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/06/34c6b81567c8d5585f6450e32f670c17.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Solitaire Beach Season",
-      "description": "Solitaire Beach Season is a new card game set in exotic seaside locations!",
-      "price": "$14.99",
-      "url": "https://game.giveawayoftheday.com/solitaire-beach-season/",
+      "title": "New Yankee: The Way of the Knight",
+      "description": "Join the legendary John and Mary in this thrilling adventure.",
+      "price": "$6.99",
+      "url": "https://game.giveawayoftheday.com/new-yankee-the-way-of-the-knight/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/31acc2cdee3d8b8e23262b62124f2221.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/d229beb7af4676a4f59c44c9621b6e42.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Healing Wood Block Travel",
-      "description": "Welcome to the colorful world of Healing WoodBlock Puzzles!",
-      "price": "0.99",
-      "url": "https://android.giveawayoftheday.com/healing-wood-block-travel/",
+      "title": "PDF Reader & Editor (PRO)",
+      "description": "Are you looking for a handy PDF viewer or a PDF converter to convert images into a PDF easily?",
+      "price": "$11.99",
+      "url": "https://android.giveawayoftheday.com/pdf-reader-editor-pro/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/10/com.whitewind.woodblock_app_icon_1635592624.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/06/com.pdf.reader.editor.viewer.pro_app_icon_1780827998.png"
     },
     {
       "category": "iphone",
