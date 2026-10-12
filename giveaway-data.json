@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-10-11T17:42:06Z",
+  "updatedAt": "2026-10-12T21:17:32Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "MobiKin HEIC to JPG Converter 3.10.18",
-      "description": "Convert iPhone, iPad, iPod HEIC files.",
-      "price": "$9.95",
-      "url": "https://www.giveawayoftheday.com/mobikin-heic-to-jpg-converter-3-10-18-3/",
+      "title": "OKmusi MP3 Downloader Pro 10.9.5",
+      "description": "Download MP3 from 900+ Sites.",
+      "price": "$36.99",
+      "url": "https://www.giveawayoftheday.com/okmusi-mp3-downloader-2/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/06/34c6b81567c8d5585f6450e32f670c17.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/04/b4fbab956b110475b06032d8e8ed3eb4.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "New Yankee: The Way of the Knight",
-      "description": "Join the legendary John and Mary in this thrilling adventure.",
-      "price": "$6.99",
-      "url": "https://game.giveawayoftheday.com/new-yankee-the-way-of-the-knight/",
+      "title": "IL Decipher Terminal",
+      "description": "Solve math problems to gradually reveal a hidden coded word.",
+      "price": "$5.00",
+      "url": "https://game.giveawayoftheday.com/il-decipher-terminal/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/d229beb7af4676a4f59c44c9621b6e42.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/d2f821fc94817f7b3058f033385e2c9c.jpeg"
     },
     {
       "category": "android",
@@ -30,7 +30,7 @@
       "icon": "🤖",
       "title": "PDF Reader & Editor (PRO)",
       "description": "Are you looking for a handy PDF viewer or a PDF converter to convert images into a PDF easily?",
-      "price": "$11.99",
+      "price": "11.99",
       "url": "https://android.giveawayoftheday.com/pdf-reader-editor-pro/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
       "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/06/com.pdf.reader.editor.viewer.pro_app_icon_1780827998.png"
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Relight - Better Photos",
-      "description": "Instantly correct lighting and exposure and transform your photos and videos into something extraordinary.",
-      "price": "$4.99",
-      "url": "https://iphone.giveawayoftheday.com/relight-better-photos/",
+      "title": "Slideshow Master Professional",
+      "description": "Combine multiple photos together into one movie with Slideshow!",
+      "price": "$2.99",
+      "url": "https://iphone.giveawayoftheday.com/slideshow-master-professional/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1055538670_app_icon_big_1791623625.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1225490847_app_icon_big_1791789348.jpg"
     }
   ]
 }
