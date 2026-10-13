@@ -1,39 +1,39 @@
 {
-  "updatedAt": "2026-10-12T21:17:32Z",
+  "updatedAt": "2026-10-13T19:19:22Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "OKmusi MP3 Downloader Pro 10.9.5",
-      "description": "Download MP3 from 900+ Sites.",
-      "price": "$36.99",
-      "url": "https://www.giveawayoftheday.com/okmusi-mp3-downloader-2/",
+      "title": "Coolmuster Android Backup Manager 3.5.37",
+      "description": "Realize all your demands on Android backup and restore.",
+      "price": "$19.95",
+      "url": "https://www.giveawayoftheday.com/coolmuster-android-backup-manager-3-5-37/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/04/b4fbab956b110475b06032d8e8ed3eb4.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/09/0cc048cbe7bceee2b5b86240bdd74204.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "IL Decipher Terminal",
-      "description": "Solve math problems to gradually reveal a hidden coded word.",
+      "title": "IL Pixel Override",
+      "description": "Enter a cybernetic puzzle, activate all neon nodes on a five by five grid.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/il-decipher-terminal/",
+      "url": "https://game.giveawayoftheday.com/il-pixel-override/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/d2f821fc94817f7b3058f033385e2c9c.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/01976590a1b2cbef868b1c78ecdadc58.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "PDF Reader & Editor (PRO)",
-      "description": "Are you looking for a handy PDF viewer or a PDF converter to convert images into a PDF easily?",
-      "price": "11.99",
-      "url": "https://android.giveawayoftheday.com/pdf-reader-editor-pro/",
+      "title": "Tech VPN Pro / Protect Privacy",
+      "description": "Premium VPN with fastest VPN Server, Secure VPN Connection & Protect Privacy of the users",
+      "price": "$49.99",
+      "url": "https://android.giveawayoftheday.com/tech-vpn-pro-protect-privacy/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/06/com.pdf.reader.editor.viewer.pro_app_icon_1780827998.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/11/com.tech.vpnpro_app_icon_1636186519.png"
     },
     {
       "category": "iphone",
