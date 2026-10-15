@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-10-14T17:14:52Z",
+  "updatedAt": "2026-10-15T17:04:43Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "SurSort Media Manager 1.2.6 (Win&Mac)",
-      "description": "Smart Audio & Video Management, Secured by Design.",
-      "price": "$19.95 per year",
-      "url": "https://www.giveawayoftheday.com/sursort-media-manager/",
+      "title": "Privacy Protector for Windows 11",
+      "description": "Protect private user data in Windows.",
+      "price": "$14.99 / month",
+      "url": "https://www.giveawayoftheday.com/privacy-protector-for-windows-11-8/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/458a52fb0afb1266be2d59ff982edba9.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/09/d7d12d47862cb3574521df66dca4a915.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "DirtyRoad",
-      "description": "Push your vehicle to the limit as you race through dirt.",
+      "title": "Flappy Kva",
+      "description": "Fly by frog around columns.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/dirty-road/",
+      "url": "https://game.giveawayoftheday.com/flappy-kva-pc-edition/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/4f1e89ece21107a79cb699a96bb38b14.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/e20ae660a869b39355689930644027aa.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Blend Photos - Photo Blender",
-      "description": "Photo blender with beautiful effects using Blend Photos.",
-      "price": "2.99",
-      "url": "https://android.giveawayoftheday.com/blend-photos-photo-blender/",
+      "title": "Strike Royale: Gun Shooter Pro",
+      "description": "Prepare for an adrenaline-fueled mobile gun shooting games experience like never before with Strike Royale.",
+      "price": "0.99",
+      "url": "https://android.giveawayoftheday.com/strike-royale-gun-shooter-pro/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2023/10/com.tapuniverse.blendphotos_app_icon_1697450289.jpeg"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2023/12/com.gemjem.gun.games.shooting.shooter.strike.fps.csgo.combat.sniper.zombie.modern.action.ops_app_icon_1702821985.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Adorable - Baby Photo Editor",
-      "description": "Adorable is a stunning editing app for every parent.",
-      "price": "$2.99",
-      "url": "https://iphone.giveawayoftheday.com/adorable-baby-photo-editor/",
+      "title": "TinType - Wet Plate Camera",
+      "description": "One plate. One shot. No second chance.",
+      "price": "$0.99",
+      "url": "https://iphone.giveawayoftheday.com/tintype-wet-plate-camera/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/08/1103680295_app_icon_big_1787388685.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/926177061_app_icon_big_1791189289.jpg"
     }
   ]
 }
