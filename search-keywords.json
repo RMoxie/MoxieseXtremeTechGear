@@ -1,0 +1,139 @@
+[
+  {
+    "title": "Lights, SMBs & cutting tools",
+    "url": "/scuba-diving/index.html#gear",
+    "description": "Dive lights, surface marker buoys, reels, signaling and cutting tools. This section links to a safety-accessory search.",
+    "keywords": [
+      "dive knife", "dive knives", "scuba knife", "scuba knives",
+      "diving knife", "diving knives", "line cutter", "line cutters",
+      "cutting tool", "cutting tools", "dive shears", "dive scissors",
+      "dive light", "dive lights", "underwater flashlight",
+      "underwater torch", "SMB", "DSMB", "surface marker buoy",
+      "safety sausage", "dive reel", "dive whistle"
+    ]
+  },
+  {
+    "title": "Mask, fins & exposure protection",
+    "url": "/scuba-diving/index.html#gear",
+    "description": "Personal scuba equipment covering masks, fins, boots, wetsuits, hoods, gloves and drysuit systems.",
+    "keywords": [
+      "dive mask", "dive masks", "scuba mask", "scuba masks",
+      "diving fins", "scuba fins", "dive boots",
+      "wetsuit", "wetsuits", "dry suit", "drysuit", "drysuits",
+      "dive hood", "dive gloves", "exposure protection"
+    ]
+  },
+  {
+    "title": "BCD, regulators & gauges",
+    "url": "/scuba-diving/index.html#gear",
+    "description": "Scuba life-support equipment categories, including buoyancy equipment, regulators and gauges.",
+    "keywords": [
+      "BCD", "BCDs", "buoyancy compensator", "buoyancy control device",
+      "scuba regulator", "scuba regulators",
+      "dive regulator", "dive regulators",
+      "pressure gauge", "pressure gauges", "SPG", "scuba gauges"
+    ]
+  },
+  {
+    "title": "Dive computers & navigation",
+    "url": "/scuba-diving/index.html#gear",
+    "description": "Scuba dive computers and compasses for underwater navigation.",
+    "keywords": [
+      "dive computer", "dive computers",
+      "scuba computer", "scuba computers",
+      "diving computer", "diving computers",
+      "dive compass", "underwater compass",
+      "scuba compass", "underwater navigation"
+    ]
+  },
+  {
+    "title": "Underwater cameras & accessories",
+    "url": "/scuba-diving/index.html#gear",
+    "description": "Underwater imaging equipment, camera housings, lighting, trays, lanyards and maintenance accessories.",
+    "keywords": [
+      "underwater camera", "underwater cameras",
+      "dive camera", "dive cameras", "scuba camera", "diving camera",
+      "underwater photography", "underwater video",
+      "camera housing", "camera housings",
+      "camera tray", "camera lighting"
+    ]
+  },
+  {
+    "title": "Travel, storage & maintenance",
+    "url": "/scuba-diving/index.html#gear",
+    "description": "Dive bags, regulator protection, wet-gear storage, spares and save-a-dive items.",
+    "keywords": [
+      "dive bag", "dive bags", "scuba bag", "scuba bags",
+      "regulator bag", "gear bag", "wet gear",
+      "save a dive kit", "save-a-dive kit",
+      "scuba spares", "dive equipment storage", "dive maintenance"
+    ]
+  },
+  {
+    "title": "Underwater scooters",
+    "url": "/scuba-diving/index.html#underwater-scooters",
+    "description": "Compare the underwater scooter models featured on the dive page and follow their existing product-search links.",
+    "keywords": [
+      "underwater scooter", "underwater scooters",
+      "sea scooter", "sea scooters", "dive scooter", "diving scooter",
+      "diver propulsion vehicle", "DPV", "DPVs",
+      "underwater propulsion", "Subnado", "SUBLUE", "ASIWO", "GENEINNO"
+    ]
+  },
+  {
+    "title": "Dive classes & training resources",
+    "url": "/scuba-diving/index.html#lessons",
+    "description": "Recognized scuba training resources, Open Water courses and continuing education for Bloomsburg and beyond.",
+    "keywords": [
+      "scuba class", "scuba classes", "dive class", "dive classes",
+      "diving lessons", "scuba lessons", "learn to dive", "learn scuba",
+      "open water course", "open water certification",
+      "scuba certification", "PADI training", "rescue course",
+      "nitrox course", "enriched air", "drysuit course",
+      "night diving course"
+    ]
+  },
+  {
+    "title": "Scuba instructor directory",
+    "url": "/scuba-diving/instructors.html",
+    "description": "An opt-in, moderated instructor directory accepting professional listing requests. Profiles are published only after review.",
+    "keywords": [
+      "scuba instructor", "scuba instructors",
+      "dive instructor", "dive instructors",
+      "diving instructor", "diving instructors",
+      "scuba teacher", "instructor directory",
+      "dive professional", "Bloomsburg instructor"
+    ]
+  },
+  {
+    "title": "Request an instructor listing",
+    "url": "/scuba-diving/instructors.html#apply",
+    "description": "Submit an opt-in request for a professional scuba instructor directory listing.",
+    "keywords": [
+      "add instructor", "list instructor", "instructor listing",
+      "instructor application", "register instructor",
+      "submit instructor profile"
+    ]
+  },
+  {
+    "title": "Moderated diver guestbook",
+    "url": "/scuba-diving/guestbook.html",
+    "description": "A moderated guestbook for sharing favorite dive locations and responsible-diving context. Submissions require review.",
+    "keywords": [
+      "dive guestbook", "diver guestbook", "diving guestbook",
+      "scuba guestbook", "dive locations", "dive sites",
+      "diving locations", "favorite dive spot",
+      "favorite dive site", "diver community"
+    ]
+  },
+  {
+    "title": "Share a favorite dive location",
+    "url": "/scuba-diving/guestbook.html#submit",
+    "description": "Submit a dive location and responsible-diving notes for owner review before publication.",
+    "keywords": [
+      "add dive site", "submit dive site",
+      "share dive location", "share dive spot",
+      "submit guestbook entry", "add guestbook entry"
+    ]
+  }
+]
