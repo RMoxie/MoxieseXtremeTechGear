@@ -124,8 +124,8 @@
 
       /*
        * Accept only this website's URLs.
-       * Treat www and non-www as the same website, but fetch and
-       * link using the visitor's current origin.
+       * Treat www and non-www as the same website.
+       * Preserve section anchors such as #gear.
        */
       function siteURL(value) {
         try {
@@ -144,7 +144,7 @@
           }
 
           return new URL(
-            url.pathname + url.search,
+            url.pathname + url.search + url.hash,
             location.origin
           );
         } catch (_) {
@@ -234,7 +234,6 @@
           "Moxies eXtreme TechGear"
         ).trim();
 
-        // Always provide a valid label, even on an unmapped page.
         const pageLabel =
           CATEGORY_LABELS[categoryPath] ||
           { title: fallbackTitle };
@@ -266,7 +265,8 @@
         );
       }
 
-      // New cache version prevents reuse of the old search index.
+      // Only ordinary page content is stored in this cache.
+      // The keyword dictionary is loaded separately.
       const CACHE_KEY = "moxie-site-search-v2";
       const CACHE_MAX_AGE = 24 * 60 * 60 * 1000;
       let indexPromise;
@@ -483,7 +483,6 @@
       `;
       document.head.appendChild(cosmicVisibilityStyle);
 
-      // A header problem must not prevent search from being created.
       try {
         enhanceHeader();
       } catch (error) {
@@ -552,7 +551,6 @@
         controls.append(themeButton, button);
         document.body.append(overlay);
       } else {
-        // Pages without the shared header get a floating button.
         document.body.append(button, overlay);
       }
 
@@ -685,7 +683,7 @@
             };
           }
         } catch (_) {
-          // Search still works when browser storage is unavailable.
+          // Search can work without browser storage.
         }
 
         const sitemapText = await fetchText(
@@ -795,8 +793,6 @@
                 .replace(/\s+/g, " ")
                 .trim();
 
-              // Search the full page rather than cutting off
-              // products or information near the bottom.
               const text = normalize(
                 title + " " +
                 description + " " +
@@ -823,8 +819,6 @@
           }
         }
 
-        // Limit simultaneous requests instead of fetching
-        // every website page at once.
         await Promise.all(
           Array.from(
             { length: Math.min(4, urls.length) },
@@ -838,7 +832,6 @@
           );
         }
 
-        // Do not save an incomplete index for 24 hours.
         if (!failedCount) {
           try {
             localStorage.setItem(
@@ -850,11 +843,106 @@
               })
             );
           } catch (_) {
-            // A full browser cache must not break search.
+            // Storage limits must not break search.
           }
         }
 
         return { pages, failedCount };
+      }
+
+      /*
+       * Load the editable dictionary separately from the
+       * cached page-content index.
+       *
+       * A successful dictionary is reused during this page visit.
+       * Refreshing the page loads it again with cache: "no-store".
+       */
+      let keywordPromise;
+
+      function getKeywordIndex() {
+        if (!keywordPromise) {
+          const pending = fetchText(
+            new URL(
+              "/search-keywords.json",
+              location.origin
+            ).href
+          ).then(text => {
+            const entries = JSON.parse(text);
+
+            if (!Array.isArray(entries)) {
+              throw new Error(
+                "Search dictionary must be an array"
+              );
+            }
+
+            const pages = entries.map(entry => {
+              if (
+                !entry ||
+                typeof entry.title !== "string" ||
+                !entry.title.trim() ||
+                typeof entry.url !== "string" ||
+                typeof entry.description !== "string" ||
+                !Array.isArray(entry.keywords) ||
+                !entry.keywords.length ||
+                !entry.keywords.every(
+                  word => typeof word === "string"
+                )
+              ) {
+                throw new Error(
+                  "Invalid search dictionary entry"
+                );
+              }
+
+              const url = siteURL(entry.url);
+
+              if (!url) {
+                throw new Error(
+                  "Dictionary links must stay on this website"
+                );
+              }
+
+              return {
+                url: url.href,
+                title: entry.title.trim(),
+                description: entry.description.trim(),
+                text: normalize(
+                  [
+                    entry.title,
+                    entry.description,
+                    ...entry.keywords
+                  ].join(" ")
+                ),
+                preview: entry.description.trim()
+              };
+            });
+
+            return {
+              pages,
+              unavailable: false
+            };
+          });
+
+          keywordPromise = pending;
+
+          pending.catch(() => {
+            if (keywordPromise === pending) {
+              keywordPromise = null;
+            }
+          });
+        }
+
+        return keywordPromise.catch(error => {
+          console.warn(
+            "Extra search keywords could not load:",
+            error
+          );
+
+          // Keep ordinary website search working.
+          return {
+            pages: [],
+            unavailable: true
+          };
+        });
       }
 
       function getIndex() {
@@ -879,7 +967,29 @@
           );
         }
 
-        return indexPromise;
+        return Promise.all([
+          indexPromise,
+          getKeywordIndex()
+        ]).then(([index, keywordIndex]) => {
+          const unique = new Map();
+
+          [
+            ...index.pages,
+            ...keywordIndex.pages
+          ].forEach(page => {
+            unique.set(
+              page.url + "\n" + page.title,
+              page
+            );
+          });
+
+          return {
+            pages: [...unique.values()],
+            failedCount: index.failedCount,
+            dictionaryUnavailable:
+              keywordIndex.unavailable
+          };
+        });
       }
 
       function excerpt(page) {
@@ -923,10 +1033,12 @@
         results.setAttribute("aria-busy", "true");
 
         try {
-          const { pages, failedCount } =
-            await getIndex();
+          const {
+            pages,
+            failedCount,
+            dictionaryUnavailable
+          } = await getIndex();
 
-          // Ignore results from an older query.
           if (revision !== searchRevision) return;
 
           const ranked = pages
@@ -978,13 +1090,20 @@
               failedCount
                 ? " — some pages could not be searched; try again."
                 : ""
+            ) +
+            (
+              dictionaryUnavailable
+                ? " — extra search keywords could not load."
+                : ""
             );
 
           if (!shown.length) {
             showMessage(
-              failedCount
-                ? "No matches in the pages that loaded. Some pages were unavailable; try again."
-                : "No matching guide was found. Try a shorter or more general search."
+              dictionaryUnavailable
+                ? "No matching page was found. The extra keyword dictionary could not load; please try again."
+                : failedCount
+                  ? "No matches in the pages that loaded. Some pages were unavailable; try again."
+                  : "No matching guide was found. Try a shorter or more general search."
             );
             return;
           }
@@ -1154,7 +1273,6 @@
           return;
         }
 
-        // Keep keyboard focus inside the open search dialog.
         if (isOpen && event.key === "Tab") {
           const focusable = [
             input,
@@ -1366,7 +1484,6 @@
           });
         });
       } catch (_) {
-        // Content must stay visible if animation setup fails.
         observer?.disconnect();
 
         candidates.forEach(element =>
@@ -1445,7 +1562,6 @@
     })();
   }
 
-  // Works whether the script loads before or after the page HTML.
   if (document.readyState === "loading") {
     document.addEventListener(
       "DOMContentLoaded",
