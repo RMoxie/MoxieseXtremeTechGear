@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-10-16T16:42:28Z",
+  "updatedAt": "2026-10-17T15:38:56Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "GiMeSpace RAM Temp Folder 2.0.1",
-      "description": "Turn your temporary folder into a RAM folder.",
-      "price": "$15.00",
-      "url": "https://www.giveawayoftheday.com/gimespace-ram-temp-folder-2-0-1/",
+      "title": "Screenphoto 2026",
+      "description": "Creates high-quality screenshots simply with a mouse click!",
+      "price": "$19.95",
+      "url": "https://www.giveawayoftheday.com/screenphoto/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2023/12/dd6f05b7878c7d5999b19d25c0ec3fd0.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/c156884162f8dca66222efcaef0b138b.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Blossom Mahjong Solitaire",
-      "description": "Clear the entire board.",
-      "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/blossom-mahjong-solitaire/",
+      "title": "Medieval Defenders",
+      "description": "Defend your ancestral castle – show the invader who the master is!",
+      "price": "$14.99",
+      "url": "https://game.giveawayoftheday.com/medieval-defenders-2/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/32b52d93d8c32be300f28d91ee90ff88.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/4d61664c1128303715874fdf036029b2.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Strike Royale: Gun Shooter Pro",
-      "description": "Prepare for an adrenaline-fueled mobile gun shooting games experience like never before with Strike Royale.",
-      "price": "0.99",
-      "url": "https://android.giveawayoftheday.com/strike-royale-gun-shooter-pro/",
+      "title": "Reminder - Pro",
+      "description": "Reminder app without advertisements.",
+      "price": "$3.75",
+      "url": "https://android.giveawayoftheday.com/reminder-pro/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2023/12/com.gemjem.gun.games.shooting.shooter.strike.fps.csgo.combat.sniper.zombie.modern.action.ops_app_icon_1702821985.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/10/alarm.clock.calendar.reminder.pro_app_icon_1633873082.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "PDF Reader Pro Edition®",
-      "description": "The most powerful PDF reader, carefully designed and optimized specially for the iOS.",
-      "price": "$1.99",
-      "url": "https://iphone.giveawayoftheday.com/pdf-reader-pro-edition/",
+      "title": "Fotospot Road Trip Community",
+      "description": "Fotospot is your ultimate road trip companion!",
+      "price": "$4.99",
+      "url": "https://iphone.giveawayoftheday.com/fotospot-road-trip-community/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/364502063_app_icon_big_1792132189.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1200952700_app_icon_big_1792243042.jpg"
     }
   ]
 }
