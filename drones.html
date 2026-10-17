@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6TMQMLGXP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-H6TMQMLGXP');
+  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drones — Mini, Mid-Range &amp; High-End Drone Picks</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --flame-orange: #f97316;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --header-bg: #1e293b;
+            --hero-grad-start: #1e293b;
+            --hero-grad-end: #0f172a;
+        }
+
+        [data-theme="light"] {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --accent: #0284c7;
+            --flame-orange: #ea580c;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-color: #cbd5e1;
+            --header-bg: #ffffff;
+            --hero-grad-start: #f1f5f9;
+            --hero-grad-end: #f8fafc;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+        header {
+            background: var(--header-bg);
+            padding: 1.25rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--accent);
+            letter-spacing: 0.5px;
+            text-decoration: none;
+        }
+        .nav-wrap {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .theme-toggle {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .theme-toggle:hover {
+            border-color: var(--accent);
+        }
+
+        .hot-banner {
+            background: linear-gradient(90deg, #c2410c, #ea580c, #f97316, #ea580c, #c2410c);
+            background-size: 200% auto;
+            color: #ffffff;
+            text-align: center;
+            padding: 0.75rem 1rem;
+            font-weight: bold;
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+            animation: flameGlow 4s linear infinite;
+            border-bottom: 1px solid #9a3412;
+        }
+        @keyframes flameGlow {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1.5rem;
+            background: linear-gradient(to bottom, var(--hero-grad-start), var(--hero-grad-end));
+            border-bottom: 1px solid var(--border-color);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+        .hero p {
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+            border-left: 4px solid var(--flame-orange);
+            padding-left: 12px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: border-color 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            border-color: var(--flame-orange);
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
+        }
+        .card h3 {
+            font-size: 1.35rem;
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .specs { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.0rem; }
+
+        .aff-btn {
+            display: inline-block;
+            background: var(--flame-orange);
+            color: #ffffff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            text-align: center;
+            transition: background 0.2s;
+        }
+        .aff-btn:hover { background: #ea580c; }
+        .aff-btn[aria-disabled="true"] { opacity: 0.65; cursor: default; }
+
+
+        .comparison-wrap { overflow-x: auto; margin: 2.5rem 0; border: 1px solid var(--border-color, #334155); border-radius: 8px; }
+        .comparison-table { width: 100%; border-collapse: collapse; min-width: 680px; background: var(--card-bg, #1e293b); }
+        .comparison-table th, .comparison-table td { padding: 0.9rem 1rem; border-bottom: 1px solid var(--border-color, #334155); text-align: left; vertical-align: top; }
+        .comparison-table th { color: var(--text-main, #f8fafc); background: rgba(56,189,248,0.1); }
+        .comparison-table td { color: var(--text-muted, #94a3b8); }
+        .comparison-table tr:last-child td { border-bottom: 0; }
+        .buying-note { color: var(--text-muted, #94a3b8); font-size: 0.95rem; }
+        .aff-btn:focus-visible, .btn-buy:focus-visible { outline: 3px solid #f97316; outline-offset: 3px; }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            background: var(--card-bg);
+        }
+    </style>
+
+  <link rel="stylesheet" href="/style.css?v=20260920a">
+
+  <meta name="description" content="Explore mini drones, mid-range drones, and high-end drones — with comparison guides, drone 101 education, flying tips, best places to fly, and a flyers sign-in sheet.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="canonical" href="https://moxiesextremetechgear.com/drones.html">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:site_name" content="Moxies eXtreme TechGear">
+  <meta property="og:title" content="Drones — Mini, Mid-Range &amp; High-End Drone Picks">
+  <meta property="og:description" content="Explore mini drones, mid-range drones, and high-end drones — with comparison guides, drone 101 education, flying tips, best places to fly, and a flyers sign-in sheet.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://moxiesextremetechgear.com/drones.html">
+  <meta property="og:image" content="https://moxiesextremetechgear.com/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Moxies eXtreme TechGear practical technology guides">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Drones — Mini, Mid-Range &amp; High-End Drone Picks">
+  <meta name="twitter:description" content="Explore mini drones, mid-range drones, and high-end drones — with comparison guides, drone 101 education, flying tips, best places to fly, and a flyers sign-in sheet.">
+  <meta name="twitter:image" content="https://moxiesextremetechgear.com/social-card.png">
+  <style id="site-quality-upgrades">
+    .content-updated{color:var(--text-muted,#94a3b8);font-size:.92rem;margin:.35rem 0 1.5rem}
+    .footer-links{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin:.65rem 0}
+    .footer-links a{color:var(--accent,#38bdf8)}
+    .trust-note{border:1px solid var(--border-color,#334155);border-radius:12px;padding:1.15rem 1.25rem;margin:1.5rem 0;background:var(--card-bg,#1e293b)}
+    @media (max-width:800px){#sitePrimaryNav a,.site-primary-nav a,.product-card a,.feature-card a,.guide-card a,.aff-btn,.btn,.cta{min-height:44px;display:inline-flex;align-items:center}.theme-toggle,#siteMenuToggle{min-width:44px;min-height:44px}}
+  </style>
+
+  <script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebPage","name":"Drones — Mini, Mid-Range & High-End Drone Picks","description":"Explore mini drones, mid-range drones, and high-end drones — with comparison guides, drone 101 education, flying tips, best places to fly, and a flyers sign-in sheet.","url":"https://moxiesextremetechgear.com/drones.html","isPartOf":{"@type":"WebSite","name":"Moxies eXtreme TechGear","url":"https://moxiesextremetechgear.com/"},"dateModified":"2026-10-16"}</script>
+<style id="seo-breadcrumb-style">.site-breadcrumb{width:min(1180px,calc(100% - 2rem));margin:.8rem auto 0;padding:.35rem 0;color:var(--text-muted,#64748b);font-size:.9rem}.site-breadcrumb a{color:var(--accent,#0284c7);text-decoration:none}.site-breadcrumb a:hover{text-decoration:underline}.site-breadcrumb span[aria-current="page"]{font-weight:700;color:var(--text-main,#0f172a)}</style><script type="application/ld+json">{"@context":"https://schema.org/","@type":"Article","headline":"Drones — Mini, Mid-Range & High-End Drone Picks","description":"Explore mini drones, mid-range drones, and high-end drones — with comparison guides, drone 101 education, flying tips, best places to fly, and a flyers sign-in sheet.","url":"https://moxiesextremetechgear.com/drones.html","author":{"@type":"Person","name":"Moxie","url":"https://moxiesextremetechgear.com/about.html"},"publisher":{"@type":"Organization","name":"Moxies eXtreme TechGear","url":"https://moxiesextremetechgear.com/"},"dateModified":"2026-10-16","image":"https://moxiesextremetechgear.com/social-card.png"}</script>
+</head>
+<body>
+  <a class="site-skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="site-header-top">
+      <a class="site-brand" href="/">Moxies eXtreme TechGear</a>
+      <button class="site-theme-toggle" id="siteThemeToggle" type="button" aria-label="Switch to light mode">☀️ <span>Light Mode</span></button>
+      <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-expanded="false" aria-controls="sitePrimaryNav">Menu</button>
+    </div>
+    <nav class="site-primary-nav" id="sitePrimaryNav" aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a href="/offers.html">Deals, Drops &amp; Giveaways</a>
+      <a href="/special-picks.html">Featured Gear Picks</a>
+      <a href="/computers.html">Computers &amp; Mini PCs</a>
+      <a href="/mobile-power.html">Portable Power &amp; Battery Packs</a>
+      <a href="/ai-hardware.html">AI Hardware &amp; Smart Mini Rigs</a>
+      <a href="/home-networking-security.html">Networking &amp; Wi-Fi Gear</a>
+      <a href="/monitors-docks-desk-setup.html">Desk Setups &amp; Monitors</a>
+      <details class="site-nav-more is-current">
+        <summary>More Categories</summary>
+        <div class="site-nav-more-menu"><a href="/gan-chargers-guide.html">Fast Chargers &amp; Wall Power</a><a href="/automotive-emergency.html">Auto, Road &amp; Emergency Tech</a><a href="/storage-gear/index.html">Massive Storage Solutions</a><a href="/ebike-gear.html">E-Bikes, Tech &amp; Riding Accessories</a><a href="/scuba-diving/index.html">Scuba Diving Gear, Classes &amp; Local Guides</a><a href="/cable-management.html">Cable Management Made Easy</a><span aria-current="page">Drones</span><a href="/audio-gear.html">State-of-the-Art Audio Gear</a><a href="/coding-gear/index.html">Software, Linux, Open Source &amp; Coding Guides</a><a href="/contact.html">Contact</a></div>
+      </details>
+    </nav>
+  </header>
+  <div class="site-highlight-banner" role="note">🚁 MINI DRONES, MID-RANGE DRONES &amp; HIGH-END DRONES 🚁</div>
+
+<main id="main-content">
+<div class="hero">
+        <h1>Drones</h1>
+        <p class="content-updated"><time datetime="2026-10-16">Updated October 16, 2026</time></p>
+        <p>From pocket-sized mini drones to high-end camera rigs, this is our growing drone hub — 10 picks in each tier, plus comparison guides, drone education, flying tips, and a community of flyers.</p>
+    </div>
+
+    <div class="container">
+        <h2>Mini Drones</h2>
+        <p class="buying-note">Small, affordable, and perfect for learning to fly. Our first 10 picks are mini drones — being added now.</p>
+
+        <div class="grid">
+            <article class="card"><div><h3>🚁 Weavixol Brushless Drone for Beginners</h3><div class="specs">Black K13Max | Screen on Controller | 2 Batteries | $49.99</div><p>Beginner-friendly brushless drone with a built-in screen on the controller — no phone needed. Auto hover, one-key takeoff and landing, 360&deg; flips, and headless mode, all under 250g so no FAA registration is required.</p></div><a href="https://www.amazon.com/dp/B0HDNPZ9WY?tag=rmoxie-20" target="_blank" rel="sponsored noopener noreferrer" class="aff-btn">View on Amazon &rarr;</a></article>
+            <article class="card"><div><h3>🚁 Mini Drone Pick #2</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mini drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🚁 Mini Drone Pick #3</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mini drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🚁 Mini Drone Pick #4</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mini drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🚁 Mini Drone Pick #5</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mini drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🚁 Mini Drone Pick #6</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mini drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🚁 Mini Drone Pick #7</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mini drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🚁 Mini Drone Pick #8</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mini drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🚁 Mini Drone Pick #9</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mini drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🚁 Mini Drone Pick #10</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mini drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+        </div>
+
+        <h2>Mid-Range Drones</h2>
+        <p class="buying-note">Better cameras, longer flight times, and smarter features — the sweet spot for hobbyists ready to level up.</p>
+
+        <div class="grid">
+            <article class="card"><div><h3>🛸 Mid-Range Drone Pick #1</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mid-range drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🛸 Mid-Range Drone Pick #2</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mid-range drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🛸 Mid-Range Drone Pick #3</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mid-range drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🛸 Mid-Range Drone Pick #4</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mid-range drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🛸 Mid-Range Drone Pick #5</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mid-range drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🛸 Mid-Range Drone Pick #6</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mid-range drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🛸 Mid-Range Drone Pick #7</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mid-range drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🛸 Mid-Range Drone Pick #8</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mid-range drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🛸 Mid-Range Drone Pick #9</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mid-range drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🛸 Mid-Range Drone Pick #10</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 mid-range drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+        </div>
+
+        <h2>High-End Drones</h2>
+        <p class="buying-note">Pro-grade cameras, long range, and advanced stabilization for serious aerial photography and videography.</p>
+
+        <div class="grid">
+            <article class="card"><div><h3>🎥 High-End Drone Pick #1</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 high-end drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🎥 High-End Drone Pick #2</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 high-end drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🎥 High-End Drone Pick #3</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 high-end drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🎥 High-End Drone Pick #4</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 high-end drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🎥 High-End Drone Pick #5</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 high-end drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🎥 High-End Drone Pick #6</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 high-end drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🎥 High-End Drone Pick #7</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 high-end drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🎥 High-End Drone Pick #8</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 high-end drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🎥 High-End Drone Pick #9</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 high-end drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🎥 High-End Drone Pick #10</h3><div class="specs">Pick coming soon</div><p>This spot is reserved for one of our 10 high-end drone picks — full details and buying link on the way.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+        </div>
+
+        <section class="trust-note" aria-labelledby="drone-tiers-title"><h2 id="drone-tiers-title">How the three tiers work</h2><p>Start with the flying you want to do, not the price tag. Each tier answers a different question:</p><ul><li><strong>Mini drones:</strong> the cheapest way to learn the sticks. Light, portable, and forgiving — ideal first drones for kids and beginners.</li><li><strong>Mid-range drones:</strong> the hobbyist sweet spot. Sharper cameras, longer batteries, and obstacle sensing for confident everyday flying.</li><li><strong>High-end drones:</strong> cinema-grade cameras, extended range, and rock-solid stabilization for creators who sell or showcase their footage.</li></ul><p>Every pick that goes live gets a full write-up with specs and a buying link, tagged with our affiliate code at no extra cost to you.</p></section>
+
+        <h2>Coming Soon to the Drone Hub</h2>
+        <div class="grid">
+            <article class="card"><div><h3>📊 Drone Comparison Guide</h3><div class="specs">Side-by-side specs, all three tiers</div><p>Mini vs. mid-range vs. high-end, compared head to head — cameras, flight time, range, and who each tier is really for.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🎓 Drone 101</h3><div class="specs">Beginner education</div><p>How drones fly, battery basics, registration and airspace rules, and everything a first-time pilot should know before takeoff.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>🗺️ Flying Tips &amp; Best Locations</h3><div class="specs">Helpful hints for better flights</div><p>Practical flying tips plus the best kinds of places to fly — open fields, parks, and scenic spots worth the trip.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+            <article class="card"><div><h3>✍️ Flyers Sign-In Sheet</h3><div class="specs">Our community board</div><p>Tell us where you fly, what drone you fly, and what you love (or dislike) about it — meet fellow pilots from the community.</p></div><a href="#" class="aff-btn" aria-disabled="true">Coming soon &rarr;</a></article>
+        </div>
+
+        <p class="buying-note" style="margin-top:2rem;"><strong>Publishing note:</strong> Our first 10 picks are mini drones and are being added now — check back as this page fills out.</p>
+    </div>
+
+    </main>
+<footer>
+    <p class="footer-links"><a href="/about.html">About &amp; Editorial Standards</a> <span aria-hidden="true"> · </span><a href="/contact.html">Contact</a> <span aria-hidden="true"> · </span><a href="/privacy.html">Privacy</a> <span aria-hidden="true"> · </span><a href="/affiliate-disclosure.html">Affiliate Disclosure</a> <span aria-hidden="true"> · </span><a href="/terms.html">Terms</a></p>
+    <p><strong>Moxies eXtreme TechGear</strong> — practical technology guidance without the guesswork.</p>
+    <p class="affiliate-disclosure"><strong>Affiliate disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases <strong class="no-additional-cost">AT NO ADDITIONAL COST TO YOU.</strong></p>
+    <p>&copy; 2026 Moxies eXtreme TechGear. All rights reserved.</p>
+  </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const btn = document.getElementById('themeToggleBtn');
+            if (html.getAttribute('data-theme') === 'light') {
+                html.removeAttribute('data-theme');
+                btn.textContent = '☀️ Light Mode';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                btn.textContent = '🌙 Dark Mode';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        (function initTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.getElementById('themeToggleBtn').textContent = '🌙 Dark Mode';
+            }
+        })();
+    </script>
+
+  <script data-site-shell>
+    (() => {
+      const root = document.documentElement;
+      const themeButton = document.getElementById('siteThemeToggle');
+      const menuButton = document.getElementById('siteMenuToggle');
+      const nav = document.getElementById('sitePrimaryNav');
+      const applyTheme = theme => {
+        const light = theme === 'light';
+        if (light) root.setAttribute('data-theme', 'light'); else root.removeAttribute('data-theme');
+        themeButton.innerHTML = light ? '🌙 <span>Dark Mode</span>' : '☀️ <span>Light Mode</span>';
+        themeButton.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+        localStorage.setItem('theme', light ? 'light' : 'dark');
+      };
+      applyTheme(localStorage.getItem('theme') === 'light' ? 'light' : 'dark');
+      themeButton.addEventListener('click', () => applyTheme(root.hasAttribute('data-theme') ? 'dark' : 'light'));
+      menuButton.addEventListener('click', () => {
+        const open = nav.classList.toggle('is-open');
+        menuButton.setAttribute('aria-expanded', String(open));
+      });
+      nav.addEventListener('click', event => {
+        if (event.target.closest('a')) { nav.classList.remove('is-open'); menuButton.setAttribute('aria-expanded', 'false'); }
+      });
+    })();
+  </script>
+  <script src="/site-search.js?v=20260921a" defer></script>
+</body>
+</html>
