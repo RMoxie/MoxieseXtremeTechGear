@@ -984,22 +984,57 @@
     ]
   },
   {
-    "title": "Drone Comparison Guide — all 30 drones side by side",
-    "url": "/drone-comparison.html",
-    "description": "Compare all 30 drone picks side by side: prices, cameras, flight times, GPS, and who each drone is best for.",
+    "title": "Drone 101 — beginner's guide to how drones work",
+    "url": "/drone-101.html",
+    "description": "How drones fly, battery basics, FAA registration, airspace rules, and key drone terms explained for beginners.",
     "keywords": [
-      "compare drones",
-      "drone comparison",
-      "comparison guide",
-      "side by side",
-      "which drone",
-      "best drone",
-      "drone specs",
-      "compare prices",
-      "mini vs",
-      "buying guide",
-      "choose a drone",
-      "drone chart"
+      "drone 101",
+      "beginner drone",
+      "how drones work",
+      "how do drones fly",
+      "FAA registration",
+      "TRUST test",
+      "remote ID",
+      "drone battery",
+      "LiPo",
+      "drone terms",
+      "glossary",
+      "gimbal",
+      "RTH",
+      "learn drones"
+    ]
+  },
+  {
+    "title": "Flying Tips & Best Places to Fly Your Drone",
+    "url": "/flying-tips.html",
+    "description": "Practical drone flying tips plus the best kinds of places to fly — and where to avoid.",
+    "keywords": [
+      "flying tips",
+      "drone tips",
+      "where to fly",
+      "best places to fly",
+      "beginner tips",
+      "pre-flight",
+      "golden hour",
+      "drone locations",
+      "parks",
+      "beach flying",
+      "no fly zones"
+    ]
+  },
+  {
+    "title": "Flyers Sign-In Sheet — drone pilot community",
+    "url": "/flyers-signin.html",
+    "description": "Join the pilot community board: share where you fly, what you fly, and what you love about it.",
+    "keywords": [
+      "sign in",
+      "community",
+      "pilots",
+      "flyers",
+      "guestbook",
+      "share",
+      "meet pilots",
+      "drone community"
     ]
   }
 ]
