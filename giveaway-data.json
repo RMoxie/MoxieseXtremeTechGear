@@ -1,39 +1,39 @@
 {
-  "updatedAt": "2026-10-17T15:38:56Z",
+  "updatedAt": "2026-10-18T15:54:22Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Screenphoto 2026",
-      "description": "Creates high-quality screenshots simply with a mouse click!",
-      "price": "$19.95",
-      "url": "https://www.giveawayoftheday.com/screenphoto/",
+      "title": "Ashampoo WinOptimizer 27",
+      "description": "PC tuning software for a fast, slim, and secure Windows.",
+      "price": "$14.00",
+      "url": "https://www.giveawayoftheday.com/ashampoo-winoptimizer-27/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/c156884162f8dca66222efcaef0b138b.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/01/c5e1520794d1417cb45cf67dec4b3d39.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Medieval Defenders",
-      "description": "Defend your ancestral castle – show the invader who the master is!",
-      "price": "$14.99",
-      "url": "https://game.giveawayoftheday.com/medieval-defenders-2/",
+      "title": "The Esoterica: Hollow Earth",
+      "description": "The fabled land of Agartha awaits your discovery in Esoterica: Hollow Earth!",
+      "price": "$3.99",
+      "url": "https://game.giveawayoftheday.com/the-esoterica-hollow-earth/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/4d61664c1128303715874fdf036029b2.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/182448a6f6bcd7076c7b71c73311b764.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Reminder - Pro",
-      "description": "Reminder app without advertisements.",
-      "price": "$3.75",
-      "url": "https://android.giveawayoftheday.com/reminder-pro/",
+      "title": "Eco inc. Save the Earth",
+      "description": "Eco Inc. challenges you with a variety of environmental scenarios.",
+      "price": "$9.99",
+      "url": "https://android.giveawayoftheday.com/eco-inc-save-the-earth/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/10/alarm.clock.calendar.reminder.pro_app_icon_1633873082.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/02/com.gamefirst.savetheearth_app_icon_1771243504.png"
     },
     {
       "category": "iphone",
