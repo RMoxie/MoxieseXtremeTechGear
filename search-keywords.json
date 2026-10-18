@@ -363,5 +363,624 @@
       "5.4K",
       "6K"
     ]
+  },
+  {
+    "title": "Practical Tech Gear Guides — homepage",
+    "url": "/",
+    "description": "Moxies eXtreme TechGear homepage: real-world tech gear reviews, buying guides, and deals across every category.",
+    "keywords": [
+      "homepage",
+      "tech gear",
+      "gear guides",
+      "reviews",
+      "deals",
+      "moxies",
+      "extreme techgear",
+      "buying guides"
+    ]
+  },
+  {
+    "title": "AI Hardware & Smart Mini Rigs",
+    "url": "/ai-hardware.html",
+    "description": "AI hardware picks: smart mini rigs and gear for running AI locally.",
+    "keywords": [
+      "AI hardware",
+      "artificial intelligence",
+      "mini PC AI",
+      "local AI hardware",
+      "smart rig",
+      "AI computer",
+      "machine learning hardware"
+    ]
+  },
+  {
+    "title": "Airline-Safe Power Bank Capacity Guide",
+    "url": "/airline-safe-power-bank-capacity-guide.html",
+    "description": "What size power bank you actually need — and what's legal to fly with.",
+    "keywords": [
+      "power bank",
+      "airline safe",
+      "TSA power bank",
+      "battery pack",
+      "portable charger",
+      "100Wh",
+      "travel charger",
+      "flight safe battery"
+    ]
+  },
+  {
+    "title": "State-of-the-Art Audio Gear",
+    "url": "/audio-gear.html",
+    "description": "Audio gear picks: speakers, headphones, and sound equipment.",
+    "keywords": [
+      "audio gear",
+      "headphones",
+      "speakers",
+      "sound",
+      "earbuds",
+      "audio equipment",
+      "bluetooth speaker"
+    ]
+  },
+  {
+    "title": "Studio Audio & ANC Headsets",
+    "url": "/audio-gear/headset-guide.html",
+    "description": "Studio audio and noise-cancelling headsets for developers and gamers.",
+    "keywords": [
+      "headset",
+      "headphones",
+      "ANC",
+      "noise cancelling",
+      "studio headphones",
+      "gaming headset",
+      "developer headphones",
+      "microphone headset"
+    ]
+  },
+  {
+    "title": "Auto, Road & Emergency Tech",
+    "url": "/automotive-emergency.html",
+    "description": "Car tech and emergency gear for the road.",
+    "keywords": [
+      "car tech",
+      "automotive",
+      "emergency gear",
+      "road trip",
+      "jump starter",
+      "dash cam",
+      "car accessories",
+      "roadside emergency"
+    ]
+  },
+  {
+    "title": "Best 100W USB-C Travel Chargers",
+    "url": "/best-100w-usb-c-chargers-travel.html",
+    "description": "How to choose a 100W USB-C charger for travel — buying guide.",
+    "keywords": [
+      "100W charger",
+      "USB-C charger",
+      "travel charger",
+      "GaN charger",
+      "fast charger",
+      "laptop charger",
+      "USB C power adapter",
+      "wall charger"
+    ]
+  },
+  {
+    "title": "Best Electric Bikes by Riding Style",
+    "url": "/best-electric-bikes.html",
+    "description": "2026 e-bike buying guide organized by riding style.",
+    "keywords": [
+      "electric bike",
+      "e-bike",
+      "ebike",
+      "e bike",
+      "electric bicycle",
+      "best ebike",
+      "commuter ebike",
+      "mountain ebike"
+    ]
+  },
+  {
+    "title": "Best Locks for E-Bikes",
+    "url": "/best-locks-for-ebikes.html",
+    "description": "How to choose the best lock for an e-bike — security buying guide.",
+    "keywords": [
+      "bike lock",
+      "e-bike lock",
+      "ebike lock",
+      "u-lock",
+      "chain lock",
+      "bike security",
+      "anti-theft",
+      "folding lock"
+    ]
+  },
+  {
+    "title": "Best Power Banks for Camping & Field Charging",
+    "url": "/best-power-banks-camping-field-charging.html",
+    "description": "Power banks built for camping and off-grid field charging.",
+    "keywords": [
+      "power bank",
+      "camping",
+      "portable power",
+      "solar charger",
+      "battery bank",
+      "off grid",
+      "field charging",
+      "outdoor charger"
+    ]
+  },
+  {
+    "title": "Best USB-C Docks for Dual Monitors",
+    "url": "/best-usb-c-docks-dual-monitors.html",
+    "description": "How to choose a USB-C dock for dual monitors — compatibility guide.",
+    "keywords": [
+      "USB-C dock",
+      "docking station",
+      "dual monitor",
+      "thunderbolt dock",
+      "laptop dock",
+      "monitor hub",
+      "display dock",
+      "workstation dock"
+    ]
+  },
+  {
+    "title": "Cable Management Made Easy",
+    "url": "/cable-management.html",
+    "description": "Tame the cable chaos — management gear and tips.",
+    "keywords": [
+      "cable management",
+      "cable organizer",
+      "cord management",
+      "desk cables",
+      "cable ties",
+      "cable sleeve",
+      "wire management"
+    ]
+  },
+  {
+    "title": "Software, Linux, Open Source & Coding Guides",
+    "url": "/coding-gear/index.html",
+    "description": "Coding gear hub: Linux, open source, and developer guides.",
+    "keywords": [
+      "coding",
+      "programming",
+      "developer",
+      "linux",
+      "open source",
+      "software",
+      "code editor",
+      "dev tools"
+    ]
+  },
+  {
+    "title": "Mechanical Keyboards for Developers",
+    "url": "/coding-gear/keyboard-guide.html",
+    "description": "Mechanical keyboards and ergonomics for developers.",
+    "keywords": [
+      "mechanical keyboard",
+      "keyboard",
+      "ergonomic keyboard",
+      "developer keyboard",
+      "key switches",
+      "typing",
+      "wireless keyboard"
+    ]
+  },
+  {
+    "title": "Linux Gaming with Steam & Proton",
+    "url": "/coding-gear/linux-gaming-steam-proton.html",
+    "description": "Play Windows games on Linux with Steam and Proton.",
+    "keywords": [
+      "linux gaming",
+      "steam",
+      "proton",
+      "gaming on linux",
+      "wine",
+      "PC gaming linux",
+      "steam deck"
+    ]
+  },
+  {
+    "title": "Safe Linux Live-USB & Install Guide",
+    "url": "/coding-gear/linux-live-usb-install-guide.html",
+    "description": "Try and install Linux safely with a live USB.",
+    "keywords": [
+      "linux install",
+      "live USB",
+      "ubuntu install",
+      "bootable USB",
+      "dual boot",
+      "linux setup",
+      "install linux"
+    ]
+  },
+  {
+    "title": "Linux & Open Source Beginner Guide",
+    "url": "/coding-gear/linux-open-source.html",
+    "description": "Linux and open source without the guesswork — beginner friendly.",
+    "keywords": [
+      "linux",
+      "open source",
+      "ubuntu",
+      "beginner linux",
+      "free software",
+      "linux distro",
+      "mint",
+      "fedora"
+    ]
+  },
+  {
+    "title": "Precision Mice for Developers",
+    "url": "/coding-gear/mouse-guide.html",
+    "description": "High-precision mice and input productivity for developers.",
+    "keywords": [
+      "mouse",
+      "ergonomic mouse",
+      "precision mouse",
+      "developer mouse",
+      "wireless mouse",
+      "trackball",
+      "input devices"
+    ]
+  },
+  {
+    "title": "Ubuntu vs Linux Mint vs Fedora",
+    "url": "/coding-gear/ubuntu-vs-mint-vs-fedora.html",
+    "description": "Beginner comparison of the three most popular Linux distros.",
+    "keywords": [
+      "ubuntu",
+      "linux mint",
+      "fedora",
+      "linux distro",
+      "best linux",
+      "distro comparison",
+      "mint vs ubuntu"
+    ]
+  },
+  {
+    "title": "Windows-to-Linux App Alternatives",
+    "url": "/coding-gear/windows-to-linux-app-alternatives.html",
+    "description": "Find Linux replacements for your Windows apps.",
+    "keywords": [
+      "windows to linux",
+      "linux apps",
+      "app alternatives",
+      "switch to linux",
+      "linux software",
+      "open source alternatives"
+    ]
+  },
+  {
+    "title": "Computers & Mini PCs",
+    "url": "/computers.html",
+    "description": "Desktop computers and mini PCs — picks and guides.",
+    "keywords": [
+      "computer",
+      "desktop",
+      "mini PC",
+      "PC",
+      "small form factor",
+      "desktop computer",
+      "mini computer"
+    ]
+  },
+  {
+    "title": "Desktop Systems Buying Guide",
+    "url": "/desktop-systems/index.html",
+    "description": "Choose a desktop platform: Windows, Apple, Linux and more.",
+    "keywords": [
+      "desktop",
+      "PC buying guide",
+      "windows vs mac",
+      "desktop computer",
+      "workstation",
+      "home PC",
+      "gaming PC"
+    ]
+  },
+  {
+    "title": "Alternative Desktop Systems",
+    "url": "/desktop-systems/alternative.html",
+    "description": "ChromeOS, BSD, SBCs and thin clients — when the job is specific.",
+    "keywords": [
+      "chromeos",
+      "chromebook desktop",
+      "BSD",
+      "raspberry pi desktop",
+      "thin client",
+      "SBC",
+      "alternative OS"
+    ]
+  },
+  {
+    "title": "Apple Desktop Buying Guide",
+    "url": "/desktop-systems/apple.html",
+    "description": "Mac mini, iMac and Mac Studio — choose the Mac you'll keep.",
+    "keywords": [
+      "mac",
+      "apple",
+      "mac mini",
+      "imac",
+      "mac studio",
+      "apple desktop",
+      "macOS",
+      "M4 mac"
+    ]
+  },
+  {
+    "title": "Linux Desktop Buying Guide",
+    "url": "/desktop-systems/linux.html",
+    "description": "Prebuilt, DIY and repurposed PCs for Linux.",
+    "keywords": [
+      "linux PC",
+      "linux desktop",
+      "ubuntu PC",
+      "DIY PC",
+      "linux workstation",
+      "prebuilt linux"
+    ]
+  },
+  {
+    "title": "Windows Desktop Buying Guide",
+    "url": "/desktop-systems/windows.html",
+    "description": "Office, gaming and workstation Windows desktops.",
+    "keywords": [
+      "windows PC",
+      "windows desktop",
+      "gaming PC",
+      "office PC",
+      "workstation",
+      "windows 11"
+    ]
+  },
+  {
+    "title": "E-Bikes, Tech & Riding Accessories",
+    "url": "/ebike-gear.html",
+    "description": "E-bike hub: bikes, tech and riding accessories.",
+    "keywords": [
+      "e-bike",
+      "ebike",
+      "electric bike",
+      "bike accessories",
+      "cycling gear",
+      "bike tech",
+      "riding gear"
+    ]
+  },
+  {
+    "title": "Fast Chargers & Wall Power (GaN)",
+    "url": "/gan-chargers-guide.html",
+    "description": "GaN fast chargers and wall power gear.",
+    "keywords": [
+      "GaN charger",
+      "fast charger",
+      "wall charger",
+      "USB-C charger",
+      "65W charger",
+      "charging station",
+      "power adapter"
+    ]
+  },
+  {
+    "title": "Gen 4 vs Gen 5 NVMe SSDs",
+    "url": "/gen4-vs-gen5-nvme-ssd-guide.html",
+    "description": "Is the Gen 5 SSD upgrade worth it? Comparison guide.",
+    "keywords": [
+      "NVMe",
+      "SSD",
+      "gen 4",
+      "gen 5",
+      "gen4 vs gen5",
+      "M.2 SSD",
+      "storage upgrade",
+      "PCIe 5"
+    ]
+  },
+  {
+    "title": "Networking & Wi-Fi Gear",
+    "url": "/home-networking-security.html",
+    "description": "Routers, mesh Wi-Fi and home networking gear.",
+    "keywords": [
+      "router",
+      "wifi",
+      "mesh wifi",
+      "networking",
+      "wi-fi 7",
+      "home network",
+      "ethernet",
+      "access point"
+    ]
+  },
+  {
+    "title": "Home Safety & Security Gear",
+    "url": "/home-safety-security.html",
+    "description": "Cameras, sensors, locks and alarms for home safety.",
+    "keywords": [
+      "home security",
+      "security camera",
+      "smart lock",
+      "smoke detector",
+      "doorbell camera",
+      "alarm system",
+      "safety sensor"
+    ]
+  },
+  {
+    "title": "How Much VRAM for Local AI?",
+    "url": "/local-ai-gpu-vram-guide.html",
+    "description": "GPU buying guide: how much VRAM you need for local AI in 2026.",
+    "keywords": [
+      "VRAM",
+      "GPU",
+      "local AI",
+      "graphics card",
+      "AI GPU",
+      "video memory",
+      "LLM hardware",
+      "RTX"
+    ]
+  },
+  {
+    "title": "Portable Power & Battery Packs",
+    "url": "/mobile-power.html",
+    "description": "Portable power stations and battery packs.",
+    "keywords": [
+      "portable power",
+      "power station",
+      "battery pack",
+      "power bank",
+      "solar generator",
+      "backup power",
+      "camping power"
+    ]
+  },
+  {
+    "title": "Desk Setups & Monitors",
+    "url": "/monitors-docks-desk-setup.html",
+    "description": "Monitors, docks and desk setup gear.",
+    "keywords": [
+      "monitor",
+      "desk setup",
+      "4K monitor",
+      "ultrawide",
+      "standing desk",
+      "monitor arm",
+      "workspace",
+      "home office"
+    ]
+  },
+  {
+    "title": "Deals, Drops & Giveaways",
+    "url": "/offers.html",
+    "description": "Current deals, product drops and giveaways.",
+    "keywords": [
+      "deals",
+      "discounts",
+      "giveaway",
+      "sale",
+      "coupon",
+      "free stuff",
+      "drops",
+      "bargains"
+    ]
+  },
+  {
+    "title": "Portable Computers: Laptops, Tablets & Mini PCs",
+    "url": "/portable-computers/index.html",
+    "description": "Laptops, tablets and smaller computers clearly compared.",
+    "keywords": [
+      "laptop",
+      "portable computer",
+      "tablet",
+      "mini PC",
+      "notebook",
+      "mobile computer"
+    ]
+  },
+  {
+    "title": "Laptop Buying Guide",
+    "url": "/portable-computers/laptops.html",
+    "description": "Windows, Mac, Chromebook and Linux laptops — choose by workload.",
+    "keywords": [
+      "laptop",
+      "notebook",
+      "macbook",
+      "chromebook",
+      "windows laptop",
+      "ultrabook",
+      "gaming laptop",
+      "best laptop"
+    ]
+  },
+  {
+    "title": "Mini PC & Handheld Buying Guide",
+    "url": "/portable-computers/mini-pcs-handhelds.html",
+    "description": "Mini PCs, handheld PCs and small computers.",
+    "keywords": [
+      "mini PC",
+      "handheld PC",
+      "steam deck",
+      "mini computer",
+      "NUC",
+      "small PC",
+      "portable gaming"
+    ]
+  },
+  {
+    "title": "Tablet & 2-in-1 Buying Guide",
+    "url": "/portable-computers/tablets-2-in-1s.html",
+    "description": "iPad, Android, Windows and ChromeOS tablets and 2-in-1s.",
+    "keywords": [
+      "tablet",
+      "ipad",
+      "2-in-1",
+      "convertible",
+      "android tablet",
+      "surface",
+      "touchscreen laptop"
+    ]
+  },
+  {
+    "title": "Featured Gear Picks",
+    "url": "/special-picks.html",
+    "description": "Hand-picked featured gear across every category.",
+    "keywords": [
+      "featured",
+      "picks",
+      "best gear",
+      "top picks",
+      "recommendations",
+      "staff picks",
+      "deals"
+    ]
+  },
+  {
+    "title": "Massive Storage Solutions",
+    "url": "/storage-gear/index.html",
+    "description": "Hard drives, NAS and big storage solutions.",
+    "keywords": [
+      "storage",
+      "hard drive",
+      "NAS",
+      "external drive",
+      "backup",
+      "HDD",
+      "data storage",
+      "RAID"
+    ]
+  },
+  {
+    "title": "NVMe SSDs & Heatsink Solutions",
+    "url": "/storage-gear/ssd-guide.html",
+    "description": "Extreme performance NVMe SSDs and thermal solutions.",
+    "keywords": [
+      "SSD",
+      "NVMe",
+      "M.2",
+      "heatsink",
+      "storage",
+      "fast storage",
+      "PS5 SSD",
+      "internal SSD"
+    ]
+  },
+  {
+    "title": "Wi-Fi 7 vs Wi-Fi 6E",
+    "url": "/wifi-7-vs-wifi-6e-guide.html",
+    "description": "Which Wi-Fi upgrade makes sense? Comparison guide.",
+    "keywords": [
+      "wifi 7",
+      "wifi 6E",
+      "wi-fi",
+      "wireless",
+      "router upgrade",
+      "6GHz",
+      "mesh",
+      "internet speed"
+    ]
   }
 ]
