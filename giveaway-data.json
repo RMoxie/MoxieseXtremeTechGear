@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-10-18T15:54:22Z",
+  "updatedAt": "2026-10-19T18:44:08Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Ashampoo WinOptimizer 27",
-      "description": "PC tuning software for a fast, slim, and secure Windows.",
-      "price": "$14.00",
-      "url": "https://www.giveawayoftheday.com/ashampoo-winoptimizer-27/",
+      "title": "iReaShare iPhone Manager 2.1.26",
+      "description": "Transfer and manage iOS data on your computer.",
+      "price": "$29.95",
+      "url": "https://www.giveawayoftheday.com/ireashare-iphone-manager-2-1-23-2/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/01/c5e1520794d1417cb45cf67dec4b3d39.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2024/11/3c853f4693f047aa715106bb6c5acbd5.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "The Esoterica: Hollow Earth",
-      "description": "The fabled land of Agartha awaits your discovery in Esoterica: Hollow Earth!",
-      "price": "$3.99",
-      "url": "https://game.giveawayoftheday.com/the-esoterica-hollow-earth/",
+      "title": "KL Perfect Ten",
+      "description": "Prove that counting to ten can still be tricky.",
+      "price": "$5.00",
+      "url": "https://game.giveawayoftheday.com/kl-perfect-ten/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/182448a6f6bcd7076c7b71c73311b764.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/27d45d66a5030bf929c845e336336051.jpeg"
     },
     {
       "category": "android",
@@ -30,7 +30,7 @@
       "icon": "🤖",
       "title": "Eco inc. Save the Earth",
       "description": "Eco Inc. challenges you with a variety of environmental scenarios.",
-      "price": "$9.99",
+      "price": "9.99",
       "url": "https://android.giveawayoftheday.com/eco-inc-save-the-earth/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
       "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/02/com.gamefirst.savetheearth_app_icon_1771243504.png"
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Fotospot Road Trip Community",
-      "description": "Fotospot is your ultimate road trip companion!",
-      "price": "$4.99",
-      "url": "https://iphone.giveawayoftheday.com/fotospot-road-trip-community/",
+      "title": "Orderly",
+      "description": "Orderly is a nice and incredibly easy to-do list app designed exclusively for iOS 7.",
+      "price": "$1.99",
+      "url": "https://iphone.giveawayoftheday.com/orderly-tasks-to-do-lists-2/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1200952700_app_icon_big_1792243042.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/506632088_app_icon_big_1792394494.jpg"
     }
   ]
 }
