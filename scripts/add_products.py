@@ -215,6 +215,39 @@ def main():
         log(f"AI product added for {category}")
 
     save_history(history)
+def update_dashboard(history: dict):
+    dashboard_path = SITE_DIR / "dashboard.html"
+
+    # Count total products ever added
+    total_products = sum(len(day_data) for day_data in history.values())
+
+    # Today's additions
+    today = datetime.now().strftime("%Y-%m-%d")
+    today_entries = history.get(today, {})
+
+    # Build HTML table rows
+    today_rows = "".join(
+        f"<tr><td>{cat}</td><td>{url}</td></tr>"
+        for cat, url in today_entries.items()
+    )
+
+    history_rows = ""
+    for day, categories in history.items():
+        for cat, url in categories.items():
+            history_rows += f"<tr><td>{day}</td><td>{cat}</td><td>{url}</td></tr>"
+
+    # Load dashboard template
+    html = dashboard_path.read_text(encoding="utf-8")
+
+    # Replace placeholders
+    html = html.replace("Loading...", today) \
+               .replace("<table id=\"today-table\"></table>",
+                        f"<table><tr><th>Category</th><th>Product URL</th></tr>{today_rows}</table>") \
+               .replace("<table id=\"history-table\"></table>",
+                        f"<table><tr><th>Date</th><th>Category</th><th>Product URL</th></tr>{history_rows}</table>") \
+               .replace("Loading...</p>", f"{total_products}</p>")
+
+    dashboard_path.write_text(html, encoding="utf-8")
 
 # ---------------------------------------------------------
 # RUN
