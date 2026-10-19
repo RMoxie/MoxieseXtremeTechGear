@@ -1,1 +1,36 @@
+name: Daily Add Products
+
+on:
+  schedule:
+    - cron: "0 2 * * *"   # Runs every day at 2 AM
+  workflow_dispatch:
+
+jobs:
+  add-products:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run product add script
+        run: |
+          python scripts/add_products.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "Daily automated product addition"
+          git push
 
