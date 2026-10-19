@@ -1,17 +1,21 @@
-# add_products.py
-
 import pathlib
 import json
-
-ROOT = pathlib.Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "data"
-MANUAL_FILE = DATA_DIR / "manual_products.json"   # your links
-SITE_DIR = ROOT / "site"                          # your HTML files
-
-TRENDING_CATEGORY_FILE = SITE_DIR / "trending-tech-picks.html"
+import requests
+from bs4 import BeautifulSoup
+from datetime import datetime
 
 # ---------------------------------------------------------
-# CATEGORY LIST (one product per category per day)
+# PATHS
+# ---------------------------------------------------------
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT / "data"
+SITE_DIR = ROOT / "site"
+
+MANUAL_FILE = DATA_DIR / "manual_products.json"
+HISTORY_FILE = DATA_DIR / "product_history.json"
+
+# ---------------------------------------------------------
+# CATEGORY LIST
 # ---------------------------------------------------------
 CATEGORIES = [
     "drones",
@@ -21,15 +25,14 @@ CATEGORIES = [
     "coding",
     "desktop-systems",
     "scuba",
-    "trending-tech-picks"  # catch-all
+    "trending-tech-picks"
 ]
+
 BEST_SELLER_URLS = {
     "drones": "https://www.amazon.com/Best-Sellers-Camera-Photo-Drones/zgbs/photo/2975392011",
     "audio": "https://www.amazon.com/Best-Sellers-Electronics-Headphones/zgbs/electronics/172541",
     "portable-computers": "https://www.amazon.com/Best-Sellers-Computers-Tablets/zgbs/pc/541966",
     "storage": "https://www.amazon.com/Best-Sellers-Computers-Accessories-External-Hard-Drives/zgbs/pc/595048",
-    # pick one for coding:
-    # "coding": "https://www.amazon.com/Best-Sellers-Computers-Accessories-Computer-Keyboards/zgbs/pc/172574",
     "coding": "https://www.amazon.com/Best-Sellers-Books-Programming/zgbs/books/3952",
     "desktop-systems": "https://www.amazon.com/Best-Sellers-Computers-Accessories-Desktop-Computers/zgbs/pc/565098",
     "scuba": "https://www.amazon.com/Best-Sellers-Sports-Outdoors-Diving-Snorkeling/zgbs/sporting-goods/3410851",
@@ -39,7 +42,37 @@ BEST_SELLER_URLS = {
 AFFILIATE_TAG = "moxie-20"
 
 # ---------------------------------------------------------
-# LOAD / CLEAR MANUAL PRODUCTS
+# LOGGING
+# ---------------------------------------------------------
+def log(msg: str):
+    print(f"[TechGear] {msg}")
+
+# ---------------------------------------------------------
+# HISTORY SYSTEM
+# ---------------------------------------------------------
+def load_history():
+    if not HISTORY_FILE.exists():
+        HISTORY_FILE.write_text("{}", encoding="utf-8")
+        return {}
+    try:
+        with HISTORY_FILE.open("r", encoding="utf-8") as f:
+            return json.load(f)
+    except:
+        return {}
+
+def save_history(history: dict):
+    with HISTORY_FILE.open("w", encoding="utf-8") as f:
+        json.dump(history, f, indent=2)
+
+def product_already_added(history: dict, product_url: str) -> bool:
+    for day, categories in history.items():
+        for cat, url in categories.items():
+            if url == product_url:
+                return True
+    return False
+
+# ---------------------------------------------------------
+# MANUAL PRODUCTS
 # ---------------------------------------------------------
 def load_manual_products():
     if not MANUAL_FILE.exists():
@@ -51,29 +84,8 @@ def clear_manual_products():
     MANUAL_FILE.write_text("[]", encoding="utf-8")
 
 # ---------------------------------------------------------
-# FETCH AMAZON PRODUCT (placeholder)
+# AMAZON SCRAPER
 # ---------------------------------------------------------
-def fetch_amazon_product(url: str) -> dict:
-    """
-    TODO: Implement:
-    - Fetch title
-    - Fetch description
-    - Fetch main image URL
-    - Normalize affiliate tag (moxie-20)
-    """
-    return {
-        "name": "Example Product",
-        "description": "Short description from Amazon.",
-        "image_url": "https://example.com/image.jpg",
-        "amazon_url": url,
-    }
-
-# ---------------------------------------------------------
-# AI PRODUCT PICKER (placeholder)
-# ---------------------------------------------------------
-import requests
-from bs4 import BeautifulSoup
-
 def ensure_affiliate_tag(url: str) -> str:
     if "amazon." not in url:
         return url
@@ -95,20 +107,19 @@ def ai_find_product_for_category(category: str) -> dict:
         resp = requests.get(url, timeout=15)
         resp.raise_for_status()
     except Exception:
+        log(f"Failed to fetch Amazon page for {category}")
         return None
 
     soup = BeautifulSoup(resp.text, "html.parser")
 
-    # Amazon Best Seller pages often use this structure; may need tweaking over time
     item = soup.select_one(".zg-grid-general-faceout, .zg-item-immersion, .a-section.a-spacing-none.p13n-asin")
     if not item:
+        log(f"No product found for {category}")
         return None
 
-    # Title
     title_el = item.select_one(".p13n-sc-truncated, .a-link-normal")
     name = title_el.get_text(strip=True) if title_el else "Amazon Best Seller"
 
-    # Link
     link_el = item.select_one("a.a-link-normal")
     if link_el and link_el.get("href"):
         product_url = "https://www.amazon.com" + link_el["href"].split("?", 1)[0]
@@ -117,11 +128,9 @@ def ai_find_product_for_category(category: str) -> dict:
 
     product_url = ensure_affiliate_tag(product_url)
 
-    # Image
     img_el = item.select_one("img")
     image_url = img_el.get("src") if img_el and img_el.get("src") else "https://via.placeholder.com/400x400?text=Product"
 
-    # Description (simple version: reuse title)
     description = f"Trending pick in {category.replace('-', ' ').title()} from Amazon Best Sellers."
 
     return {
@@ -132,45 +141,7 @@ def ai_find_product_for_category(category: str) -> dict:
     }
 
 # ---------------------------------------------------------
-# ONE PRODUCT PER CATEGORY PER DAY
-# ---------------------------------------------------------
-def get_one_product_per_category():
-    results = {}
-
-    manual_products = load_manual_products()
-
-    for category in CATEGORIES:
-
-        # 1) Manual override for this category
-        manual = [
-            p for p in manual_products
-            if p.get("category") == category
-        ]
-        if manual:
-            results[category] = fetch_amazon_product(manual[0]["amazon_url"])
-            continue
-
-        # 2) AI-selected product for this category
-        ai_product = ai_find_product_for_category(category)
-        if ai_product:
-            results[category] = ai_product
-            continue
-
-        # 3) Fallback: Trending Tech Picks
-        fallback = ai_find_product_for_category("trending-tech-picks")
-        if fallback:
-            results[category] = fallback
-
-    return results
-
-# ---------------------------------------------------------
-# CATEGORY ASSIGNMENT
-# ---------------------------------------------------------
-def assign_category(product: dict) -> str:
-    return "trending-tech-picks"
-
-# ---------------------------------------------------------
-# BUILD PRODUCT CARD HTML
+# HTML BUILDER
 # ---------------------------------------------------------
 def build_product_card(product: dict) -> str:
     return f"""
@@ -182,13 +153,9 @@ def build_product_card(product: dict) -> str:
 </div>
 """.strip()
 
-# ---------------------------------------------------------
-# INSERT PRODUCT INTO CATEGORY HTML FILE
-# ---------------------------------------------------------
 def insert_into_category(category: str, card_html: str):
     target = SITE_DIR / f"{category}.html"
 
-    # If file doesn't exist, create a basic skeleton
     if not target.exists():
         target.write_text("<div class=\"products\">\n</div>\n", encoding="utf-8")
 
@@ -202,30 +169,55 @@ def insert_into_category(category: str, card_html: str):
     target.write_text(content, encoding="utf-8")
 
 # ---------------------------------------------------------
-# MAIN PROCESS
+# MAIN DAILY PROCESS
 # ---------------------------------------------------------
 def main():
-    # 1) Manual products
+    history = load_history()
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    if today not in history:
+        history[today] = {}
+
     manual_products = load_manual_products()
+
+    # Manual products first
     for entry in manual_products:
-        product = fetch_amazon_product(entry["amazon_url"])
-        category = entry.get("category") or assign_category(product)
+        product = ai_find_product_for_category(entry["category"])
+        if not product:
+            continue
+
+        if product_already_added(history, product["amazon_url"]):
+            log(f"Duplicate manual product skipped for {entry['category']}")
+            continue
+
         card = build_product_card(product)
-        insert_into_category(category, card)
+        insert_into_category(entry["category"], card)
+
+        history[today][entry["category"]] = product["amazon_url"]
+        log(f"Manual product added for {entry['category']}")
 
     clear_manual_products()
 
-    # 2) AI-picked products (one per category per day)
-    category_products = get_one_product_per_category()
-
-    for category, product in category_products.items():
+    # AI products
+    for category in CATEGORIES:
+        product = ai_find_product_for_category(category)
         if not product:
             continue
+
+        if product_already_added(history, product["amazon_url"]):
+            log(f"Duplicate AI product skipped for {category}")
+            continue
+
         card = build_product_card(product)
         insert_into_category(category, card)
 
+        history[today][category] = product["amazon_url"]
+        log(f"AI product added for {category}")
+
+    save_history(history)
+
 # ---------------------------------------------------------
-# RUN SCRIPT
+# RUN
 # ---------------------------------------------------------
 if __name__ == "__main__":
     main()
