@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TechGear Automation Dashboard</title>
+<style>
+  body {
+    background: #0d1117;
+    color: #e6edf3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  h1 {
+    color: #58a6ff;
+    border-bottom: 2px solid #30363d;
+    padding-bottom: 10px;
+  }
+  .section {
+    background: #161b22;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+  }
+  .section h2 {
+    color: #79c0ff;
+    margin-top: 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  th, td {
+    border: 1px solid #30363d;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background: #21262d;
+  }
+</style>
+</head>
+<body>
+<h1>TechGear Automation Dashboard</h1>
+
+<div class="section">
+  <h2>Last Run</h2>
+  <p id="last-run">Loading...</p>
+</div>
+
+<div class="section">
+  <h2>Products Added Today</h2>
+  <table id="today-table"></table>
+</div>
+
+<div class="section">
+  <h2>History Timeline</h2>
+  <table id="history-table"></table>
+</div>
+
+<div class="section">
+  <h2>Total Products Added</h2>
+  <p id="total-count">Loading...</p>
+</div>
+
+</body>
+</html>
 
