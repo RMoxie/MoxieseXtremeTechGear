@@ -1,1 +1,40 @@
+name: Add + Audit + Deploy
+
+on:
+  schedule:
+    - cron: "0 4 * * *"   # Runs every day at 4 AM
+  workflow_dispatch:
+
+jobs:
+  add-audit-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Add new products
+        run: |
+          python scripts/add_products.py
+
+      - name: Audit all products
+        run: |
+          python scripts/audit_products.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "Automated add + audit + deploy"
+          git push
 
