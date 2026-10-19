@@ -11,7 +11,6 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 SITE_DIR = ROOT / "site"
 
-MANUAL_FILE = DATA_DIR / "manual_products.json"
 HISTORY_FILE = DATA_DIR / "product_history.json"
 
 # ---------------------------------------------------------
@@ -70,18 +69,6 @@ def product_already_added(history: dict, product_url: str) -> bool:
             if url == product_url:
                 return True
     return False
-
-# ---------------------------------------------------------
-# MANUAL PRODUCTS
-# ---------------------------------------------------------
-def load_manual_products():
-    if not MANUAL_FILE.exists():
-        return []
-    with MANUAL_FILE.open("r", encoding="utf-8") as f:
-        return json.load(f)
-
-def clear_manual_products():
-    MANUAL_FILE.write_text("[]", encoding="utf-8")
 
 # ---------------------------------------------------------
 # AMAZON SCRAPER
@@ -169,6 +156,37 @@ def insert_into_category(category: str, card_html: str):
     target.write_text(content, encoding="utf-8")
 
 # ---------------------------------------------------------
+# DASHBOARD UPDATER
+# ---------------------------------------------------------
+def update_dashboard(history: dict):
+    dashboard_path = SITE_DIR / "dashboard.html"
+
+    total_products = sum(len(day_data) for day_data in history.values())
+    today = datetime.now().strftime("%Y-%m-%d")
+    today_entries = history.get(today, {})
+
+    today_rows = "".join(
+        f"<tr><td>{cat}</td><td>{url}</td></tr>"
+        for cat, url in today_entries.items()
+    )
+
+    history_rows = ""
+    for day, categories in history.items():
+        for cat, url in categories.items():
+            history_rows += f"<tr><td>{day}</td><td>{cat}</td><td>{url}</td></tr>"
+
+    html = dashboard_path.read_text(encoding="utf-8")
+
+    html = html.replace("Loading...", today) \
+               .replace("<table id=\"today-table\"></table>",
+                        f"<table><tr><th>Category</th><th>Product URL</th></tr>{today_rows}</table>") \
+               .replace("<table id=\"history-table\"></table>",
+                        f"<table><tr><th>Date</th><th>Category</th><th>Product URL</th></tr>{history_rows}</table>") \
+               .replace("Loading...</p>", f"{total_products}</p>")
+
+    dashboard_path.write_text(html, encoding="utf-8")
+
+# ---------------------------------------------------------
 # MAIN DAILY PROCESS
 # ---------------------------------------------------------
 def main():
@@ -177,26 +195,6 @@ def main():
 
     if today not in history:
         history[today] = {}
-
-    manual_products = load_manual_products()
-
-    # Manual products first
-    for entry in manual_products:
-        product = ai_find_product_for_category(entry["category"])
-        if not product:
-            continue
-
-        if product_already_added(history, product["amazon_url"]):
-            log(f"Duplicate manual product skipped for {entry['category']}")
-            continue
-
-        card = build_product_card(product)
-        insert_into_category(entry["category"], card)
-
-        history[today][entry["category"]] = product["amazon_url"]
-        log(f"Manual product added for {entry['category']}")
-
-    clear_manual_products()
 
     # AI products
     for category in CATEGORIES:
@@ -215,39 +213,7 @@ def main():
         log(f"AI product added for {category}")
 
     save_history(history)
-def update_dashboard(history: dict):
-    dashboard_path = SITE_DIR / "dashboard.html"
-
-    # Count total products ever added
-    total_products = sum(len(day_data) for day_data in history.values())
-
-    # Today's additions
-    today = datetime.now().strftime("%Y-%m-%d")
-    today_entries = history.get(today, {})
-
-    # Build HTML table rows
-    today_rows = "".join(
-        f"<tr><td>{cat}</td><td>{url}</td></tr>"
-        for cat, url in today_entries.items()
-    )
-
-    history_rows = ""
-    for day, categories in history.items():
-        for cat, url in categories.items():
-            history_rows += f"<tr><td>{day}</td><td>{cat}</td><td>{url}</td></tr>"
-
-    # Load dashboard template
-    html = dashboard_path.read_text(encoding="utf-8")
-
-    # Replace placeholders
-    html = html.replace("Loading...", today) \
-               .replace("<table id=\"today-table\"></table>",
-                        f"<table><tr><th>Category</th><th>Product URL</th></tr>{today_rows}</table>") \
-               .replace("<table id=\"history-table\"></table>",
-                        f"<table><tr><th>Date</th><th>Category</th><th>Product URL</th></tr>{history_rows}</table>") \
-               .replace("Loading...</p>", f"{total_products}</p>")
-
-    dashboard_path.write_text(html, encoding="utf-8")
+    update_dashboard(history)
 
 # ---------------------------------------------------------
 # RUN
