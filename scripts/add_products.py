@@ -23,6 +23,20 @@ CATEGORIES = [
     "scuba",
     "trending-tech-picks"  # catch-all
 ]
+BEST_SELLER_URLS = {
+    "drones": "https://www.amazon.com/Best-Sellers-Camera-Photo-Drones/zgbs/photo/2975392011",
+    "audio": "https://www.amazon.com/Best-Sellers-Electronics-Headphones/zgbs/electronics/172541",
+    "portable-computers": "https://www.amazon.com/Best-Sellers-Computers-Tablets/zgbs/pc/541966",
+    "storage": "https://www.amazon.com/Best-Sellers-Computers-Accessories-External-Hard-Drives/zgbs/pc/595048",
+    # pick one for coding:
+    # "coding": "https://www.amazon.com/Best-Sellers-Computers-Accessories-Computer-Keyboards/zgbs/pc/172574",
+    "coding": "https://www.amazon.com/Best-Sellers-Books-Programming/zgbs/books/3952",
+    "desktop-systems": "https://www.amazon.com/Best-Sellers-Computers-Accessories-Desktop-Computers/zgbs/pc/565098",
+    "scuba": "https://www.amazon.com/Best-Sellers-Sports-Outdoors-Diving-Snorkeling/zgbs/sporting-goods/3410851",
+    "trending-tech-picks": "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics",
+}
+
+AFFILIATE_TAG = "moxie-20"
 
 # ---------------------------------------------------------
 # LOAD / CLEAR MANUAL PRODUCTS
@@ -57,13 +71,65 @@ def fetch_amazon_product(url: str) -> dict:
 # ---------------------------------------------------------
 # AI PRODUCT PICKER (placeholder)
 # ---------------------------------------------------------
+import requests
+from bs4 import BeautifulSoup
+
+def ensure_affiliate_tag(url: str) -> str:
+    if "amazon." not in url:
+        return url
+    if "tag=" in url:
+        parts = url.split("tag=")
+        before = parts[0]
+        after = parts[1].split("&", 1)
+        rest = after[1] if len(after) > 1 else ""
+        return f"{before}tag={AFFILIATE_TAG}" + (f"&{rest}" if rest else "")
+    sep = "&" if "?" in url else "?"
+    return f"{url}{sep}tag={AFFILIATE_TAG}"
+
 def ai_find_product_for_category(category: str) -> dict:
-    """
-    TODO: Implement:
-    - AI logic to pick one Amazon product per category
-    - Return dict with name, description, image_url, amazon_url
-    """
-    return None
+    url = BEST_SELLER_URLS.get(category)
+    if not url:
+        return None
+
+    try:
+        resp = requests.get(url, timeout=15)
+        resp.raise_for_status()
+    except Exception:
+        return None
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    # Amazon Best Seller pages often use this structure; may need tweaking over time
+    item = soup.select_one(".zg-grid-general-faceout, .zg-item-immersion, .a-section.a-spacing-none.p13n-asin")
+    if not item:
+        return None
+
+    # Title
+    title_el = item.select_one(".p13n-sc-truncated, .a-link-normal")
+    name = title_el.get_text(strip=True) if title_el else "Amazon Best Seller"
+
+    # Link
+    link_el = item.select_one("a.a-link-normal")
+    if link_el and link_el.get("href"):
+        product_url = "https://www.amazon.com" + link_el["href"].split("?", 1)[0]
+    else:
+        product_url = url
+
+    product_url = ensure_affiliate_tag(product_url)
+
+    # Image
+    img_el = item.select_one("img")
+    image_url = img_el.get("src") if img_el and img_el.get("src") else "https://via.placeholder.com/400x400?text=Product"
+
+    # Description (simple version: reuse title)
+    description = f"Trending pick in {category.replace('-', ' ').title()} from Amazon Best Sellers."
+
+    return {
+        "name": name,
+        "description": description,
+        "image_url": image_url,
+        "amazon_url": product_url,
+    }
 
 # ---------------------------------------------------------
 # ONE PRODUCT PER CATEGORY PER DAY
