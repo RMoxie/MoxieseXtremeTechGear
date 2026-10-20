@@ -9,6 +9,7 @@
       window.__moxieSiteSearchLoaded = true;
 
       const CATEGORY_LABELS = {
+        "/camping-outdoors-equipment.html": { title: "🏕️ Camping and outdoors Equipment" },
         "/": { title: "🏠 Home" },
         "/offers.html": { title: "🎁 Deals, Drops & Giveaways" },
         "/special-picks.html": { title: "⭐ Featured Gear Picks" },
@@ -180,6 +181,15 @@
 
         if (!headerTop) return;
 
+        const campingPath = "/camping-outdoors-equipment.html";
+        const primaryNav = document.querySelector(".site-primary-nav");
+        if (primaryNav && !primaryNav.querySelector(`a[href="${campingPath}"]`)) {
+          const campingLink = document.createElement("a");
+          campingLink.href = campingPath;
+          campingLink.textContent = "Camping and outdoors Equipment";
+          (primaryNav.querySelector(".site-nav-more-menu") || primaryNav).append(campingLink);
+        }
+
         const navLinks = [
           ...document.querySelectorAll(
             ".site-primary-nav a[href]"
@@ -267,7 +277,7 @@
 
       // Only ordinary page content is stored in this cache.
       // The keyword dictionary is loaded separately.
-      const CACHE_KEY = "moxie-site-search-v2";
+      const CACHE_KEY = "moxie-site-search-v3";
       const CACHE_MAX_AGE = 24 * 60 * 60 * 1000;
       let indexPromise;
 
