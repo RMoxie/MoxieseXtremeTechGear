@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-10-19T18:44:08Z",
+  "updatedAt": "2026-10-20T17:12:36Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "iReaShare iPhone Manager 2.1.26",
-      "description": "Transfer and manage iOS data on your computer.",
-      "price": "$29.95",
-      "url": "https://www.giveawayoftheday.com/ireashare-iphone-manager-2-1-23-2/",
+      "title": "50 Sharpen Photoshop Actions",
+      "description": "Get ready to create magic right in Photoshop!",
+      "price": "$15.00",
+      "url": "https://www.giveawayoftheday.com/50-sharpen-photoshop-actions/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2024/11/3c853f4693f047aa715106bb6c5acbd5.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/082241da31edec15791fa22e42b1191e.jpeg"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "KL Perfect Ten",
-      "description": "Prove that counting to ten can still be tricky.",
+      "title": "Pixel Board Puzzle 3D",
+      "description": "Step into a vibrant isometric grid filled with tactical challenges.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/kl-perfect-ten/",
+      "url": "https://game.giveawayoftheday.com/pixel-board-puzzle-3d/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/27d45d66a5030bf929c845e336336051.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/c1ecebe20c8a0a7906629ebc0948d332.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Orderly",
-      "description": "Orderly is a nice and incredibly easy to-do list app designed exclusively for iOS 7.",
-      "price": "$1.99",
-      "url": "https://iphone.giveawayoftheday.com/orderly-tasks-to-do-lists-2/",
+      "title": "Notes Writer Pro - Sync &Share",
+      "description": "Notes Writer is an excellent assistant in study and business, also being effective for writing down your ideas.",
+      "price": "$14.99",
+      "url": "https://iphone.giveawayoftheday.com/notes-writer-pro-sync-share/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/506632088_app_icon_big_1792394494.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1422480068_app_icon_big_1792243114.jpg"
     }
   ]
 }
