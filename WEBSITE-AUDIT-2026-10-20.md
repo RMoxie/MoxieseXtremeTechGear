@@ -10,9 +10,10 @@ Repository-source audit of all 56 original sitemap pages, 134 unique local link/
 - No missing page titles, meta descriptions, canonical links, H1 headings, image alt attributes, duplicate IDs, or malformed JSON-LD detected by these checks.
 - Search keyword dictionary status: 200; valid JSON: true.
 
-## Findings requiring follow-up
-1. index.html: “Start with three of the most useful areas” describes a featured grid containing four cards. Update this introduction to reflect four areas or remove the number.
-2. site-search.js: Drones and Home Safety & Security are absent from CATEGORY_LABELS. Their navigation labels and active-category highlighting do not get the same shared enhancement as mapped categories. Add appropriate labels (and Drone subpage mappings where relevant).
+## Follow-ups resolved — October 21, 2026
+
+- `index.html`: Updated the introduction from “three” to “four” to match the four featured cards.
+- `site-search.js`: Added shared navigation labels for Drones and Home Safety & Security, plus Drones active-category mappings for the comparison guide, Drone 101, Flying Tips, and Flyers Sign-In pages.
 
 ## Changes requested and completed
 - Created camping-outdoors-equipment.html with Camping and outdoors Equipment as the category name.
