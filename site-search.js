@@ -9,6 +9,8 @@
       window.__moxieSiteSearchLoaded = true;
 
       const CATEGORY_LABELS = {
+        "/drones.html": { title: "🚁 Drones — Mini, Mid-Range & High-End" },
+        "/home-safety-security.html": { title: "🛡️ Home Safety & Security Gear" },
         "/camping-outdoors-equipment.html": { title: "🏕️ Camping and outdoors Equipment" },
         "/": { title: "🏠 Home" },
         "/offers.html": { title: "🎁 Deals, Drops & Giveaways" },
@@ -58,6 +60,10 @@
       };
 
       const PAGE_CATEGORY_PATHS = {
+        "/drone-comparison.html": "/drones.html",
+        "/drone-101.html": "/drones.html",
+        "/flying-tips.html": "/drones.html",
+        "/flyers-signin.html": "/drones.html",
         "/": "/",
         "/index.html": "/",
         "/airline-safe-power-bank-capacity-guide.html":
