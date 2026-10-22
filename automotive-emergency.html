@@ -30,7 +30,8 @@
     .choose-grid,.tier-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem} .auto-checklist,.auto-tier{padding:1.25rem} .auto-checklist h3,.auto-tier h3{margin-top:0} .auto-checklist p,.auto-tier p{color:var(--text-muted,#b7c3d4)}
     .price-note{font-size:.9rem;color:var(--text-muted,#b7c3d4)}
     @media(max-width:780px){.auto-intro,.auto-grid,.choose-grid,.tier-grid{grid-template-columns:1fr}.auto-card.featured{grid-column:auto}}
-  </style>
+  .card-photo { width:100%; height:170px; object-fit:cover; display:block; border-radius:10px; margin-bottom:12px; }
+</style>
 
   <meta name="description" content="Compare tire inflators, jump starters, dash cams, diagnostic scanners, battery tools, and roadside emergency kits for safer driving and travel.">
   <meta name="theme-color" content="#0f172a">
@@ -129,7 +130,7 @@
       <div class="auto-grid">
         <article class="auto-card featured">
           <span class="tag">Best compact tire tool</span>
-          <h3>AstroAI L7 Portable Tire Inflator</h3>
+          <img class="card-photo" src="/pic-auto-astroai-inflator.jpg" alt="Portable tire inflator" loading="lazy"><h3>AstroAI L7 Portable Tire Inflator</h3>
           <p>A sub-one-pound cordless inflator for common car, motorcycle, bicycle, and ball inflation. It offers a digital gauge, pressure presets, auto-stop, an LED emergency light, and USB backup power.</p>
           <ul><li>Rated up to 150 PSI</li><li>4000mAh rechargeable battery</li><li>Designed for quick top-offs rather than large truck tires</li></ul>
           <p class="fit">Best fit: Drivers wanting an affordable, glove-box-friendly first purchase.</p>
@@ -138,7 +139,7 @@
 
         <article class="auto-card">
           <span class="tag">Best battery recovery</span>
-          <h3>NOCO Boost GB40 Jump Starter</h3>
+          <img class="card-photo" src="/pic-auto-noco-gb40.jpg" alt="Jump starter" loading="lazy"><h3>NOCO Boost GB40 Jump Starter</h3>
           <p>A compact 12V lithium jump starter with 1000 amps of peak power, rated by the manufacturer for engines up to 6.0L gasoline and 3.0L diesel.</p>
           <ul><li>Spark-proof connection design</li><li>Reverse-polarity protection</li><li>Integrated power bank and multi-mode flashlight</li></ul>
           <p class="fit">Best fit: A primary emergency tool for conventional 12V vehicles.</p>
@@ -147,7 +148,7 @@
 
         <article class="auto-card">
           <span class="tag">Best full-coverage camera</span>
-          <h3>VIOFO A229 Pro 3-Channel Dash Cam</h3>
+          <img class="card-photo" src="/pic-auto-viofo-dashcam.jpg" alt="3-channel dash cam" loading="lazy"><h3>VIOFO A229 Pro 3-Channel Dash Cam</h3>
           <p>A high-detail setup covering the road ahead, rear traffic, and the cabin. HDR and infrared cabin lighting improve difficult lighting situations.</p>
           <ul><li>4K front, 2K rear, and 1080p cabin video</li><li>Voice controls and status notifications</li><li>Optional parking modes require a compatible hardwire kit</li></ul>
           <p class="fit">Best fit: Families, rideshare drivers, and anyone prioritizing incident documentation.</p>
@@ -156,7 +157,7 @@
 
         <article class="auto-card">
           <span class="tag">Best preventative check</span>
-          <h3>TOPDON BT100 Battery Tester</h3>
+          <img class="card-photo" src="/pic-auto-topdon-tester.jpg" alt="Battery tester" loading="lazy"><h3>TOPDON BT100 Battery Tester</h3>
           <p>A compact diagnostic tool for checking battery health, state of charge, cranking performance, and the charging system before a weak battery becomes a roadside problem.</p>
           <ul><li>Supports common 12V flooded, AGM, EFB, and GEL batteries</li><li>100–2000 CCA testing range</li><li>No separate charging required when properly connected</li></ul>
           <p class="fit">Best fit: DIY maintenance and seasonal battery checks.</p>
@@ -165,7 +166,7 @@
 
         <article class="auto-card">
           <span class="tag">Best all-in-one foundation</span>
-          <h3>Everlit Roadside Emergency Kit</h3>
+          <img class="card-photo" src="/pic-auto-everlit-kit.jpg" alt="Roadside emergency kit" loading="lazy"><h3>Everlit Roadside Emergency Kit</h3>
           <p>A broad trunk kit combining a 12V inflator, jumper cables, first-aid supplies, visibility gear, and basic recovery tools.</p>
           <ul><li>Digital inflator with preset shutoff</li><li>12-foot jumper cables and tow strap</li><li>First-aid and roadside visibility supplies</li></ul>
           <p class="fit">Best fit: New drivers or vehicles that do not yet have an emergency kit.</p>
@@ -174,7 +175,7 @@
 
         <article class="auto-card">
           <span class="tag">Best battery maintainer</span>
-          <h3>NOCO GENIUS5 Smart Battery Charger</h3>
+          <img class="card-photo" src="/pic-auto-noco-genius5.jpg" alt="Smart battery charger" loading="lazy"><h3>NOCO GENIUS5 Smart Battery Charger</h3>
           <p>A compact 5-amp charger, maintainer, and desulfator for supported 6V and 12V lead-acid or lithium batteries. Automatic charging and temperature compensation make it useful for seasonal vehicles and batteries that sit between trips.</p>
           <ul><li>5A charging for supported 6V and 12V batteries</li><li>Modes for flooded, AGM, gel, maintenance-free, and lithium chemistries</li><li>Can detect batteries down to 1V; Force Mode requires careful manual use</li></ul>
           <p class="fit">Best fit: Garages maintaining a car, motorcycle, marine, or deep-cycle battery between uses.</p>
@@ -183,16 +184,16 @@
 
         <article class="auto-card">
           <span class="tag">Best app-based diagnostics</span>
-          <h3>BlueDriver Pro OBD2 Scanner</h3>
+          <img class="card-photo" src="/pic-auto-bluedriver.jpg" alt="OBD2 scanner" loading="lazy"><h3>BlueDriver Pro OBD2 Scanner</h3>
           <p>A Bluetooth scanner that pairs with iOS or Android to read and clear check-engine codes, graph live data, review emissions readiness, and surface repair reports without a subscription.</p>
           <ul><li>Supports 1996-and-newer OBD-II vehicles sold in North America</li><li>Enhanced ABS, airbag, transmission, and other system coverage varies by make and model</li><li>Compatibility checker helps confirm vehicle-specific functions before buying</li></ul>
           <p class="fit">Best fit: Drivers who want deeper diagnostics before deciding whether a warning needs DIY attention or a repair shop.</p>
           <a class="btn-buy" href="https://us.bluedriver.com/products/bluedriver-scan-tool" target="_blank" rel="noopener noreferrer">Review BlueDriver Pro →</a>
         </article>
-        <article class="auto-card"><span class="tag">Larger 12V battery recovery</span><h3>NOCO Boost X GBX45 Jump Starter</h3><p>A higher-output compact jump starter for supported engines, with USB-C fast recharging and power-bank duty.</p><ul><li>1,250A | 12V | 60W USB-C PD</li><li>Match the 6.5L gas / 4.0L diesel rating</li></ul><p class="fit">Best fit: Larger 12V battery recovery.</p><a class="btn-buy" href="https://no.co/gbx45" target="_blank" rel="noopener noreferrer">Review at official source →</a></article>
-        <article class="auto-card"><span class="tag">High-detail forward recording</span><h3>Garmin Dash Cam X310</h3><p>A compact high-resolution camera with voice control and a touchscreen for drivers who want detailed forward incident footage.</p><ul><li>4K video | 140° field of view | Touchscreen</li><li>Parking features need constant power and setup</li></ul><p class="fit">Best fit: High-detail forward recording.</p><a class="btn-buy" href="https://www.garmin.com/en-US/p/1391409/" target="_blank" rel="noopener noreferrer">Review at official source →</a></article>
-        <article class="auto-card"><span class="tag">Cordless tire top-offs</span><h3>Fanttik X8 APEX Tire Inflator</h3><p>A rechargeable inflator for routine car-tire top-offs and smaller inflatables, with presets and a built-in power-bank function.</p><ul><li>150 PSI | ±1 PSI precision | USB backup power</li><li>Not a substitute for a shop compressor</li></ul><p class="fit">Best fit: Cordless tire top-offs.</p><a class="btn-buy" href="https://fanttik.com/products/x8-apex-tire-inflator" target="_blank" rel="noopener noreferrer">Review at official source →</a></article>
-        <article class="auto-card"><span class="tag">Weather and outage readiness</span><h3>Midland ER310 Emergency Crank Radio</h3><p>A multi-source emergency radio with a bright SOS flashlight and backup battery option for outages, roadside kits, and severe-weather alerts.</p><ul><li>Weather radio | Solar + crank + rechargeable battery | AA backup</li><li>Test alerts and recharge it periodically</li></ul><p class="fit">Best fit: Weather and outage readiness.</p><a class="btn-buy" href="https://midlandusa.com/products/er310-portable-emergency-crank-weather-radio" target="_blank" rel="noopener noreferrer">Review at official source →</a></article>
+        <article class="auto-card"><span class="tag">Larger 12V battery recovery</span><img class="card-photo" src="/pic-auto-noco-gbx45.jpg" alt="Jump starter" loading="lazy"><h3>NOCO Boost X GBX45 Jump Starter</h3><p>A higher-output compact jump starter for supported engines, with USB-C fast recharging and power-bank duty.</p><ul><li>1,250A | 12V | 60W USB-C PD</li><li>Match the 6.5L gas / 4.0L diesel rating</li></ul><p class="fit">Best fit: Larger 12V battery recovery.</p><a class="btn-buy" href="https://no.co/gbx45" target="_blank" rel="noopener noreferrer">Review at official source →</a></article>
+        <article class="auto-card"><span class="tag">High-detail forward recording</span><img class="card-photo" src="/pic-auto-garmin-dashcam.jpg" alt="Dash cam" loading="lazy"><h3>Garmin Dash Cam X310</h3><p>A compact high-resolution camera with voice control and a touchscreen for drivers who want detailed forward incident footage.</p><ul><li>4K video | 140° field of view | Touchscreen</li><li>Parking features need constant power and setup</li></ul><p class="fit">Best fit: High-detail forward recording.</p><a class="btn-buy" href="https://www.garmin.com/en-US/p/1391409/" target="_blank" rel="noopener noreferrer">Review at official source →</a></article>
+        <article class="auto-card"><span class="tag">Cordless tire top-offs</span><img class="card-photo" src="/pic-auto-fanttik-inflator.jpg" alt="Cordless tire inflator" loading="lazy"><h3>Fanttik X8 APEX Tire Inflator</h3><p>A rechargeable inflator for routine car-tire top-offs and smaller inflatables, with presets and a built-in power-bank function.</p><ul><li>150 PSI | ±1 PSI precision | USB backup power</li><li>Not a substitute for a shop compressor</li></ul><p class="fit">Best fit: Cordless tire top-offs.</p><a class="btn-buy" href="https://fanttik.com/products/x8-apex-tire-inflator" target="_blank" rel="noopener noreferrer">Review at official source →</a></article>
+        <article class="auto-card"><span class="tag">Weather and outage readiness</span><img class="card-photo" src="/pic-auto-midland-radio.jpg" alt="Emergency crank radio" loading="lazy"><h3>Midland ER310 Emergency Crank Radio</h3><p>A multi-source emergency radio with a bright SOS flashlight and backup battery option for outages, roadside kits, and severe-weather alerts.</p><ul><li>Weather radio | Solar + crank + rechargeable battery | AA backup</li><li>Test alerts and recharge it periodically</li></ul><p class="fit">Best fit: Weather and outage readiness.</p><a class="btn-buy" href="https://midlandusa.com/products/er310-portable-emergency-crank-weather-radio" target="_blank" rel="noopener noreferrer">Review at official source →</a></article>
       </div>
       <p class="auto-note"><strong>Safety note:</strong> Follow the vehicle and tool manuals, keep batteries and inflators charged, and move to a safe location before attempting roadside work. Call professional roadside assistance when conditions are unsafe.</p>
     </section>
@@ -200,18 +201,18 @@
     <section class="auto-container" aria-labelledby="choose-title">
       <div class="section-head"><span class="section-kicker">Buying checklist</span><h2 id="choose-title">Three checks before you buy</h2></div>
       <div class="choose-grid">
-        <article class="auto-checklist"><h3>1. Vehicle compatibility</h3><p>Confirm voltage, engine-size limits, tire size, connector type, and operating temperature.</p></article>
-        <article class="auto-checklist"><h3>2. Power readiness</h3><p>Choose USB-C charging when practical, record recharge intervals, and inspect stored batteries every few months.</p></article>
-        <article class="auto-checklist"><h3>3. Safe operation</h3><p>Prioritize reverse-polarity protection, clear pressure presets, bright lighting, and controls usable with gloves.</p></article>
+        <article class="auto-checklist"><img class="card-photo" src="/pic-auto-checklist-compat.jpg" alt="Check vehicle compatibility" loading="lazy"><h3>1. Vehicle compatibility</h3><p>Confirm voltage, engine-size limits, tire size, connector type, and operating temperature.</p></article>
+        <article class="auto-checklist"><img class="card-photo" src="/pic-auto-checklist-power.jpg" alt="Power readiness" loading="lazy"><h3>2. Power readiness</h3><p>Choose USB-C charging when practical, record recharge intervals, and inspect stored batteries every few months.</p></article>
+        <article class="auto-checklist"><img class="card-photo" src="/pic-auto-checklist-safe.jpg" alt="Safe operation" loading="lazy"><h3>3. Safe operation</h3><p>Prioritize reverse-polarity protection, clear pressure presets, bright lighting, and controls usable with gloves.</p></article>
       </div>
     </section>
 
     <section class="auto-container" aria-labelledby="kit-title">
       <div class="section-head"><span class="section-kicker">Build in stages</span><h2 id="kit-title">A kit for every budget</h2></div>
       <div class="tier-grid">
-        <article class="auto-tier"><h3>Essential</h3><p>Start with the tire inflator, reflective triangle, flashlight, first aid, and your roadside-assistance details.</p></article>
-        <article class="auto-tier"><h3>Prepared</h3><p>Add the jump starter and battery tester so weak batteries can be identified and handled sooner.</p></article>
-        <article class="auto-tier"><h3>Maximum coverage</h3><p>Add the three-channel dash cam and a complete recovery kit, then schedule seasonal inspections.</p></article>
+        <article class="auto-tier"><img class="card-photo" src="/pic-auto-tier-essential.jpg" alt="Essential coverage tier" loading="lazy"><h3>Essential</h3><p>Start with the tire inflator, reflective triangle, flashlight, first aid, and your roadside-assistance details.</p></article>
+        <article class="auto-tier"><img class="card-photo" src="/pic-auto-tier-prepared.jpg" alt="Prepared coverage tier" loading="lazy"><h3>Prepared</h3><p>Add the jump starter and battery tester so weak batteries can be identified and handled sooner.</p></article>
+        <article class="auto-tier"><img class="card-photo" src="/pic-auto-tier-max.jpg" alt="Maximum coverage tier" loading="lazy"><h3>Maximum coverage</h3><p>Add the three-channel dash cam and a complete recovery kit, then schedule seasonal inspections.</p></article>
       </div>
       <p class="price-note">Product specifications were reviewed from current manufacturer and retailer sources on September 16, 2026. Confirm details for the exact configuration before purchasing.</p>
     </section>
