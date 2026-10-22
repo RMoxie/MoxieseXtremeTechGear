@@ -211,7 +211,8 @@
             font-size: 0.9rem;
             background: var(--card-bg);
         }
-    </style>
+    .card-photo { width:100%; height:170px; object-fit:cover; display:block; border-radius:10px; margin-bottom:12px; }
+</style>
 
   <link rel="stylesheet" href="/style.css?v=20260920a">
 
@@ -277,8 +278,8 @@
     </section>
     <div class="grid">
       <section>
-        <article class="card"><span class="status">Open for submissions</span><h2>Approved flyer entries</h2><div class="empty"><h3>Be among the first pilots</h3><p>No community entries have been approved yet. The first entries will appear here only after review.</p></div></article>
-        <article class="card" id="submit"><h2>Sign the flyers sheet</h2>
+        <article class="card"><span class="status">Open for submissions</span><img class="card-photo" src="/pic-hub-signin.jpg" alt="Approved flyer entries" loading="lazy"><h2>Approved flyer entries</h2><div class="empty"><h3>Be among the first pilots</h3><p>No community entries have been approved yet. The first entries will appear here only after review.</p></div></article>
+        <article class="card" id="submit"><img class="card-photo" src="/pic-fly-signinform.jpg" alt="Sign the flyers sheet" loading="lazy"><h2>Sign the flyers sheet</h2>
           <form data-community-form data-kind="Flyers Sheet" class="form-grid">
             <div class="field"><label for="f-name">Display name</label><input id="f-name" name="display name" maxlength="60" required autocomplete="nickname"></div>
             <div class="field"><label for="f-email">Your email address (kept private)</label><input id="f-email" name="private reply email" type="email" maxlength="120" required autocomplete="email"></div>
@@ -293,8 +294,8 @@
         </article>
       </section>
       <aside>
-        <article class="card"><h2>How moderation works</h2><ol class="steps"><li>Fill in the form, open the email draft, and click Send in your email app.</li><li>The owner reviews privacy and clarity.</li><li>Approved fields are added manually.</li><li>You can request correction or removal anytime.</li></ol></article>
-        <article class="card"><h2>Keep it friendly</h2><p>Entries are personal experiences, not product reviews or flying instruction. Be kind — every expert was once a beginner who crashed into a tree.</p></article>
+        <article class="card"><img class="card-photo" src="/pic-community-moderation.jpg" alt="How moderation works" loading="lazy"><h2>How moderation works</h2><ol class="steps"><li>Fill in the form, open the email draft, and click Send in your email app.</li><li>The owner reviews privacy and clarity.</li><li>Approved fields are added manually.</li><li>You can request correction or removal anytime.</li></ol></article>
+        <article class="card"><img class="card-photo" src="/pic-community-friendly.jpg" alt="Keep it friendly" loading="lazy"><h2>Keep it friendly</h2><p>Entries are personal experiences, not product reviews or flying instruction. Be kind — every expert was once a beginner who crashed into a tree.</p></article>
       </aside>
     </div>
   </div>
