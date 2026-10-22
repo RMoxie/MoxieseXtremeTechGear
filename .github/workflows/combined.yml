@@ -5,16 +5,19 @@ on:
     - cron: "0 4 * * *"   # Runs every day at 4 AM
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   add-audit-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.11"
 
@@ -35,6 +38,10 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add .
+          if git diff --cached --quiet; then
+            echo "No product changes to commit."
+            exit 0
+          fi
           git commit -m "Automated add + audit + deploy"
           git push
 
