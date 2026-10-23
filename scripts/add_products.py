@@ -38,7 +38,7 @@ BEST_SELLER_URLS = {
     "trending-tech-picks": "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics",
 }
 
-AFFILIATE_TAG = "moxie-20"
+AFFILIATE_TAG = "rmoxie-20"
 
 # ---------------------------------------------------------
 # LOGGING

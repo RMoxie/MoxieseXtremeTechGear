@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-10-20T17:12:36Z",
+  "updatedAt": "2026-10-23T04:51:52Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "50 Sharpen Photoshop Actions",
-      "description": "Get ready to create magic right in Photoshop!",
-      "price": "$15.00",
-      "url": "https://www.giveawayoftheday.com/50-sharpen-photoshop-actions/",
+      "title": "Apeaksoft MobieTrans 2.3.36",
+      "description": "Professional iOS data transfer and manager.",
+      "price": "$17.95 / month",
+      "url": "https://www.giveawayoftheday.com/apeaksoft-mobietrans-2-3-36/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/082241da31edec15791fa22e42b1191e.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2020/05/a391082ba0753ee9e6c6d897d55777ea.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Pixel Board Puzzle 3D",
-      "description": "Step into a vibrant isometric grid filled with tactical challenges.",
+      "title": "Flappy Kva 2",
+      "description": "Fly around columns, get points.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/pixel-board-puzzle-3d/",
+      "url": "https://game.giveawayoftheday.com/flappy-kva-2/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/c1ecebe20c8a0a7906629ebc0948d332.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/5b24dc43159893967e536451ee87c8f7.png"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Eco inc. Save the Earth",
-      "description": "Eco Inc. challenges you with a variety of environmental scenarios.",
-      "price": "9.99",
-      "url": "https://android.giveawayoftheday.com/eco-inc-save-the-earth/",
+      "title": "Sky Wings VIP : Pixel Fighters",
+      "description": "Are you looking for a brand new style of arcade shooter?",
+      "price": "$0.99",
+      "url": "https://android.giveawayoftheday.com/sky-wings-vip-pixel-fighters/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/02/com.gamefirst.savetheearth_app_icon_1771243504.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2024/01/com.livezen.retroshooting.vip_app_icon_1705837740.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Notes Writer Pro - Sync &Share",
-      "description": "Notes Writer is an excellent assistant in study and business, also being effective for writing down your ideas.",
-      "price": "$14.99",
-      "url": "https://iphone.giveawayoftheday.com/notes-writer-pro-sync-share/",
+      "title": "OBD Car Wizard | ELM327 OBD2",
+      "description": "Free iPhone & iPad App giveaway — featured today on Giveaway of the Day.",
+      "price": "$3.99",
+      "url": "https://iphone.giveawayoftheday.com/obd-car-wizard-elm327-obd2/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1422480068_app_icon_big_1792243114.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1312918682_app_icon_big_1792568981.jpg"
     }
   ]
 }

@@ -102,8 +102,10 @@ def fetch_item(category, label, icon, source):
     parser.feed(text)
     value = parser.values
     title, description, price = (value[key].strip() for key in ("title", "description", "price"))
-    if not title or not description or not price:
-        raise ValueError(f"Incomplete {category} offer: title/description/price missing")
+    if not title or not price:
+        raise ValueError(f"Incomplete {category} offer: title/price missing")
+    if not description:
+        description = f"Free {label} giveaway \u2014 featured today on Giveaway of the Day."
     host = urlsplit(source).hostname
     image = ""
     if value["image"]:
