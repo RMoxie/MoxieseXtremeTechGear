@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-10-23T17:12:09Z",
+  "updatedAt": "2026-10-24T15:59:37Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Ashampoo Face Blur",
-      "description": "Protect your privacy with Ashampoo Face Blur!",
-      "price": "$20.00",
-      "url": "https://www.giveawayoftheday.com/ashampoo-face-blur/",
+      "title": "Coolmuster iPhone Data Recovery 6.0.64",
+      "description": "Recover lost or deleted files from the iOS device and iTunes backup.",
+      "price": "$49.95",
+      "url": "https://www.giveawayoftheday.com/coolmuster-iphone-data-recovery-6-0-64/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/09/582214da6670e1dedc7ef069c27008b3.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2021/06/e1c077cddf4b0bace20fd1d3e3076fa8.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Frost Gates",
-      "description": "Slide colorful blocks across the board to guide each one to the gate.",
-      "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/frost-gates/",
+      "title": "Asian Riddles 3",
+      "description": "It's time for new adventures on ancient puzzles.",
+      "price": "$14.99",
+      "url": "https://game.giveawayoftheday.com/asian-riddles-3/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/4d85b4d7d11b1693c9c06d1305e1a208.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/da786611b7e868e066848a82232b7070.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Sky Wings VIP : Pixel Fighters",
-      "description": "Are you looking for a brand new style of arcade shooter?",
-      "price": "0.99",
-      "url": "https://android.giveawayoftheday.com/sky-wings-vip-pixel-fighters/",
+      "title": "Eco inc. Save the Earth",
+      "description": "Eco Inc. challenges you with a variety of environmental scenarios.",
+      "price": "9.99",
+      "url": "https://android.giveawayoftheday.com/eco-inc-save-the-earth/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2024/01/com.livezen.retroshooting.vip_app_icon_1705837740.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/10/com.gamefirst.savetheearth_app_icon_1792838232.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Rock Drum Machine: Real Drums",
-      "description": "Rock Drum Machine is a rock drummer in your pocket.",
-      "price": "$4.99",
-      "url": "https://iphone.giveawayoftheday.com/rock-drum-machine-real-drums/",
+      "title": "Symmetrain",
+      "description": "Choose your train and spot all differences as quickly as you can while driving from train station to train station!",
+      "price": "$0.99",
+      "url": "https://iphone.giveawayoftheday.com/symmetrain-2/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/725234217_app_icon_big_1792740082.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/725274537_app_icon_big_1792827393.jpg"
     }
   ]
 }
