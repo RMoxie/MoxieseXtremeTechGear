@@ -1125,5 +1125,24 @@
       "gifts for teens",
       "gifts for campers"
     ]
+  },
+  {
+    "title": "Smart Home",
+    "url": "/smart-home.html",
+    "description": "10 verified smart home picks: Echo Dot with Clock, Sonos Era 100, Nest and ecobee thermostats, Philips Hue, Lutron Caseta, August lock, myQ garage, Kasa plugs, Roomba j7+.",
+    "keywords": [
+      "smart home",
+      "home automation",
+      "echo dot",
+      "sonos era 100",
+      "nest thermostat",
+      "ecobee",
+      "philips hue",
+      "lutron caseta",
+      "august smart lock",
+      "myq garage",
+      "kasa smart plug",
+      "roomba j7"
+    ]
   }
 ]
