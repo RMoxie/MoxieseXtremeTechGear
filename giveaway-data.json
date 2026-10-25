@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-10-24T15:59:37Z",
+  "updatedAt": "2026-10-25T16:27:19Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Coolmuster iPhone Data Recovery 6.0.64",
-      "description": "Recover lost or deleted files from the iOS device and iTunes backup.",
-      "price": "$49.95",
-      "url": "https://www.giveawayoftheday.com/coolmuster-iphone-data-recovery-6-0-64/",
+      "title": "Leawo Blu-ray Player Premium 3.0.0.7",
+      "description": "Blu-ray/ DVD/ Video Player.",
+      "price": "$44.95",
+      "url": "https://www.giveawayoftheday.com/leawo-blu-ray-player-premium-3-0-0-7/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2021/06/e1c077cddf4b0bace20fd1d3e3076fa8.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2025/10/e5eac9025f7b71dd42701998d577a298.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Asian Riddles 3",
-      "description": "It's time for new adventures on ancient puzzles.",
-      "price": "$14.99",
-      "url": "https://game.giveawayoftheday.com/asian-riddles-3/",
+      "title": "Saving Clicklandia",
+      "description": "An ancient evil has awoken in the Kingdom of Clicklandia and chaos now reigns.",
+      "price": "$6.99",
+      "url": "https://game.giveawayoftheday.com/saving-clicklandia-2/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/da786611b7e868e066848a82232b7070.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2025/05/1fca77e0e934985648166c06ff133317.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Symmetrain",
-      "description": "Choose your train and spot all differences as quickly as you can while driving from train station to train station!",
-      "price": "$0.99",
-      "url": "https://iphone.giveawayoftheday.com/symmetrain-2/",
+      "title": "Responder.ai: Crime Alerts",
+      "description": "Responder.ai puts what is happening around you on one dark map.",
+      "price": "$2.99",
+      "url": "https://iphone.giveawayoftheday.com/responder-ai-crime-alerts/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/725274537_app_icon_big_1792827393.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/317435796_app_icon_big_1792702167.jpg"
     }
   ]
 }
