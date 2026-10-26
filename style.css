@@ -336,7 +336,7 @@ main.container > h1 {
 @media(max-width:620px){.giveaway-heading{align-items:start;flex-direction:column}.giveaway-grid{grid-template-columns:1fr}.giveaway-media{aspect-ratio:16/8}.giveaway-showcase{padding-top:2rem;padding-bottom:2rem}}
 @media(prefers-reduced-motion:reduce){.giveaway-card{transition:none}.giveaway-card:hover{transform:none}}
 
-/* Site-wide Cosmic Cliffs background — NASA/ESA/CSA/STScI */
+/* Site-wide background: simple blue/red/gold gradient in the logo colors (nebula photo retired 2026-10-25) */
 :root { --site-background-overlay: rgba(2, 6, 23, .22); }
 [data-theme="light"] { --site-background-overlay: rgba(248, 250, 252, .50); }
 html { background-color: #020617; }
@@ -355,7 +355,18 @@ body::after {
 }
 body::before {
   z-index: -2;
-  background: url("/moxie-cosmic-cliffs-background.webp") center center / cover no-repeat;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(37, 99, 235, .30), transparent 46%),
+    radial-gradient(circle at 88% 18%, rgba(220, 38, 38, .26), transparent 46%),
+    radial-gradient(ellipse at 50% 0%, rgba(250, 204, 21, .14), transparent 52%),
+    linear-gradient(180deg, #0b1220 0%, #0f172a 55%, #0b1220 100%);
+}
+[data-theme="light"] body::before {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(37, 99, 235, .15), transparent 46%),
+    radial-gradient(circle at 88% 18%, rgba(220, 38, 38, .13), transparent 46%),
+    radial-gradient(ellipse at 50% 0%, rgba(250, 204, 21, .22), transparent 52%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2f7 55%, #f8fafc 100%);
 }
 body::after {
   z-index: -1;
@@ -370,7 +381,7 @@ body::after {
 }
 
 
-/* Override the legacy script-injected background so the shared Cosmic Cliffs layer stays visible. */
+/* Override the legacy script-injected background so the shared site background layer stays visible. */
 html body,
 html[data-theme="dark"] body,
 html[data-theme="light"] body {
@@ -379,16 +390,8 @@ html[data-theme="light"] body {
 }
 body::before { background-position: center 42%; }
 
-/* Keep the site-wide image credit accurate and visible on every page. */
-.site-background-credit { font-size: 0 !important; }
-.site-background-credit > * { display: none !important; }
-.site-background-credit::after {
-  content: "Background image: \201C Cosmic Cliffs\201D  in the Carina Nebula. Credit: NASA, ESA, CSA, STScI.";
-  display: block;
-  font-size: .78rem;
-  line-height: 1.5;
-  color: var(--text-muted, #94a3b8);
-}
+/* The nebula photo is retired; the background is now a plain CSS gradient, so no photo credit is needed. */
+.site-background-credit { display: none !important; }
 
 
 /* Keep the photographic layer above the page canvas and content above the image. */
@@ -422,7 +425,7 @@ body::after {
 .moxie-hero-sheen { opacity: .45 !important; }
 
 
-/* Cosmic Cliffs visibility refinements — 2026-09-20 */
+/* site background visibility refinements — 2026-09-20 */
 :root {
   --moxie-panel-glass: rgba(17, 28, 48, .68);
   --moxie-panel-glass-strong: rgba(17, 28, 48, .78);
@@ -458,7 +461,7 @@ html[data-theme="light"] body .hero {
 }
 
 /* Moxies panoramic category glass — 2026-09-20
-   Unifies every category template while keeping Cosmic Cliffs visible during the full scroll. */
+   Unifies every category template while keeping site background visible during the full scroll. */
 html body main,
 html body main.container {
   background-color: transparent !important;
@@ -595,7 +598,7 @@ html[data-theme="light"] body footer {
 }
 
 /* Moxies transparent full-page shells — 2026-09-22
-   Keep layout wrappers clear so Cosmic Cliffs remains visible; cards and tables retain the shared glass treatment above. */
+   Keep layout wrappers clear so site background remains visible; cards and tables retain the shared glass treatment above. */
 html.moxie-category-page body main > :is(.dive-wrap, .community-wrap),
 html.moxie-category-page body > main.guide-wrap {
   background-color: transparent !important;
