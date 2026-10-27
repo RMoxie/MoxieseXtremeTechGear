@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6TMQMLGXP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-H6TMQMLGXP');
+  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Setup 101 — Build a Setup That Fits How You Play</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --flame-orange: #f97316;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --header-bg: #1e293b;
+            --hero-grad-start: #1e293b;
+            --hero-grad-end: #0f172a;
+        }
+
+        [data-theme="light"] {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --accent: #0284c7;
+            --flame-orange: #ea580c;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-color: #cbd5e1;
+            --header-bg: #ffffff;
+            --hero-grad-start: #f1f5f9;
+            --hero-grad-end: #f8fafc;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+        header {
+            background: var(--header-bg);
+            padding: 1.25rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--accent);
+            letter-spacing: 0.5px;
+            text-decoration: none;
+        }
+        .nav-wrap {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .theme-toggle {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .theme-toggle:hover {
+            border-color: var(--accent);
+        }
+
+        .hot-banner {
+            background: linear-gradient(90deg, #c2410c, #ea580c, #f97316, #ea580c, #c2410c);
+            background-size: 200% auto;
+            color: #ffffff;
+            text-align: center;
+            padding: 0.75rem 1rem;
+            font-weight: bold;
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+            animation: flameGlow 4s linear infinite;
+            border-bottom: 1px solid #9a3412;
+        }
+        @keyframes flameGlow {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1.5rem;
+            background: linear-gradient(to bottom, var(--hero-grad-start), var(--hero-grad-end));
+            border-bottom: 1px solid var(--border-color);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+        .hero p {
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+            border-left: 4px solid var(--flame-orange);
+            padding-left: 12px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: border-color 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            border-color: var(--flame-orange);
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
+        }
+        .card h3 {
+            font-size: 1.35rem;
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .specs { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.0rem; }
+
+        .aff-btn {
+            display: inline-block;
+            background: var(--flame-orange);
+            color: #ffffff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            text-align: center;
+            transition: background 0.2s;
+        }
+        .aff-btn:hover { background: #ea580c; }
+        .aff-btn[aria-disabled="true"] { opacity: 0.65; cursor: default; }
+
+
+        .comparison-wrap { overflow-x: auto; margin: 2.5rem 0; border: 1px solid var(--border-color, #334155); border-radius: 8px; }
+        .comparison-table { width: 100%; border-collapse: collapse; min-width: 680px; background: var(--card-bg, #1e293b); }
+        .comparison-table th, .comparison-table td { padding: 0.9rem 1rem; border-bottom: 1px solid var(--border-color, #334155); text-align: left; vertical-align: top; }
+        .comparison-table th { color: var(--text-main, #f8fafc); background: rgba(56,189,248,0.1); }
+        .comparison-table td { color: var(--text-muted, #94a3b8); }
+        .comparison-table tr:last-child td { border-bottom: 0; }
+        .buying-note { color: var(--text-muted, #94a3b8); font-size: 0.95rem; }
+        .aff-btn:focus-visible, .btn-buy:focus-visible { outline: 3px solid #f97316; outline-offset: 3px; }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            background: var(--card-bg);
+        }
+    .card-photo { width:100%; height:170px; object-fit:cover; display:block; border-radius:10px; margin-bottom:12px; }
+</style>
+
+  <link rel="stylesheet" href="/style.css?v=20261025b">
+
+  <meta name="description" content="The four pillars in the right order, what monitor specs actually mean, why feel beats specs on mice and keyboards, and where spending more stops helping.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="canonical" href="https://moxiesextremetechgear.com/gaming-101.html">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:site_name" content="Moxies eXtreme TechGear">
+  <meta property="og:title" content="Gaming Setup 101 — Build a Setup That Fits How You Play">
+  <meta property="og:description" content="The four pillars in the right order, what monitor specs actually mean, why feel beats specs on mice and keyboards, and where spending more stops helping.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://moxiesextremetechgear.com/gaming-101.html">
+  <meta property="og:image" content="https://moxiesextremetechgear.com/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Moxies eXtreme TechGear practical technology guides">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gaming Setup 101 — Build a Setup That Fits How You Play">
+  <meta name="twitter:description" content="The four pillars in the right order, what monitor specs actually mean, why feel beats specs on mice and keyboards, and where spending more stops helping.">
+  <meta name="twitter:image" content="https://moxiesextremetechgear.com/social-card.png">
+  <style id="site-quality-upgrades">
+    .content-updated{color:var(--text-muted,#94a3b8);font-size:.92rem;margin:.35rem 0 1.5rem}
+    .footer-links{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin:.65rem 0}
+    .footer-links a{color:var(--accent,#38bdf8)}
+    .trust-note{border:1px solid var(--border-color,#334155);border-radius:12px;padding:1.15rem 1.25rem;margin:1.5rem 0;background:var(--card-bg,#1e293b)}
+    @media (max-width:800px){#sitePrimaryNav a,.site-primary-nav a,.product-card a,.feature-card a,.guide-card a,.aff-btn,.btn,.cta{min-height:44px;display:inline-flex;align-items:center}.theme-toggle,#siteMenuToggle{min-width:44px;min-height:44px}}
+  </style>
+
+  <script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebPage","name":"Drones — Mini, Mid-Range & High-End Drone Picks","description":"The four pillars in the right order, what monitor specs actually mean, why feel beats specs on mice and keyboards, and where spending more stops helping.","url":"https://moxiesextremetechgear.com/gaming-101.html","isPartOf":{"@type":"WebSite","name":"Moxies eXtreme TechGear","url":"https://moxiesextremetechgear.com/"},"dateModified":"2026-10-27"}</script>
+<style id="seo-breadcrumb-style">.site-breadcrumb{width:min(1180px,calc(100% - 2rem));margin:.8rem auto 0;padding:.35rem 0;color:var(--text-muted,#64748b);font-size:.9rem}.site-breadcrumb a{color:var(--accent,#0284c7);text-decoration:none}.site-breadcrumb a:hover{text-decoration:underline}.site-breadcrumb span[aria-current="page"]{font-weight:700;color:var(--text-main,#0f172a)}</style><script type="application/ld+json">{"@context":"https://schema.org/","@type":"Article","headline":"Drones — Mini, Mid-Range & High-End Drone Picks","description":"The four pillars in the right order, what monitor specs actually mean, why feel beats specs on mice and keyboards, and where spending more stops helping.","url":"https://moxiesextremetechgear.com/gaming-101.html","author":{"@type":"Person","name":"Moxie","url":"https://moxiesextremetechgear.com/about.html"},"publisher":{"@type":"Organization","name":"Moxies eXtreme TechGear","url":"https://moxiesextremetechgear.com/"},"dateModified":"2026-10-27","image":"https://moxiesextremetechgear.com/social-card.png"}</script>
+</head>
+<style>
+.compare-table { width: 100%; border-collapse: collapse; margin: 1rem 0 2.5rem; font-size: .92rem; }
+.compare-table th, .compare-table td { padding: .6rem .7rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+.compare-table thead th { background: var(--card-bg); }
+.compare-table tbody tr:hover { background: var(--card-bg); }
+.ct-drone { font-weight: 600; white-space: nowrap; }
+.table-wrap { overflow-x: auto; }
+.page-intro { max-width: 60ch; color: var(--text-muted); }
+</style>
+<body>
+  <a class="site-skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+    <div class="site-header-top">
+      <a class="site-brand" href="/">Moxies eXtreme TechGear</a>
+      <button class="site-theme-toggle" id="siteThemeToggle" type="button" aria-label="Switch to light mode">☀️ <span>Light Mode</span></button>
+      <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-expanded="false" aria-controls="sitePrimaryNav">Menu</button>
+    </div>
+    <nav class="site-primary-nav" id="sitePrimaryNav" aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a href="/offers.html">Deals, Drops &amp; Giveaways</a>
+      <a href="/special-picks.html">Featured Gear Picks</a>
+      <a href="/computers.html">Computers &amp; Mini PCs</a>
+      <a href="/mobile-power.html">Portable Power &amp; Battery Packs</a>
+      <a href="/ai-hardware.html">AI Hardware &amp; Smart Mini Rigs</a>
+      <a href="/home-networking-security.html">Networking &amp; Wi-Fi Gear</a>
+      <a href="/monitors-docks-desk-setup.html">Desk Setups &amp; Monitors</a>
+      <details class="site-nav-more is-current">
+        <summary>More Categories</summary>
+        <div class="site-nav-more-menu"><a href="/gan-chargers-guide.html">Fast Chargers &amp; Wall Power</a><a href="/automotive-emergency.html">Auto, Road &amp; Emergency Tech</a><a href="/storage-gear/index.html">Massive Storage Solutions</a><a href="/ebike-gear.html">E-Bikes, Tech &amp; Riding Accessories</a><a href="/scuba-diving/index.html">Scuba Diving Gear, Classes &amp; Local Guides</a><a href="/cable-management.html">Cable Management Made Easy</a><span aria-current="page">Drones</span><a href="/audio-gear.html">State-of-the-Art Audio Gear</a><a href="/coding-gear/index.html">Software, Linux, Open Source &amp; Coding Guides</a><a href="/contact.html">Contact</a>
+          <a href="/gaming-setup.html">Gaming Setup</a>
+          <a href="/smart-home.html">Smart Home</a>
+          <a href="/tech-gifts-under-50.html">Tech Gifts Under $50</a>
+          <a href="/epoxy-resin-tables.html">Epoxy &amp; Resin for River Tables</a>
+          <a href="/black-friday-deals.html">Black Friday Deals</a></div>
+      </details>
+    </nav>
+  </header>
+<main id="main-content">
+  <div class="page-hero">
+    <nav class="site-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/gaming-setup.html">Gaming Setup</a> &rsaquo; <span aria-current="page">Gaming Setup 101</span></nav>
+    <h1>🎮 Gaming Setup 101</h1>
+    <p class="page-intro">New to building a setup? Start here. The four pillars in the right order, what monitor specs actually mean, why feel beats specs on mice and keyboards, and where spending more stops helping.</p>
+  </div>
+
+  <h2>The Four Pillars, in Order</h2>
+  <div class="grid">
+    <article class="card"><div><img class="card-photo" src="/pic-game-monitor.jpg" alt="Gaming monitor on a desk setup" loading="lazy"><h3>🔊 Sound First</h3><p>You hear the game before you see it — footsteps, callouts, music. Audio is the upgrade you notice every single session.</p></div></article>
+    <article class="card"><div><h3>🖱️ Hands Second</h3><p>The mouse and keyboard are what you touch for hours. Comfort and reliability here beat every other spec on the box.</p></div></article>
+    <article class="card"><div><h3>🖥️ Screen &amp; Seat</h3><p>The display you stare at and the chair you sit in. Both are long-session gear — buy for hours, not for photos.</p></div></article>
+    <article class="card"><div><h3>📺 Content Last</h3><p>Capture cards and stream decks turn play into content. They matter only after the playing itself feels great.</p></div></article>
+  </div>
+
+  <h2>Monitor Specs, Translated</h2>
+  <div class="grid">
+    <article class="card"><div><h3>⚡ Refresh Rate</h3><p>144Hz or higher is the single most noticeable display upgrade over 60Hz — motion goes from choppy to smooth. Past 240Hz, most players stop noticing.</p></div></article>
+    <article class="card"><div><h3>🔍 Resolution</h3><p>1080p with high refresh is the competitive pick; 1440p is sharper and prettier for story games. 4K demands a serious graphics card to keep up.</p></div></article>
+    <article class="card"><div><h3>⏱️ Response Time</h3><p>Lower means less ghosting behind moving objects. Treat 1ms claims as marketing-adjacent — panel type and real reviews matter more.</p></div></article>
+  </div>
+
+  <h2>Mice &amp; Keyboards: Feel Beats Specs</h2>
+  <div class="grid">
+    <article class="card"><div><h3>🎯 DPI Isn't Skill</h3><p>800–1600 DPI is plenty for most players; polling rate (how often the mouse reports) matters more than a giant DPI number. Consistency beats extremes.</p></div></article>
+    <article class="card"><div><h3>⌨️ Switches</h3><p>Linear (smooth), tactile (a bump), clicky (a bump and a sound). There is no best — only what your fingers like after an hour, so try before you commit.</p></div></article>
+    <article class="card"><div><h3>✋ Size &amp; Grip</h3><p>Palm, claw, or fingertip grip — and hand size — decide the right mouse shape more than any sensor spec. Weight matters too: lighter is easier to move all day.</p></div></article>
+  </div>
+
+  <h2>Audio: Headset vs Mic + Headphones</h2>
+  <div class="grid">
+    <article class="card"><div><h3>🎧 Headset</h3><p>The simplest path: one cable, mic included, designed for games. The right call for most players, and the easiest setup to live with.</p></div></article>
+    <article class="card"><div><h3>🎙️ Separate Mic</h3><p>A standalone mic sounds clearly better for streaming and voice work. Pair it with good headphones when your voice is part of the content.</p></div></article>
+    <article class="card"><div><h3>🔓 Open vs Closed</h3><p>Open-back headphones sound natural and airy but leak sound; closed-back blocks room noise and keeps game audio private. Roommates decide this one.</p></div></article>
+  </div>
+
+  <h2>Comfort Is Performance</h2>
+  <div class="grid">
+    <article class="card"><div><h3>🪑 Chair vs Posture</h3><p>A good chair helps, but monitor height, feet flat, and regular breaks matter more. No chair fixes a setup that has you hunching for hours.</p></div></article>
+    <article class="card"><div><h3>💡 Lighting</h3><p>A soft bias light behind the monitor reduces eye strain in dark rooms, and a lit room beats a pitch-black one for long sessions.</p></div></article>
+    <article class="card"><div><h3>🧹 Cable &amp; Desk Order</h3><p>A tidy desk is a faster desk: cable routing, a monitor arm, and everything in reach. You play better when nothing is in the way.</p></div></article>
+  </div>
+
+  <p class="buying-note" style="margin-top:2rem;">Ready to shop? <a href="/gaming-setup.html"><strong>See the picks &rarr;</strong></a></p>
+</main>
+<footer>
+    <p class="footer-links"><a href="/about.html">About &amp; Editorial Standards</a> <span aria-hidden="true"> · </span><a href="/contact.html">Contact</a> <span aria-hidden="true"> · </span><a href="/privacy.html">Privacy</a> <span aria-hidden="true"> · </span><a href="/affiliate-disclosure.html">Affiliate Disclosure</a> <span aria-hidden="true"> · </span><a href="/terms.html">Terms</a></p>
+    <p><strong>Moxies eXtreme TechGear</strong> — practical technology guidance without the guesswork.</p>
+    <p class="affiliate-disclosure"><strong>Affiliate disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases <strong class="no-additional-cost">AT NO ADDITIONAL COST TO YOU.</strong></p>
+    <p>&copy; 2026 Moxies eXtreme TechGear. All rights reserved.</p>
+  </footer>
+<script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const btn = document.getElementById('themeToggleBtn');
+            if (html.getAttribute('data-theme') === 'light') {
+                html.removeAttribute('data-theme');
+                btn.textContent = '☀️ Light Mode';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                btn.textContent = '🌙 Dark Mode';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        (function initTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.getElementById('themeToggleBtn').textContent = '🌙 Dark Mode';
+            }
+        })();
+    </script>
+<script src="/site-search.js?v=20260921a" defer></script>
+</body>
+</html>

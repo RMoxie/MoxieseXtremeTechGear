@@ -1165,5 +1165,54 @@
       "esports",
       "battle station"
     ]
+  },
+  {
+    "title": "Epoxy 101 — how resin works & how to pick the right one",
+    "url": "/epoxy-101.html",
+    "description": "What epoxy resin is, deep pour vs tabletop, safety that matters, the river table build order, and common first-pour problems.",
+    "keywords": [
+      "epoxy 101",
+      "how epoxy works",
+      "deep pour vs tabletop",
+      "epoxy resin beginner",
+      "river table guide",
+      "epoxy safety",
+      "epoxy bubbles",
+      "resin mistakes",
+      "learn epoxy"
+    ]
+  },
+  {
+    "title": "Smart Home 101 — start small, build a home that helps",
+    "url": "/smart-home-101.html",
+    "description": "Hubs and languages in plain English, picking one ecosystem, the room-by-room order that works, and smart home privacy basics.",
+    "keywords": [
+      "smart home 101",
+      "smart home beginner",
+      "matter",
+      "thread",
+      "zigbee",
+      "z-wave",
+      "smart home hub",
+      "alexa vs google",
+      "smart home privacy",
+      "how to start smart home"
+    ]
+  },
+  {
+    "title": "Gaming Setup 101 — build a setup that fits how you play",
+    "url": "/gaming-101.html",
+    "description": "The four pillars in order, monitor specs translated, mice and keyboards feel vs specs, headset vs mic, and comfort as performance.",
+    "keywords": [
+      "gaming setup 101",
+      "gaming setup beginner",
+      "gaming monitor specs",
+      "refresh rate",
+      "gaming mouse dpi",
+      "keyboard switches",
+      "gaming headset",
+      "battle station",
+      "how to build gaming setup"
+    ]
   }
 ]
