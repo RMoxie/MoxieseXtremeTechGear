@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-10-26T18:42:05Z",
+  "updatedAt": "2026-10-27T18:02:08Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "MobiKin Doctor for Android 5.2.11",
-      "description": "Helps you get back all kinds of lost or deleted data on Android devices.",
-      "price": "$49.95",
-      "url": "https://www.giveawayoftheday.com/mobikin-doctor-for-android-5-2-11/",
+      "title": "Somio AI Music Generator 3.2.3",
+      "description": "Next-Gen AI Music Generator for Effortless Song Creation!",
+      "price": "$8.99",
+      "url": "https://www.giveawayoftheday.com/somio-ai-music-generator-3-2-3/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2021/09/8754b7e289e5926fafc561b57eb2a47c.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/04/b50bc710cf51d3d23642f6d7f809628d.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "KL Jewel Quest",
-      "description": "Collect identical elements into continuous rows.",
+      "title": "Hexa Hamlet",
+      "description": "A calm little world grows one hexagon at a time.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/kl-jewel-quest/",
+      "url": "https://game.giveawayoftheday.com/hexa-hamlet/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/2d21aca90266d36085c76abf13a66378.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/c9c9a654c2a88509f74abbe4ade47e50.jpeg"
     },
     {
       "category": "android",
