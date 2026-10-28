@@ -12,7 +12,7 @@
         "/drones.html": { title: "🚁 Drones — Mini, Mid-Range & High-End" },
         "/home-safety-security.html": { title: "🛡️ Home Safety & Security Gear" },
         "/camping-outdoors-equipment.html": { title: "🏕️ Camping and outdoors Equipment" },
-        "/": { title: "🏠 Home" },
+        "/": { title: "Home", icon: "/pic-home-house.jpg" },
         "/offers.html": { title: "🎁 Deals, Drops & Giveaways" },
         "/special-picks.html": { title: "⭐ Featured Gear Picks" },
         "/computers.html": { title: "💻 Computers & Mini PCs" },
@@ -170,7 +170,14 @@
 
         const title = document.createElement("span");
         title.className = "moxie-label-title";
-        title.textContent = label.title;
+        if (label.icon) {
+          const icon = document.createElement("img");
+          icon.className = "moxie-label-icon";
+          icon.src = label.icon;
+          icon.alt = "";
+          title.append(icon);
+        }
+        title.append(document.createTextNode(label.title));
         element.append(title);
 
         if (label.subtitle) {
@@ -338,6 +345,7 @@
         .site-brand{grid-column:1;justify-self:start}
         .moxie-page-heading{grid-column:2;justify-self:center;align-self:center;max-width:min(44vw,720px);padding:.25rem .8rem;color:var(--text-main,#f8fafc);font:900 clamp(1.15rem,1.75vw,1.8rem)/1.12 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:-.02em;text-align:center;text-wrap:balance}
         .moxie-page-heading .moxie-label-title,.moxie-page-heading .moxie-label-subtitle{display:block}
+        .moxie-label-icon{height:1.35em;width:1.35em;object-fit:cover;border-radius:.3em;vertical-align:-.22em;margin-right:.35em}
         .moxie-page-heading .moxie-label-subtitle{margin-top:.18rem;color:var(--text-muted,#b7c3d4);font-size:clamp(.68rem,.8vw,.82rem);font-weight:700;letter-spacing:.01em}
         .site-primary-nav a .moxie-label-title,.site-primary-nav a .moxie-label-subtitle{display:block}
         .site-primary-nav a.moxie-nav-has-subtitle{flex-direction:column;align-items:flex-start;justify-content:center}
