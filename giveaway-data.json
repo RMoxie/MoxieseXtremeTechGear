@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-10-28T18:22:28Z",
+  "updatedAt": "2026-10-29T18:29:59Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Bitwar Cleaner 1.2.9",
-      "description": "Your Trusted PC Cleaner & Optimizer!",
-      "price": "$29.00",
-      "url": "https://www.giveawayoftheday.com/bitwar-cleaner-1-2-9/",
+      "title": "Permanent Data Eraser 3.7",
+      "description": "Completely wipe data from your drives.",
+      "price": "$10.00 / month",
+      "url": "https://www.giveawayoftheday.com/permanent-data-eraser/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/37318ff4a35103225b68cca69d635106.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/6b7b739ee6f095b7490a28ca6d2f2703.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Meadow Dash",
-      "description": "Roll a cheerful red ball across sunny meadows and collect coins on the way.",
+      "title": "Green Hills Golf",
+      "description": "Drag anywhere on the screen to pull the ball back and aim your shot.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/meadow-dash/",
+      "url": "https://game.giveawayoftheday.com/green-hills-golf/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/07be3c2895217db301b022ab107aabad.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/c192655c951e8248497a4a0735f8bc41.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Mobile Mouse & Keyboard",
-      "description": "Turn your iPhone/iPad device into handy mobile keyboard for your computer.",
-      "price": "$5.00",
-      "url": "https://iphone.giveawayoftheday.com/wireless-keyboard-trackpad/",
+      "title": "Priime",
+      "description": "Control the editing for RAW and high-resolution photos.",
+      "price": "$2.99",
+      "url": "https://iphone.giveawayoftheday.com/priime/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1515294700_app_icon_big_1793167687.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2019/05/934587545_app_icon_big_1558587311.jpg"
     }
   ]
 }
