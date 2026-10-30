@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-10-29T18:29:59Z",
+  "updatedAt": "2026-10-30T18:02:21Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Permanent Data Eraser 3.7",
-      "description": "Completely wipe data from your drives.",
-      "price": "$10.00 / month",
-      "url": "https://www.giveawayoftheday.com/permanent-data-eraser/",
+      "title": "1000 Halloween LUTs and Presets Bundle",
+      "description": "Within a few clicks, you can add amazing effects to your photos!",
+      "price": "$19.00",
+      "url": "https://www.giveawayoftheday.com/1000-halloween-luts-and-presets-bundle/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/6b7b739ee6f095b7490a28ca6d2f2703.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/dbaf3932c64d62945ec62d0750adf068.jpeg"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Green Hills Golf",
-      "description": "Drag anywhere on the screen to pull the ball back and aim your shot.",
+      "title": "Letter Lagoonio",
+      "description": "Find hidden word in the letter grid before you move on to the next level.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/green-hills-golf/",
+      "url": "https://game.giveawayoftheday.com/letter-lagoonio/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/c192655c951e8248497a4a0735f8bc41.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/eb5e5cb43a1f4a17d76a0e84419c8082.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Priime",
-      "description": "Control the editing for RAW and high-resolution photos.",
-      "price": "$2.99",
-      "url": "https://iphone.giveawayoftheday.com/priime/",
+      "title": "Remote Keyboard Pad for Mac - NumPad & KeyPad",
+      "description": "Use your iPhone or iPad as wireless numbers & key pad for your Mac.",
+      "price": "$9.99",
+      "url": "https://iphone.giveawayoftheday.com/remote-keyboard-pad-for-mac-numpad-keypad/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2019/05/934587545_app_icon_big_1558587311.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/05/1135300319_app_icon_big_1778498952.jpg"
     }
   ]
 }
