@@ -9,54 +9,40 @@
       window.__moxieSiteSearchLoaded = true;
 
       const CATEGORY_LABELS = {
-        "/drones.html": { title: "🚁 Drones — Mini, Mid-Range & High-End" },
-        "/home-safety-security.html": { title: "🛡️ Home Safety & Security Gear" },
-        "/camping-outdoors-equipment.html": { title: "🏕️ Camping and outdoors Equipment" },
+        "/drones.html": { title: "Drones — Mini, Mid-Range & High-End", icon: "/pic-nav-drones.jpg" },
+        "/home-safety-security.html": { title: "Home Safety & Security Gear", icon: "/pic-nav-home-safety.jpg" },
+        "/camping-outdoors-equipment.html": { title: "Camping and outdoors Equipment", icon: "/pic-nav-camping.jpg" },
         "/": { title: "Home", icon: "/pic-home-house.jpg" },
-        "/offers.html": { title: "🎁 Deals, Drops & Giveaways" },
-        "/special-picks.html": { title: "⭐ Featured Gear Picks" },
-        "/computers.html": { title: "💻 Computers & Mini PCs" },
-        "/mobile-power.html": {
-          title: "🔋 Portable Power & Battery Packs"
-        },
-        "/ai-hardware.html": {
-          title: "🤖 AI Hardware & Smart Mini Rigs"
-        },
-        "/home-networking-security.html": {
-          title: "📡 Networking & Wi-Fi Gear"
-        },
-        "/monitors-docks-desk-setup.html": {
-          title: "🖥️ Desk Setups & Monitors"
-        },
-        "/gan-chargers-guide.html": {
-          title: "⚡ Fast Chargers & Wall Power"
-        },
-        "/storage-gear/index.html": {
-          title: "💾 Massive Storage Solutions"
-        },
-        "/scuba-diving/index.html": {
-          title: "🤿 Scuba Gear, Classes & Dive Guides"
-        },
-        "/audio-gear.html": {
-          title: "🎧 State-of-the-Art Audio Gear"
-        },
-        "/automotive-emergency.html": {
-          title: "🔧 Auto, Road & Emergency Tech"
-        },
-        "/ebike-gear.html": {
-          title: "🚴 E-Bikes, Tech & Riding Accessories"
-        },
-        "/cable-management.html": {
-          title: "🔌 Cable Management Made Easy"
-        },
+        "/offers.html": { title: "Deals, Drops & Giveaways", icon: "/pic-nav-offers.jpg" },
+        "/special-picks.html": { title: "Featured Gear Picks", icon: "/pic-nav-special-picks.jpg" },
+        "/computers.html": { title: "Computers & Mini PCs", icon: "/pic-nav-computers.jpg" },
+        "/mobile-power.html": { title: "Portable Power & Battery Packs", icon: "/pic-nav-mobile-power.jpg" },
+        "/ai-hardware.html": { title: "AI Hardware & Smart Mini Rigs", icon: "/pic-nav-ai-hardware.jpg" },
+        "/home-networking-security.html": { title: "Networking & Wi-Fi Gear", icon: "/pic-nav-networking.jpg" },
+        "/monitors-docks-desk-setup.html": { title: "Desk Setups & Monitors", icon: "/pic-nav-desk.jpg" },
+        "/gan-chargers-guide.html": { title: "Fast Chargers & Wall Power", icon: "/pic-nav-gan.jpg" },
+        "/storage-gear/index.html": { title: "Massive Storage Solutions", icon: "/pic-nav-storage.jpg" },
+        "/scuba-diving/index.html": { title: "Scuba Gear, Classes & Dive Guides", icon: "/pic-nav-scuba.jpg" },
+        "/audio-gear.html": { title: "State-of-the-Art Audio Gear", icon: "/pic-nav-audio.jpg" },
+        "/automotive-emergency.html": { title: "Auto, Road & Emergency Tech", icon: "/pic-nav-auto.jpg" },
+        "/ebike-gear.html": { title: "E-Bikes, Tech & Riding Accessories", icon: "/pic-nav-ebike.jpg" },
+        "/cable-management.html": { title: "Cable Management Made Easy", icon: "/pic-nav-cable.jpg" },
         "/coding-gear/index.html": {
-          title: "💻 Your Software Hub",
-          subtitle: "Windows, macOS, Linux & More"
+          title: "Your Software Hub",
+          subtitle: "Windows, macOS, Linux & More",
+          icon: "/pic-nav-coding.jpg"
         },
         "/contact.html": {
-          title: "📬 Contact Moxie Anytime",
-          subtitle: "Support, Questions, Help & Tech Advice"
-        }
+          title: "Contact Moxie Anytime",
+          subtitle: "Support, Questions, Help & Tech Advice",
+          icon: "/pic-nav-contact.jpg"
+        },
+        "/gaming-setup.html": { title: "Gaming Setup", icon: "/pic-nav-gaming.jpg" },
+        "/smart-home.html": { title: "Smart Home", icon: "/pic-nav-smarthome.jpg" },
+        "/tech-gifts-under-50.html": { title: "Tech Gifts Under $50", icon: "/pic-nav-techgifts.jpg" },
+        "/epoxy-resin-tables.html": { title: "Epoxy & Resin for River Tables", icon: "/pic-nav-epoxy.jpg" },
+        "/black-friday-deals.html": { title: "Black Friday Deals", icon: "/pic-nav-blackfriday.jpg" },
+        "/full-auto-bb-guns.html": { title: "Full-Auto BB Guns", icon: "/pic-nav-bbguns.jpg" }
       };
 
       const PAGE_CATEGORY_PATHS = {

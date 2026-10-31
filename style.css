@@ -714,3 +714,20 @@ html[data-theme="light"] body :is(
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
 }
+
+/* Photorealistic nav + page-heading icons (replaces emoji category icons) */
+.moxie-label-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  border-radius: 6px;
+  vertical-align: -5px;
+  margin-right: 8px;
+}
+.moxie-page-heading .moxie-label-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  vertical-align: -12px;
+  margin-right: 12px;
+}
