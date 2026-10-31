@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-10-30T18:02:21Z",
+  "updatedAt": "2026-10-31T17:15:35Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "1000 Halloween LUTs and Presets Bundle",
-      "description": "Within a few clicks, you can add amazing effects to your photos!",
-      "price": "$19.00",
-      "url": "https://www.giveawayoftheday.com/1000-halloween-luts-and-presets-bundle/",
+      "title": "Coolmuster iCloud Backup Recovery 2.0.15",
+      "description": "Selectively recover iCloud backup files on your computer.",
+      "price": "$19.95",
+      "url": "https://www.giveawayoftheday.com/coolmuster-icloud-backup-recovery-2-0-15/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/dbaf3932c64d62945ec62d0750adf068.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2023/03/29e45bec6bd9fd766e2cc74540eca0bb.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Letter Lagoonio",
-      "description": "Find hidden word in the letter grid before you move on to the next level.",
-      "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/letter-lagoonio/",
+      "title": "Gizmos: Spooky Adventures",
+      "description": "Discover new riddles, an engaging plotline in Spooky Adventures!",
+      "price": "$4.99",
+      "url": "https://game.giveawayoftheday.com/gizmos-spooky-adventures/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/eb5e5cb43a1f4a17d76a0e84419c8082.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/6b769ac7d4b468122e236bd987b9df8b.jpg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Remote Keyboard Pad for Mac - NumPad & KeyPad",
-      "description": "Use your iPhone or iPad as wireless numbers & key pad for your Mac.",
+      "title": "OneAGI : AGI for Everyone",
+      "description": "Whether you’re online or offline, OneAGI delivers fast, private, and flexible AI capabilities directly on your device.",
       "price": "$9.99",
-      "url": "https://iphone.giveawayoftheday.com/remote-keyboard-pad-for-mac-numpad-keypad/",
+      "url": "https://iphone.giveawayoftheday.com/oneagi-agi-for-everyone/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/05/1135300319_app_icon_big_1778498952.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/6740195165_app_icon_big_1793435819.jpg"
     }
   ]
 }
