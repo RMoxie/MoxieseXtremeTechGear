@@ -759,7 +759,55 @@
       margin-bottom: 1rem;
       display: block;
     }
-  </style>
+  
+    .amazon-search {
+      display: flex;
+      gap: .6rem;
+      max-width: 640px;
+      margin: 2.2rem auto 0;
+    }
+
+    .amazon-search input[type="search"] {
+      flex: 1;
+      min-height: 52px;
+      padding: .8rem 1.1rem;
+      border-radius: .7rem;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .amazon-search button {
+      min-height: 52px;
+      padding: .8rem 1.3rem;
+      border-radius: .7rem;
+      border: 1px solid transparent;
+      background: var(--orange);
+      color: #111827;
+      font-weight: 850;
+      font-size: 1rem;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    [data-theme="light"] .amazon-search button {
+      color: #ffffff;
+    }
+
+    .amazon-search-note {
+      margin: .7rem auto 0;
+      color: var(--muted);
+      font-size: .9rem;
+      max-width: 640px;
+    }
+
+    @media (max-width: 560px) {
+      .amazon-search {
+        flex-direction: column;
+      }
+    }
+</style>
 
   <!-- Existing shared website stylesheet -->
   <link rel="stylesheet" href="/style.css?v=20261031a">
@@ -938,6 +986,14 @@
           See How We Choose
         </a>
       </div>
+
+      <!-- Shop anything on Amazon (affiliate search, tag rides along) -->
+      <form class="amazon-search" action="https://www.amazon.com/s" method="get" target="_blank" rel="sponsored noopener noreferrer" role="search" aria-label="Search Amazon">
+        <input type="hidden" name="tag" value="rmoxie-20">
+        <input type="search" name="k" placeholder="Search anything on Amazon — corn starch, cables, whatever…" required aria-label="Search anything on Amazon">
+        <button type="submit">Search Amazon →</button>
+      </form>
+      <p class="amazon-search-note">Anything you buy after searching here supports the site, at no extra cost to you.</p>
     </section>
 
     <!-- Reader expectations -->
