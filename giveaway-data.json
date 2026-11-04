@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-11-03T19:30:50Z",
+  "updatedAt": "2026-11-04T19:48:51Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Recastia Pro",
-      "description": "Turn Documents into Videos, Presentations, Flipbooks, Websites & More with AI!",
-      "price": "$8.00 / month",
-      "url": "https://www.giveawayoftheday.com/recastia-pro/",
+      "title": "ID3Genius Music Tag Editor 3.10.0",
+      "description": "All-In-One ID3 Tag Editor!",
+      "price": "$29.99",
+      "url": "https://www.giveawayoftheday.com/id3genius-music-tag-editor-3-10-0/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/ec6768602514cf57ccb2815bb9f1ee19.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/02/58e5d5fd113b654b58caf306e016a217.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Cosmo Cat",
-      "description": "Fight waves of hostile aliens across dangerous alien worlds.",
+      "title": "Tron Arcade",
+      "description": "Steer your light around the arena while it leaves a solid wall behind it.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/cosmo-cat/",
+      "url": "https://game.giveawayoftheday.com/tron-arcade/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/49c6e4267a28320bdeb8a8e175e0aff6.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/32595c61438b99c63456530ee8987534.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Relight - Better Photos",
-      "description": "Instantly correct lighting and exposure and transform your photos and videos into something extraordinary.",
-      "price": "$4.99",
-      "url": "https://iphone.giveawayoftheday.com/relight-better-photos/",
+      "title": "MCBackup Pro - Contacts Backup",
+      "description": "The ultimate contacts backup & transfer pro app designed to protect your phonebook and make sharing simple.",
+      "price": "$0.99",
+      "url": "https://iphone.giveawayoftheday.com/mcbackup-pro-contacts-backup/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1055538670_app_icon_big_1791623625.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1406717706_app_icon_big_1793787318.jpg"
     }
   ]
 }
