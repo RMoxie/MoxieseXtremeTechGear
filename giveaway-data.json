@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-11-04T19:48:51Z",
+  "updatedAt": "2026-11-05T19:59:24Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "ID3Genius Music Tag Editor 3.10.0",
-      "description": "All-In-One ID3 Tag Editor!",
-      "price": "$29.99",
-      "url": "https://www.giveawayoftheday.com/id3genius-music-tag-editor-3-10-0/",
+      "title": "Photo Stamp Remover 19.2",
+      "description": "A photo correction utility that can remove unwanted objects from photographs.",
+      "price": "$14.99 / month",
+      "url": "https://www.giveawayoftheday.com/photo-stamp-remover-17-1/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/02/58e5d5fd113b654b58caf306e016a217.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2019/12/24334b9167debaf8580d1fb657580ecb.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Tron Arcade",
-      "description": "Steer your light around the arena while it leaves a solid wall behind it.",
+      "title": "KL 20 Clicks",
+      "description": "Effective virtual exercise helps improve your visual memory skills daily.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/tron-arcade/",
+      "url": "https://game.giveawayoftheday.com/kl-20-clicks/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/32595c61438b99c63456530ee8987534.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/50a249060a5e29422e062047b1d28c81.jpeg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "MCBackup Pro - Contacts Backup",
-      "description": "The ultimate contacts backup & transfer pro app designed to protect your phonebook and make sharing simple.",
-      "price": "$0.99",
-      "url": "https://iphone.giveawayoftheday.com/mcbackup-pro-contacts-backup/",
+      "title": "Fotospot Road Trip Community",
+      "description": "Fotospot is your ultimate road trip companion!",
+      "price": "$4.99",
+      "url": "https://iphone.giveawayoftheday.com/fotospot-road-trip-community/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1406717706_app_icon_big_1793787318.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1200952700_app_icon_big_1792243042.jpg"
     }
   ]
 }
