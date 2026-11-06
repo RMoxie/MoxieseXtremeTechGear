@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-11-05T19:59:24Z",
+  "updatedAt": "2026-11-06T19:27:25Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Photo Stamp Remover 19.2",
-      "description": "A photo correction utility that can remove unwanted objects from photographs.",
-      "price": "$14.99 / month",
-      "url": "https://www.giveawayoftheday.com/photo-stamp-remover-17-1/",
+      "title": "GiMeSpace KMShare 1.2.5",
+      "description": "Keyboard and mouse sharing tool!",
+      "price": "$19.00",
+      "url": "https://www.giveawayoftheday.com/gimespace-kmshare-4/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2019/12/24334b9167debaf8580d1fb657580ecb.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/01/48e2a32263ad4dad913159c53a8a25c9.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "KL 20 Clicks",
-      "description": "Effective virtual exercise helps improve your visual memory skills daily.",
+      "title": "Power Grid Tycoon 2",
+      "description": "Build a power grid on a tiny island with a bright cartoon look.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/kl-20-clicks/",
+      "url": "https://game.giveawayoftheday.com/power-grid-tycoon-2/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/50a249060a5e29422e062047b1d28c81.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/e1128e4b26c52252a5520a72998e82e7.jpg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Logo Guess Challenge",
-      "description": "Are you a lover of logo guessing games?",
-      "price": "2.49",
-      "url": "https://android.giveawayoftheday.com/logo-guess-challenge/",
+      "title": "MSafe - Pro",
+      "description": "Encrypt your passwords using the advanced AES encryption algorithm.",
+      "price": "11.99",
+      "url": "https://android.giveawayoftheday.com/msafe-pro/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2024/02/com.eggies.logoguesschallenge_app_icon_1708255427.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/06/com.codfishworks.msafe.pro_app_icon_1781532763.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Fotospot Road Trip Community",
-      "description": "Fotospot is your ultimate road trip companion!",
-      "price": "$4.99",
-      "url": "https://iphone.giveawayoftheday.com/fotospot-road-trip-community/",
+      "title": "AI Business Card Generator QR",
+      "description": "Create your own Business Card in seconds.",
+      "price": "$2.99",
+      "url": "https://iphone.giveawayoftheday.com/ai-business-card-generator-qr/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1200952700_app_icon_big_1792243042.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1468005938_app_icon_big_1793948829.jpg"
     }
   ]
 }
