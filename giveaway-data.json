@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-11-06T19:27:25Z",
+  "updatedAt": "2026-11-07T17:45:19Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "GiMeSpace KMShare 1.2.5",
-      "description": "Keyboard and mouse sharing tool!",
-      "price": "$19.00",
-      "url": "https://www.giveawayoftheday.com/gimespace-kmshare-4/",
+      "title": "DeepCleanAudio 4.0",
+      "description": "Eliminates extreme ambient noise while preserving 100% natural human voice.",
+      "price": "$79.00",
+      "url": "https://www.giveawayoftheday.com/deepcleanaudio/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2022/01/48e2a32263ad4dad913159c53a8a25c9.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/68026a6c7b712dc51416bd9268f4397e.jpg"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Power Grid Tycoon 2",
-      "description": "Build a power grid on a tiny island with a bright cartoon look.",
-      "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/power-grid-tycoon-2/",
+      "title": "Jigsaw Boom",
+      "description": "Put together challenging Puzzles as quickly as you can in Jigsaw Boom!",
+      "price": "$14.99",
+      "url": "https://game.giveawayoftheday.com/jigsaw-boom/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/e1128e4b26c52252a5520a72998e82e7.jpg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/ebb1e394ff4c5087b918fd7edf85c6e2.jpg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "AI Business Card Generator QR",
-      "description": "Create your own Business Card in seconds.",
-      "price": "$2.99",
-      "url": "https://iphone.giveawayoftheday.com/ai-business-card-generator-qr/",
+      "title": "Paprika Recipe Manager 4",
+      "description": "Delightfully simple recipe management.",
+      "price": "$4.99",
+      "url": "https://iphone.giveawayoftheday.com/paprika-recipe-manager-4/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1468005938_app_icon_big_1793948829.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1303222868_app_icon_big_1794055833.jpg"
     }
   ]
 }
