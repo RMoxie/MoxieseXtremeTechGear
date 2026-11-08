@@ -24,14 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-
-      - name: Add new products
-        run: |
-          python scripts/add_products.py
-
-      - name: Audit all products
-        run: |
-          python scripts/audit_products.py
+          
 
       - name: Commit and push changes
         run: |
