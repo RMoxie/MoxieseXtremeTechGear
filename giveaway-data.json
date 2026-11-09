@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-11-08T17:57:06Z",
+  "updatedAt": "2026-11-09T22:25:12Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "ThunderSoft Slideshow Factory 6.7.1",
-      "description": "Create, edit, publish, and manage slideshows with images and video files.",
-      "price": "$49.99",
-      "url": "https://www.giveawayoftheday.com/thundersoft-slideshow-factory-6-7-1/",
+      "title": "Hunter Disk Cleaner 1.0.8",
+      "description": "Deep system cleanup and safe cache optimization!",
+      "price": "$12.00",
+      "url": "https://www.giveawayoftheday.com/hunter-disk-cleaner/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2020/04/a73ebdcd633e3661cb2408af105d6bc1.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/08ef1c3fa0562780f15ed09c294ab5f4.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Day D - Time Mayhem",
-      "description": "We know why the dinosaurs disappeared!",
-      "price": "$4.99",
-      "url": "https://game.giveawayoftheday.com/day-d-time-mayhem/",
+      "title": "Puzzles Box io Collection",
+      "description": "A collection of nine relaxing puzzles waits behind golden framed tiles.",
+      "price": "$5.00",
+      "url": "https://game.giveawayoftheday.com/puzzles-box-io-collection/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/99109d2ad1e8cbe71e285daf07f43e96.jpg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/1aa95bebd36df549e1680bf357eabfe9.jpg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "MSafe - Pro",
-      "description": "Encrypt your passwords using the advanced AES encryption algorithm.",
-      "price": "11.99",
-      "url": "https://android.giveawayoftheday.com/msafe-pro/",
+      "title": "Final Castle Defence : Idle RPG",
+      "description": "Defense RPG is to train heroes, towers and pets to defend the Castle against enemies.",
+      "price": "$1.59",
+      "url": "https://android.giveawayoftheday.com/final-castle-defence-idle-rpg/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/06/com.codfishworks.msafe.pro_app_icon_1781532763.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2023/11/com.gdx.dh.game.sdefence_app_icon_1701182875.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Notes Writer Pro - Sync &Share",
-      "description": "Notes Writer is an excellent assistant in study and business, also being effective for writing down your ideas.",
-      "price": "$14.99",
-      "url": "https://iphone.giveawayoftheday.com/notes-writer-pro-sync-share/",
+      "title": "Ad Block Multi",
+      "description": "A multi-filter ad-blocking solution for mobile devices.",
+      "price": "$0.99",
+      "url": "https://iphone.giveawayoftheday.com/ad-block-multi/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/10/1422480068_app_icon_big_1792243114.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1037619477_app_icon_big_1794210668.jpg"
     }
   ]
 }
