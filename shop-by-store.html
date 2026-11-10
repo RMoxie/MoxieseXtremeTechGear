@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <!-- Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-H6TMQMLGXP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-H6TMQMLGXP');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shop by Store | Moxies eXtreme TechGear</title>
+
+  <meta name="description" content="Every store Moxies eXtreme TechGear partners with — Amazon live now, Walmart applied, REI, Bass Pro Shops, B&H Photo, Wayfair and more on the way — what each store is best for, and where to find the gear.">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="google-site-verification" content="koWjCrKH-ORkeLcW9eoQ7WwrbfxCllX7qdwUjP_UXoA">
+
+  <link rel="canonical" href="https://moxiesextremetechgear.com/shop-by-store.html">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <!-- Social sharing -->
+  <meta property="og:site_name" content="Moxies eXtreme TechGear">
+  <meta property="og:title" content="Shop by Store">
+  <meta property="og:description" content="Every store we partner with in one place — Amazon live now, Walmart applied, REI, Bass Pro, B&H and more on the way.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://moxiesextremetechgear.com/shop-by-store.html">
+  <meta property="og:image" content="https://moxiesextremetechgear.com/pic-home-house.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Moxies eXtreme TechGear — shop by store">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shop by Store">
+  <meta name="twitter:description" content="Every store we partner with in one place — Amazon live now, Walmart applied, REI, Bass Pro, B&H and more on the way.">
+  <meta name="twitter:image" content="https://moxiesextremetechgear.com/pic-home-house.jpg">
+
+  <!-- Website structured data -->
+  
+
+  <!-- Organization structured data -->
+  
+
+  <!-- Breadcrumb structured data -->
+  
+
+  <!-- Category structured data: matches the homepage category grid -->
+  
+
+  <!-- Homepage styling -->
+  <style>
+    :root {
+      --bg: #0b1220;
+      --surface: #111c30;
+      --surface-2: #17243a;
+      --text: #f8fafc;
+      --muted: #b7c3d4;
+      --border: #2d3c55;
+      --blue: #55c6ff;
+      --orange: #fb923c;
+      --orange-strong: #f97316;
+      --header: rgba(11, 18, 32, .94);
+      --shadow: 0 18px 50px rgba(0, 0, 0, .25);
+    }
+
+    [data-theme="light"] {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --surface-2: #edf3f9;
+      --text: #0f172a;
+      --muted: #44546a;
+      --border: #c7d2e1;
+      --blue: #0369a1;
+      --orange: #c2410c;
+      --orange-strong: #9a3412;
+      --header: rgba(255, 255, 255, .95);
+      --shadow: 0 18px 45px rgba(15, 23, 42, .10);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-skip-link {
+      position: fixed;
+      top: .75rem;
+      left: .75rem;
+      z-index: 1000;
+      transform: translateY(-180%);
+      padding: .75rem 1rem;
+      background: var(--orange);
+      color: #111827;
+      border-radius: .55rem;
+      font-weight: 800;
+    }
+
+    [data-theme="light"] .site-skip-link {
+      color: #ffffff;
+    }
+
+    .site-skip-link:focus {
+      transform: translateY(0);
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 4px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem clamp(1rem, 4vw, 4rem);
+      background: var(--header);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(16px);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: .45rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .91rem;
+      padding: .65rem .7rem;
+      border-radius: .5rem;
+    }
+
+    nav a:hover,
+    nav a[aria-current="page"] {
+      color: var(--text);
+      background: var(--surface-2);
+    }
+
+    main {
+      overflow: hidden;
+    }
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      padding:
+        clamp(5rem, 10vw, 8.5rem)
+        1.25rem
+        clamp(4.5rem, 8vw, 7rem);
+      text-align: center;
+      background:
+        radial-gradient(
+          circle at 15% 15%,
+          rgba(85, 198, 255, .18),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 85% 15%,
+          rgba(251, 146, 60, .18),
+          transparent 28%
+        ),
+        linear-gradient(180deg, var(--surface), var(--bg));
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: .12;
+      background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 44px 44px;
+      mask-image: linear-gradient(to bottom, black, transparent 85%);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: .5rem;
+      align-items: center;
+      color: var(--orange);
+      font-weight: 850;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      font-size: .8rem;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: .8rem auto 1.2rem;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      line-height: 1.02;
+      letter-spacing: -.045em;
+    }
+
+    .hero-copy {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.28rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .9rem;
+      margin-top: 2rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: .75rem 1.2rem;
+      border: 1px solid transparent;
+      border-radius: .7rem;
+      text-decoration: none;
+      font-weight: 850;
+    }
+
+    .button.primary {
+      background: var(--orange);
+      color: #111827;
+    }
+
+    [data-theme="light"] .button.primary {
+      color: #ffffff;
+    }
+
+    .button.secondary {
+      background: var(--surface);
+      border-color: var(--border);
+      color: var(--text);
+    }
+
+    .trust-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 1050px;
+      margin: -1.75rem auto 0;
+      padding: 0 1.25rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .trust-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 1rem 1.2rem;
+      text-align: center;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .trust-item:first-child {
+      border-radius: .8rem 0 0 .8rem;
+    }
+
+    .trust-item:last-child {
+      border-radius: 0 .8rem .8rem 0;
+    }
+
+    .trust-item strong {
+      color: var(--text);
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 4.5rem 0;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 2rem;
+    }
+
+    .section-kicker {
+      color: var(--orange);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-weight: 850;
+      font-size: .8rem;
+    }
+
+    h2 {
+      margin: .35rem 0 .7rem;
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -.025em;
+    }
+
+    .section-heading p,
+    .feature-card p,
+    .category-card p,
+    .method p,
+    footer p {
+      color: var(--muted);
+    }
+
+    .featured-grid,
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .feature-card,
+    .category-card,
+    .method,
+    .offers-panel {
+      background: linear-gradient(
+        145deg,
+        var(--surface-2),
+        var(--surface)
+      );
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      box-shadow: var(--shadow);
+    }
+
+    .feature-card {
+      padding: 1.6rem;
+      position: relative;
+      min-height: 265px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .feature-card::before {
+      content: "";
+      height: 4px;
+      position: absolute;
+      left: 1.6rem;
+      right: 1.6rem;
+      top: 0;
+      border-radius: 0 0 8px 8px;
+      background: linear-gradient(90deg, var(--blue), var(--orange));
+    }
+
+    .visual {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+      font-size: 1.75rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+    }
+
+    h3 {
+      margin: 0 0 .25rem;
+      color: var(--text);
+      font-size: 1.28rem;
+    }
+
+    .label {
+      color: var(--blue);
+      font-size: .88rem;
+      font-weight: 800;
+    }
+
+    .text-link {
+      margin-top: auto;
+      color: var(--blue);
+      font-weight: 850;
+      text-underline-offset: .25rem;
+    }
+
+    .categories {
+      background: var(--surface);
+      border-block: 1px solid var(--border);
+    }
+
+    .category-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .category-card {
+      padding: 1.35rem;
+      box-shadow: none;
+      transition: transform .18s ease, border-color .18s ease;
+    }
+
+    .category-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--blue);
+    }
+
+    .category-card .visual {
+      width: 48px;
+      height: 48px;
+      font-size: 1.45rem;
+    }
+
+    .category-card h3 {
+      font-size: 1.08rem;
+    }
+
+    .category-card p {
+      font-size: .94rem;
+      margin-bottom: 0;
+    }
+
+    .method {
+      padding: clamp(1.5rem, 4vw, 2.5rem);
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .method ol {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: steps;
+    }
+
+    .method li {
+      counter-increment: steps;
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: .8rem;
+      color: var(--muted);
+      margin: 1rem 0;
+    }
+
+    .method li::before {
+      content: counter(steps);
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--orange);
+      color: #111827;
+      font-weight: 900;
+    }
+
+    [data-theme="light"] .method li::before {
+      color: #ffffff;
+    }
+
+    .offers-panel {
+      padding: clamp(1.5rem, 4vw, 2.5rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .offers-panel h2 {
+      font-size: clamp(1.6rem, 3vw, 2.35rem);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--blue);
+    }
+
+    .guide-card-image {
+      width: calc(100% + 3.2rem);
+      max-width: none;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      margin: -1.6rem -1.6rem 1.25rem;
+      border-radius: 1rem 1rem .4rem .4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    @media (max-width: 980px) {
+      .category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .featured-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-card {
+        min-height: auto;
+      }
+
+      .method {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 800px) {
+      header {
+        flex-wrap: wrap;
+      }
+
+      nav {
+        display: none;
+        width: 100%;
+        order: 3;
+        padding-top: .75rem;
+      }
+
+      nav.is-open {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      nav a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+      }
+
+      header:has(nav.is-open) {
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .hero {
+        padding-top: 4.5rem;
+      }
+
+      .trust-strip {
+        grid-template-columns: 1fr;
+        margin-top: -1rem;
+      }
+
+      .trust-item,
+      .trust-item:first-child,
+      .trust-item:last-child {
+        border-radius: 0;
+      }
+
+      .trust-item:first-child {
+        border-radius: .8rem .8rem 0 0;
+      }
+
+      .trust-item:last-child {
+        border-radius: 0 0 .8rem .8rem;
+      }
+
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .offers-panel {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav.is-open {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+      }
+    }
+  
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .product-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-card .card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      border-radius: 6px;
+      margin-bottom: 1.2rem;
+      background: #ffffff;
+      padding: .5rem;
+    }
+
+    .product-card h3 {
+      font-size: 1.35rem;
+      margin-top: 0;
+    }
+
+    .product-card .specs {
+      font-size: .95rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .aff-btn {
+      display: inline-block;
+      background: var(--orange-strong);
+      color: #ffffff;
+      padding: .6rem 1.2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+      text-align: center;
+      transition: background .2s;
+    }
+
+    .aff-btn:hover {
+      background: var(--orange);
+    }
+  
+    .category-card .cat-img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: .75rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+  </style>
+
+  <!-- Existing shared website stylesheet -->
+  <link rel="stylesheet" href="/style.css?v=20261031a">
+
+  <style id="site-quality-upgrades">
+    .content-updated {
+      color: var(--muted, #94a3b8);
+      font-size: .92rem;
+      margin: .35rem 0 1.5rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin: .65rem 0;
+    }
+
+    .footer-links a {
+      color: var(--blue, #38bdf8);
+    }
+
+    .trust-note {
+      border: 1px solid var(--border, #334155);
+      border-radius: 12px;
+      padding: 1.15rem 1.25rem;
+      margin: 1.5rem 0;
+      background: var(--surface, #1e293b);
+    }
+
+    @media (max-width: 800px) {
+      #sitePrimaryNav a,
+      .site-primary-nav a,
+      .product-card a,
+      .feature-card a,
+      .guide-card a,
+      .aff-btn,
+      .btn,
+      .cta {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .site-theme-toggle,
+      #siteMenuToggle {
+        min-width: 44px;
+        min-height: 44px;
+      }
+    }
+  </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Shop by Store","description":"Every store Moxies eXtreme TechGear partners with — Amazon live now, Walmart applied, REI, Bass Pro Shops, B&H Photo, Wayfair and more on the way.","url":"https://moxiesextremetechgear.com/shop-by-store.html","isPartOf":{"@type":"WebSite","name":"Moxies eXtreme TechGear","url":"https://moxiesextremetechgear.com/"}}</script><style>
+    .store-tile { width: 100%; height: 120px; border-radius: .75rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; font-weight: 800; color: #fff; letter-spacing: .02em; text-align: center; padding: 0 .5rem; }
+    .store-status { display: inline-block; font-size: .72rem; font-weight: 800; letter-spacing: .08em; padding: .3rem .65rem; border-radius: 999px; margin-bottom: .6rem; }
+    .st-live { background: #15803d; color: #fff; }
+    .st-applied { background: #b45309; color: #fff; }
+    .st-next { background: #1d4ed8; color: #fff; }
+    .st-list { background: #475569; color: #fff; }
+    .store-links { font-size: .95rem; margin-top: .9rem; line-height: 1.7; }
+    .store-links a { font-weight: 700; }
+  </style>
+</head>
+
+<body class="moxie-home">
+  <a class="site-skip-link" href="#main-content">
+    Skip to main content
+  </a>
+
+  <!-- Website header -->
+  <header class="site-header">
+    <div class="site-header-top">
+      <span class="site-brand">
+        Moxies eXtreme TechGear
+      </span>
+
+      <button class="site-theme-toggle" id="siteThemeToggle" type="button" aria-label="Switch to light mode">
+        ☀️ <span>Light Mode</span>
+      </button>
+
+      <button class="site-menu-toggle" id="siteMenuToggle" type="button" aria-expanded="false" aria-controls="sitePrimaryNav">
+        Menu
+      </button>
+    </div>
+
+    <nav class="site-primary-nav" id="sitePrimaryNav" aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a href="/offers.html">Deals, Drops &amp; Giveaways</a>
+      <a href="/special-picks.html">Featured Gear Picks</a>
+
+      <!-- New category immediately after Featured Gear Picks -->
+      <a href="/home-safety-security.html">
+        Home Safety &amp; Security Gear
+      </a>
+
+      <a href="/computers.html">Computers &amp; Mini PCs</a>
+      <a href="/mobile-power.html">Portable Power &amp; Battery Packs</a>
+      <a href="/ai-hardware.html">AI Hardware &amp; Smart Mini Rigs</a>
+      <a href="/home-networking-security.html">Networking &amp; Wi-Fi Gear</a>
+      <a href="/monitors-docks-desk-setup.html">Desk Setups &amp; Monitors</a>
+
+      <details class="site-nav-more">
+        <summary>More Categories</summary>
+
+        <div class="site-nav-more-menu"><a href="/camping-outdoors-equipment.html">Camping and outdoors Equipment</a>
+          <a href="/gan-chargers-guide.html">
+            Fast Chargers &amp; Wall Power
+          </a>
+          <a href="/automotive-emergency.html">
+            Auto, Road &amp; Emergency Tech
+          </a>
+          <a href="/storage-gear/index.html">
+            Massive Storage Solutions
+          </a>
+          <a href="/ebike-gear.html">
+            E-Bikes, Tech &amp; Riding Accessories
+          </a>
+          <a href="/scuba-diving/index.html">
+            Scuba Diving Gear, Classes &amp; Local Guides
+          </a>
+          <a href="/cable-management.html">
+            Cable Management Made Easy
+          </a>
+          <a href="/audio-gear.html">
+            State-of-the-Art Audio Gear
+          </a>
+          <a href="/drones.html">
+            Drones — Mini, Mid-Range &amp; High-End
+          </a>
+          <a href="/coding-gear/index.html">
+            Software, Linux, Open Source &amp; Coding Guides
+          </a>
+          
+          <a href="/gaming-setup.html">Gaming Setup</a>
+          <a href="/smart-home.html">Smart Home</a>
+          <a href="/tech-gifts-under-50.html">Tech Gifts Under $50</a>
+          <a href="/epoxy-resin-tables.html">Epoxy &amp; Resin for River Tables</a>
+          <a href="/black-friday-deals.html">Black Friday Deals</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+      </details>
+    </nav>
+  </header>
+
+  <div class="site-highlight-banner" role="note">
+    ⚡ PRACTICAL GUIDES FOR POWER, PERFORMANCE, MOBILITY &amp; MODERN TECH ⚡
+  </div>
+
+  <main id="main-content"><section class="hero" aria-labelledby="hero-title"><span class="eyebrow">🏬 Shop by store</span><h1 id="hero-title">Shop by Store</h1><p class="hero-copy">One site, every store we're with. Amazon is live now, Walmart is applied for, and REI, Bass Pro, B&amp;H and more are on the way — pick the store you like, find the gear, and every purchase through our links supports the site.</p><div class="hero-actions"><a class="button primary" href="#stores">Browse the stores</a><a class="button secondary" href="#how-it-works">How this works</a></div></section>
+<section class="container" id="stores" aria-labelledby="stores-title"><div class="section-heading"><span class="section-kicker">Every store, one page</span><h2 id="stores-title">The stores we're with</h2><p>Store statuses checked November 9, 2026. New stores join this page as they're approved — and the "also at" buttons on each product pick grow with them.</p></div><div class="product-grid"><article class="product-card"><div class="store-tile" style="background:#ff9900">amazon</div><div><span class="store-status st-live">● LIVE NOW</span><h3>Amazon</h3><div class="specs">Best for: everything — our home base</div><p>Every pick on this site links here first. The widest selection anywhere, and the store most of our readers already shop at. As an Amazon Associate I earn from qualifying purchases.</p></div><div class="store-links">Shop here: <a href="drones.html">Drones</a> · <a href="camping-outdoors-equipment.html">Camping &amp; outdoors</a> · <a href="mens-outdoor-apparel.html">Men's apparel</a> · <a href="womens-outdoor-apparel.html">Women's apparel</a> · <a href="tech-gifts-under-50.html">Tech gifts under $50</a></div></article><article class="product-card"><div class="store-tile" style="background:#0071dc">Walmart</div><div><span class="store-status st-applied">APPLIED — WAITING TO HEAR BACK</span><h3>Walmart</h3><div class="specs">Best for: everyday gear at rollback prices</div><p>We applied to the Walmart Affiliate Program on November 8, 2026 and are waiting on approval. Once we're in, "also at Walmart" buttons appear wherever Walmart beats Amazon.</p></div><div class="store-links">Shop here: <a href="tech-gifts-under-50.html">Tech gifts under $50</a> · <a href="smart-home.html">Smart home</a></div></article><article class="product-card"><div class="store-tile" style="background:#00694e">REI</div><div><span class="store-status st-next">NEXT UP</span><h3>REI Co-op</h3><div class="specs">Best for: camping, hiking, kayaks, apparel — 5% reported, 15-day window</div><p>The outdoor-gear counterpart to Amazon, and our first application after Walmart. High brand trust, and the natural home for our camping and apparel picks.</p></div><div class="store-links">Shop here: <a href="camping-outdoors-equipment.html">Camping &amp; outdoors</a> · <a href="mens-outdoor-apparel.html">Men's apparel</a> · <a href="womens-outdoor-apparel.html">Women's apparel</a></div></article><article class="product-card"><div class="store-tile" style="background:#c2410c">Bass Pro</div><div><span class="store-status st-next">NEXT UP</span><h3>Bass Pro Shops &amp;amp; Cabela&#x27;s</h3><div class="specs">Best for: fishing, kayaks, hunting — up to 5% reported, 14-day window</div><p>One application covers both brands. The best fishing and kayak fit anywhere — a natural next mirror for our outdoor categories.</p></div><div class="store-links">Shop here: <a href="camping-outdoors-equipment.html">Camping &amp; outdoors</a> · <a href="mens-outdoor-apparel.html">Men's apparel</a> · <a href="womens-outdoor-apparel.html">Women's apparel</a></div></article><article class="product-card"><div class="store-tile" style="background:#1e3a5f">B&amp;H</div><div><span class="store-status st-next">NEXT UP</span><h3>B&amp;H Photo Video</h3><div class="specs">Best for: cameras, drones, audio, computing — 2% base, up to 8% select (reported)</div><p>The best tech fit after Amazon. High average order values mean even 2% adds up, and the 8% featured-brand rate is the strongest tech rate we found.</p></div><div class="store-links">Shop here: <a href="drones.html">Drones</a> · <a href="audio-gear.html">Audio gear</a></div></article><article class="product-card"><div class="store-tile" style="background:#7c3aed">Wayfair</div><div><span class="store-status st-next">NEXT UP</span><h3>Wayfair</h3><div class="specs">Best for: outdoor living, patio &amp; camp furniture — 5–7% reported, 7-day window</div><p>Worth it for outdoor-living and patio gear — kayak storage, camp furniture, patio setups. Not a tech store, but a strong one for the outdoor side of the site.</p></div><div class="store-links">Shop here: <a href="camping-outdoors-equipment.html">Camping &amp; outdoors</a> · <a href="smart-home.html">Smart home</a></div></article><article class="product-card"><div class="store-tile" style="background:#005daa">Sam&#x27;s Club</div><div><span class="store-status st-list">ON THE LIST</span><h3>Sam&#x27;s Club</h3><div class="specs">Best for: bulk buys — ~1.6% on products reported, 3-day window</div><p>A real affiliate program, but a low product rate — memberships pay far better than products. On the list for when the bigger stores are done.</p></div><div class="store-links">Shop here: <a href="tech-gifts-under-50.html">Tech gifts under $50</a> · <a href="smart-home.html">Smart home</a></div></article><article class="product-card"><div class="store-tile" style="background:#003087">Dick&#x27;s</div><div><span class="store-status st-list">ON THE LIST</span><h3>Dick&#x27;s Sporting Goods</h3><div class="specs">Best for: broad sporting goods — ~2–3.2% reported, verifying terms first</div><p>Broad camping, fishing and kayak coverage, but the reported rates disagree from source to source — we're verifying the live terms before applying.</p></div><div class="store-links">Shop here: <a href="camping-outdoors-equipment.html">Camping &amp; outdoors</a> · <a href="mens-outdoor-apparel.html">Men's apparel</a> · <a href="womens-outdoor-apparel.html">Women's apparel</a></div></article></div></section>
+<section class="container" id="how-it-works" aria-labelledby="how-title"><div class="section-heading"><span class="section-kicker">Why more than one store</span><h2 id="how-title">How this works</h2><p>Different stores win on different gear — so we list the same kind of picks wherever they're sold, and you buy from the store you trust.</p></div><div class="method-panel"><ul><li>Amazon is live on every pick today. As each new store approves us, "also at" buttons appear on the picks where that store carries the same gear.</li><li>Every store on this page is a real affiliate partner or an application in progress — we only list stores we've actually joined or applied to.</li><li>Buying through our links costs you nothing extra and keeps the site running — that's the whole deal.</li><li><strong>What about Costco?</strong> Costco doesn't offer a product affiliate program — it only pays $3–$6 when someone signs up for a membership — so there are no Costco product buttons here. The same gear is linked at the stores above.</li></ul><p>As an Amazon Associate I earn from qualifying purchases.</p><p>This page lists the stores we partner with — it has no prices of its own. Prices appear on the product pages and change often, so check the listing before you buy. Product prices and availability are accurate as of the date/time indicated and are subject to change. Any price and availability information displayed on Amazon.com at the time of purchase will apply to the purchase of this product.</p><p><a href="/contact.html">Suggest a store or a topic</a> · <a href="/affiliate-disclosure.html">Affiliate disclosure</a></p></div></section>
+</main>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-links">
+      <a href="/about.html">About &amp; Editorial Standards</a>
+      <span aria-hidden="true">·</span>
+      <a href="/contact.html">Contact</a>
+      <span aria-hidden="true">·</span>
+      <a href="/privacy.html">Privacy</a>
+      <span aria-hidden="true">·</span>
+      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
+      <span aria-hidden="true">·</span>
+      <a href="/terms.html">Terms</a>
+    </p>
+
+    <p>
+      <strong>Moxies eXtreme TechGear</strong>
+      — practical technology guidance without the guesswork.
+    </p>
+
+    <p class="affiliate-disclosure">
+      <strong>Affiliate disclosure:</strong>
+      As an Amazon Associate, I earn from qualifying purchases
+      <strong class="no-additional-cost">
+        AT NO ADDITIONAL COST TO YOU.
+      </strong>
+    </p>
+
+    <p>© 2026 Moxies eXtreme TechGear. All rights reserved.</p>
+  </footer>
+
+  <!-- Theme and mobile navigation -->
+  <script data-site-shell="">
+    (() => {
+      const root = document.documentElement;
+      const themeButton = document.getElementById('siteThemeToggle');
+      const menuButton = document.getElementById('siteMenuToggle');
+      const nav = document.getElementById('sitePrimaryNav');
+
+      const readSavedTheme = () => {
+        try {
+          return localStorage.getItem('theme');
+        } catch {
+          return null;
+        }
+      };
+
+      const saveTheme = theme => {
+        try {
+          localStorage.setItem('theme', theme);
+        } catch {
+          // Theme still works if browser storage is unavailable.
+        }
+      };
+
+      const applyTheme = theme => {
+        const light = theme === 'light';
+
+        if (light) {
+          root.setAttribute('data-theme', 'light');
+        } else {
+          root.removeAttribute('data-theme');
+        }
+
+        if (themeButton) {
+          themeButton.innerHTML = light
+            ? '🌙 <span>Dark Mode</span>'
+            : '☀️ <span>Light Mode</span>';
+
+          themeButton.setAttribute(
+            'aria-label',
+            light ? 'Switch to dark mode' : 'Switch to light mode'
+          );
+        }
+
+        saveTheme(light ? 'light' : 'dark');
+      };
+
+      applyTheme(readSavedTheme() === 'light' ? 'light' : 'dark');
+
+      if (themeButton) {
+        themeButton.addEventListener('click', () => {
+          applyTheme(
+            root.hasAttribute('data-theme') ? 'dark' : 'light'
+          );
+        });
+      }
+
+      const closeMenu = () => {
+        if (!nav || !menuButton) return;
+
+        nav.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+
+        nav.querySelectorAll('details[open]').forEach(details => {
+          details.open = false;
+        });
+      };
+
+      if (menuButton && nav) {
+        menuButton.addEventListener('click', () => {
+          const open = nav.classList.toggle('is-open');
+          menuButton.setAttribute('aria-expanded', String(open));
+        });
+
+        nav.addEventListener('click', event => {
+          if (
+            event.target instanceof Element &&
+            event.target.closest('a')
+          ) {
+            closeMenu();
+          }
+        });
+
+        document.addEventListener('keydown', event => {
+          if (
+            event.key === 'Escape' &&
+            (
+              nav.classList.contains('is-open') ||
+              nav.querySelector('details[open]')
+            )
+          ) {
+            closeMenu();
+            menuButton.focus();
+          }
+        });
+      }
+    })();
+  </script>
+
+  <!-- Existing daily giveaway and site-search functionality -->
+  <script src="/daily-giveaways.js" defer=""></script>
+  <script src="/site-search.js?v=20261031a" defer=""></script>
+
+
+</body></html>
