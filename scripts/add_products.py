@@ -1,7 +1,9 @@
-"""MoxiesExtremeTechGear daily auto-pick adder — v2 (2026-11-05).
+"""MoxiesExtremeTechGear daily auto-pick adder — v3 (2026-11-12).
 
-Adds ONE verified Amazon Best Seller pick per day to each coverable live
+Adds FIVE verified Amazon Best Seller picks per day to each coverable live
 product page, inside a dedicated "Fresh picks" section just before </main>.
+No item cap (removed 2026-11-12 per RMoxie: some categories have more
+products than others; pages grow ~5/day — watch page sizes).
 
 Why a dedicated section (not the curated grid):
 - The curated grids feed the compare tables + best-value callouts; appending
@@ -22,9 +24,9 @@ Verification (every pick, every day):
   pick is skipped — never a placeholder (reads as "no pic").
 - Optional max-price rule (tech-gifts-under-50: price must parse and be <= $50).
 
-Cap: 100 total product cards per page. Past 100, the oldest AUTO-ADDED card
-is removed (FIFO). Original hand-built picks are never removed. Auto cards
-are marked data-auto-pick="1" + <!-- auto-pick DATE ASIN -->.
+Cap: none (removed v3). Auto cards are marked data-auto-pick="1" +
+<!-- auto-pick DATE ASIN -->. History records every pick per page per day
+(as a list) so a product is never re-added on any page.
 
 Safety:
 - Only pages in PAGES are ever modified. A page is skipped (never written)
@@ -61,8 +63,10 @@ DATA_DIR = ROOT / "data"
 HISTORY_FILE = DATA_DIR / "product_history.json"
 
 AFFILIATE_TAG = "rmoxie-20"
-MAX_ITEMS_PER_PAGE = 100
-MAX_CANDIDATES_PER_PAGE = 8  # how many zgbs entries to try before giving up
+PICKS_PER_PAGE = 5  # v3 (2026-11-12): five fresh picks per page per run, per RMoxie
+# No item cap anymore (v3): RMoxie removed the 100-item cap — some categories
+# simply have more products than others. Pages grow ~5/day; keep an eye on
+# page sizes in the weekly scan and revisit if one gets unwieldy.
 
 HEADERS = {
     "User-Agent": (
@@ -456,30 +460,23 @@ def insert_card(page_html, card_html):
         return None
     return page_html.replace(MARKER, card_html + "\n  " + MARKER, 1)
 
-def prune_oldest(page_html):
-    """Remove the single oldest auto-added card. Returns (html, asin|None)."""
-    matches = list(AUTO_RE.finditer(page_html))
-    if not matches:
-        return page_html, None
-    oldest = min(matches, key=lambda m: (m.group(1), m.start()))
-    new_html = page_html[:oldest.start()] + page_html[oldest.end():]
-    return new_html, oldest.group(2)
-
 # ---------------------------------------------------------
 # PER-PAGE RUN
 # ---------------------------------------------------------
-def pick_candidate(candidates, page_html, history, must, must_not,
-                   max_price, picked_today, path):
-    """First candidate that passes every check, or None.
+def find_picks(candidates, page_html, history, must, must_not,
+               max_price, picked_today, path, want, start=0):
+    """Collect up to `want` candidates passing every check, scanning from
+    index `start`. Returns (picks, next_index).
 
     Checks, in order: keyword filter, not already on the page, not in
     history, not already picked for another page today, price rule,
-    dp-200 check."""
-    tried = 0
-    for cand in candidates:
-        if tried >= MAX_CANDIDATES_PER_PAGE:
-            break
-        tried += 1
+    dp-200 check. Scans the whole candidate list (no per-call cap): a
+    zgbs page holds ~50 items and finding 5 passing picks needs the room."""
+    picks = []
+    i = start
+    while i < len(candidates) and len(picks) < want:
+        cand = candidates[i]
+        i += 1
         if not keyword_ok(cand["name"], must, must_not):
             continue
         if cand["asin"] in page_html:
@@ -493,8 +490,9 @@ def pick_candidate(candidates, page_html, history, must, must_not,
         if not verify_dp(cand["asin"]):
             log(f"  {path}: dp check failed for {cand['asin']} ({cand['name'][:50]})")
             continue
-        return cand
-    return None
+        picks.append(cand)
+        picked_today.add(cand["asin"])
+    return picks, i
 
 def run_page(root, cfg, history, date_iso, date_display, dry_run, picked_today):
     path, count_pattern, source_url, must, must_not, max_price = cfg
@@ -518,14 +516,14 @@ def run_page(root, cfg, history, date_iso, date_display, dry_run, picked_today):
         log(f"{path}: SKIP — fresh-picks grid marker missing")
         return False
 
-    # 2. Fetch + parse the best-sellers source (page 1, then page 2).
-    picked = None
+    # 2. Fetch + parse best-sellers (page 1, then page 2 only if short).
+    #    Collect up to PICKS_PER_PAGE verified picks.
+    picks = []
     for page_no in (1, 2):
-        if page_no == 1:
-            url = source_url
-        else:
-            sep = "&" if "?" in source_url else "?"
-            url = f"{source_url}{sep}pg=2"
+        if len(picks) >= PICKS_PER_PAGE:
+            break
+        url = source_url if page_no == 1 else (
+            f"{source_url}{'&' if '?' in source_url else '?'}pg=2")
         zgbs_html = fetch(url)
         if not zgbs_html:
             log(f"{path}: source fetch failed (page {page_no})")
@@ -534,37 +532,29 @@ def run_page(root, cfg, history, date_iso, date_display, dry_run, picked_today):
         if not candidates:
             log(f"{path}: no products parsed from source (page {page_no})")
             continue
-        picked = pick_candidate(candidates, page_html, history, must, must_not,
-                                max_price, picked_today, path)
-        if picked:
-            break
-        log(f"{path}: no candidate passed verification (page {page_no})")
-    if not picked:
-        log(f"{path}: SKIP — no verified pick today")
+        found, _ = find_picks(candidates, page_html, history, must, must_not,
+                              max_price, picked_today, path,
+                              PICKS_PER_PAGE - len(picks))
+        picks.extend(found)
+        if not found:
+            log(f"{path}: no candidate passed verification (page {page_no})")
+    if not picks:
+        log(f"{path}: SKIP — no verified picks today")
         return False
 
-    # 4. Cap: prune oldest auto pick(s) if at/over 100 items.
-    card_html = build_card(picked, date_iso, date_display)
-    total = count_items(page_html, count_pattern)
-    pruned = []
-    while total >= MAX_ITEMS_PER_PAGE:
-        page_html, removed = prune_oldest(page_html)
-        if not removed:
-            log(f"{path}: SKIP — at cap ({total}) with no auto picks to prune")
+    # 3. Insert each card (no cap since v3).
+    updated = page_html
+    for picked in picks:
+        card_html = build_card(picked, date_iso, date_display)
+        updated = insert_card(updated, card_html)
+        if updated is None:
+            log(f"{path}: SKIP — insert failed")
             return False
-        pruned.append(removed)
-        total = count_items(page_html, count_pattern)
-
-    # 5. Insert.
-    updated = insert_card(page_html, card_html)
-    if updated is None:
-        log(f"{path}: SKIP — insert failed")
-        return False
 
     if dry_run:
-        log(f"{path}: DRY RUN — would add {picked['asin']} "
-            f"({picked['name'][:60]})" + (f"; would prune {pruned}" if pruned else ""))
-        picked_today.add(picked["asin"])
+        for picked in picks:
+            log(f"{path}: DRY RUN — would add {picked['asin']} "
+                f"({picked['name'][:60]})")
         return True
 
     try:
@@ -573,10 +563,21 @@ def run_page(root, cfg, history, date_iso, date_display, dry_run, picked_today):
         log(f"{path}: SKIP — write failed ({e})")
         return False
 
-    history.setdefault(date_iso, {})[path] = picked["amazon_url"]
-    picked_today.add(picked["asin"])
-    log(f"{path}: ADDED {picked['asin']} ({picked['name'][:60]})"
-        + (f"; pruned oldest {pruned}" if pruned else ""))
+    # History keeps every pick (list per page per day) so nothing is
+    # re-added on any page later. Legacy single-URL values are converted.
+    day = history.setdefault(date_iso, {})
+    cur = day.get(path)
+    urls = [p["amazon_url"] for p in picks]
+    if cur is None:
+        day[path] = urls
+    elif isinstance(cur, str):
+        day[path] = [cur] + urls
+    else:
+        cur.extend(urls)
+    total = count_items(updated, count_pattern)
+    log(f"{path}: ADDED {len(picks)} "
+        + ", ".join(f"{p['asin']} ({p['name'][:40]})" for p in picks)
+        + f" — page now has {total} items")
     return True
 
 # ---------------------------------------------------------
@@ -612,7 +613,7 @@ def main():
 
     if not args.dry_run:
         save_history(history)
-    log(f"done — {added}/{len(PAGES)} pages got a new pick")
+    log(f"done — {added}/{len(PAGES)} pages got new picks ({PICKS_PER_PAGE} per page)")
 
 if __name__ == "__main__":
     main()
