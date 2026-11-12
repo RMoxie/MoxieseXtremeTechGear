@@ -1,39 +1,39 @@
 {
-  "updatedAt": "2026-11-11T19:38:51Z",
+  "updatedAt": "2026-11-12T19:57:58Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Geekersoft PDF Converter 3.9.9",
-      "description": "Easily convert PDF files to and from any Microsoft Office format or image.",
-      "price": "$19.99",
-      "url": "https://www.giveawayoftheday.com/geekersoft-pdf-converter-2/",
+      "title": "Coolmuster Screen Recorder 1.1.69",
+      "description": "Capture anything on your screen and enhance it instantly.",
+      "price": "$25.95",
+      "url": "https://www.giveawayoftheday.com/coolmuster-screen-recorder-1-1-69/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2023/06/4b634a076feeeaaf048e2802a954c36c.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/06/c40b9ea768aab0472c4309a577089bf0.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Gnome Burrow Strategy",
-      "description": "Lead a small colony of gnomes and defeat the rival red colony.",
+      "title": "Music Tapi Tapo",
+      "description": "Tap falling gems in time with a full backing track.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/gnome-burrow-strategy/",
+      "url": "https://game.giveawayoftheday.com/music-tapi-tapo/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/3721106d3c2ec1df3145b2288c234583.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/74e75c36b92ca44470dec5434402950b.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Final Castle Defence : Idle RPG",
-      "description": "Defense RPG is to train heroes, towers and pets to defend the Castle against enemies.",
-      "price": "1.59",
-      "url": "https://android.giveawayoftheday.com/final-castle-defence-idle-rpg/",
+      "title": "Shadow Hunter: Offline Premium",
+      "description": "The must try game for any real hack and slash fan who already got bored with just mindlessly smashing buttons.",
+      "price": "0.99",
+      "url": "https://android.giveawayoftheday.com/demon-hunter-premium/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2023/11/com.gdx.dh.game.sdefence_app_icon_1701182875.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/04/com.eapublishing.dhsw.paid_app_icon_1744443496.png"
     },
     {
       "category": "iphone",
