@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-11-13T19:46:08Z",
+  "updatedAt": "2026-11-14T18:09:17Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Tree Notes 3.6",
-      "description": "Hierarchical note software!",
-      "price": "$19.00",
-      "url": "https://www.giveawayoftheday.com/tree-notes-3-6/",
+      "title": "OnlineTV 20",
+      "description": "Start receiving all your favorite radio and TV channels on your own laptop!",
+      "price": "$21.99",
+      "url": "https://www.giveawayoftheday.com/onlinetv-20/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/50bbb037b675b8121a81c24220b29130.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/45c84455713579ffd8cc93a9d6042fe3.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Speed Combat",
-      "description": "Jump behind the wheel of a supercharged sports car!",
-      "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/speed-combat/",
+      "title": "Fairytale Mosaics Beauty And The Beast 2",
+      "description": "Fairytale Mosaics is a true gift for any puzzle lover.",
+      "price": "$14.99",
+      "url": "https://game.giveawayoftheday.com/fairytale-mosaics-beauty-and-the-beast-2/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/72a51c84413fa50dc641e50c46392521.jpg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/a407db765a1415d7a72b56bdc7a038d0.jpg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Fieldrunners 2",
-      "description": "The fieldrunners are back! With legions of soldiers and a gaggle of new tricks, they’re ready to conquer the globe.",
-      "price": "$2.99",
-      "url": "https://iphone.giveawayoftheday.com/fieldrunners-2-2/",
+      "title": "Snap Markup - Annotation Tool",
+      "description": "Markup or annotate the photo with various shapes and send it anywhere.",
+      "price": "$1.99",
+      "url": "https://iphone.giveawayoftheday.com/snap-markup-annotation-tool/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2014/09/527358348_app_icon_big_1441388692.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1012363691_app_icon_big_1794663872.jpg"
     }
   ]
 }
