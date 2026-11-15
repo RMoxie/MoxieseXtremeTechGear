@@ -1,39 +1,39 @@
 {
-  "updatedAt": "2026-11-14T18:09:17Z",
+  "updatedAt": "2026-11-15T18:54:08Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "OnlineTV 20",
-      "description": "Start receiving all your favorite radio and TV channels on your own laptop!",
-      "price": "$21.99",
-      "url": "https://www.giveawayoftheday.com/onlinetv-20/",
+      "title": "Excel Password Recovery 1.2",
+      "description": "Manage and recover lost passwords for Excel files.",
+      "price": "$7.50",
+      "url": "https://www.giveawayoftheday.com/excel-password-recovery/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/45c84455713579ffd8cc93a9d6042fe3.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/7c3158daa66941104ad2066cf6b41b66.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Fairytale Mosaics Beauty And The Beast 2",
-      "description": "Fairytale Mosaics is a true gift for any puzzle lover.",
-      "price": "$14.99",
-      "url": "https://game.giveawayoftheday.com/fairytale-mosaics-beauty-and-the-beast-2/",
+      "title": "Paranormal Pursuit: The Gifted One",
+      "description": "Every second counts in this breathtaking paranormal adventure!",
+      "price": "$9.99",
+      "url": "https://game.giveawayoftheday.com/paranormal-pursuit-the-gifted-one-3/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/a407db765a1415d7a72b56bdc7a038d0.jpg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2020/06/f479a0f5615add009caaae5457738131.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Equalizer - Bass Booster pro",
-      "description": "Improve the sound quality of your phone!",
-      "price": "1.99",
-      "url": "https://android.giveawayoftheday.com/equalizer-bass-booster-pro-4/",
+      "title": "Word Connect: Crossword",
+      "description": "Welcome to this brand new addictive word connect game!",
+      "price": "2.99",
+      "url": "https://android.giveawayoftheday.com/word-connect-crossword/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2024/03/equalizer.eq.bassbooster.volume.pro_app_icon_1710317217.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2024/01/com.crossword.brain.wordgame.puzzle.board.en_app_icon_1706618844.png"
     },
     {
       "category": "iphone",
