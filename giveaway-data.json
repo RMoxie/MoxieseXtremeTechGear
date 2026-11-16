@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-11-15T18:54:08Z",
+  "updatedAt": "2026-11-16T22:09:48Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Excel Password Recovery 1.2",
-      "description": "Manage and recover lost passwords for Excel files.",
-      "price": "$7.50",
-      "url": "https://www.giveawayoftheday.com/excel-password-recovery/",
+      "title": "MobiKin Eraser for iOS 2.1.21",
+      "description": "Erase all deleted files from iOS.",
+      "price": "$29.95",
+      "url": "https://www.giveawayoftheday.com/mobikin-eraser-for-ios-2-1-21-3/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/7c3158daa66941104ad2066cf6b41b66.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/03/8b88a4220392a3eb1845cc100821c04e.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Paranormal Pursuit: The Gifted One",
-      "description": "Every second counts in this breathtaking paranormal adventure!",
-      "price": "$9.99",
-      "url": "https://game.giveawayoftheday.com/paranormal-pursuit-the-gifted-one-3/",
+      "title": "Block io Shooting Top",
+      "description": "Shoot numbered blocks upward and merge matching numbers to build bigger ones.",
+      "price": "$5.00",
+      "url": "https://game.giveawayoftheday.com/block-io-shooting-top/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2020/06/f479a0f5615add009caaae5457738131.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/c6c4f88f0cba4f8016e625f0ad3ecabd.jpg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Snap Markup - Annotation Tool",
-      "description": "Markup or annotate the photo with various shapes and send it anywhere.",
+      "title": "BlackCam - Black&White Camera",
+      "description": "BlackCam helps you to take stunning black and white photographs with live preview.",
       "price": "$1.99",
-      "url": "https://iphone.giveawayoftheday.com/snap-markup-annotation-tool/",
+      "url": "https://iphone.giveawayoftheday.com/blackcam-blackwhite-camera-2/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1012363691_app_icon_big_1794663872.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/943901190_app_icon_big_1794811111.jpg"
     }
   ]
 }
