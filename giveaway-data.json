@@ -1,39 +1,39 @@
 {
-  "updatedAt": "2026-11-16T22:09:48Z",
+  "updatedAt": "2026-11-17T20:58:29Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "MobiKin Eraser for iOS 2.1.21",
-      "description": "Erase all deleted files from iOS.",
-      "price": "$29.95",
-      "url": "https://www.giveawayoftheday.com/mobikin-eraser-for-ios-2-1-21-3/",
+      "title": "Imagelys Picture Lab 10.0",
+      "description": "Create your seamless texture or artistic effect with a few mouse clicks.",
+      "price": "$9.00",
+      "url": "https://www.giveawayoftheday.com/imagelys-picture-lab-10-0/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/03/8b88a4220392a3eb1845cc100821c04e.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/b1a4386d8d9f6d225a58ea598f942012.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Block io Shooting Top",
-      "description": "Shoot numbered blocks upward and merge matching numbers to build bigger ones.",
+      "title": "Sunset Highway",
+      "description": "Take the wheel of a yellow sports car and race down a road full of traffic.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/block-io-shooting-top/",
+      "url": "https://game.giveawayoftheday.com/sunset-highway/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/c6c4f88f0cba4f8016e625f0ad3ecabd.jpg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/ff13692ed0a55c326c239b745b339b0b.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Word Connect: Crossword",
-      "description": "Welcome to this brand new addictive word connect game!",
-      "price": "2.99",
-      "url": "https://android.giveawayoftheday.com/word-connect-crossword/",
+      "title": "Dead God Land - Light Survival",
+      "description": "Explore mysterious islands and face a lot of dangers!",
+      "price": "$6.99",
+      "url": "https://android.giveawayoftheday.com/dead-god-land-light-survival/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2024/01/com.crossword.brain.wordgame.puzzle.board.en_app_icon_1706618844.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/11/com.devvisiongames.dglandlight.survival_app_icon_1762173047.png"
     },
     {
       "category": "iphone",
