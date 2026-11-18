@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-11-17T20:58:29Z",
+  "updatedAt": "2026-11-18T20:36:22Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Imagelys Picture Lab 10.0",
-      "description": "Create your seamless texture or artistic effect with a few mouse clicks.",
-      "price": "$9.00",
-      "url": "https://www.giveawayoftheday.com/imagelys-picture-lab-10-0/",
+      "title": "AnyMP4 Video Converter 7.2.62",
+      "description": "Quickly convert 4K Ultra HD/1080p HD/SD video to a wide range of formats.",
+      "price": "$12.50 / month",
+      "url": "https://www.giveawayoftheday.com/anymp4-video-converter-7-2-62/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/b1a4386d8d9f6d225a58ea598f942012.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2018/12/3fb5cd752cbc4ea3c1e45bc02c19b193.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Sunset Highway",
-      "description": "Take the wheel of a yellow sports car and race down a road full of traffic.",
+      "title": "Voxel Map Destroyer",
+      "description": "Smash through a sprawling voxel district and watch every wall crumbles.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/sunset-highway/",
+      "url": "https://game.giveawayoftheday.com/voxel-map-destroyer/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/ff13692ed0a55c326c239b745b339b0b.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/3fcd4fc2eadb07ea20732dbf06dd7959.jpg"
     },
     {
       "category": "android",
@@ -30,7 +30,7 @@
       "icon": "🤖",
       "title": "Dead God Land - Light Survival",
       "description": "Explore mysterious islands and face a lot of dangers!",
-      "price": "$6.99",
+      "price": "6.99",
       "url": "https://android.giveawayoftheday.com/dead-god-land-light-survival/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
       "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/11/com.devvisiongames.dglandlight.survival_app_icon_1762173047.png"
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "BlackCam - Black&White Camera",
-      "description": "BlackCam helps you to take stunning black and white photographs with live preview.",
-      "price": "$1.99",
-      "url": "https://iphone.giveawayoftheday.com/blackcam-blackwhite-camera-2/",
+      "title": "StoryShots: Book Summaries",
+      "description": "Choose from 1 Million+ Book Summaries, including Bestsellers & New Releases!",
+      "price": "$5.99",
+      "url": "https://iphone.giveawayoftheday.com/storyshots-book-summaries/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/943901190_app_icon_big_1794811111.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1430885497_app_icon_big_1794986625.jpg"
     }
   ]
 }
