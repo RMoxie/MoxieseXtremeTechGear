@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-11-18T20:36:22Z",
+  "updatedAt": "2026-11-19T20:41:18Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "AnyMP4 Video Converter 7.2.62",
-      "description": "Quickly convert 4K Ultra HD/1080p HD/SD video to a wide range of formats.",
-      "price": "$12.50 / month",
-      "url": "https://www.giveawayoftheday.com/anymp4-video-converter-7-2-62/",
+      "title": "FileCryptor 2025",
+      "description": "One click is enough: backs up folders and files in seconds!",
+      "price": "$29.95",
+      "url": "https://www.giveawayoftheday.com/filecryptor/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2018/12/3fb5cd752cbc4ea3c1e45bc02c19b193.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/8878ed999f59d6f2aa4837c1f10faa42.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Voxel Map Destroyer",
-      "description": "Smash through a sprawling voxel district and watch every wall crumbles.",
+      "title": "Aqueduct Garden",
+      "description": "Guide streams of water across the stone board.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/voxel-map-destroyer/",
+      "url": "https://game.giveawayoftheday.com/aqueduct-garden/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/10/3fcd4fc2eadb07ea20732dbf06dd7959.jpg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/5d351f72c342103f77fb626a9d7fc3e0.jpg"
     },
     {
       "category": "android",
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "StoryShots: Book Summaries",
-      "description": "Choose from 1 Million+ Book Summaries, including Bestsellers & New Releases!",
-      "price": "$5.99",
-      "url": "https://iphone.giveawayoftheday.com/storyshots-book-summaries/",
+      "title": "Waltz of the Wizard",
+      "description": "Waltz of the Wizard is a first-person magic simulator inspired by the wonders of classical fantasy.",
+      "price": "$8.99",
+      "url": "https://iphone.giveawayoftheday.com/waltz-of-the-wizard/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1430885497_app_icon_big_1794986625.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/04/6742191553_app_icon_big_1776330808.jpg"
     }
   ]
 }
