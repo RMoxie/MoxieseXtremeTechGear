@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-11-19T20:41:18Z",
+  "updatedAt": "2026-11-20T20:25:53Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "FileCryptor 2025",
-      "description": "One click is enough: backs up folders and files in seconds!",
-      "price": "$29.95",
-      "url": "https://www.giveawayoftheday.com/filecryptor/",
+      "title": "Coolmuster Mobile Transfer 5.0.37",
+      "description": "Move data from one device to another without damage.",
+      "price": "$25.95",
+      "url": "https://www.giveawayoftheday.com/coolmuster-mobile-transfer-5-0-37/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/8878ed999f59d6f2aa4837c1f10faa42.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2025/06/35ce08c709a9c014c3c33eeb659fbd60.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Aqueduct Garden",
-      "description": "Guide streams of water across the stone board.",
-      "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/aqueduct-garden/",
+      "title": "Golden Rush",
+      "description": "Golden Rush is an interesting and snowy arcade game.",
+      "price": "$0.99",
+      "url": "https://game.giveawayoftheday.com/golden-rush-2/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/5d351f72c342103f77fb626a9d7fc3e0.jpg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/d3d846604957ae17d2dab711c23449d9.jpg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Dead God Land - Light Survival",
-      "description": "Explore mysterious islands and face a lot of dangers!",
-      "price": "6.99",
-      "url": "https://android.giveawayoftheday.com/dead-god-land-light-survival/",
+      "title": "My English Grammar Test PRO",
+      "description": "Test and improve your English grammar skills in My English Grammar Test PRO!",
+      "price": "1.99",
+      "url": "https://android.giveawayoftheday.com/my-english-grammar-test-pro/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2025/11/com.devvisiongames.dglandlight.survival_app_icon_1762173047.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2018/10/air.com.littlebigplay.games.myenglishgrammartestpro_app_icon_1540726080.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Waltz of the Wizard",
-      "description": "Waltz of the Wizard is a first-person magic simulator inspired by the wonders of classical fantasy.",
-      "price": "$8.99",
-      "url": "https://iphone.giveawayoftheday.com/waltz-of-the-wizard/",
+      "title": "Mobile Mouse & Keyboard",
+      "description": "Turn your iPhone/iPad device into handy mobile keyboard for your computer.",
+      "price": "$5.00",
+      "url": "https://iphone.giveawayoftheday.com/wireless-keyboard-trackpad/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/04/6742191553_app_icon_big_1776330808.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1515294700_app_icon_big_1795160205.jpg"
     }
   ]
 }
