@@ -254,17 +254,19 @@ body{overflow-x:hidden}.visual-break{margin:2.2rem 0}.visual-break img{display:b
     function setTheme(theme) {
       if (theme === 'light') root.setAttribute('data-theme', 'light'); else root.removeAttribute('data-theme');
       const light = theme === 'light';
-      themeButton.innerHTML = light ? '🌙 <span class="theme-text">Dark</span>' : '☀️ <span class="theme-text">Light</span>';
-      themeButton.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+      if (themeButton) {
+        themeButton.innerHTML = light ? '🌙 <span class="theme-text">Dark</span>' : '☀️ <span class="theme-text">Light</span>';
+        themeButton.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+      }
       localStorage.setItem('theme', theme);
     }
     setTheme(localStorage.getItem('theme') === 'light' ? 'light' : 'dark');
-    themeButton.addEventListener('click', () => setTheme(root.hasAttribute('data-theme') ? 'dark' : 'light'));
-    menuButton.addEventListener('click', () => {
+    if (themeButton) themeButton.addEventListener('click', () => setTheme(root.hasAttribute('data-theme') ? 'dark' : 'light'));
+    if (menuButton) menuButton.addEventListener('click', () => {
       const open = nav.classList.toggle('open');
       menuButton.setAttribute('aria-expanded', String(open));
     });
-    nav.addEventListener('click', event => {
+    if (nav) nav.addEventListener('click', event => {
       if (event.target.matches('a')) { nav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); }
     });
   </script>

@@ -437,7 +437,6 @@
         }
 
         html body::before {
-          background-image: url("/moxie-cosmic-cliffs-background.webp") !important;
           background-position: center center !important;
           background-size: cover !important;
           filter: saturate(1.08) contrast(1.03);
@@ -461,7 +460,7 @@
 
         html {
           background-color: #020617 !important;
-          background-image: linear-gradient(rgba(2,6,23,.16),rgba(2,6,23,.16)), url("/moxie-cosmic-cliffs-background.webp") !important;
+          background-image: linear-gradient(rgba(2,6,23,.16),rgba(2,6,23,.16)) !important;
           background-position: center center !important;
           background-size: cover !important;
           background-repeat: no-repeat !important;
@@ -470,7 +469,7 @@
 
         html[data-theme="light"] {
           background-color: #f8fafc !important;
-          background-image: linear-gradient(rgba(248,250,252,.42),rgba(248,250,252,.42)), url("/moxie-cosmic-cliffs-background.webp") !important;
+          background-image: linear-gradient(rgba(248,250,252,.42),rgba(248,250,252,.42)) !important;
         }
 
         html body::before,
@@ -1517,7 +1516,7 @@
 
         body{
           background-color:#07111f!important;
-          background-image:linear-gradient(rgba(2,8,23,.66),rgba(2,8,23,.66)),url('/moxie-cosmic-cliffs-background.webp')!important;
+          background-image:linear-gradient(rgba(2,8,23,.66),rgba(2,8,23,.66))!important;
           background-size:cover!important;
           background-position:center!important;
           background-repeat:no-repeat!important;
@@ -1532,7 +1531,7 @@
 
         [data-theme="light"] body{
           background-color:#f8fafc!important;
-          background-image:linear-gradient(rgba(248,250,252,.84),rgba(248,250,252,.84)),url('/moxie-cosmic-cliffs-background.webp')!important;
+          background-image:linear-gradient(rgba(248,250,252,.84),rgba(248,250,252,.84))!important;
         }
 
         [data-theme="light"] .hero{
