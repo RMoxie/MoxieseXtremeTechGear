@@ -42,7 +42,11 @@
         "/tech-gifts-under-50.html": { title: "Tech Gifts Under $50", icon: "/pic-nav-techgifts.jpg" },
         "/epoxy-resin-tables.html": { title: "Epoxy & Resin for River Tables", icon: "/pic-nav-epoxy.jpg" },
         "/black-friday-deals.html": { title: "Black Friday Deals", icon: "/pic-nav-blackfriday.jpg" },
-        "/full-auto-bb-guns.html": { title: "Full-Auto BB Guns", icon: "/pic-nav-bbguns.jpg" }
+        "/full-auto-bb-guns.html": { title: "Full-Auto BB Guns", icon: "/pic-nav-bbguns.jpg" },
+        "/high-tech.html": { title: "High-Tech Gear", icon: "/pic-nav-hightech.jpg" },
+        "/cozy-home-tech.html": { title: "Cozy Home Tech", icon: "/pic-nav-cozy.jpg" },
+        "/fishing-gear.html": { title: "Fishing Gear", icon: "/pic-nav-fishing.jpg" },
+        "/womens-fishing-gear.html": { title: "Women's Fishing Gear", icon: "/pic-nav-womens-fishing.jpg" }
       };
 
       const PAGE_CATEGORY_PATHS = {
