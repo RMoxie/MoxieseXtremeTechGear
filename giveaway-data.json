@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-11-20T20:25:53Z",
+  "updatedAt": "2026-11-21T19:20:25Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Coolmuster Mobile Transfer 5.0.37",
-      "description": "Move data from one device to another without damage.",
-      "price": "$25.95",
-      "url": "https://www.giveawayoftheday.com/coolmuster-mobile-transfer-5-0-37/",
+      "title": "100 Realistic Sky Photo Overlays",
+      "description": "Turn every photo into a masterpiece with over 100 Realistic Sky Overlays!",
+      "price": "$19.00",
+      "url": "https://www.giveawayoftheday.com/100-realistic-sky-photo-overlays/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2025/06/35ce08c709a9c014c3c33eeb659fbd60.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/a4d0294bd3b2fe94e1883651c0715b70.jpg"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Golden Rush",
-      "description": "Golden Rush is an interesting and snowy arcade game.",
-      "price": "$0.99",
-      "url": "https://game.giveawayoftheday.com/golden-rush-2/",
+      "title": "Magic Bookshop: Mahjong",
+      "description": "An unforgettable journey through an enchanted land awaits you!",
+      "price": "$9.99",
+      "url": "https://game.giveawayoftheday.com/magic-bookshop-mahjong-3/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/d3d846604957ae17d2dab711c23449d9.jpg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2023/03/c2f675e5670f5c2b595aed5544cf0757.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "My English Grammar Test PRO",
-      "description": "Test and improve your English grammar skills in My English Grammar Test PRO!",
-      "price": "1.99",
-      "url": "https://android.giveawayoftheday.com/my-english-grammar-test-pro/",
+      "title": "Healing Wood Block Travel",
+      "description": "Welcome to the colorful world of Healing WoodBlock Puzzles!",
+      "price": "0.99",
+      "url": "https://android.giveawayoftheday.com/healing-wood-block-travel/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2018/10/air.com.littlebigplay.games.myenglishgrammartestpro_app_icon_1540726080.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/10/com.whitewind.woodblock_app_icon_1635592624.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Mobile Mouse & Keyboard",
-      "description": "Turn your iPhone/iPad device into handy mobile keyboard for your computer.",
-      "price": "$5.00",
-      "url": "https://iphone.giveawayoftheday.com/wireless-keyboard-trackpad/",
+      "title": "Calc4Key",
+      "description": "Use calculator directly on keyboard anywhere, anytime.",
+      "price": "$0.99",
+      "url": "https://iphone.giveawayoftheday.com/calc4key/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1515294700_app_icon_big_1795160205.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1585531759_app_icon_big_1795243003.jpg"
     }
   ]
 }
