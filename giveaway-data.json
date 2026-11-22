@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-11-21T19:20:25Z",
+  "updatedAt": "2026-11-22T19:44:26Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "100 Realistic Sky Photo Overlays",
-      "description": "Turn every photo into a masterpiece with over 100 Realistic Sky Overlays!",
-      "price": "$19.00",
-      "url": "https://www.giveawayoftheday.com/100-realistic-sky-photo-overlays/",
+      "title": "Allavsoft 3.29 (Win&Mac)",
+      "description": "Download free videos from 100+ websites and convert to popular formats!",
+      "price": "$59.99",
+      "url": "https://www.giveawayoftheday.com/allavsoft-8/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/a4d0294bd3b2fe94e1883651c0715b70.jpg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2019/03/9e63fc638b2978d0a0f3dc79d9421b66.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Magic Bookshop: Mahjong",
-      "description": "An unforgettable journey through an enchanted land awaits you!",
+      "title": "Lost Inca Prophecy 2: The Hollow Island",
+      "description": "Join Seraphine in this amazing adventure to save the world from its doom!",
       "price": "$9.99",
-      "url": "https://game.giveawayoftheday.com/magic-bookshop-mahjong-3/",
+      "url": "https://game.giveawayoftheday.com/lost-inca-prophecy-2-the-hollow-island-3/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2023/03/c2f675e5670f5c2b595aed5544cf0757.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2019/11/82144d2faa34f77500d8eea9d03bfed6.jpeg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Healing Wood Block Travel",
-      "description": "Welcome to the colorful world of Healing WoodBlock Puzzles!",
+      "title": "Cooking Kawaii - cooking games",
+      "description": "Come to the cooking adventure, as a passionate chef, you are invited to take part in those challenges.",
       "price": "0.99",
-      "url": "https://android.giveawayoftheday.com/healing-wood-block-travel/",
+      "url": "https://android.giveawayoftheday.com/cooking-kawaii-cooking-games/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/10/com.whitewind.woodblock_app_icon_1635592624.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/06/com.cscmobi.cooking.love_app_icon_1781349499.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Calc4Key",
-      "description": "Use calculator directly on keyboard anywhere, anytime.",
-      "price": "$0.99",
-      "url": "https://iphone.giveawayoftheday.com/calc4key/",
+      "title": "Weight Diary",
+      "description": "Simple and effective weight loss tracking.",
+      "price": "$3.99",
+      "url": "https://iphone.giveawayoftheday.com/weight-diary-2/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1585531759_app_icon_big_1795243003.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2014/03/410413185_app_icon_big_1441379631.jpg"
     }
   ]
 }
