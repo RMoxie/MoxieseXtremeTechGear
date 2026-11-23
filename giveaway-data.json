@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-11-22T19:44:26Z",
+  "updatedAt": "2026-11-23T23:57:17Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Allavsoft 3.29 (Win&Mac)",
-      "description": "Download free videos from 100+ websites and convert to popular formats!",
-      "price": "$59.99",
-      "url": "https://www.giveawayoftheday.com/allavsoft-8/",
+      "title": "Aiarty Image Matting 2.7 (Win)",
+      "description": "One-Click AI for Precise Photo Background Removal with FineDetail Preservation",
+      "price": "$75.00",
+      "url": "https://www.giveawayoftheday.com/aiarty-image-matting-2-7/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2019/03/9e63fc638b2978d0a0f3dc79d9421b66.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2025/01/2fc561a3b5d723c7414ace70e3f22c62.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Lost Inca Prophecy 2: The Hollow Island",
-      "description": "Join Seraphine in this amazing adventure to save the world from its doom!",
-      "price": "$9.99",
-      "url": "https://game.giveawayoftheday.com/lost-inca-prophecy-2-the-hollow-island-3/",
+      "title": "Heart Tile Match",
+      "description": "Clear the heart shaped pile of fruit and match them in groups of three.",
+      "price": "$5.00",
+      "url": "https://game.giveawayoftheday.com/heart-tile-match/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2019/11/82144d2faa34f77500d8eea9d03bfed6.jpeg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/3114efdf1727e360e21fd557be761c4a.jpg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Cooking Kawaii - cooking games",
-      "description": "Come to the cooking adventure, as a passionate chef, you are invited to take part in those challenges.",
-      "price": "0.99",
-      "url": "https://android.giveawayoftheday.com/cooking-kawaii-cooking-games/",
+      "title": "Tech VPN Pro / Protect Privacy",
+      "description": "Premium VPN with fastest VPN Server, Secure VPN Connection & Protect Privacy of the users",
+      "price": "$49.99",
+      "url": "https://android.giveawayoftheday.com/tech-vpn-pro-protect-privacy/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2026/06/com.cscmobi.cooking.love_app_icon_1781349499.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/11/com.tech.vpnpro_app_icon_1636186519.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Weight Diary",
-      "description": "Simple and effective weight loss tracking.",
-      "price": "$3.99",
-      "url": "https://iphone.giveawayoftheday.com/weight-diary-2/",
+      "title": "Save the Earth: Climate Strike",
+      "description": "Save the Earth is the first educational game on ecological topic.",
+      "price": "$0.29",
+      "url": "https://iphone.giveawayoftheday.com/save-the-earth-climate-strike/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2014/03/410413185_app_icon_big_1441379631.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1504760106_app_icon_big_1795422165.jpg"
     }
   ]
 }
