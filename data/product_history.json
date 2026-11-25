@@ -1194,5 +1194,76 @@
       "https://www.amazon.com/dp/B09LQHMWBX?tag=rmoxie-20",
       "https://www.amazon.com/dp/B0D6LK4T8P?tag=rmoxie-20"
     ]
+  },
+  "2026-11-25": {
+    "ai-hardware.html": [
+      "https://www.amazon.com/dp/B0DXLG4FJ3?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0HQ3KLQ9D?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0DGB5RLLV?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0FRC51HMF?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0H4WQCMNL?tag=rmoxie-20"
+    ],
+    "audio-gear.html": [
+      "https://www.amazon.com/dp/B0GQ3MD31D?tag=rmoxie-20"
+    ],
+    "audio-gear/headset-guide.html": [
+      "https://www.amazon.com/dp/B0HMVQ5QF1?tag=rmoxie-20"
+    ],
+    "automotive-emergency.html": [
+      "https://www.amazon.com/dp/B0F6TSNLK8?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B002B3BM38?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B07VGRVKSN?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0CX8YW6J3?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B07G61YN8K?tag=rmoxie-20"
+    ],
+    "camping-outdoors-equipment.html": [
+      "https://www.amazon.com/dp/B0DKXHYFJM?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0G8J1VZW4?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0DDC4MH84?tag=rmoxie-20"
+    ],
+    "coding-gear/mouse-guide.html": [
+      "https://www.amazon.com/dp/B0BXNR9DB6?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0BXNQK9CM?tag=rmoxie-20"
+    ],
+    "drones.html": [
+      "https://www.amazon.com/dp/B0H8ZMDZB3?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0F13PRVR8?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0F27WC7QY?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0F1JSD37S?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0H69CRQ4G?tag=rmoxie-20"
+    ],
+    "ebike-gear.html": [
+      "https://www.amazon.com/dp/B0GJZL2ZJS?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0HKJ3PZ8S?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0G93DRBZM?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0F5PLD583?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0F5PMCGBS?tag=rmoxie-20"
+    ],
+    "gaming-setup.html": [
+      "https://www.amazon.com/dp/B0F59V5Y6Q?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0HFFKP4ZF?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0F1SYWBBX?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B07DZDJ739?tag=rmoxie-20"
+    ],
+    "home-safety-security.html": [
+      "https://www.amazon.com/dp/B0C427WDTQ?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0H1J3WLBQ?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0F5LPQZPT?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0FG2MD3YP?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0HJ2MNBX6?tag=rmoxie-20"
+    ],
+    "scuba-diving/index.html": [
+      "https://www.amazon.com/dp/B0GD6973X7?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0861B7YZH?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0CRB1T55S?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B07DR9LF2V?tag=rmoxie-20",
+      "https://www.amazon.com/dp/B0D8B3B5CX?tag=rmoxie-20"
+    ],
+    "smart-home.html": [
+      "https://www.amazon.com/dp/B0HLDJS9LV?tag=rmoxie-20"
+    ],
+    "storage-gear/index.html": [
+      "https://www.amazon.com/dp/B0DX2M3SLM?tag=rmoxie-20"
+    ]
   }
 }
