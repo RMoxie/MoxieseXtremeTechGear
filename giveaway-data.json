@@ -1,28 +1,28 @@
 {
-  "updatedAt": "2026-11-24T22:29:40Z",
+  "updatedAt": "2026-11-25T21:44:39Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Tipard DVD Creator 5.3.32",
-      "description": "Turn any video and audio into Blu-ray or DVD disc/folder/ISO file.",
-      "price": "$24.00 / month",
-      "url": "https://www.giveawayoftheday.com/tipard-dvd-creator-5-3-32/",
+      "title": "Batch Image Resizer 5.7",
+      "description": "Quickly resize, crop, rotate, flip, and resample lots of images!",
+      "price": "$55.95",
+      "url": "https://www.giveawayoftheday.com/batch-image-resizer-2/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2019/11/90c8dc4801c750651f1de8700a1470b8.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/672bcf0beba5d0fc119dd05e99cfdcc2.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Wisp Herder",
-      "description": "Tend a night garden and scares the critters by a magic lantern.",
+      "title": "Weed Pull io",
+      "description": "Rescue the flower beds from cheeky weeds that sprout around the blooms.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/wisp-herder/",
+      "url": "https://game.giveawayoftheday.com/weed-pull-io/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/0bbed491de528b7a84a67c34c5c53a37.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/9bbfb043c2bb7083741545ff8d9970c3.jpg"
     },
     {
       "category": "android",
@@ -30,7 +30,7 @@
       "icon": "🤖",
       "title": "Reminder - Pro",
       "description": "Reminder app without advertisements.",
-      "price": "$3.75",
+      "price": "3.75",
       "url": "https://android.giveawayoftheday.com/reminder-pro/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
       "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/10/alarm.clock.calendar.reminder.pro_app_icon_1633873082.png"
@@ -39,12 +39,12 @@
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Dunder Inc.",
-      "description": "Think you've seen every episode of The Office more times than you'd admit?",
-      "price": "$0.99",
-      "url": "https://iphone.giveawayoftheday.com/dunder-inc/",
+      "title": "Phone Drive: File Storage Sync",
+      "description": "Phone Drive allows you to store, view and manage files on your iPhone or iPad.",
+      "price": "$4.99",
+      "url": "https://iphone.giveawayoftheday.com/phone-drive-2/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/1455659335_app_icon_big_1795549981.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/431033044_app_icon_big_1795595968.jpg"
     }
   ]
 }
