@@ -311,29 +311,105 @@
     <p class="affiliate-disclosure"><strong>Affiliate disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases <strong class="no-additional-cost">AT NO ADDITIONAL COST TO YOU.</strong></p>
     <p>&copy; 2026 Moxies eXtreme TechGear. All rights reserved.</p>
   </footer>
-<script>
-        function toggleTheme() {
-            const html = document.documentElement;
-            const btn = document.getElementById('themeToggleBtn');
-            if (html.getAttribute('data-theme') === 'light') {
-                html.removeAttribute('data-theme');
-                btn.textContent = '☀️ Light Mode';
-                localStorage.setItem('theme', 'dark');
-            } else {
-                html.setAttribute('data-theme', 'light');
-                btn.textContent = '🌙 Dark Mode';
-                localStorage.setItem('theme', 'light');
-            }
+<!-- Theme and mobile navigation -->
+  <script data-site-shell>
+    (() => {
+      const root = document.documentElement;
+      const themeButton = document.getElementById('siteThemeToggle');
+      const menuButton = document.getElementById('siteMenuToggle');
+      const nav = document.getElementById('sitePrimaryNav');
+
+      const readSavedTheme = () => {
+        try {
+          return localStorage.getItem('theme');
+        } catch {
+          return null;
+        }
+      };
+
+      const saveTheme = theme => {
+        try {
+          localStorage.setItem('theme', theme);
+        } catch {
+          // Theme still works if browser storage is unavailable.
+        }
+      };
+
+      const applyTheme = theme => {
+        const light = theme === 'light';
+
+        if (light) {
+          root.setAttribute('data-theme', 'light');
+        } else {
+          root.removeAttribute('data-theme');
         }
 
-        (function initTheme() {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.getElementById('themeToggleBtn').textContent = '🌙 Dark Mode';
-            }
-        })();
-    </script>
+        if (themeButton) {
+          themeButton.innerHTML = light
+            ? '🌙 <span>Dark Mode</span>'
+            : '☀️ <span>Light Mode</span>';
+
+          themeButton.setAttribute(
+            'aria-label',
+            light ? 'Switch to dark mode' : 'Switch to light mode'
+          );
+        }
+
+        saveTheme(light ? 'light' : 'dark');
+      };
+
+      applyTheme(readSavedTheme() === 'light' ? 'light' : 'dark');
+
+      if (themeButton) {
+        themeButton.addEventListener('click', () => {
+          applyTheme(
+            root.hasAttribute('data-theme') ? 'dark' : 'light'
+          );
+        });
+      }
+
+      const closeMenu = () => {
+        if (!nav || !menuButton) return;
+
+        nav.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+
+        nav.querySelectorAll('details[open]').forEach(details => {
+          details.open = false;
+        });
+      };
+
+      if (menuButton && nav) {
+        menuButton.addEventListener('click', () => {
+          const open = nav.classList.toggle('is-open');
+          menuButton.setAttribute('aria-expanded', String(open));
+        });
+
+        nav.addEventListener('click', event => {
+          if (
+            event.target instanceof Element &&
+            event.target.closest('a')
+          ) {
+            closeMenu();
+          }
+        });
+
+        document.addEventListener('keydown', event => {
+          if (
+            event.key === 'Escape' &&
+            (
+              nav.classList.contains('is-open') ||
+              nav.querySelector('details[open]')
+            )
+          ) {
+            closeMenu();
+            menuButton.focus();
+          }
+        });
+      }
+    })();
+  </script>
+
 <script src="/site-search.js?v=20261031a" defer></script>
 <script>(()=>{const form=document.querySelector('[data-community-form]');if(!form)return;form.addEventListener('submit',event=>{event.preventDefault();if(!form.reportValidity())return;const data=new FormData(form),kind=form.dataset.kind,lines=[];for(const [key,value] of data.entries()){if(key==='consent')continue;const clean=String(value).trim();if(clean)lines.push(`${key}: ${clean}`)}lines.push('Consent to review and publish selected fields: yes');const subject=encodeURIComponent(`[Drone ${kind}] ${data.get('display name')||'New submission'}`);const body=encodeURIComponent(`Please review this ${kind.toLowerCase()} submission. Nothing should be published until it is manually approved.\n\n${lines.join('\n')}\n\nI understand that opening this draft does not submit it; I must send the email from my email app.`);document.querySelector('.form-status').textContent='Your email app should open with a completed draft. Send that email to finish the submission.';location.href=`mailto:moxiesextremetechgear@gmail.com?subject=${subject}&body=${body}`})})();</script>
 </body>
