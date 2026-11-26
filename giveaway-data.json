@@ -1,50 +1,50 @@
 {
-  "updatedAt": "2026-11-25T21:44:39Z",
+  "updatedAt": "2026-11-26T21:37:32Z",
   "source": "Giveaway of the Day",
   "items": [
     {
       "category": "windows",
       "label": "Windows Software",
       "icon": "💻",
-      "title": "Batch Image Resizer 5.7",
-      "description": "Quickly resize, crop, rotate, flip, and resample lots of images!",
-      "price": "$55.95",
-      "url": "https://www.giveawayoftheday.com/batch-image-resizer-2/",
+      "title": "TranscribeIt: Audio & Video to Text Transcriber 1.3.0",
+      "description": "TranscribeIt turns your audio and video recordings into text.",
+      "price": "$14.99 / month",
+      "url": "https://www.giveawayoftheday.com/transcribeit-audio-video-to-text-transcriber/",
       "categoryUrl": "https://www.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/672bcf0beba5d0fc119dd05e99cfdcc2.png"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/657c24bcaa7268a12827895c3ef0ffa3.png"
     },
     {
       "category": "game",
       "label": "PC Game",
       "icon": "🎮",
-      "title": "Weed Pull io",
-      "description": "Rescue the flower beds from cheeky weeds that sprout around the blooms.",
+      "title": "Ghost Escape io",
+      "description": "You play as a little ghost trapped in a haunted maze full of tasty dots.",
       "price": "$5.00",
-      "url": "https://game.giveawayoftheday.com/weed-pull-io/",
+      "url": "https://game.giveawayoftheday.com/ghost-escape-io/",
       "categoryUrl": "https://game.giveawayoftheday.com/",
-      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/9bbfb043c2bb7083741545ff8d9970c3.jpg"
+      "image": "https://giveawayoftheday.com/wp-content/uploads/2026/11/a6f65a5e52f904042c6681fc16393b52.jpg"
     },
     {
       "category": "android",
       "label": "Android App",
       "icon": "🤖",
-      "title": "Reminder - Pro",
-      "description": "Reminder app without advertisements.",
-      "price": "3.75",
-      "url": "https://android.giveawayoftheday.com/reminder-pro/",
+      "title": "Zombie Age 3 Premium: Rules of Survival",
+      "description": "The awesome Zombie Age series returns with a lot more of savage zombies, deadly weapons and unique heroes.",
+      "price": "$0.99",
+      "url": "https://android.giveawayoftheday.com/zombie-age-3-premium-rules-of-survival/",
       "categoryUrl": "https://android.giveawayoftheday.com/",
-      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2021/10/alarm.clock.calendar.reminder.pro_app_icon_1633873082.png"
+      "image": "https://android.giveawayoftheday.com/wp-content/plugins/gotd_googleplay_plugin/images/2019/09/com.redantz.game.za3p_app_icon_1569484137.png"
     },
     {
       "category": "iphone",
       "label": "iPhone & iPad App",
       "icon": "📱",
-      "title": "Phone Drive: File Storage Sync",
-      "description": "Phone Drive allows you to store, view and manage files on your iPhone or iPad.",
+      "title": "Little Kitten Favorite Pet Cat",
+      "description": "Little Kitten is every child's dream - a cheeky, funny and adorable little pet.",
       "price": "$4.99",
-      "url": "https://iphone.giveawayoftheday.com/phone-drive-2/",
+      "url": "https://iphone.giveawayoftheday.com/little-kitten-my-favorite-cat/",
       "categoryUrl": "https://iphone.giveawayoftheday.com/",
-      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/11/431033044_app_icon_big_1795595968.jpg"
+      "image": "https://iphone.giveawayoftheday.com/wp-content/plugins/gotd_appstore_plugin/images/163/2026/08/1171095810_app_icon_big_1785737291.jpg"
     }
   ]
 }
